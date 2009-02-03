@@ -1,0 +1,26 @@
+include "basic_4_staves.mup"
+score pagewidth = 4
+
+staff 1 label = "2."
+
+staff 4 vscheme = 2o
+
+music
+	ital (15) above 1-4: 0 "p";
+	1: a; a; g; a;
+	2: f; f; c; f;
+	3: c+; c+; c+; c+;
+	4: f; f; e; f;
+	lyrics 1-4: "Doam-ne mi-lu-";
+	bar
+
+	1: b; c+; a; 8a; 8r;
+	2: 2e; 4f; 8f; 8r;
+	3: 2c+; 4c+; 8c+; 8r;
+	4 1: 4g; 4a; 4ff-; 8ff-; 8r;
+	4 2: 2c; 4ff-; 8ff-; 8r;
+	lyrics 1-4: 2;2; "ie-ste._";
+	phrase above 1: 1 til 2;
+	phrase below 1,2,4: 3 til 4;
+	phrase above 3,4: 3 til 4;
+	endbar

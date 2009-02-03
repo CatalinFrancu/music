@@ -1,0 +1,466 @@
+header
+	title bold (24) "La raul Babilonului"
+
+score
+	topmargin = 0.5
+	bottommargin = 0.5
+	leftmargin = 0.6
+	rightmargin = 0.6
+	scale = 0.7
+	packfact = 1.7
+	key = 1&
+	staffs = 2
+	brace = 1-2
+	barstyle = 1-2
+	measnum = y
+	time = 4/4n
+	beamstyle = 2,2
+	vscheme = 2f
+	endingstyle = top
+	lyricssize = 15
+
+staff 2
+	clef = bass
+
+music
+	midi all: 0 "tempo=90";
+	midi 1: 0 "channel=1"; 0 "program=70";
+	midi 2: 0 "channel=2"; 0 "program=70";
+
+	1: 2.s;4f;
+	2: 2.s;4d;
+	lyrics 1: 2.s;4; "La";
+	invisbar
+
+	1: 4f; 4e; 4d; 4c;
+	2: 1d;
+	lyrics 1: "r\(a^)-ul Ba-bi-";
+	invisbar
+
+	1: 8g; 8a; 4g; 4f<>; 4e;
+	2: 1d;
+	phrase 1: 1 til 2;
+	lyrics 1: 2;2; "lo-nu-";
+	invisbar
+
+	1: 2f; 4r; 4d;
+	2: 1d;
+	lyrics 1: "lui, A-";
+	invisbar
+
+	1: 4e; 4f; {8g; 8a; 8g;}3; 4f; 
+	2: 1d;
+	phrase 1: 2 til 3.7;
+	lyrics 1: 4;2;4; "co-lo_ am";
+	invisbar
+
+	1: 4e; {8e; 8f; 8e;}3; 4.d; 8r;
+	2: 2d; 4.d; 8r;
+	phrase 1: 2 til 3;
+	lyrics 1: 4;2.; "se-zut_";
+	invisbar
+
+	1: 4c+<>; 4bn; 8a&; 8g; 8f; 8e;
+	2: 4c+<>; 4bn; 8a&; 8g; 8f; 8e;
+	lyrics 1: 2;2; "Si_ am_";
+	invisbar
+
+	1: 4.f; 8f; 4f; 4g;
+	2: 4.f; 8f; 2f;
+	lyrics 1: "pl\(a^)ns C\(a^)nd ne\(emdash)am a-";
+	invisbar
+
+	1: 4a; 4g; 4a; 4g;
+	2: 1f;
+	lyrics 1: "dus a-min-te";
+	invisbar
+
+	1: 4f; 4f; 4b; 8a; 8g;
+	2: 1f;
+	lyrics 1: 4;4;2; "de Si-on_";
+	invisbar
+	
+	1:4a; 8g; 8f; 4g; 8f; 8e;
+	2: 2f; 2c;
+	invisbar
+
+	1: 4d; 2c; 4r;
+	2: 2.c; 4r;
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+	1: 4a; 4g; 4f; 4e;
+	2: 2f; 2d;
+	lyrics 1: "i-a, A-li-";
+	invisbar
+
+	1: 4f; 4e; 2d;
+	2: 1d;
+	lyrics 1: "lu-i-a,_";
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+score	time=5/4n
+	beamstyle=4,4,4,4,4
+music
+	1: 4a<>; 4g; 8g; 16f; 16e; 2f;
+	2: 2f; 2.f;
+	lyrics 1: 2;2.; "i-a_";
+	invisbar
+
+score	time=4/4n
+music
+	1: 2.s; 4f;
+	2: 2.s; 4f;
+	lyrics 1: "\(I^)n";
+	invisbar
+
+	1: 4g<>; 4a; 4a; 4a;
+	2: 1f;
+	lyrics 1: 2;4;4; "s\(a~)l-cii, \(i^)n";
+	invisbar
+
+	1: 4c+<>; 4b; 4a; 4g;
+	2: 1f;
+	lyrics 1: 2;4;4; "mij-lo-cul";
+	invisbar
+
+	1: 4.a; 8g; 4a; 4b;
+	2: 1f;
+	lyrics 1: "lor, am sp\(a^)n-zu-";
+	invisbar
+
+	1: 4c+; 4b; 4a<>; 4g;
+	2: 2f; 2c;
+	lyrics 1: "rat or-ga-";
+	invisbar
+
+	1: 8f; 8e; 8d; 8c; 4g<>; 4a;
+	2: 1c;
+	lyrics 1: 4;4;2; "ne-le noas-";
+	invisbar
+
+	1: 2f; 4b; 8a; 8g;
+	2: 1f;
+	lyrics 1: 1; "tre_";
+	invisbar
+
+	1: 4a; 8g; 8f; 4g; 8f; 8e;
+	2: 2f; 2c;
+	invisbar
+
+	1: 4d; 2c; 4r;
+	2: 2.c; 4r;
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+	1: 4a; 4g; 4f; 4e;
+	2: 2f; 2d;
+	lyrics 1: "i-a, A-li-";
+	invisbar
+
+	1: 4f; 4e; 2d;
+	2: 1d;
+	lyrics 1: "lu-i-a,_";
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+	1: 4a; 8g; 8f; 4g; 4a;	
+	2: 1f;
+	phrase 1: 1 til 4;
+	lyrics 1: 1; "i-";
+	invisbar
+
+	1: 8g; 16a; 16g; 2f; 4r;
+	2: 2.f; 4r;
+	lyrics 1: 2.;4s; "a_";
+	invisbar
+
+	1: 8f; 8g; 8f; 8e; 4d; 4e;
+	2: 1d;
+	phrase 1: 1 til 2.7;
+	lyrics 1: 2;4;4; "C\(a~) a-co-";
+	invisbar
+
+	1: 4f; 4e; 4f; 4g;
+	2: 1d;
+	lyrics 1: "lo ne\(emdash)au \(i^)n-tre-";
+	invisbar
+
+	1: 4a; 4g; 8f; 8e; 8d; 8e;
+	2: 1d;
+	phrase 1: 3 til 4.7;
+	lyrics 1: 2;2; "bat pe";
+	invisbar
+
+	1: 2.f; 4r;
+	2: 1f;
+	lyrics 1: "noi";
+	invisbar
+
+	1: 4a; 4g; 4a; 4b;
+	2: 1f;
+	lyrics 1: "Cei ce ne\(emdash)au ro-";
+	invisbar
+
+	1: 8c+; 8d+; 4c+; 4b<>; 4a;
+	2: 1f;
+	phrase 1: 1 til 2;
+	lyrics 1: 2;2; "bit_ pe_";
+	invisbar
+
+	1: 8a; 16g; 16f; 2g; 8r; 8g;
+	2: 4f; 2.c;
+	phrase 1: 1 til 2.5;
+	lyrics 1: 2;4s;4; "noi_ Cu-";
+	invisbar
+
+	1: 4a; 4g; 8f; 8g; 8f; 8e;
+	2: 1c;
+	phrase 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "vin-te de_";
+	invisbar
+
+	1: 8d; 8e; 4d; 8g; 8a; 8g; 16f; 16e;
+	2: 1d;
+	phrase 1: 1 til 2;
+	lyrics 1: 2;2; "c\(a^)n-t\(a~)ri_";
+	invisbar
+
+	1: 2f; 4c; 16f; 16g; 16f; 16g;
+	2: 2f; 4c; 4f;
+	invisbar
+
+	1: 2.f; 4r;
+	2: 2.f; 4r;
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+	1: 4a; 4g; 4f; 4e;
+	2: 2f; 2d;
+	lyrics 1: "i-a, A-li-";
+	invisbar
+
+	1: 4f; 4e; 2d;
+	2: 1d;
+	lyrics 1: "lu-i-a,_";
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+score	time=5/4n
+	beamstyle=4,4,4,4,4
+music
+	1: 4a<>; 4g; 8g; 16f; 16e; 2f;
+	2: 2f; 2.f;
+	lyrics 1: 2;2.; "i-a_";
+	invisbar
+
+score	time=4/4n
+music
+	1: 4r; 2s; 4f;
+	2: 4r; 2s; 4d;
+	lyrics 1: "Si";
+	invisbar;
+
+	1: 4f; 4e; 4d; 4c;
+	2: 1d;
+	lyrics 1: "cei ce ne\(emdash)au ro-";
+	invisbar;
+
+	1: 2d; 8e; 8f; 4e;
+	2: 1d;
+	phrase 1: 3 til 4.7;
+	lyrics 1: 2;2; "bit pe_";
+	invisbar;
+
+	1: 2f; 4.r; 8f;
+	2: 1f;
+	lyrics 1: 2;4.s;8; "noi C\(a^)n-";
+	invisbar;
+
+	1: 4b; 8a; 8b; 4a; 4g;
+	2: 1f;
+	phrase 1: 1 til 4;
+	lyrics 1: 1; "ta_";
+	invisbar;
+
+	1: 8g; 4.f; 2s;
+	2: 2f; 2s;
+	phrase 1: 1 til 2;
+	lyrics 1: 2;2s; "re_";
+	invisbar
+
+score	beamstyle=4,4,4,4
+music
+	1: 8r; 8g; 4g; 8f; 8e; 8f; 16g; 16a;
+	2: 1f;
+	phrase 1: 2 til 3.7; 4 til 4.7;
+	lyrics 1: 8s;8;2;4; "C\(a^)n-tati_ no-";
+	invisbar
+
+score	beamstyle=2,2
+music
+	1: 2g; 4g; 4g;
+	2: 1c;
+	lyrics 1: "u\(a~) Din c\(a^)n-";
+	invisbar
+
+	1: 4b; 4a; 2g;
+	2: 1c;
+	lyrics 1: "t\(a~)-ri-le";
+	invisbar
+
+	1: [grace]8g; 8f; 16e; 16f; 4g; 8f; 8g; 8f; 8e;
+	2: 2c; 2d;
+	phrase 1: 0 til 2.5; 3 til 4.7;
+	lyrics 1: 2;2; "Si-o-";
+	invisbar
+
+	1: 8d; 8e; 4d; 8g; 8a; 8g; 16f; 16e;
+	2: 1d;
+	phrase 1: 1 til 2.5; 3 til 4.7;
+	lyrics 1: 2;2; "nu-lui_";
+	invisbar
+
+	1: 2f; 4c; 16f; 16g; 16f; 16g;
+	2: 2f; 4c; 4f;
+	invisbar
+
+	1: 2.f; 4r;
+	2: 2.f; 4r;
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+	1: 4a; 4g; 4f; 4e;
+	2: 2f; 2d;
+	lyrics 1: "i-a, A-li-";
+	invisbar
+
+	1: 4f; 4e; 2d;
+	2: 1d;
+	lyrics 1: "lu-i-a,_";
+	invisbar
+
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+score	time=5/4n
+	beamstyle=4,4,4,4,4
+music
+	1: 4a<>; 4g; 8g; 16f; 16e; 2f;
+	2: 2f; 2.f;
+	lyrics 1: 2;2.; "i-a_";
+	invisbar
+
+score	time=4/4n
+music
+	1: 8b; 8c+; 8b; 8a; 4g; 4a;
+	2: 1g;
+	phrase 1: 1 til 2.5;
+	lyrics 1: 2;4;4; "Cum_ vom c\(a^)n-";
+	invisbar
+
+	1: 8c+; 16b; 16a; 2b; 8r; 8f;
+	2: 2.g; 4f;
+	phrase 1: 1 til 3.5;
+	lyrics 1: 2.;8s;8; "ta_ C\(a^)n-";
+	invisbar
+
+	1: 4g; 4a; 8b; 8a; 8b; 8c+;
+	2: 1f;
+	lyrics 1: 4;4;2; "ta-rea Dom-";
+	invisbar
+
+	1: 8b; 8a; 8g; 8b; 4.a; 8r;
+	2: 2f; 4.f; 8r;
+	lyrics 1: 2;4.;8s; "nu-lui";
+	invisbar
+
+	1: 4g; 4g; 4a<>; 4g;
+	2: 1c;
+	lyrics 1: 4;4;2; "\(i^)n p\(a~)-m\(a^)nt_";
+	invisbar
+
+	1: 8f; 8e; 8d; 8g; 4.f; 8b;
+	2: 1c;
+	lyrics 1: 2;2; "stre-in_";
+	invisbar
+
+	1: 8a; 8g; 8f; 8e; 4d; 4c;
+	2: 1c;
+	invisbar
+
+score	beamstyle=4,4,4,4
+music
+	1: 8g; 8a; {8g; 8f; 8e;}3; 2f;
+	2: 2c; 2f;
+	invisbar
+
+score	beamstyle=2,2
+music
+	1: 4f; 4g; 4a; 16b; 16c+; 8b;
+	2: 1f;
+	phrase above 1: 3 til 4.7;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+	1: 4a; 4g; 4f; 4e;
+	2: 2f; 2d;
+	lyrics 1: "i-a, A-li-";
+	invisbar
+
+	1: 4f; 4e; 2d;
+	2: 1d;
+	lyrics 1: "lu-i-a,_";
+	invisbar
+
+	1: 4f; 4g; {8a; 8g; 8a;}3; 4b;
+	2: 1f;
+	lyrics 1: 4;4;2; "A-li-lu-";
+	invisbar
+
+score	time=5/4n
+	beamstyle=2,4,4,4
+music
+	1: 8a; 8b; 8a; 8g; 8g; 16f; 16e; 2f;
+	2: 2f; 2.f;
+	lyrics 1: 2;2.; "i-a_";
+	endbar

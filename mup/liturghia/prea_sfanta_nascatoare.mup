@@ -1,0 +1,85 @@
+include "basic_4_staves.mup"
+score pagewidth = 6.5
+
+music
+	ital above 1-4: 0 "p";
+	1: 2.s; [pad 1; =t] 4f;
+	2: 2.s; [pad 1; =u] 4f;
+	3: 2.s; [pad 1; =v] 4a;
+	4: 2.s; [pad 1; =w] 4f;
+	lyrics 1-4: "Prea";
+
+	// Manually place the second time signature
+	print (t.w - 4, t.y) "\f(newcentury bold)\s(16)2"; 
+	print (t.w - 4, t.y - 4) "\f(newcentury bold)\s(16)4";
+	print (u.w - 4, u.y) "\f(newcentury bold)\s(16)2"; 
+	print (u.w - 4, u.y - 4) "\f(newcentury bold)\s(16)4";
+	print (v.w - 4, v.y) "\f(newcentury bold)\s(16)2"; 
+	print (v.w - 4, v.y - 4) "\f(newcentury bold)\s(16)4";
+	print (w.w - 4, w.y) "\f(newcentury bold)\s(16)2"; 
+	print (w.w - 4, w.y - 4) "\f(newcentury bold)\s(16)4";
+	bar
+
+	ital above 1-4: 2 "cresc.";
+	1: 4a; 4a; 4a; 4a;
+	2: 4f; 4f; 4f; 4f;
+	3: 4c+; 4c+; 4d+; 4d+;
+	4: 4f; 4f; 4d; 4d;
+	lyrics 1-4: "Sf\(a^)n-t\(a~) N\(a~)s-c\(a~)-";
+	bar
+
+	1: 2b; 4a; 4g;
+	2: 2g; 4f; 4g;
+	3: 2d+; 4d+; 4c+;
+	4: 2g; 4d; 4e;
+	lyrics 1-4: 2; 4; 4; "toa-re de";
+	bar
+
+// Make the next measure in 2/4 time
+score
+	time = 2/4n
+
+music
+	1: 4a; 4b;
+	2: 4f; 4f;
+	3: 4c+; 4f+;
+	4: 8f; 8e; 4d;
+	phrase above 4: 1 til 1.5;
+	lyrics 1-4: "Dum-ne-";
+	bar
+
+score
+	time = 4/4n
+
+music
+	ital above 1-4: 0.3 "mf";
+	bold (24) above 1-4: 2 ",";
+	ital above 1-4: 3 "p";
+	1: [pad 10] 2c+; 4a; 4a;
+	2: [pad 10] 2g; 4f; 4f;
+	3: [pad 10] 2e+; 4c+; 4c+;
+	4: [pad 10] 2c; 4f; 4f;
+	mussym above 1-4: 1 "ferm";
+	lyrics 1-4: "zeu, mi-lu-";
+	bar
+
+	1: 2.b; 4a;
+	2: 2.e; 4f;
+	3: 2.c+; 4c+;
+	4: 2.g; 4f;
+	lyrics 1-4: "ie-ste-";
+	bar
+
+	1: 2g; 2a;
+	2: 2e; 2e;
+	3: 2c+; 2c+;
+	4: 2c; 2c;
+	lyrics 1-4: "ne pre";
+	bar
+
+	1: 2a; 2r;
+	2: 2f; 2r;
+	3: 2c+; 2r;
+	4: 2f; 2r;
+	lyrics 1-4: "noi.";
+	endbar

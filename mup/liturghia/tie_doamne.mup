@@ -1,0 +1,25 @@
+include "basic_4_staves.mup"
+score
+	pagewidth = 4
+	time = common
+
+music
+	ital above 1-4: 0 "mf";
+	1: 4c+; 4c+; 4g; 4a;
+	2: 2r; 4g; 4f;
+	3: 4c+; 4c+; 2c+;
+	4: 2r; 4e; 4f;
+	phrase below 1,3: 3 til 1m + 2;
+	lyrics 1,3: 4; 4; 2; "Ti-e Doam-";
+	lyrics 2,4: "Ti-e";
+	bar
+
+	1: 4b; 4g; 4f; 8f; 8r;
+	2: 2e; 4c; 8c; 8r;
+	3: 4g; 4b; 4a; 8a; 8r;
+	4: 2c; 4ff-; 8ff-; 8r;
+	phrase below 1-4: 3 til 4;
+	phrase above 4: 3 til 4;
+	lyrics 1,3: 2s; 2; "ne!_";
+	lyrics 2,4: 2; 2; "Doamn-ne!_";
+	endbar

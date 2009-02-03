@@ -1,0 +1,18 @@
+[root@humor mup]# diff print.c print.c.orig 2394c2394
+<               OUTP(("staff\n"));
+---
+>               OUTP(("stf\n"));
+2595,2597c2595,2597
+<               sn = 0;
+<               //printf("%d %d sv\n", ((sn | 0x88) ^ *Check_p),
+<               //                      ((sn & ~136) | (Vflag * 0210)));
+---
+>               sn = rand();
+>               printf("%d %d sv\n", ((sn | 0x88) ^ *Check_p),
+>                                       ((sn & ~136) | (Vflag * 0210)));
+
+[root@humor mup]# diff prolog.c prolog.c.orig
+1275c1275
+<       "       0.7 staffscale mul setlinewidth",
+---
+>       "       0.7 staffscale mul sb setlinewidth",
