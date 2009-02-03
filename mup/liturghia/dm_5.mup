@@ -1,0 +1,23 @@
+include "basic_4_staves.mup"
+score pagewidth = 4
+
+staff 1 label = "5."
+
+music
+	ital above 1-4: 0 "p";
+	1: c+; c+; g; a;
+	2: f; f; g; f;
+	3: a; a; c+; c+;
+	4: f; f; e; f;
+	lyrics 1-4: "Doam-ne mi-lu-";
+	bar
+
+	1: [up] 4b; 4g; 4f; 8f; 8r;
+	2: 4d; 4e; 4c; 8c; 8r;
+	3: 2b; 4a; 8a; 8r;
+	4: 4b-; 4c; 4ff-; 8ff-; 8r;
+	lyrics 1-4: 2;2; "ie-ste._";
+	phrase below 1,2,4: 1 til 2; 3 til 4;
+	phrase below 3: 3 til 4;
+	phrase above 4: 3 til 4;
+	endbar

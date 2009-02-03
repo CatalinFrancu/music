@@ -1,0 +1,38 @@
+score
+	topmargin = 0.2
+	bottommargin = 0.2
+	leftmargin = 0.05
+	rightmargin = 0.05
+	key = 1&
+	label=""
+	scale = 0.7
+	staffs = 4
+	bracket = 1-4
+	barstyle = 1-4
+	pagewidth = 4
+	size = 20
+
+staff 1
+	label = "1."
+
+staff 4
+	clef = bass
+
+music
+	ital (18) above 1-4: 0 "p";
+	1: a; a; g; f;
+	2: f; f; c; f;
+	3: c+; c+; b; a;
+	4: f; f; e; f;
+	lyrics 1-4: "Doam-ne mi-lu";
+	bar
+
+	1: g; a; f; 8f; 8r;
+	2: 2e; 4c; 8c; 8r;
+	3: 2b; 4a; 8a; 8r;
+	4: 2c; 4ff-; 8ff-; 8r;
+	lyrics 1-4: 2;2; "ie-ste._";
+	phrase below 1: 1 til 2; 3 til 4;
+	phrase below 2-4: 3 til 4;
+	phrase above 4: 3 til 4;
+	endbar

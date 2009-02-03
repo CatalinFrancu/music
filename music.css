@@ -1,0 +1,61 @@
+h1 {
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+div.license {
+  background: #f8f8f8;
+  border: 1px solid black;
+  font-size: 90%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+a.thumb img {
+  border: 1px solid black;
+}
+
+table.completeScore {
+  background: #f0f0ff;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+table.listing {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.listing tr th {
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  text-align: left;
+}
+
+table.listing tr {
+  border-bottom: 1px solid #a0d0d0;
+}
+
+table.listing tr td {
+  padding-bottom: 2px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+table.listing tr td.section {
+  border: 1px solid black;
+  background: #f0fff0;
+  font-weight: bold;
+  padding-left: 5px;
+}

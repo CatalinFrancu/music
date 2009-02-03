@@ -1,0 +1,596 @@
+header
+	title bold (24) "Heruvicul"
+	title bold (18) "Nr. 2, glas 5"
+	title bold (14) "" "Aranj. dupa I. POPESCU - PASAREA"
+	title bold (14) "" "si N. LUNGU"
+	title bold (14) "" "de N. MOLDOVEANU"
+
+score
+	topmargin = 0.5
+	bottommargin = 0.5
+	leftmargin = 0.6
+	rightmargin = 0.6
+	scale = 0.7
+	packfact = 1.2
+	key = 2&
+	time = 4/4
+	staffs = 2
+	brace = 1-2
+	barstyle = 1-2
+	measnum = y
+	vscheme = 2o
+	beamstyle = 2,2
+	endingstyle = top
+	lyricssize = 15
+
+staff 2
+	clef = bass
+
+music
+	midi all: 0 "tempo=90";
+	midi 1: 0 "channel=1"; 0 "program=70";
+	midi 2: 0 "channel=2"; 0 "program=70";
+
+	// Noi
+	rom (18) above 1: 1 "Adagio";
+	boldital (18) above 1: 0 "p";
+	1 1-2: 4.g; 8a; 4b; 4c+;
+	2 1-2: 4.g; 8a; 4b; 4c+;
+	phrase above 1-2: 1 til 2.5; 3 til 1m + 2.5;
+	phrase below 1-2: 1 til 2.5; 3 til 1m + 2.5;
+	lyrics below 1-2: 2; 2; "Noi ca_";
+	bar
+
+	1 1-2: 4b; 8a; 8b; 2g;
+	2 1-2: 4b; 8a; 8b; 2g;
+	lyrics below 1-2: 2s; 2; "re,";
+	bar
+
+	1 1-2: 4.a; 8b; 4a; 4b;
+	2 1: 1f;
+	phrase above 1: 1 til 4;
+	phrase below 1: 1 til 4;
+	lyrics below 1-2: 1; "ca_";
+	bar
+
+	1 1-2: 2s; 4g; 4g;
+	2 1-2: 2s; 4g; 4g;
+	lyrics below 1-2: "re pe";
+	bar
+
+	1 1: 4a; 4b; 4c+; 8d+; 8c+;
+	1 2: 4a; 4b; 4a; 8b; 8a;	
+	2 1-2: 2f; 2f;
+	phrase above 1: 1 til 2.5; 3 til 5;
+	phrase below 1: 1 til 2.5; 3 til 5;
+	lyrics below 1-2: 2; 2; "He_ru_";
+	bar
+
+	bold (24) above 1-2: 2 ",";
+	1 1: 2b; 4a; 8c+; 8b;
+	1 2: 2g; 4f; 8a; 8g;
+	2 1-2: 2g; 2d;
+	phrase above 1: 3 til 5;
+	phrase below 1: 3 til 5;
+	lyrics below 1: 2; 2; "vimi, pe_";
+	lyrics below 2: 2; 2; "vimi, pe";
+	bar
+
+	1 1: [grace]8c+<>; 8b; 4a; 8b; 4g; 4f;
+	1 2: 8g; 4f; 8g; 4g; 4f;
+	2 1: 2d; 2d;
+	2 2: 2d; 8g-; 8a-; 4b-;
+	phrase above 1: 1 til 2.5; 3 til 4;
+	phrase below 1: 1 til 2.5; 3 til 4;
+	phrase below 2: 3 til 5;
+	lyrics below 1-2: 2; 2; "He_ru_";
+	bar
+
+	1 1-2: 2g<>; 4g; [dist 0] 8r; 8g;
+	2 1: 1g<>;
+	2 2: 1g-<>;
+	lyrics below 1: 2.; 8s; 8; "vimi,_ cu";
+	lyrics below 2: 1; "vimi,_";
+	bar
+
+	// (cu) taina 1
+	1 1: 4.d+; 8e+; 4d+; 4c+;
+	1 2: 4.b; 8c+; 4b; 4a;
+	2 1: 1g<>;
+	2 2: 1g-<>;	
+	phrase above 1: 1 til 2;
+	phrase below 1: 1 til 2;
+	lyrics below 1: 2; 4; 4; "tai_na, cu";
+	bar
+
+	1 1: 4.b; 8c+; 4b; 4a;
+	1 2: 4.g; 8a; 4g; 4f;
+	2 1: 1g<>;
+	2 2: 1g-<>;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	lyrics below 1: 1; "tai_";
+	bar
+
+	1 1-2: 2g<>; 4.g; 8g;
+	2 1: 2g<>; 4.g; 8g;
+	2 2: 2g-<>; 4.g-; 8g;
+	lyrics below 1: 2.; 8s; 8; "na,_ cu";
+	lyrics below 2: 2.s; 8s; 8; "cu";
+	bar
+
+	1 1-2: 4a; 4g; 8f; 8g; 8f; 8en;
+	2 1-2: 4a; 4g; 8f; 8g; 8f; 8en;
+	phrase above 1-2: 1 til 5;
+	phrase below 1-2: 1 til 5;
+	lyrics below 1-2: 1; "tai_";
+	bar
+
+	1 1-2: 2s; 4d; 4d;
+	2 1-2: 2s; 4d; 4d;
+	lyrics below 1-2: "na in_";
+	bar
+
+	1 1-2: 2en; 8f; 8g; 4f;
+	2 1-2: 2c; 2d;
+	phrase above 1: 3 til 5;
+	phrase below 1: 3 til 5;
+	lyrics below 1-2: 2; 2; "chi_pu_";
+	bar
+
+	1 1-2: 2g<>; 4g; [dist 0] 8r; 8g;
+	2 1-2: 2g<>; 4g; [dist 0] 8r; 8g;
+	lyrics below 1-2: 2.; 8s; 8; "im,_ cu";
+	bar
+
+	// (cu) taina 2
+	1 1: 4a; 4b; 4c+; 8d+; 8e+;
+	1 2: 4a; 4b; 4a; 8b; 8c+;
+	2 1-2: 2g; 4f; 4f;
+	phrase above 1: 1 til 2; 4 til 5;
+	phrase below 1: 1 til 2; 4 til 5;
+	lyrics below 1-2: 2; 4; 4; "tai_na in_";
+	bar
+
+	1 1: 4d+; 4c+; 4b; 4a;
+	1 2: 4b; 4a; 4g; 4f;
+	2 1-2: 2g; 2g;
+	phrase above 1: 1 til 2; 3 til 4;
+	phrase below 1: 1 til 2; 3 til 4;
+	lyrics below 1-2: 2; 2; "chi_pu_";
+	bar
+
+	bold (24) above 1-2: 2 ",";
+	1 1: 2b; 4a; 8c+; 8b;
+	1 2: 2g; 4f; 8a; 8g;
+	2 1-2: 2g; 2d;
+	phrase above 1: 3 til 5;
+	phrase below 1: 3 til 5;
+	lyrics below 1-2: 2; 2; "im, in_";
+	bar
+
+	1 1: 8b; 4a; 8b; 4g; 4f;
+	1 2: 8g; 4f; 8g; 4g; 4f;
+	2 1: 2d; 2d;
+	2 2: 2d; 8g-; 8a-; 4b-;
+	phrase above 1: 1 til 2.5; 3 til 5;
+	phrase below 1: 1 til 2.5; 3 til 5;
+	phrase below 2: 3 til 5;
+	lyrics below 1-2: 2; 2; "chi_pu_";
+	bar
+
+	1 1-2: [ho 0] 1g<>;
+	2 1: 4d; 4d; 4e; 4e;
+	2 2: 4g-; 4g-; 4c; 4c;
+	lyrics below 1: 1; "im_";
+	lyrics below 2: "im, in-chi-pu-";
+	bar
+
+	1 1-2: 2.g; [dist 0] 4r;
+	2 1: 2.d; [dist 0] 4r;
+	2 2: 2.g-; 4s;
+	lyrics below 1: 2.s; 4; "<>";
+	lyrics below 2: 2.; 4s; "im,";
+	bar
+
+	// Si facatoarei
+	boldital (18) above 1: 1 "mf";
+	1 1: 4.g; 8a; 4b; 4c+;
+	1 2: 4.g; 8a; 4b; 4a;
+	2 1-2: [dist 0] 1r;
+	phrase above 1: 1 til 2;
+	phrase below 1: 1 til 2;
+	lyrics below 1: 2; 4; 4; "si fa_ ca_";
+	bar
+
+	1 1: 4.d+; 8e+; 4d+; 4c+;
+	1 2: 4.b; 8c+; 4b; 4a;
+	2 1-2: 2g; 2g;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	lyrics below 1: 1; "toa_";
+	lyrics below 2: 2; 4; 4; "si fa_ ca_";
+	bar
+
+	1 1: 4.b; 8c+; 4b; 4a;
+	1 2: 4.g; 8a; 4g; 4f;
+	2 1-2: 2g; 2g;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	lyrics below 1: 1; "rei_";
+	lyrics below 2: 2; 2; "toa_rei";
+	bar
+
+	1 1: 4.g; 8c+; 4b; 4c+;
+	1 2: 2.g; 4a;
+	2 1-2: 2.g; 4f;
+	phrase above 1: 1 til 3;
+	lyrics below 1: 2.; 4; "de_ vi-";
+	lyrics below 2: 2.; 4; "de vi-";
+	bar
+
+	1 1: 2d+; 2d+;
+	1 2: 2b; 2b;
+	2 1-2: 2b; 2b;
+	lyrics below 1-2: 2; 2; "a-ta,";
+	bar
+
+	boldital (18) above 1: 1 "f";
+	1 1: 4.e+n<>; 8f+; 4e+; 4f+;
+	1 2: 2c+; 4c+; 4c+;
+	2 1-2: 2c+; 4c+; 4c+;
+	lyrics below 1: 2; 4; 4; "si_ fa-ca-";
+	lyrics below 2: 2; 4; 4; "si fa-ca-";
+	bar
+
+	1 1: 2d+; 2d+;
+	1 2: 2b; 2b;
+	2 1-2: 2g; 2g<>;
+	lyrics below 1: 2; 2; "toa-rei";
+	lyrics below 2: 2; 2; "toa-rei_";
+	bar
+
+	1 1: 4e+n; 4f+; 2s;
+	1 2: 4c+; 4d+; 2s;
+	2 1-2: 2g; 2s;
+	lyrics below 1: "de vi_";
+	bar
+
+	1 1: 2.g+; 8a+; 8g+;
+	1 2: 2.e+n; 8f+; 8e+;
+	2 1-2: 4c+; 4c+; 2c+<>;
+	phrase above 1: 1 til 1m + 5;
+	phrase below 1: 1 til 1m + 5;
+	lyrics below 1: 1; "a_";
+	lyrics below 2: 4; 4; 2; "de vi_a_";
+	bar
+
+	1 1: 2f+; 4e+n; 8g+; 8f+;
+	1 2: 2d+; 4c+; 8e+; 8d+;
+	2 1-2: [ho 0] 1g;
+	bar
+
+	1 1: 8f+; 4e+n; 8f+; 4d+; 4c+;
+	1 2: 8d+; 4c+; 8d+; 4d+; 4a;
+	2 1-2: 2g; 8d; 8en; 4f;
+	phrase above 1: 1 til 2.5; 3 til 4;
+	phrase below 1: 1 til 2.5; 3 til 4;
+	phrase above 2: 3 til 5;
+	phrase below 2: 3 til 5;
+	lyrics below 1: 2; 2; "ta_ Tre_";
+	lyrics below 2: 2; 2; "ta Tre_";
+	bar
+
+	// (-imi) intreit
+	boldital (18) above 1: 3 "mf";
+	bold (24) above 1: 2 ",";
+	1 1: 2d+; 4d+; 4d+;
+	1 2: 2a; 4d+; 4d+;
+	2 1: 2d; 4d+; 4c+;
+	2 2: 2d; [dist -2] 2r;
+	lyrics below 1: 2; 4; 4; "imi, in_tre_";
+	lyrics below 2: 2; 2s; "imi,";
+	bar
+
+	1 1: 2s; 8.g+; 16a+; 4g+;
+	1 2: 2s; 2d+;
+	2 1: 2s; 2b;
+	2 2: 2s; 4g; 4g;
+	phrase above 1: 3 til 5;
+	lyrics below 1: 2s; 2; "it_";
+	lyrics below 2: 2s; 4; 4; "in_tre_";
+	bar
+
+	1 1: [grace]8g+<>; 8f+; 8e+; 8d+; 8e+; 4c+; 8d+; 8e+;
+	1 2: 8d+; 8c+; 8b; 8c+; 4a; 8b; 8c+;
+	2 1-2: 2g; 4a; 4g;
+	phrase above 1: 1 til 2.5; 4 til 5;
+	phrase below 1: 1 til 2.5; 4 til 5;
+	lyrics below 1: 2; 4; 4; "sfan_ta can_";
+	lyrics below 2: 2; 4; 4; "i_ta can_";
+	bar
+
+	1 1: 4d+; 4c+; 8b; 8c+; 8b; 8a;
+	1 2: 4b; 4a; 8b; 8c+; 8b; 8a;
+	2 1-2: 2f; 2g;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	phrase above 2: 1 til 3;
+	phrase below 2: 1 til 3;
+	lyrics below 1-2: 1; "ta_";
+	bar
+
+	1 1-2: 2g<>; 4.g; 8g;
+	2 1-2: [ho 0] 1g<>;
+	lyrics below 1: 2.; 8s; 8; "re,_ can_";
+	lyrics below 2: 1; "re_";
+	bar
+
+	1 1: 4d+; 4c+; 4b; 4a;
+	1 2: 4b; 4a; 4g; 4a;
+	2 1-2: 4.g; 8g; 4g; 4f;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	phrase above 2: 3 til 4;
+	phrase below 2: 3 til 4;
+	lyrics below 1: 1; "ta_";
+	lyrics below 2: 4.s; 8; 2; "can_ta_";
+	bar
+
+	1 1: 2b; 4a; 8c+; 8b;
+	1 2: 2g; 4f; 8a; 8g;
+	2 1-2: 4.e; 8g; 2d;
+	phrase above 1: 3 til 5;
+	phrase below 1: 3 til 5;
+	lyrics below 1: 2; 2; "re a_";
+	lyrics below 2: 4.; 8; 2; "re a_du_";
+	bar
+
+	1 1: 8b; 4a; 8b; 4g; 4f;
+	1 2: 8g; 4f; 8g; 4g; 4f;
+	2 1: 4d; 4d; 2d;
+	2 2: 4d; 4d; 8g-; 8a-; 4b-;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	phrase below 2: 3 til 5;
+	lyrics below 1: 1; "du_";
+	lyrics below 2: 4; 4; 2; "cem, a_du_";
+	bar
+
+	1 1-2: 2.g; [dist 0] 4r;
+	2 1: 2.d; [dist 0] 4r;
+	2 2: 2.g-; [dist 0] 4r;
+	lyrics below 1-2: 2.; 4s; "cem.";
+	bar
+
+	// Toata
+	1 1: 8.d+; 16e+; 8d+; 8c+; 8b; 8c+; 8d+; 8e+;
+	1 2: 8.b; 16c+; 8b; 8a; 8b; 8c+; 8d+; 8e+;
+	2 1-2: 4.b; 8f; 8g; 8a; 8b; 8c+;
+	phrase above 1-2: 1 til 5;
+	phrase below 1-2: 1 til 5;
+	lyrics below 1-2: 1; "Toa_";
+	bar
+
+	bold (24) above 1-2: 2 ",";
+	1 1: 2d+; 8d+ bm; 8c+ ebm; 8d+ bm; 8e+n ebm;
+	1 2: 2d+; 8d+ bm; 8c+ ebm; 8b bm; 8c+ ebm;
+	2 1-2: 2b; 4b; 4b;
+	phrase above 1: 3 til 3.5; 4 til 5;
+	phrase below 1: 3 til 3.5; 4 til 5;
+	lyrics below 1: 2; 4; 4; "ta, toa_ta_";
+	lyrics below 2: 2; 4; 4; "ta, toa_ta";
+	bar
+
+	1 1: 4.f+; 8e+n; 2g+;
+	1 2: 4.d+; 8c+; 4.b; 8c+;
+	2 1-2: 4b<>; 4g; 4.g<>; 8a;
+	phrase above 1: 1 til 1m + 2.5;
+	phrase below 1: 1 til 1m + 2.5;
+	lyrics below 1: 1; "gri_";
+	lyrics below 2: 2; 2; "gri_ja_";
+	bar
+
+	1 1: 4f+; 8e+n; 8d+; 2d+;
+	1 2: 4d+; 8c+; 8b; 2b;
+	2 1-2: 4b; 4g; 4g; 4g;
+	lyrics below 1: 2s; 2; "ja,";
+	lyrics below 2: "toa_ta gri_ja,";
+	bar
+
+	1 1: 4e+&; 4f+; 4e+; 4d+;
+	1 2: 2c+; 4c+; 4b;
+	2 1-2: 2f; 4f; 4f;
+	phrase above 1: 1 til 2.5;
+	lyrics below 1-2: 2; 4; 4; "gri_ja lu_";
+	bar
+
+	1 1: 8d+; 4c+; 8d+; 2b;
+	1 2: 8b; 4a; 8b; 2b;
+	2 1-2: 2f; 2b;
+	phrase above 1: 1 til 2.5;
+	phrase below 1: 1 til 2.5;
+	lyrics below 1-2: 2; 2; "meas_ca,";
+	bar
+
+	1 1: 4c+; 4d+; 4e+; 8d+; 8e+;
+	1 2: 4a; 4b; 4c+; 8b; 8c+;
+	2 1-2: 2f; 4f; 4f;
+	phrase above 1: 1 til 2.5; 4 til 5;
+	phrase below 1: 1 til 2.5; 4 til 5;
+	lyrics below 1-2: 2; 4; 4; "gri_ja lu_";
+	bar
+
+	1 1: { 8f+ bm; 8e+; 8d+ ebm; }3; 8d+ bm; 8e+ ebm; 4.e+; 8f+;
+	1 2: { 8d+ bm; 8c+; 8b ebm; }3; 8b bm; 8c+ ebm; 4.c+; 8d+;
+	2 1-2: 2f; 4.f; 8b;
+	phrase above 1: 1 til 2.5;
+	phrase below 1: 1 til 2.5;
+	lyrics below 1-2: 2; 4.; 8; "meas_ca a_";
+	bar
+
+	// (a)cum grija
+	1 1: 4g+; 4f+; 4e+; 4d+;
+	1 2: 4e+; 4d+; 4c+; 4b;
+	2 1: 2b; 4a; 4b;
+	2 2: 4e; 4f; 2f;
+	phrase above 1: 1 til 2.5; 3.5 til 4;
+	phrase below 1: 1 til 2.5; 3.5 til 4;
+	phrase above 2: 3.5 til 4;
+	phrase below 2: 1 til 2.5;
+	lyrics below 1-2: 2; 2; "cum_ gri_";
+	bar
+
+	1 1: 2s; 4e+; 4f+;
+	1 2: 2s; 4c+; 4d+;
+	2 1-2: 2s; 4f; 4b;
+	lyrics below 1-2: 2s; 4; 4; "ja lu_";
+	bar
+
+	1 1: 8.g+; 16a+&; 8g+; 8f+; 8e+; 8f+; 8g+; 8a+;
+	1 2: 8.e+; 16f+; 8e+; 8d+; 8c+; 8d+; 8e+; 8f+;
+	2 1: 2b<>; 2b;
+	2 2: 2e<>; 4f; 4d;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	phrase below 2: 3 til 4;
+	lyrics below 1-2: 1; "meas_";
+	bar
+
+	1 1: 2.g+; 4d+;
+	1 2: 2.e+; 4d+;
+	2 1: 2.b; 4b;
+	2 2: 2.e; 4b;
+	lyrics below 1-2: 2.; 4; "ca a-";
+	bar
+
+	1 1: 8g+; 8a+n; 4g+; 8f+; 8e+; 8d+; 8e+;
+	1 2: 8e+; 8f+; 4e+; 8d+; 8c+; 8b; 8c+;
+	2 1-2: 2c+; 2g;
+	phrase above 1: 1 til 2; 3 til 5;
+	phrase below 1: 1 til 2; 3 til 5;
+	lyrics below 1: 2; 2; "cum_ sa_";
+	lyrics below 2: 2; 2; "cum sa";
+	bar
+
+	1 1: 4c+; 8d+; 8e+; 4d+; 4c+;
+	1 2: 4a; 8b; 8c+; 4b; 4a;
+	2 1-2: 2f; 2f;
+	phrase above 1: 1 til 2.5; 3.5 til 5;
+	phrase below 1: 1 til 2.5; 3.5 til 5;
+	lyrics below 1: 2; 2; "o_ le_";
+	lyrics below 2: 2; 2; "o le";
+	bar
+
+	1 1: 8.b; 16c+; 8b; 8a; 8g; 8a; 4g;
+	1 2: 8.g; 16s; 8s; 8f; 8g; 8a; 4g;
+	2 1-2: 4.g; 8f; 8g; 8a; 4g;
+	phrase above 1-2: 1 til 5;
+	phrase below 1-2: 1 til 5;
+	lyrics below 1-2: 1; "pa_";
+	bar
+
+	boldital (18) above 1: 3 "mp";
+	bold (24) above 1-2: 2 ",";
+	1 1-2: 2g; 4g; 4g;
+	2 1-2: 2g; 4g; 4g;
+	lyrics below 1-2: 2; 4; 4; "dam, sa o";
+	bar
+
+	1 1: 4d+; 4c+; 4b; 4a;
+	1 2: 4b; 4a; 4g; 4a;
+	2 1-2: 2g; 2g;
+	phrase above 1: 1 til 2.5; 3.5 til 5;
+	phrase below 1: 1 til 2.5; 3.5 til 5;
+	lyrics below 1-2: 2; 2; "le_pa_";
+	bar
+
+	1 1: 2b; 4a; 8c+; 8b;
+	1 2: 2g; 4f; 8a; 8g;	
+	2 1-2: 2g; 4d; 4d;
+	phrase above 1: 4 til 5;
+	phrase below 1: 4 til 5;
+	lyrics below 1: 2; 4; 4; "dam, sa o_";
+	lyrics below 2: 2; 4; 4; "dam, sa o";
+	bar
+
+	1 1: 8b; 4a; 8b; 4g; 4f;
+	1 2: 8g; 4f; 8g; 4g; 4f;
+	2 1: 2d; 2d;
+	2 2: 2d; 8g-; 8a-; 4b-;
+	phrase above 1: 1 til 2.5; 3 til 5;
+	phrase below 1: 1 til 2.5; 3 til 5;
+	phrase below 2: 3 til 5;
+	lyrics below 1-2: 2; 2; "le_pa_";
+	bar
+
+	1 1-2: 2.g; [dist 0] 4r;
+	2 1: 2.d; [dist 0] 4r;
+	2 2: 2.g-; [dist 0] 4r;
+	lyrics below 1-2: 2.; 4s; "dam,";
+	bar
+
+	boldital (18) above 1: 1 "p";
+	1 1: 8e+; 16d+; 16e+; 8d+; 8e+<>; 8e+; 8f+; 8e+; 8d+;
+	1 2: 8c+; 16b; 16c+; 8b; 8c+<>; 8c+; 8d+; 8c+; 8b;
+	2 1: 1g;
+	2 2: 1g-;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	lyrics below 1: 1; "sa_";
+	lyrics below 2: 1; "sa";
+	bar
+
+	1 1: 8d+; 16c+; 16d+; 8c+; 8d+<>; 8d+; 8e+; 8d+; 8c+;
+	1 2: 8b; 16a; 16b; 8a; 8b<>; 8b; 8c+; 8b; 8a;
+	2 1: 1g;
+	2 2: 1g-;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	lyrics below 1: 1; "o_";
+	lyrics below 2: 1; "o";
+	bar
+
+	1 1: 8c+; 16b; 16c+; 8b; 8c+<>; 8c+; 8d+; 8c+; 8b;
+	1 2: 8a; 16g; 16a; 8g; 8a<>; 8a; 8b; 8a; 8g;
+	2 1: 1d;
+	phrase above 1: 1 til 5;
+	phrase below 1: 1 til 5;
+	lyrics below 1: 1; "le_";
+	lyrics below 2: 1; "le";
+	bar
+
+	1 1: 8.b; 16c+; 8b; 8a; 8g; 8a; 4g;
+	1 2: 8.g; 16s; 8s; 8f; 8g; 8a; 4g;
+	2 1-2: 4.g; 8f; 8g; 8a; 4g;
+	phrase above 1: 1 til 3.5;
+	phrase below 1: 1 til 3.5;
+	phrase above 2: 1 til 5;
+	phrase below 2: 1 til 5;
+	lyrics below 1-2: 1; "pa_";
+	bar
+
+	rom (18) above 1: 4 "rall.";
+	boldital (18) above 1: 3 "pp";
+	bold (24) above 1-2: 2 ",";
+	1 1-2: 2g; 4g; 4g;
+	2 1-2: 2g; 4g; 4g;
+	lyrics below 1-2: 2; 4; 4; "dam, sa o";
+	bar
+
+	1 1: 4f; 4g; 8a; 8b; 4a;
+	1 2: 4f; 4g; 2f;
+	2 1-2: 4f; 4e; 2d;
+	phrase above 1: 1 til 2; 3 til 4;
+	phrase below 1: 1 til 2;
+	phrase above 2: 1 til 2;
+	phrase below 2: 1 til 2;
+	lyrics below 1-2: 2; 2; "le_pa_";
+	bar
+
+	mussym above 1-2: 1 "ferm";
+	1 1: 1g;
+	2 1: 1g;
+	2 2: 1g-;
+	lyrics below 1-2: "dam.";
+	endbar
