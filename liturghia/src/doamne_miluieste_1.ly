@@ -1,4 +1,4 @@
-\version "2.10.10"
+\version "2.12.0"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
@@ -21,7 +21,7 @@ global = {
 }
 
 sopMusic = \relative {
-  \set Staff.instrumentName = \markup { \bold \huge \bigger 1. }
+  \set Staff.instrumentName = \markup { \bold \huge \larger 1. }
   a'^\p a g^\< f
   g(\! a)^\> f~ f8\! r \bar "|."
 }

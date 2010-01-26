@@ -1,4 +1,4 @@
-\version "2.10.10"
+\version "2.12.0"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
@@ -15,7 +15,7 @@ tenorWords = \sopWords
 bassWords = \sopWords
 
 sopMusic = \relative {
-  \set Staff.instrumentName = \markup { \bold \huge \bigger 6. }
+  \set Staff.instrumentName = \markup { \bold \huge \larger 6. }
   \partial 4 c'4
   g8([^\accent a8 bes8^\> g8)] f4.\! r8 \bar "|."
 }
