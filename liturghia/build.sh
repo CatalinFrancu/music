@@ -12,10 +12,10 @@ function runChecked {
 }
 
 pushd src
-runChecked lilypond-book --psfonts -o lilypond-book-output liturghia.tex
+runChecked lilypond-book --pdf -o lilypond-book-output liturghia.lytex
 pushd lilypond-book-output
 runChecked latex liturghia.tex
-runChecked dvips -t letter -o liturghia.ps -h liturghia.psfonts liturghia.dvi
+runChecked dvips -t letter -o liturghia.ps liturghia.dvi
 mv liturghia.ps ../../
 popd
 popd

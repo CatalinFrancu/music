@@ -1,10 +1,10 @@
-\version "2.10.10"
+\version "2.12.0"
 #(set-global-staff-size 14)
 #(define myNoteSpacing 7.0)
 #(define raggedRight #f)
 
 atempoMarkup = \markup {
-  \italic \bold \bigger "a tempo"
+  \italic \bold \larger "a tempo"
 }
 
 breathMarkup = \markup {
@@ -12,11 +12,11 @@ breathMarkup = \markup {
 }
 
 crescendoMarkup = \markup{
-  \italic \bold \bigger "cresc."
+  \italic \bold \larger "cresc."
 }
 
 descrescendoMarkup = \markup{
-  \italic \bold \bigger "descrescendo"
+  \italic \bold \larger "descrescendo"
 }
 
 mixedTimeSigMarkup = \markup {
@@ -44,15 +44,15 @@ prepareBox = {
 }
 
 rallMarkup = \markup {
-  \bold \bigger "rall..."
+  \bold \larger "rall..."
 }
 
 rarMarkup = \markup {
-  \bold \bigger "rar"
+  \bold \larger "rar"
 }
 
 ritMarkup = \markup {
-  \italic \bold \bigger "rit."
+  \italic \bold \larger "rit."
 }
 
 wholeNotesOverlap = {
