@@ -59,3 +59,9 @@ table.listing tr td.section {
   font-weight: bold;
   padding-left: 5px;
 }
+
+div.remarks {
+  color: #333;
+  font-size: 90%;
+  margin-left: 20px;
+}
