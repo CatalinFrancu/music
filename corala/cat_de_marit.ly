@@ -32,7 +32,7 @@ stanzaOne = \lyricmode {
   şi pâ -- nă -- ntr-un fir de iar -- bă pe pă -- mânt.
   
   Ma -- re eşti, pre -- tu -- tin -- de -- nea, Doa -- mne,
-  pre -- tu -- tin -- deni eşti mă -- rit,
+  pre -- tu -- tin -- de -- nea eşti mă -- rit,
   în zi, în noa -- pte, cu stră -- lu -- ci -- re.
   Ma -- re re.
    
@@ -65,7 +65,7 @@ sopranMusic = \relative c'' {
     e'4 d4 c4
     c2 b4
     c4( b4) a4
-    g2 e4
+    g2 e8 e8
     a4.( g8) f8( e8)
     d2 g4
     b2 g4
@@ -105,7 +105,7 @@ altMusic = \relative c' {
     g4 f4 e4
     e2 d4
     e2 d4
-    e2 c4
+    e2 c8 c8
     f4.( e8) d8( c8)
     b2 g'4
     g2 g4
@@ -145,7 +145,7 @@ tenorMusic = \relative c'' {
    g4 g4 g4
    g2 g4
    g2 g4
-   g2 g4
+   g2 g8 g8
    f2 g4
    g2 g4
    g2 g4
@@ -186,7 +186,7 @@ bassMusic = \relative c {
     c4 b4 c4
     g'2 g4
     c,4( e4) f4
-    c2 c4
+    c2 c8 c8
     f2 g4
     g2 g4
     d2 d4
@@ -204,6 +204,8 @@ myScore = \new Score <<
   \new ChoirStaff <<
     \new Staff <<
     \set Staff.instrumentName = #"S" 
+    \set Staff.midiMinimumVolume = #0.8
+    \set Staff.midiMinimumVolume = #1.0
     \new Voice { \global \sopranMusic }
     \addlyrics { \stanzaOne }
     
