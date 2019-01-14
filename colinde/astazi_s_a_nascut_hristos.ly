@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 1\in
+  markup-system-spacing.basic-distance = #30
 }
 
 \header {
@@ -14,10 +15,11 @@
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
-  \override Score.VerticalAxisGroup #'remove-first = ##t
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \key g \major
   \time 2/4
   \autoBeamOff
@@ -26,12 +28,12 @@ global = {
 sopStanzaOne = \lyricmode {
   \set stanza = "1."
   As -- tăzi s-a năs -- cut Hris -- tos, Me -- sia -- a, chip lu -- mi -- nos,
-  Lă -- u -- daţi şi cân -- taţi şi vă bu -- cu -- raţi!
+  Lă -- u -- dați și cân -- tați și vă bu -- cu -- rați!
 }
 
 sopStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Mi -- ti -- tel, în -- fă -- şe -- ţel, În scu -- tec de bum -- bă -- cel,
+  Mi -- ti -- tel, în -- fă -- șe -- țel, În scu -- tec de bum -- bă -- cel,
 }
 
 sopStanzaThree = \lyricmode {
@@ -42,24 +44,24 @@ sopStanzaThree = \lyricmode {
 
 sopStanzaFour = \lyricmode {
   \set stanza = "4."
-  Şi de-a -- cum pâ -- nă-n ve -- ci-e Mi -- la Dom -- nu -- lui să fi-e,
+  Și de-a -- cum pâ -- nă-n ve -- ci-e Mi -- la Dom -- nu -- lui să fi-e,
 }
 
 altoWords = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  Lă -- u -- daţi şi cân -- taţi şi vă bu -- cu -- raţi!
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  Lă -- u -- dați și cân -- tați și vă bu -- cu -- rați!
 }
 
 tenorWords = \lyricmode {
-  Lă -- u -- daţi şi cân -- taţi şi vă bu -- cu -- raţi!
+  Lă -- u -- dați și cân -- tați și vă bu -- cu -- rați!
 }
 
 bassWords = \tenorWords
 
-sopMusicOne = \transpose bes g \relative {
+sopMusicOne = \transpose bes g \relative c' {
   \set Staff.vocalName = "S."
-  \set Staff.vocNam = "S."
+  \set Staff.shortVocalName = "S."
 
   \repeat volta 4 {
     f8^\p bes8^\< bes8 bes8\!
@@ -73,10 +75,10 @@ sopMusicOne = \transpose bes g \relative {
   } \alternative {
     { bes4. bes8\rest }
   }
-  \bar ":|"
+  \bar ":|."
 }
 
-sopMusicTwo = \transpose bes g \relative {
+sopMusicTwo = \transpose bes g \relative c' {
   \repeat volta 4 {
     f8 f8 f8 f8
     bes8 bes8 a4
@@ -90,14 +92,14 @@ sopMusicTwo = \transpose bes g \relative {
   }
 }
 
-altoMusic = \transpose bes g \relative {
+altoMusic = \transpose bes g \relative c' {
   \set Staff.vocalName = "A."
-  \set Staff.vocNam = "A."
+  \set Staff.shortVocalName = "A."
 
   \repeat volta 4 {
-    f8^\p d8 d8 d8 
+    f8^\p d8 d8 d8
     f8 f8 f4
-    f8 d8 d8 d8 
+    f8 d8 d8 d8
     f8 f8 f4
     f8^\f f8 f4
     bes8 bes8 bes4
@@ -107,8 +109,8 @@ altoMusic = \transpose bes g \relative {
   }
 }
 
-tenorMusicOne = \transpose bes g \relative {
-  \set Staff.vocNam = "T."
+tenorMusicOne = \transpose bes g \relative c' {
+  \set Staff.shortVocalName = "T."
 
   \repeat volta 4 {
     R2 R2 R2 R2
@@ -120,7 +122,7 @@ tenorMusicOne = \transpose bes g \relative {
   }
 }
 
-tenorMusicTwo = \transpose bes g \relative {
+tenorMusicTwo = \transpose bes g \relative c' {
   \repeat volta 4 {
     R2 R2 R2 R2
     a8 a8 bes4
@@ -131,8 +133,8 @@ tenorMusicTwo = \transpose bes g \relative {
   }
 }
 
-bassMusic = \transpose bes g \relative {
-  \set Staff.vocNam = "B."
+bassMusic = \transpose bes g \relative c' {
+  \set Staff.shortVocalName = "B."
 
   \repeat volta 4 {
     R2 R2 R2 R2
@@ -177,7 +179,7 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }

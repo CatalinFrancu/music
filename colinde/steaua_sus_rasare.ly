@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
+  system-system-spacing.basic-distance = #0
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
 }
 
 \header {
@@ -13,12 +14,13 @@
   tagline = ""
 }
 
+#(set-global-staff-size 14)
+
 global = {
-  #(set-global-staff-size 14)
-  \override Score.VerticalAxisGroup #'remove-first = ##t
-  \override ChoirStaff.SystemStartBracket #'collapse-height = #0.0
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = \markup {
+  \override Score.VerticalAxisGroup.remove-first = ##t
+  \override ChoirStaff.SystemStartBracket.collapse-height = #0.0
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = \markup {
     \override #'(baseline-skip . 2) \number {
       \column { "4" "4" }
     }
@@ -30,10 +32,10 @@ global = {
 }
 
 introWords = \lyricmode {
-  Ci -- ne pri -- meş -- te stea -- ua fru -- moa -- să şi
+  Ci -- ne pri -- meș -- te stea -- ua fru -- moa -- să și
   lu -- mi -- noa -- să?
-  Cu col -- ţuri mul -- te şi mă -- run -- te,
-  De la Naş -- te -- rea lui Hris -- tos
+  Cu col -- țuri mul -- te și mă -- run -- te,
+  De la Naș -- te -- rea lui Hris -- tos
 }
 
 sopStanzaOne = \lyricmode {
@@ -42,10 +44,10 @@ sopStanzaOne = \lyricmode {
   Stea -- ua sus ră -- sa -- re __
   Ca o tai -- nă ma -- re,
   Stea -- ua lu -- mi -- nea -- ză __
-  Şi a -- de -- ve -- rea -- ză.
+  Și a -- de -- ve -- rea -- ză.
 
-  De la ti -- ne -- re -- ţe __
-  Pân' la bă -- trâ -- ne -- ţe.
+  De la ti -- ne -- re -- țe __
+  Pân' la bă -- trâ -- ne -- țe.
 }
 
 sopStanzaTwo = \lyricmode {
@@ -54,16 +56,16 @@ sopStanzaTwo = \lyricmode {
   Că as -- tăzi Cu -- ra -- ta, __
   Prea -- ne -- vi -- no -- va -- ta
   Fe -- cioa -- ra Ma -- ri -- a __
-  Naş -- te __ pe Me -- si -- a.
+  Naș -- te __ pe Me -- si -- a.
 }
 
 sopStanzaThree = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
   \set stanza = "3."
-  În ţa -- ra ves -- ti -- tă __
+  În ța -- ra ves -- ti -- tă __
   Bet -- le -- em nu -- mi -- tă,
   Ma -- gii cum ză -- ri -- ră __
-  Stea -- ua, __ şi por -- ni -- ră.
+  Stea -- ua, __ și por -- ni -- ră.
 }
 
 sopStanzaFour = \lyricmode {
@@ -71,7 +73,7 @@ sopStanzaFour = \lyricmode {
   \set stanza = "4."
   Mer -- gând du -- pă ra -- ză __
   Pe Hris -- tos să-L va -- ză
-  Şi da -- că so -- si -- ră, __
+  Și da -- că so -- si -- ră, __
   În -- da -- tă-L gă -- si -- ră.
 }
 
@@ -79,7 +81,7 @@ sopStanzaFive = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
   \set stanza = "5."
   La dân -- sul in -- tra -- ră __
-  Şi se în -- chi -- na -- ră
+  Și se în -- chi -- na -- ră
   Cu da -- ruri gă -- ti -- te __
   Lui Hris -- tos me -- ni -- te.
 }
@@ -90,7 +92,7 @@ sopStanzaSix = \lyricmode {
   Lu -- ând fi -- e -- ca -- re __
   Bu -- cu -- ri -- e ma -- re,
   Ca -- re bu -- cu -- ri -- e __
-  Şi a -- ici să fi -- e,
+  Și a -- ici să fi -- e,
 }
 
 altoStanzaOne = \lyricmode {
@@ -98,10 +100,10 @@ altoStanzaOne = \lyricmode {
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   Stea -- ua lu -- mi -- nea -- ză
-  Şi __ a -- de -- ve -- rea -- ză.
+  Și __ a -- de -- ve -- rea -- ză.
 
-  De la ti -- ne -- re -- ţe __
-  Pân' la bă -- trâ -- ne -- ţe.
+  De la ti -- ne -- re -- țe __
+  Pân' la bă -- trâ -- ne -- țe.
 }
 
 altoStanzaTwo = \lyricmode {
@@ -109,7 +111,7 @@ altoStanzaTwo = \lyricmode {
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   Fe -- cioa -- ra Ma -- ri -- a
-  Naş -- te pe Me -- si -- a.
+  Naș -- te pe Me -- si -- a.
 }
 
 altoStanzaThree = \lyricmode {
@@ -117,14 +119,14 @@ altoStanzaThree = \lyricmode {
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   Ma -- gii cum ză -- ri -- ră
-  Stea -- ua, şi por -- ni -- ră.
+  Stea -- ua, și por -- ni -- ră.
 }
 
 altoStanzaFour = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
-  Şi da -- că so -- si -- ră,
+  Și da -- că so -- si -- ră,
   În -- da -- tă-L gă -- si -- ră.
 }
 
@@ -141,7 +143,7 @@ altoStanzaSix = \lyricmode {
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   \skip 8. \skip 16 \skip 8 \skip 8 \skip 4 \skip 4
   Ca -- re bu -- cu -- ri -- e
-  Şi __ a -- ici să fi -- e,
+  Și __ a -- ici să fi -- e,
 }
 
 tenorStanzaOne = \lyricmode {
@@ -149,10 +151,10 @@ tenorStanzaOne = \lyricmode {
   \set stanza = "1."
   Stea -- ua sus ră -- sa -- re __
   Stea -- ua lu -- mi -- nea -- ză __
-  Şi a -- de -- ve -- rea -- ză.
+  Și a -- de -- ve -- rea -- ză.
 
-  De la ti -- ne -- re -- ţe __
-  Pân' la bă -- trâ -- ne -- ţe.
+  De la ti -- ne -- re -- țe __
+  Pân' la bă -- trâ -- ne -- țe.
 }
 
 tenorStanzaTwo = \lyricmode {
@@ -160,22 +162,22 @@ tenorStanzaTwo = \lyricmode {
   \set stanza = "2."
   Că as -- tăzi Cu -- ra -- ta, __
   Fe -- cioa -- ra Ma -- ri -- a __
-  Naş -- te pe Me -- si -- a.
+  Naș -- te pe Me -- si -- a.
 }
 
 tenorStanzaThree = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
   \set stanza = "3."
-  În ţa -- ra ves -- ti -- tă __
+  În ța -- ra ves -- ti -- tă __
   Ma -- gii cum ză -- ri -- ră __
-  Stea -- ua, şi por -- ni -- ră.
+  Stea -- ua, și por -- ni -- ră.
 }
 
 tenorStanzaFour = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
   \set stanza = "4."
   Mer -- gând du -- pă ra -- ză __
-  Şi da -- că so -- si -- ră, __
+  Și da -- că so -- si -- ră, __
   În -- da -- tă-L gă -- si -- ră.
 }
 
@@ -192,35 +194,35 @@ tenorStanzaSix = \lyricmode {
   \set stanza = "6."
   Lu -- ând fi -- e -- ca -- re __
   Ca -- re bu -- cu -- ri -- e __
-  Şi a -- ici să fi -- e,
+  Și a -- ici să fi -- e,
 }
 
 bassWords = \lyricmode {
   la la la la la la la la
 }
 
-introMusic = \relative {
+introMusic = \relative c' {
   \set Staff.vocalName = \markup { \column { "S." "A." } }
-  \set Staff.vocNam = \markup { \column { "S." "A." } }
-  \once \override Staff.TimeSignature #'text = ""
+  \set Staff.shortVocalName = \markup { \column { "S." "A." } }
+  \once \override Staff.TimeSignature.text = ""
   \cadenzaOn
 
   <<
     {
       \voiceOne
-      \override DynamicLineSpanner #'staff-padding = #3
+      \override DynamicLineSpanner.staff-padding = #5
       a'8^\markup{ \column {
         { \bold "Psalmodiind" }
-        { \line { \musicglyph #"m" \hspace #-1.0 \musicglyph #"p" } }
+        { \line { \musicglyph "m" \hspace #-1.0 \musicglyph "p" } }
       } }
       a8
       a8 a8 gis8 b8 fis8 a8 gis8([ fis8)] e8 e8^\<
       fis8 gis8\! b4\fermata^\> a4\fermata\!
       \bar "|"
       \break
-      
+
       gis8 b8^\accent a8 gis8 e8 fis8 gis8 a4\fermata a4\fermata
-      
+
       \clef bass
       e,8^\markup{ \hspace #-2.0 "T." } e8 b'8 a8 gis8 gis8 fis8 e4\fermata
     }
@@ -230,9 +232,9 @@ introMusic = \relative {
       a'8 a8 a8 a8 gis8 b8 fis8 a8 gis8([ fis8)] e8 e8
       fis8 gis8 b4\fermata a4\fermata
       \bar "|"
-      
+
       gis8 b8_\accent a8 gis8 e8 fis8 gis8 a4\fermata a4\fermata
-      
+
       \clef bass
       e,8_\markup{ \hspace #-2.0 "B." } e8 b'8 a8 gis8 gis8 fis8 e4\fermata
     }
@@ -243,8 +245,8 @@ introMusic = \relative {
   \break
 }
 
-sopMusic = \relative {
-  \set Staff.vocNam = "S."
+sopMusic = \relative c' {
+  \set Staff.shortVocalName = "S."
   \cadenzaOn
   s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4
   \cadenzaOff
@@ -276,8 +278,8 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
-  \set Staff.vocNam = "A."
+altoMusic = \relative c' {
+  \set Staff.shortVocalName = "A."
   \cadenzaOn
   s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4
   \cadenzaOff
@@ -298,8 +300,8 @@ altoMusic = \relative {
   b8 b8 fis8 gis8 a8([ cis16 b16)] a4
 }
 
-tenorMusic = \relative {
-  \set Staff.vocNam = "T."
+tenorMusic = \relative c' {
+  \set Staff.shortVocalName = "T."
   \cadenzaOn
   s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4
   \cadenzaOff
@@ -320,8 +322,8 @@ tenorMusic = \relative {
   b8 b8 fis8 gis8 a8([ cis16 b16)] a4
 }
 
-bassMusic = \relative {
-  \set Staff.vocNam = "B."
+bassMusic = \relative c' {
+  \set Staff.shortVocalName = "B."
   \cadenzaOn
   s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4
   \cadenzaOff
@@ -331,7 +333,7 @@ bassMusic = \relative {
   <<
     { R1 }
     {
-      \once \override Staff.Rest #'break-visibility = #all-invisible
+      \once \override Staff.Rest.break-visibility = #all-invisible
       r1
     }
   >>
@@ -339,8 +341,8 @@ bassMusic = \relative {
   \repeat volta 6 {
     R1
 
-    <a a,>4 <a a,>4 <a a,>4 <a a,>4 
-    <a a,>4 <a a,>4 <a a,>4 <a a,>4 
+    <a a,>4 <a a,>4 <a a,>4 <a a,>4
+    <a a,>4 <a a,>4 <a a,>4 <a a,>4
 
     <gis gis,>8 <a a,>8 e8 e8 a4 a,4
     e'8 <e e,>8 <fis fis,>8 <gis gis,>8 <a a,>4 <a a,>4
@@ -394,7 +396,7 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }

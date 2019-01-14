@@ -1,15 +1,14 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 1\mm
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
 }
 
 \header {
-  title = "Bună dimineaţa la Moş Ajun"
+  title = "Bună dimineața la Moș Ajun"
   subtitle = "(Melodie de A. Podoleanu)"
   composer = "Ioan D. Chirescu"
   meter = "Moderato"
@@ -25,44 +24,44 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Bu -- nă di -- mi -- nea -- ţa la Moş A -- jun!
-  Ne daţi ori nu ne daţi?
-  Ne daţi ori nu ne daţi?
-  Ne daţi, ne daţi? __
+  Bu -- nă di -- mi -- nea -- ța la Moș A -- jun!
+  Ne dați ori nu ne dați?
+  Ne dați ori nu ne dați?
+  Ne dați, ne dați? __
 
-  Am ve -- nit şi noi o -- da -- tă,
+  Am ve -- nit și noi o -- da -- tă,
   La un an cu să -- nă -- ta -- te,
   Dom -- nul sfânt să ne a -- ju -- te
-  La co -- vrigi şi la nuci mul -- te.
+  La co -- vrigi și la nuci mul -- te.
 }
 
 altoWords = \sopWords
 
 tenorWords = \lyricmode {
-  Bu -- nă __ di -- mi -- nea -- ţa la Moş A -- jun!
-  Ne daţi ori nu ne __ daţi?
-  Ne daţi ori nu ne __ daţi?
-  Ne daţi, ne daţi? __
+  Bu -- nă __ di -- mi -- nea -- ța la Moș A -- jun!
+  Ne dați ori nu ne __ dați?
+  Ne dați ori nu ne __ dați?
+  Ne dați, ne dați? __
 }
 
 bassWords = \lyricmode {
-  la Moş A -- jun, la Moş A -- jun!
-  Ne daţi ori nu ne __ daţi?
-  Ne daţi, ne daţi, ne daţi? __
+  la Moș A -- jun, la Moș A -- jun!
+  Ne dați ori nu ne __ dați?
+  Ne dați, ne dați, ne dați? __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.vocalName = "S."
-  \set Staff.vocNam = "S."
+  \set Staff.shortVocalName = "S."
 
   \repeat volta 2 {
     f8^\markup{
       \hspace #-5.0
-      \musicglyph #"scripts.segno"
+      \musicglyph "scripts.segno"
       \hspace #2.0
-      \musicglyph #"m"
+      \musicglyph "m"
       \hspace #-1.0
-      \musicglyph #"f"
+      \musicglyph "f"
     }^\<
     f8 f8 f8\!
     d'4.^\accent c16 bes16
@@ -90,15 +89,15 @@ sopMusic = \relative {
   a8^\markup {
     \raise #2.0 D'al
     \hspace #0.5
-    \raise #3.0 \musicglyph #"scripts.segno"
+    \raise #3.0 \musicglyph "scripts.segno"
     \raise #2.0 { al Fine }
   }^\> g8\!
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \set Staff.vocalName = "A."
-  \set Staff.vocNam = "A."
+  \set Staff.shortVocalName = "A."
 
   \repeat volta 2 {
     f8^\mf^\< f8 f8 f8\!
@@ -123,9 +122,9 @@ altoMusic = \relative {
   a8 g8 f8^\> e8\!
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.vocalName = "T."
-  \set Staff.vocNam = "T."
+  \set Staff.shortVocalName = "T."
 
   \repeat volta 2 {
     f8^\mf^\< f16([ es16)] d8 c8\!
@@ -157,9 +156,9 @@ tenorMusic = \relative {
   R2 R2 R2 R2 R2 R2 R2 R2
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.vocalName = "B."
-  \set Staff.vocNam = "B."
+  \set Staff.shortVocalName = "B."
 
   \repeat volta 2 {
     R2 R2
@@ -202,7 +201,7 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }

@@ -1,15 +1,16 @@
-\version "2.8.7"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 1\in
+  bottom-margin = 1\in
 }
 
 \header {
-  title = "Colindiţa"
-  arranger = "Emil Monţia"
+  title = "Colindița"
+  arranger = "Emil Monția"
   meter = "Allegretto"
   tagline = ""
 }
@@ -25,23 +26,23 @@ global = {
 sopStanzaOne = \lyricmode {
   \set stanza = "1."
   \set ignoreMelismata = ##t
-  Co -- lin -- di -- ţa nu-i mai mul -- tă,
+  Co -- lin -- di -- ța nu-i mai mul -- tă,
   Să tră -- ias -- că ci -- ne-as -- cul -- tă.
-  Sus la ce -- ruri o năl -- ţăm
-  Şi la gaz -- dă o-n -- chi -- năm.
+  Sus la ce -- ruri o năl -- țăm
+  Și la gaz -- dă o-n -- chi -- năm.
 
   O-n -- chi -- năm cu ve -- se -- li -- e
-  Şi cu ma -- re bu -- cu -- ri -- e
+  Și cu ma -- re bu -- cu -- ri -- e
   C-am a -- juns sea -- ra de-A -- jun
-  Şi-a bă -- trâ -- nu -- lui Cră -- ciun.
+  Și-a bă -- trâ -- nu -- lui Cră -- ciun.
 }
 
 sopStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Sus mai sus v-am î -- năl -- ţat, __
-  Ce-am şti -- ut tot v-am cân -- tat. __
-  Să ră -- mâ -- neţi să -- nă -- toşi,
-  Să -- nă -- toşi şi bu -- cu -- roşi,
+  Sus mai sus v-am î -- năl -- țat, __
+  Ce-am ști -- ut tot v-am cân -- tat. __
+  Să ră -- mâ -- neți să -- nă -- toși,
+  Să -- nă -- toși și bu -- cu -- roși,
 
   C-am a -- juns zi -- ua cea sfân -- tă
   Când co -- lin -- de -- le se cân -- tă.
@@ -52,24 +53,24 @@ sopStanzaTwo = \lyricmode {
 altoStanzaOne = \lyricmode {
   \set stanza = "1."
   \set ignoreMelismata = ##t
-  Co -- lin -- di -- ţa nu-i mai mul -- tă,
+  Co -- lin -- di -- ța nu-i mai mul -- tă,
   Să tră -- ias -- că ci -- ne-as -- cul -- \skip 16 tă.
   \unset ignoreMelismata
-  Sus la ce -- ruri o năl -- ţăm __
-  Şi la gaz -- dă o-n -- chi -- năm.
+  Sus la ce -- ruri o năl -- țăm __
+  Și la gaz -- dă o-n -- chi -- năm.
 
   O-n -- chi -- năm cu ve -- se -- li -- e
-  Şi cu ma -- re bu -- cu -- ri -- e
+  Și cu ma -- re bu -- cu -- ri -- e
   C-am a -- juns sea -- ra de-A -- jun
-  Şi-a bă -- trâ -- nu -- lui Cră -- ciun.
+  Și-a bă -- trâ -- nu -- lui Cră -- ciun.
 }
 
 altoStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Sus mai sus v-am î -- năl -- ţat, __
-  Ce-am şti -- ut tot v-am cân -- tat. __
-  Să ră -- mâ -- neţi să -- nă -- toşi, __
-  Să -- nă -- toşi şi bu -- cu -- roşi,
+  Sus mai sus v-am î -- năl -- țat, __
+  Ce-am ști -- ut tot v-am cân -- tat. __
+  Să ră -- mâ -- neți să -- nă -- toși, __
+  Să -- nă -- toși și bu -- cu -- roși,
 
   C-am a -- juns zi -- ua cea sfân -- tă
   Când co -- lin -- de -- le se cân -- tă.
@@ -80,27 +81,27 @@ altoStanzaTwo = \lyricmode {
 tenorStanzaOne = \lyricmode {
   \set stanza = "1."
   \set ignoreMelismata = ##t
-  Co -- lin -- di -- ţa nu-i mai mul -- tă,
+  Co -- lin -- di -- ța nu-i mai mul -- tă,
   \unset ignoreMelismata
   Să __ tră -- ias -- că ci -- ne-as --
   \set ignoreMelismata = ##t
   cul -- tă.
   \unset ignoreMelismata
-  Sus la ce -- ruri o năl -- ţăm
-  Şi __ la __ gaz -- dă o-n -- chi -- năm.
+  Sus la ce -- ruri o năl -- țăm
+  Și __ la __ gaz -- dă o-n -- chi -- năm.
 
   O-n -- chi -- năm cu ve -- se -- li -- e
-  Şi __ cu __ ma -- re bu -- cu -- ri -- e
+  Și __ cu __ ma -- re bu -- cu -- ri -- e
   C-am a -- juns sea -- ra de-A -- jun
-  Şi-a bă -- trâ -- nu -- lui Cră -- ciun.
+  Și-a bă -- trâ -- nu -- lui Cră -- ciun.
 }
 
 tenorStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Sus mai sus v-am î -- năl -- ţat, __
-  Ce-am __ şti -- ut tot v-am cân -- tat. __
-  Să ră -- mâ -- neţi să -- nă -- toşi,
-  Să -- nă -- toşi şi bu -- cu -- roşi,
+  Sus mai sus v-am î -- năl -- țat, __
+  Ce-am __ ști -- ut tot v-am cân -- tat. __
+  Să ră -- mâ -- neți să -- nă -- toși,
+  Să -- nă -- toși și bu -- cu -- roși,
 
   C-am a -- juns zi -- ua cea sfân -- tă
   Când __ co -- lin -- de -- le se cân -- tă.
@@ -108,7 +109,7 @@ tenorStanzaTwo = \lyricmode {
   Să vă fi -- e de fo -- los.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \repeat volta 2 {
     \slurDashed
     e'8^\f e8 e8 fis8 e8 d8 cis8( a8)
@@ -122,11 +123,11 @@ sopMusic = \relative {
     b8 b8 e8. d16 cis8 b8 cis8 a8
     \break
     b8 b8 b8 cis8 b8 a8 b4
-    b8 b8 e8. d16 cis8^\markup{ \bold "rall." } b8 a4    
+    b8 b8 e8. d16 cis8^\markup{ \bold "rall." } b8 a4
   }
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \repeat volta 2 {
     \slurDashed
     a'8^\f a8 a8 a8 a8 gis8 a8( e8)
@@ -142,7 +143,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \repeat volta 2 {
     \slurDashed
     cis8^\f cis8 cis8 d8 cis8 b8 a8( a8)
@@ -159,7 +160,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \repeat volta 2 {
     \slurDashed
     a8^\f a8 a8 a8 a8 e8 a,8( cis8)
@@ -204,9 +205,12 @@ myScore = \new Score <<
   \layout { }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 124
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 124
+    }
+
+
 
 \score {
   \unfoldRepeats

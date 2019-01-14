@@ -1,11 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 1\mm
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -15,8 +15,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 15)
+
 global = {
-  #(set-global-staff-size 15)
   \set Staff.midiInstrument = "clarinet"
   \key g \major
   \time 2/4
@@ -35,12 +36,12 @@ sopStanzaTwo = \lyricmode {
   \set stanza = "2."
   Pâ -- n-a __ fost o -- pri -- tă __ sus
   Un -- de __ s-a năs -- cut Ii -- sus
-  Ma -- gii __ dorm vi -- sând şi-aş --
+  Ma -- gii __ dorm vi -- sând și-aș --
   \set ignoreMelismata = ##t
   teap -- \skip 8 tă __ \skip 8
   \unset ignoreMelismata
   Răs -- plă -- ti -- rea lor cea
-  \set ignoreMelismata = ##t  
+  \set ignoreMelismata = ##t
   dreap -- tă.
   \unset ignoreMelismata
 }
@@ -56,7 +57,7 @@ altoStanzaTwo = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \set ignoreMelismata = ##t
-  Ma -- gii dorm vi -- sând şi-aş -- teap -- tă
+  Ma -- gii dorm vi -- sând și-aș -- teap -- tă
   Răs -- plă -- ti -- rea lor cea dreap -- tă.
   \unset ignoreMelismata
 }
@@ -72,7 +73,7 @@ tenorStanzaTwo = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \set ignoreMelismata = ##t
-  Ma -- gii dorm vi -- sând şi-aş -- teap -- \skip 8 tă __ \skip 8
+  Ma -- gii dorm vi -- sând și-aș -- teap -- \skip 8 tă __ \skip 8
   Răs -- plă -- ti -- rea lor cea dreap -- tă.
   \unset ignoreMelismata
 }
@@ -80,7 +81,7 @@ tenorStanzaTwo = \lyricmode {
 bassStanzaOne = \altoStanzaOne
 bassStanzaTwo = \altoStanzaTwo
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.midiMinimumVolume = #0.4
   \repeat volta 2 {
     R2 R2
@@ -116,7 +117,7 @@ sopMusic = \relative {
   }
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \repeat volta 2 {
     d8^\p r8 g8 r8
     d8 r8 g8 r8
@@ -152,7 +153,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \repeat volta 2 {
     d8^\p r8 b8 r8
     d8 r8 b8 r8
@@ -188,7 +189,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \repeat volta 2 {
     d,8^\p r8 g8 r8
     d8 r8 g8 r8
@@ -229,18 +230,18 @@ myScore = \new Score <<
     \new Staff \new Voice { \global \sopMusic }
     \addlyrics { \sopStanzaOne }
     \addlyrics { \sopStanzaTwo }
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoStanzaOne }
     \addlyrics { \altoStanzaTwo }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorStanzaOne }
       \addlyrics { \tenorStanzaTwo }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }
@@ -255,9 +256,12 @@ myScore = \new Score <<
   \layout { }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 160
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 160
+    }
+
+
 
 \score {
   \unfoldRepeats

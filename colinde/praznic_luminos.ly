@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -14,8 +15,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
   \key f \major
   \time 2/4
@@ -27,9 +29,9 @@ sopWords = \lyricmode {
   Praz -- nic lu -- mi -- nos,
   Stră -- lu -- cind fru -- mos,
   As -- tăzi ne-a so -- sit
-  Şi ne-a-n -- ve -- se -- lit
+  Și ne-a-n -- ve -- se -- lit
   Că Mân -- tu -- i -- to -- rul
-  Şi iz -- bă -- vi -- to -- rul
+  Și iz -- bă -- vi -- to -- rul
   Cu trup s-a năs -- cut,
   Cu trup s-a năs -- cut.
 }
@@ -42,14 +44,14 @@ bassWords = \lyricmode {
   Praz -- nic lu -- mi -- nos,
   Stră -- lu -- cind fru -- mos,
   As -- tăzi ne-a so -- sit
-  Şi ne-a-n -- ve -- se -- lit __
+  Și ne-a-n -- ve -- se -- lit __
   Că Mân -- tu -- i -- to -- rul
-  Şi iz -- bă -- vi -- to -- rul
+  Și iz -- bă -- vi -- to -- rul
   Cu trup s-a năs -- cut,
   Cu trup s-a năs -- cut.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.vocalName = \markup { \column { "S." "A." }}
   \repeat volta 4 {
     f8 f8 e8 f8
@@ -76,7 +78,7 @@ sopMusic = \relative {
   }
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \repeat volta 4 {
     c8 c8 c8 c8
     e2
@@ -100,7 +102,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.vocalName = "T."
   \repeat volta 4 {
     a8 a8 g8 a8
@@ -125,7 +127,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.vocalName = "B."
   \repeat volta 4 {
     f,8 f8 r4
@@ -157,13 +159,13 @@ myScore = \new Score <<
       \addlyrics { \sopWords }
       \new Voice { \global \voiceTwo \altoMusic }
     >>
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorWords }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }
@@ -218,17 +220,17 @@ midiOutput = \midi {
       "2."
       \column {
         "Raiul cel închis, azi iar s-a deschis"
-        "Şarpelui cumplit capul s-a zdrobit"
-        "Şi strămoşii iară prin Sfânta Fecioară"
+        "Șarpelui cumplit capul s-a zdrobit"
+        "Și strămoșii iară prin Sfânta Fecioară"
         "Iar s-au înnoit, iar s-au înnoit."
       }
       \hspace #5.0
       "3."
       \column {
         "Îngerii cântau, păstori fluierau,"
-        "Magii se-nchinau, toţi se bucurau,"
+        "Magii se-nchinau, toți se bucurau,"
         "Dar Irod era că se tulbura"
-        "De naşterea Sa, de naşterea Sa"
+        "De nașterea Sa, de nașterea Sa"
       }
     }
   }
@@ -237,8 +239,8 @@ midiOutput = \midi {
       \hspace #40.0
       "4."
       \column {
-        "El Îl căuta, voind morţii-a-L da"
-        "Dar pruncul Iisus din ţară s-a dus"
+        "El Îl căuta, voind morții-a-L da"
+        "Dar pruncul Iisus din țară s-a dus"
         "Fie lăudat, binecuvântat"
         "De-a pururi, amin, de-a pururi, amin."
       }

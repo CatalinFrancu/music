@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -13,8 +14,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
   \key as \major
   \time 3/4
@@ -34,12 +36,12 @@ words = \lyricmode {
   We
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \voiceOne
   \partial 4 es4
   as4^\markup{
     \hspace #-3.5
-    \musicglyph #"scripts.segno"
+    \musicglyph "scripts.segno"
   } as8[ bes8] as8[ g8]
   f4 f4 f4
   bes4 bes8[ c8] bes8[ as8]
@@ -65,13 +67,13 @@ sopMusic = \relative {
     \hspace #-8.0
     \raise #2.0 D'al
     \hspace #0.5
-    \raise #3.0 \musicglyph #"scripts.segno"
+    \raise #3.0 \musicglyph "scripts.segno"
     \raise #2.0 { al Fine }
   }
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \voiceTwo
   \partial 4 es4
   c4 c8[ c8] c8[ c8]
@@ -95,7 +97,7 @@ altoMusic = \relative {
   es2 es4
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \voiceOne
   \partial 4 es,4
   es4 es8[ es8] as8[ as8]
@@ -119,7 +121,7 @@ tenorMusic = \relative {
   c2 es,4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \voiceTwo
   \partial 4 es,4
   as,4 as8[ as8] as8[ as8]
@@ -164,9 +166,12 @@ myScore = \new Score <<
   \layout { }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 140
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 140
+    }
+
+
 
 \score {
   \unfoldRepeats

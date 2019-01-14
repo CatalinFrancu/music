@@ -1,16 +1,16 @@
-\version "2.8.7"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 0\mm
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.5\in
+  bottom-margin = 0.5\in
 }
 
 \header {
   title = "Cântec de Crăciun"
-  arranger = "Gheorghe Budiş"
+  arranger = "Gheorghe Budiș"
   meter = "Andantino"
   tagline = ""
 }
@@ -25,20 +25,20 @@ global = {
 
 womenStanzaOne = \lyricmode {
   \set stanza = "1."
-  Din an în an so -- sesc me -- reu la geam cu Moş __ A -- jun, __
+  Din an în an so -- sesc me -- reu la geam cu Moș __ A -- jun, __
   E ger cum -- plit, e dru -- mul greu, da-i o -- bi -- cei __ stră -- bun. __
-  Azi cu stră -- mo -- şii cânt în cor co -- lin -- dul sfânt şi bun, __
-  Tot moş e -- ra şi-n vre -- mea lor bă -- trâ -- nul Moş __ Cră -- ciun, __
+  Azi cu stră -- mo -- șii cânt în cor co -- lin -- dul sfânt și bun, __
+  Tot moș e -- ra și-n vre -- mea lor bă -- trâ -- nul Moș __ Cră -- ciun, __
   Tot
-  trâ -- nul Moş __ Cră -- ciun. __
+  trâ -- nul Moș __ Cră -- ciun. __
 }
 
 womenStanzaTwo = \lyricmode {
   \set stanza = "2."
-  E săr -- bă -- toa -- re şi e joc în ca -- sa ta __ a -- cum, __
-  Dar sunt bor -- de -- ie fă -- ră foc şi mâi -- ne-i Moş __ A -- jun. __
-  Şi-a -- cum te las, fii să -- nă -- tos şi ve -- sel de Cră -- ciun, __
-  Dar nu ui -- ta, când eşti vo -- ios, ro -- mâ -- ne să __ fii bun, __
+  E săr -- bă -- toa -- re și e joc în ca -- sa ta __ a -- cum, __
+  Dar sunt bor -- de -- ie fă -- ră foc și mâi -- ne-i Moș __ A -- jun. __
+  Și-a -- cum te las, fii să -- nă -- tos și ve -- sel de Cră -- ciun, __
+  Dar nu ui -- ta, când ești vo -- ios, ro -- mâ -- ne să __ fii bun, __
   Dar
   mâ -- ne să __ fii bun. __
 }
@@ -46,22 +46,22 @@ womenStanzaTwo = \lyricmode {
 menStanzaOne = \lyricmode {
   \set stanza = "1."
   E ger cum -- plit, e dru -- mul greu, da-i o -- bi -- cei stră -- bun. __
-  Azi cu stră -- mo -- şii cânt în cor co -- lin -- dul sfânt şi bun, __
-  Tot moş e -- ra şi-n vre -- mea lor bă -- trâ -- nul Moş Cră -- ciun, __
+  Azi cu stră -- mo -- șii cânt în cor co -- lin -- dul sfânt și bun, __
+  Tot moș e -- ra și-n vre -- mea lor bă -- trâ -- nul Moș Cră -- ciun, __
   Tot
-  trâ -- nul Moş Cră -- ciun. __
+  trâ -- nul Moș Cră -- ciun. __
 }
 
 menStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Dar sunt bor -- de -- ie fă -- ră foc şi mâi -- ne-i Moş A -- jun. __
-  Şi-a -- cum te las, fii să -- nă -- tos şi ve -- sel de Cră -- ciun, __
-  Dar nu ui -- ta, când eşti vo -- ios, ro -- mâ -- ne să fii bun, __
+  Dar sunt bor -- de -- ie fă -- ră foc și mâi -- ne-i Moș A -- jun. __
+  Și-a -- cum te las, fii să -- nă -- tos și ve -- sel de Cră -- ciun, __
+  Dar nu ui -- ta, când ești vo -- ios, ro -- mâ -- ne să fii bun, __
   Dar
   mâ -- ne să fii bun. __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \partial 8 bes'8^\p
   g4 bes8 es4 d8
   c4 bes8 g4 bes8
@@ -98,7 +98,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \partial 8 bes'8^\p
   g4 g8 g4 bes8
   as4 g8 es4 es8
@@ -130,7 +130,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \partial 8 r8
   R2. R2. R2.
   r4 r8 r4 bes8
@@ -160,7 +160,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \partial 8 r8
   R2. R2. R2.
   r4 r8 r4 bes8
@@ -221,9 +221,12 @@ myScore = \new Score <<
   \layout { }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 96
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 96
+    }
+
+
 
 \score {
   \unfoldRepeats

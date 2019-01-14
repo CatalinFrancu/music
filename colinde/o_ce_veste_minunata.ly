@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -14,8 +15,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
   \key g \major
   \autoBeamOff
@@ -43,7 +45,7 @@ bassWords = \lyricmode {
   ra -- tă.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \partial 4 d8 d8
   g4 g4 a4 c4
   b2 a4^\fermata d,8 d8
@@ -63,7 +65,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \partial 4 d8 d8
   d4 d4 e4 g4
   g2 fis4^\fermata d8 d8
@@ -82,7 +84,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \partial 4 d,8 d8
   b'4 b4 c4 e4
   d2 d4^\fermata d,8 d8
@@ -101,7 +103,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \partial 4
   <<
     {
@@ -137,21 +139,21 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #7.0
+  \override SpacingSpanner.shortest-duration-space = #7.0
 } <<
   \new ChoirStaff <<
     \new Staff \new Voice { \global \sopMusic }
     \addlyrics { \sopWords }
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoWords }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorWords }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }
@@ -160,9 +162,12 @@ myScore = \new Score \with {
   >>
 >>
 
-midiOutput = \midi {
-  \tempo 4 = 80
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 80
+    }
+
+
 
 \book {
   \score {
@@ -200,8 +205,8 @@ midiOutput = \midi {
       "2."
       \column {
         "Că la Betleem Maria"
-        "Săvârşind călătoria"
-        "În sărac lăcaş lâng-acel oraş"
+        "Săvârșind călătoria"
+        "În sărac lăcaș lâng-acel oraș"
         "A născut pe Mesia."
       }
       \hspace #5.0
@@ -209,7 +214,7 @@ midiOutput = \midi {
       \column {
         "Pe Fiul cel din vecie"
         "Ce L-a trimis Tatăl mie"
-        "Să se nască şi să crească"
+        "Să se nască și să crească"
         "Să ne mântuiască."
       }
     }

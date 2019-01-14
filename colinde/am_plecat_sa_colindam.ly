@@ -1,4 +1,4 @@
-\version "2.11.57"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
@@ -24,10 +24,10 @@ global = {
 womenWordsOne = \lyricmode {
   \set stanza = "1."
   Am ple -- cat să co -- lin -- dăm, __
-  Domn, domn __ să -- năl -- ţăm
+  Domn, domn __ să -- năl -- țăm
   \set ignoreMelismata = ##t
-  Când bo -- ie -- rii nu-s a -- ca -- să Domn, domn să -- năl -- ţăm,
-  Când bo -- ie -- rii nu-s a -- ca -- să Domn, domn să -- năl -- ţăm.
+  Când bo -- ie -- rii nu-s a -- ca -- să Domn, domn să -- năl -- țăm,
+  Când bo -- ie -- rii nu-s a -- ca -- să Domn, domn să -- năl -- țăm.
 }
 
 womenWordsTwo = \lyricmode {
@@ -35,36 +35,36 @@ womenWordsTwo = \lyricmode {
   \set ignoreMelismata = ##t
   C-au ple -- cat la vâ -- nă -- toa -- re,
   \set ignoreMelismata = ##f
-  Domn, domn __ să -- năl -- ţăm
+  Domn, domn __ să -- năl -- țăm
   \set ignoreMelismata = ##t
-  Să vâ -- ne -- ze că -- pri -- oa -- re Domn, domn să -- năl -- ţăm,
-  Să vâ -- ne -- ze că -- pri -- oa -- re Domn, domn să -- năl -- ţăm.
+  Să vâ -- ne -- ze că -- pri -- oa -- re Domn, domn să -- năl -- țăm,
+  Să vâ -- ne -- ze că -- pri -- oa -- re Domn, domn să -- năl -- țăm.
 }
 
 womenWordsThree = \lyricmode {
   \set stanza = "3."
   Că -- pri -- oa -- re n-au vâ -- nat, __
-  Domn, domn __ să -- năl -- ţăm
-  Şi-au vâ -- nat un ie -- pu -- raş __ Domn, domn să -- năl -- ţăm,
-  Şi-au vâ -- nat un ie -- pu -- raş __ Domn, domn să -- năl -- ţăm.
+  Domn, domn __ să -- năl -- țăm
+  Și-au vâ -- nat un ie -- pu -- raș __ Domn, domn să -- năl -- țăm,
+  Și-au vâ -- nat un ie -- pu -- raș __ Domn, domn să -- năl -- țăm.
 }
 
 womenWordsFour = \lyricmode {
   \set stanza = "4."
   Să fa -- că din pie -- lea lui, __
-  Domn, domn __ să -- năl -- ţăm
-  Veş -- mânt fru -- mos Dom -- nu -- lui __ Domn, domn să -- năl -- ţăm,
-  Veş -- mânt fru -- mos Dom -- nu -- lui __ Domn, domn să -- năl -- ţăm.
+  Domn, domn __ să -- năl -- țăm
+  Veș -- mânt fru -- mos Dom -- nu -- lui __ Domn, domn să -- năl -- țăm,
+  Veș -- mânt fru -- mos Dom -- nu -- lui __ Domn, domn să -- năl -- țăm.
 }
 
 menWords = \lyricmode {
-  Domn, domn să -- năl -- ţăm
-  Domn, domn să -- năl -- ţăm
-  Domn, domn să -- năl -- ţăm
-  Domn, domn să -- năl -- ţăm
+  Domn, domn să -- năl -- țăm
+  Domn, domn să -- năl -- țăm
+  Domn, domn să -- năl -- țăm
+  Domn, domn să -- năl -- țăm
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.vocalName = \markup { \column { "S." "A." }}
   \repeat volta 4 {
     \oneVoice
@@ -96,7 +96,7 @@ sopMusic = \relative {
   }
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \repeat volta 4 {
     \oneVoice
     R2 R2 R2 R2
@@ -124,7 +124,7 @@ altoMusic = \relative {
   }
 }
 
-menMusic = \relative {
+menMusic = \relative c' {
   \set Staff.vocalName = "T. + B."
   \repeat volta 4 {
     d,4 g4
@@ -153,7 +153,7 @@ menMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #7.0
+  \override SpacingSpanner.shortest-duration-space = #7.0
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -183,40 +183,28 @@ myScore = \new Score \with {
     \unfoldRepeats
     \myScore
     \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 132 4)
-      }
+      \tempo 4 = 132
     }
   }
   \score {
     \unfoldRepeats
     \new Voice { \global \sopMusic }
     \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 132 4)
-      }
+      \tempo 4 = 132
     }
   }
   \score {
     \unfoldRepeats
     \new Voice { \global \altoMusic }
     \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 132 4)
-      }
+      \tempo 4 = 132
     }
   }
   \score {
     \unfoldRepeats
     \new Voice { \global \menMusic }
     \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 132 4)
-      }
+      \tempo 4 = 132
     }
   }
 }

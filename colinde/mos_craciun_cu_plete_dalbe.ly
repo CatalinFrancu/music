@@ -1,47 +1,49 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Moş Crăciun cu plete dalbe"
+  title = "Moș Crăciun cu plete dalbe"
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
-  \override Score.VerticalAxisGroup #'remove-first = ##t
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \key g \major
   \time 2/4
 }
 
 sopStanzaOne = \lyricmode {
   \set stanza = "1."
-  Moş Cră -- ciun cu ple -- te dal -- be
-  A so -- sit de prin nă -- meţi
-  Şi a -- du -- ce da -- ruri mul -- te
-  La fe -- ti -- ţe şi bă -- ieţi.
-  Moş Cră -- ciun, __ Moş Cră -- ciun. __
+  Moș Cră -- ciun cu ple -- te dal -- be
+  A so -- sit de prin nă -- meți
+  Și a -- du -- ce da -- ruri mul -- te
+  La fe -- ti -- țe și bă -- ieți.
+  Moș Cră -- ciun, __ Moș Cră -- ciun. __
 }
 
 sopStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Din bă -- trâni se po -- ves -- teş -- te
-  Că-n toţi a -- nii ne -- gre -- şit
-  Moş Cră -- ciun pri -- beag so -- seş -- te,
+  Din bă -- trâni se po -- ves -- teș -- te
+  Că-n toți a -- nii ne -- gre -- șit
+  Moș Cră -- ciun pri -- beag so -- seș -- te,
   Nici -- o -- da -- tă n-a lip -- sit.
 }
 
 sopStanzaThree = \lyricmode {
   \set stanza = "3."
-  Moş Cră -- ciun cu ple -- te dal -- be,
+  Moș Cră -- ciun cu ple -- te dal -- be,
   În -- co -- tro vrei s-o a -- puci?
-  Ţi-aş cân -- ta "\"Flo" -- ri -- le dal -- "be\","
+  Ți-aș cân -- ta "\"Flo" -- ri -- le dal -- "be\","
   De la noi să nu te duci.
 }
 
@@ -50,18 +52,18 @@ altoWords = \lyricmode {
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
-  Moş Cră -- ciun, __ Moş Cră -- ciun. __  
+  Moș Cră -- ciun, __ Moș Cră -- ciun. __
 }
 
 tenorWords = \lyricmode {
-  Moş Cră -- ciun, __ Moş Cră -- ciun. __  
+  Moș Cră -- ciun, __ Moș Cră -- ciun. __
 }
 
 bassWords = \tenorWords
 
-sopMusic = \transpose c g \relative {
+sopMusic = \transpose c g \relative c' {
   \set Staff.vocalName = "S."
-  \set Staff.vocNam = "S."
+  \set Staff.shortVocalName = "S."
 
   \repeat volta 3 {
     g4 c4
@@ -96,9 +98,9 @@ sopMusic = \transpose c g \relative {
   }
 }
 
-altoMusic = \transpose c g \relative {
+altoMusic = \transpose c g \relative c' {
   \set Staff.vocalName = "A."
-  \set Staff.vocNam = "A."
+  \set Staff.shortVocalName = "A."
 
   \repeat volta 3 {
     g4 e4
@@ -131,8 +133,8 @@ altoMusic = \transpose c g \relative {
   }
 }
 
-tenorMusic = \transpose c g \relative {
-  \set Staff.vocNam = "T."
+tenorMusic = \transpose c g \relative c' {
+  \set Staff.shortVocalName = "T."
 
   \repeat volta 3 {
     R2 R2 R2 R2 R2 R2 R2 R2
@@ -150,8 +152,8 @@ tenorMusic = \transpose c g \relative {
   }
 }
 
-bassMusic = \transpose c g \relative {
-  \set Staff.vocNam = "B."
+bassMusic = \transpose c g \relative c' {
+  \set Staff.shortVocalName = "B."
 
   \repeat volta 3 {
     R2 R2 R2 R2 R2 R2 R2 R2
@@ -199,14 +201,17 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 108
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 108
+    }
+
+
 
 \score {
   \unfoldRepeats

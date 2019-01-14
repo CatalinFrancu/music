@@ -1,32 +1,32 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 10\mm
   left-margin = 1\in
   line-width = 7\in
-  ragged-bottom = ##t
-  top-margin = 0.5\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Şi ne lasă gazdă-n casă"
+  title = "Și ne lasă gazdă-n casă"
   subtitle = "Colind din Bihor"
   arranger = "Prelucrare de N. Lungu"
   meter = \markup { Moderato \note #"4" #1 = 100 }
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
-  \override Score.VerticalAxisGroup #'remove-first = ##t
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \set Staff.midiInstrument = "clarinet"
   \autoBeamOff
 }
 
 soloStanzaOne = \lyricmode {
   \set stanza = "1."
-  Şi ne la -- să gaz -- dă-n ca -- să, Flori din -- tr-al -- te flori, __
+  Și ne la -- să gaz -- dă-n ca -- să, Flori din -- tr-al -- te flori, __
 }
 
 soloStanzaTwo = \lyricmode {
@@ -36,12 +36,12 @@ soloStanzaTwo = \lyricmode {
 
 soloStanzaThree = \lyricmode {
   \set stanza = "3."
-  Şi ne pi -- că pi -- cu -- ri -- li
+  Și ne pi -- că pi -- cu -- ri -- li
 }
 
 soloStanzaFour = \lyricmode {
   \set stanza = "4."
-  Du -- pă toa -- te stre -- şi -- ni -- li,
+  Du -- pă toa -- te stre -- și -- ni -- li,
 }
 
 soloStanzaFive = \lyricmode {
@@ -51,7 +51,7 @@ soloStanzaFive = \lyricmode {
 
 soloStanzaSix = \lyricmode {
   \set stanza = "6."
-  Ieşi a -- fa -- ră şi nie vie -- zî,
+  Ieși a -- fa -- ră și nie vie -- zî,
 }
 
 soloStanzaSeven = \lyricmode {
@@ -79,7 +79,7 @@ sopWords = \lyricmode {
   Flori din -- tr-al -- te flori,
   Flori __
   Flori __
-  Flori din -- tr-al -- te flori, din -- tr-al -- te flori.  
+  Flori din -- tr-al -- te flori, din -- tr-al -- te flori.
   Flori __
   Flori __
 }
@@ -127,21 +127,21 @@ bassWordsTwo = \lyricmode {
 
 pppAndFermata = \markup {
   \hspace #-7.5
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #2.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 rotatedText = \markup {
   \hspace #-12.5
-  \postscript #"gsave /Arial findfont 3.0 output-scale div scalefont setfont 90 rotate (                    Doi colindatori) show grestore"
+  \postscript "gsave /Arial findfont 3.0 output-scale div scalefont setfont 90 rotate (                    Doi colindatori) show grestore"
 }
 
-soloMusic = \relative {
+soloMusic = \relative c' {
   \key g \minor
   \time 3/4
 
@@ -150,11 +150,11 @@ soloMusic = \relative {
   \repeat volta 10 {
     f'8(^\markup {
       \hspace #-6.0
-      \musicglyph #"m"
+      \musicglyph "m"
       \hspace #-1.0
-      \musicglyph #"f"
+      \musicglyph "f"
       \hspace #1.5
-      \musicglyph #"scripts.ufermata"
+      \musicglyph "scripts.ufermata"
     } \grace d8)^\markup {
       \bold "Molto rubato, rustico"
     } d8 cis8 bes8 a8 bes8
@@ -170,7 +170,7 @@ soloMusic = \relative {
   R2. * 8
 }
 
-sopMusicOne = \relative {
+sopMusicOne = \relative c' {
   \key g \minor
   \time 3/4
   \set Staff.vocalName = "S."
@@ -198,7 +198,7 @@ sopMusicOne = \relative {
   } \alternative {
     { d2.^\> }
   }
-  \bar ":|"
+  \bar ":|."
   \break
 
   g,4(\!^\mp^\markup{\column { Coda " " } }
@@ -215,7 +215,7 @@ sopMusicOne = \relative {
   \bar "|."
 }
 
-sopMusicTwo = \relative {
+sopMusicTwo = \relative c' {
   \time 3/4
   \voiceTwo
   g'4. g8 d8 d8
@@ -248,7 +248,7 @@ sopMusicTwo = \relative {
   bes4_\fermata bes4\rest bes4\rest
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \time 3/4
   \key g \minor
   \set Staff.vocalName = "A."
@@ -288,7 +288,7 @@ altoMusic = \relative {
   g4^\pppAndFermata r4 r4
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \key g \minor
   \time 3/4
   \set Staff.vocalName = "T."
@@ -319,10 +319,10 @@ tenorMusic = \relative {
   g,4(_\accent d'2)
   g,4(^\pp_\accent d'2)
   g,4(_\accent d'2)~
-  d4^\pppAndFermata r4 r4  
+  d4^\pppAndFermata r4 r4
 }
 
-bassMusicOne = \relative {
+bassMusicOne = \relative c' {
   \key g \minor
   \time 3/4
   \set Staff.vocalName = "B."
@@ -345,7 +345,7 @@ bassMusicOne = \relative {
   g4^\pppAndFermata d4\rest d4\rest
 }
 
-bassMusicTwo = \relative {
+bassMusicTwo = \relative c' {
   \time 3/4
   \voiceTwo
   g2.^\p^\accent
@@ -397,16 +397,16 @@ myScore = \new Score <<
       \new Voice { \global \sopMusicTwo }
       \addlyrics { \sopWords }
     >>
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoWords }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorWords }
     >>
-    
+
     \new Lyrics = "bassLyricsOne"
     \new Staff <<
       \clef bass
@@ -422,7 +422,7 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }

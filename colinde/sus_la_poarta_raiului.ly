@@ -1,21 +1,23 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
   title = "Sus la poarta raiului"
-  arranger = "Emil Monţia"
+  arranger = "Emil Monția"
   meter = "Andantino"
   tagline = ""
 }
 
+#(set-global-staff-size 15)
+
 global = {
-  #(set-global-staff-size 15)
   \set Staff.midiInstrument = "clarinet"
   \key a \major
   \autoBeamOff
@@ -24,40 +26,40 @@ global = {
 sopWords = \lyricmode {
   \set stanza = "1."
   Sus la poar -- ta ra -- iu -- lui, poar -- ta ra -- iu -- lui,
-  Paş -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui.
-  Li -- nu-i __ lin şi ia -- ră lin,
+  Paș -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui.
+  Li -- nu-i __ lin și ia -- ră lin,
   Ba -- te __ vân -- tul frun -- za lin,
-  Lin şi __ ia -- ră lin.
+  Lin și __ ia -- ră lin.
 }
 
 altoWords = \lyricmode {
   \set stanza = "1."
   Sus la poar -- ta ra -- iu -- lui, poar -- ta ra -- iu -- lui, __
-  Paş -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui. __
-  Li -- nu-i lin şi ia -- ră lin,
+  Paș -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui. __
+  Li -- nu-i lin și ia -- ră lin,
   Ba -- te vân -- tul frun -- za lin,
-  Lin şi ia -- ră lin.
+  Lin și ia -- ră lin.
 }
 
 tenorWords = \lyricmode {
   \set stanza = "1."
   Sus la poar -- ta ra -- iu -- lui, poar -- ta ra -- iu -- lui, __
-  Paş -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui. __
-  Li -- nu-i __ lin şi ia -- ră lin,
+  Paș -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui. __
+  Li -- nu-i __ lin și ia -- ră lin,
   Ba -- te __ vân -- tul frun -- za lin,
-  Lin şi __ ia -- ră __ lin.
+  Lin și __ ia -- ră __ lin.
 }
 
 bassWords = \lyricmode {
   \set stanza = "1."
   Sus la poar -- ta ra -- iu -- lui, poar -- ta ra -- iu -- lui, __
-  Paş -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui. __
-  Li -- nu-i lin şi ia -- ră lin,
+  Paș -- te tur -- ma Ta -- tă -- lui, tur -- ma Ta -- tă -- lui. __
+  Li -- nu-i lin și ia -- ră lin,
   Ba -- te vân -- tul frun -- za __ lin,
-  Lin şi ia -- ră __ lin.
+  Lin și ia -- ră __ lin.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   e8 a8 gis8 a8 b8^\accent cis8 b4
   cis8 b8 cis8^\accent d8 b2
   \break
@@ -74,7 +76,7 @@ sopMusic = \relative {
   }
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   e8 e8 e8 e8 gis8^\accent gis8 gis4
   a8 gis8 a8^\accent fis8 e8([ fis8] gis16[ fis16 e16 d16)]
 
@@ -88,7 +90,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   cis8 cis8 cis8 cis8 d8^\accent d8 d4
   cis8 d8 cis8^\accent a8 gis8([ a8 b8 gis8)]
 
@@ -102,7 +104,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusicOne = \relative {
+bassMusicOne = \relative c' {
   e,8 e8 e8 e8 e8^\accent e8 e4
   e8 e8 e8^\accent e8 e2
 
@@ -116,7 +118,7 @@ bassMusicOne = \relative {
   }
 }
 
-bassMusicTwo = \relative {
+bassMusicTwo = \relative c' {
   a,8 a8 a8 a8 a8_\accent a8 a4
   a8 e'8 a,8_\accent a8 e8([ e'8] e,4)
 
@@ -131,21 +133,21 @@ bassMusicTwo = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #7.0
+  \override SpacingSpanner.shortest-duration-space = #7.0
 } <<
   \new ChoirStaff <<
     \new Staff \new Voice { \global \sopMusic }
     \addlyrics { \sopWords }
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoWords }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorWords }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \voiceOne \bassMusicOne }
@@ -155,9 +157,12 @@ myScore = \new Score \with {
   >>
 >>
 
-midiOutput = \midi {
-  \tempo 4 = 64
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 64
+    }
+
+
 
 \book {
   \score {
@@ -195,6 +200,7 @@ midiOutput = \midi {
     \midi { \midiOutput }
   }
   \markup {
+    \vspace #2.0
     \large {
       \hspace #8.0
       \column {
@@ -209,7 +215,7 @@ midiOutput = \midi {
         "Stă chiar Maica Precistă, Maica Precistă."
         " "
         "Lângă ea un legănel, da, un legănel"
-        "Cu un copilaş în el, copilaş în el."
+        "Cu un copilaș în el, copilaș în el."
       }
       \hspace #5.0
       \column {
@@ -220,10 +226,10 @@ midiOutput = \midi {
         " "
       }
       \column {
-        "Copilaşul când plângea, puiul când plângea,"
+        "Copilașul când plângea, puiul când plângea,"
         "Maica Sfântă-L legăna, Maica-L legăna."
         " "
-        "Copilaşul când dormea, puiul când dormea,"
+        "Copilașul când dormea, puiul când dormea,"
         "Maica sfântă lin cânta, Maica lin cânta."
       }
     }

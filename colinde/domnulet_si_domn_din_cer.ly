@@ -1,16 +1,17 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 1\in
+  bottom-margin = 1\in
 }
 
 \header {
-  title = "Domnuleţ şi Domn din cer"
+  title = "Domnuleț și Domn din cer"
   composer = "G. Cucu"
-  meter = "Mult liniştit şi duios"
+  meter = "Mult liniștit și duios"
   tagline = ""
 }
 
@@ -25,40 +26,40 @@ global = {
 sopStanzaOne = \lyricmode {
   \set stanza = "1."
   Ma -- re-i sea -- ra de-as -- tă __ sea -- ră,
-  Dom -- nu -- leţ şi Domn din cer
-  Şi __ nu-i sea -- ra de-as -- tă __ sea -- ră,
-  Dom -- nu -- leţ şi Domn din cer. __
+  Dom -- nu -- leț și Domn din cer
+  Și __ nu-i sea -- ra de-as -- tă __ sea -- ră,
+  Dom -- nu -- leț și Domn din cer. __
 
   Ci e sea -- ra lui Cră -- ciun, __
   Lui Cră -- ciun ce -- lui bă -- trân, __
   Când s-a năs -- cut Fi -- ul sfânt, __
   Fi -- ul sfânt pe-a -- cest pă -- mânt. __
 
-  Noi __ um -- blăm şi co -- lin -- dăm, __
-  Dom -- nu -- leţ şi Domn din cer
-  Ces -- tor fe -- ţe ne-n -- chi -- năm, __
-  Dom -- nu -- leţ şi Domn din cer. __
+  Noi __ um -- blăm și co -- lin -- dăm, __
+  Dom -- nu -- leț și Domn din cer
+  Ces -- tor fe -- țe ne-n -- chi -- năm, __
+  Dom -- nu -- leț și Domn din cer. __
   Domn din cer. __
 }
 
 sopStanzaTwo = \lyricmode {
   \set stanza = "2."
   Fi -- ul plân -- ge, sta -- re __ n-a -- re,
-  Dom -- nu -- leţ şi Domn din cer
-  Pe __ bra -- ţe -- le ma -- mei __ sa -- le,
-  Dom -- nu -- leţ şi Domn din cer. __
+  Dom -- nu -- leț și Domn din cer
+  Pe __ bra -- țe -- le ma -- mei __ sa -- le,
+  Dom -- nu -- leț și Domn din cer. __
 
   \set ignoreMelismata = ##t
   Ne-n -- chi -- năm cu să -- nă -- ta -- te,
-  Tot de bi -- ne s-a -- veţi par -- te,
+  Tot de bi -- ne s-a -- veți par -- te,
   Hris -- tos să vă dea de toa -- te,
-  Via -- ţă lun -- gă, să -- nă -- ta -- te.
+  Via -- ță lun -- gă, să -- nă -- ta -- te.
   \unset ignoreMelismata
 }
 
 tenorStanzaOne = \lyricmode {
-  Dom -- nu -- leţ şi Domn din cer
-  Dom -- nu -- leţ şi Domn din cer. __
+  Dom -- nu -- leț și Domn din cer
+  Dom -- nu -- leț și Domn din cer. __
 
   \set stanza = "1."
   Ci e sea -- ra lui Cră -- ciun, __
@@ -66,10 +67,10 @@ tenorStanzaOne = \lyricmode {
   Când s-a năs -- cut Fi -- ul sfânt, __
   Fi -- ul sfânt pe-a -- cest pă -- mânt. __
 
-  Noi um -- blăm __ şi co -- lin -- dăm, __
-  Dom -- nu -- leţ şi Domn din cer
-  Ces -- tor __ fe -- ţe ne-n -- chi -- năm, __
-  Dom -- nu -- leţ şi Domn din cer. __
+  Noi um -- blăm __ și co -- lin -- dăm, __
+  Dom -- nu -- leț și Domn din cer
+  Ces -- tor __ fe -- țe ne-n -- chi -- năm, __
+  Dom -- nu -- leț și Domn din cer. __
   Domn din cer. __
 }
 
@@ -80,15 +81,15 @@ tenorStanzaTwo = \lyricmode {
   \set stanza = "2."
   \set ignoreMelismata = ##t
   Ne-n -- chi -- năm cu să -- nă -- ta -- te,
-  Tot de bi -- ne s-a -- veţi par -- te,
+  Tot de bi -- ne s-a -- veți par -- te,
   Hris -- tos să vă dea de toa -- te,
-  Via -- ţă lun -- gă, să -- nă -- ta -- te.
+  Via -- ță lun -- gă, să -- nă -- ta -- te.
   \unset ignoreMelismata
 }
 
 bassStanzaOne = \lyricmode {
-  Dom -- nu -- leţ şi Domn din cer
-  Dom -- nu -- leţ şi Domn din cer. __
+  Dom -- nu -- leț și Domn din cer
+  Dom -- nu -- leț și Domn din cer. __
 
   \set stanza = "1."
   Ci e sea -- ra lui Cră -- ciun, __
@@ -96,21 +97,21 @@ bassStanzaOne = \lyricmode {
   Când s-a năs -- cut Fi -- ul sfânt, __
   Fi -- ul sfânt pe-a -- cest pă -- mânt. __
 
-  Noi um -- blăm şi co -- lin -- dăm,
-  Dom -- nu -- leţ şi Domn din cer
-  Ces -- tor fe -- ţe ne-n -- chi -- năm,
-  Dom -- nu -- leţ şi Domn din cer. __
+  Noi um -- blăm și co -- lin -- dăm,
+  Dom -- nu -- leț și Domn din cer
+  Ces -- tor fe -- țe ne-n -- chi -- năm,
+  Dom -- nu -- leț și Domn din cer. __
   Domn din cer. __
 }
 
 bassStanzaTwo = \tenorStanzaTwo
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.vocalName = \markup { \column { "S." "A." }}
 
   \repeat volta 2 {
     \time 3/4
-    % Mare-i seara de-astă seară, Domnuleţ şi Domn din cer
+    % Mare-i seara de-astă seară, Domnuleț și Domn din cer
     a'8([^\p c8)] g2
     g4 f2
     a8([ c8)] c4.( bes16[ a16)]
@@ -119,8 +120,8 @@ sopMusic = \relative {
     d4 d2
     g4 a2
     a2 bes4\rest
-  
-    % Şi nu-i seara de-astă seară, Domnuleţ şi Domn din cer.
+
+    % Și nu-i seara de-astă seară, Domnuleț și Domn din cer.
     a8([ c8)] g2
     g4 f2
     a8([ c8)] c4.( bes16[ a16)]
@@ -148,7 +149,7 @@ sopMusic = \relative {
     \tieSolid
   }
 
-  % Noi umblăm şi colindăm, Domnuleţ şi Domn din cer,
+  % Noi umblăm și colindăm, Domnuleț și Domn din cer,
   \time 3/4
   a8([^\pp c8)]^\markup{ \bold \large "Tempo primo" } g2
   g4 f2^\markup{ \bold \large "poco" }
@@ -159,7 +160,7 @@ sopMusic = \relative {
   g4 a2
   a2 bes4\rest
 
-  % Cestor feţe ne-nchinăm, Domnuleţ şi Domn din cer, Domn din cer.
+  % Cestor fețe ne-nchinăm, Domnuleț și Domn din cer, Domn din cer.
   a8([^\ppp c8)] g2
   g4 f2
   a8([ c8)] c4.( bes16[ a16)]
@@ -175,17 +176,17 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \repeat volta 2 {
     \time 3/4
-    % Mare-i seara de-astă seară, Domnuleţ şi Domn din cer
+    % Mare-i seara de-astă seară, Domnuleț și Domn din cer
     R2. R2. R2. R2.
     a2 c4
     d4 d2
     d8([ e8)] f2
     f2 bes4\rest
-  
-    % Şi nu-i seara de-astă seară, Domnuleţ şi Domn din cer.
+
+    % Și nu-i seara de-astă seară, Domnuleț și Domn din cer.
     R2. R2. R2. R2.
     a,2 c4
     d4 d2
@@ -210,7 +211,7 @@ altoMusic = \relative {
     \tieSolid
   }
 
-  % Noi umblăm şi colindăm, Domnuleţ şi Domn din cer,
+  % Noi umblăm și colindăm, Domnuleț și Domn din cer,
   \time 3/4
   f4 f4( e4)
   d8([ e8)] c2
@@ -221,7 +222,7 @@ altoMusic = \relative {
   d8([ e8)] f2
   f2 bes4\rest
 
-  % Cestor feţe ne-nchinăm, Domnuleţ şi Domn din cer, Domn din cer.
+  % Cestor fețe ne-nchinăm, Domnuleț și Domn din cer, Domn din cer.
   f4 f4( e4)
   d8([ e8)] c2
   es4 es8([ f8] d4)
@@ -236,19 +237,19 @@ altoMusic = \relative {
   c4 bes'4\rest bes4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.vocalName = "T."
 
   \repeat volta 2 {
     \time 3/4
-    % Mare-i seara de-astă seară, Domnuleţ şi Domn din cer
+    % Mare-i seara de-astă seară, Domnuleț și Domn din cer
     R2. R2. R2. R2.
     f,2^\p f4
     f4 f2
     bes4 c2
     c2 r4
-  
-    % Şi nu-i seara de-astă seară, Domnuleţ şi Domn din cer.
+
+    % Și nu-i seara de-astă seară, Domnuleț și Domn din cer.
     R2. R2. R2. R2.
     f,2 f4
     f4 f2
@@ -271,7 +272,7 @@ tenorMusic = \relative {
     \tieSolid
   }
 
-  % Noi umblăm şi colindăm, Domnuleţ şi Domn din cer,
+  % Noi umblăm și colindăm, Domnuleț și Domn din cer,
   \time 3/4
   c4^\pp c4( bes4)
   bes8([ g8)] a2
@@ -282,7 +283,7 @@ tenorMusic = \relative {
   bes4 c2
   c2 r4
 
-  % Cestor feţe ne-nchinăm, Domnuleţ şi Domn din cer, Domn din cer.
+  % Cestor fețe ne-nchinăm, Domnuleț și Domn din cer, Domn din cer.
   c4 c4( bes4)
   bes8([ g8)] a2
   c4 c4( a4)
@@ -297,12 +298,12 @@ tenorMusic = \relative {
   a4 r4 r4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.vocalName = "B."
 
   \repeat volta 2 {
     \time 3/4
-    % Mare-i seara de-astă seară, Domnuleţ şi Domn din cer
+    % Mare-i seara de-astă seară, Domnuleț și Domn din cer
     R2. R2. R2. R2.
     d,2^\p a4
     bes4 bes2
@@ -319,8 +320,8 @@ bassMusic = \relative {
     >>
     \oneVoice
     r4
-  
-    % Şi nu-i seara de-astă seară, Domnuleţ şi Domn din cer.
+
+    % Și nu-i seara de-astă seară, Domnuleț și Domn din cer.
     R2. R2. R2. R2.
     d'2 a4
     bes4 bes2
@@ -366,7 +367,7 @@ bassMusic = \relative {
     \tieSolid
   }
 
-  % Noi umblăm şi colindăm, Domnuleţ şi Domn din cer,
+  % Noi umblăm și colindăm, Domnuleț și Domn din cer,
   \time 3/4
   <<
     {
@@ -401,7 +402,7 @@ bassMusic = \relative {
   \oneVoice
   r4
 
-  % Cestor feţe ne-nchinăm, Domnuleţ şi Domn din cer, Domn din cer.
+  % Cestor fețe ne-nchinăm, Domnuleț și Domn din cer, Domn din cer.
   <<
     {
       \voiceOne
@@ -454,7 +455,7 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #5.5
+  \override SpacingSpanner.shortest-duration-space = #5.5
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -470,7 +471,7 @@ myScore = \new Score \with {
       \addlyrics { \tenorStanzaOne }
       \addlyrics { \tenorStanzaTwo }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice = "bassesOneVoice" { \global \bassMusic }
@@ -485,9 +486,12 @@ myScore = \new Score \with {
   \layout { }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 80
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 80
+    }
+
+
 
 \score {
   \unfoldRepeats

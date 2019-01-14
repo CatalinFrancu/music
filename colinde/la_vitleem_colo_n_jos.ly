@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -27,29 +28,29 @@ sopStanzaOne = \lyricmode {
   \set stanza = "1."
   La Vit -- le -- em co -- lo-n jos __
   Ce -- rul ar -- de lu -- mi -- nos, __
-  Prea -- cu -- ra -- ta naş -- te as -- tăzi pe Hris -- tos.
+  Prea -- cu -- ra -- ta naș -- te as -- tăzi pe Hris -- tos.
 
   Nu mai plân -- ge, mai -- ca mea,
   Nu __ mai __ plân -- ge, mai -- ca __ mea, __
 
   Nu mai plân -- ge, mai -- ca mea, __
-  Scu -- te -- ce -- le noi ţi-om da, __
-  Prea -- cu -- ra -- tă, Prun -- cul Sfânt de-i în -- fă -- şa.
+  Scu -- te -- ce -- le noi ți-om da, __
+  Prea -- cu -- ra -- tă, Prun -- cul Sfânt de-i în -- fă -- șa.
 
   La Vit -- le -- em co -- lo-n jos... __
 }
 
 sopStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Naş -- te-n ies -- lea bo -- i -- lor __
+  Naș -- te-n ies -- lea bo -- i -- lor __
   Pe-m -- pă -- ra -- tul tu -- tu -- ror, __
-  Prea -- cu -- ra -- ta stă şi plân -- ge-n -- ce -- ti -- şor.
+  Prea -- cu -- ra -- ta stă și plân -- ge-n -- ce -- ti -- șor.
 }
 
 sopStanzaThree = \lyricmode {
   \set stanza = "3."
-  N-a -- re scu -- tec de-n -- fă -- şat __
-  Nici hăi -- nu -- ţe de-m -- bră -- cat __
+  N-a -- re scu -- tec de-n -- fă -- șat __
+  Nici hăi -- nu -- țe de-m -- bră -- cat __
   Prea -- cu -- ra -- ta pen -- tru prun -- cul de-m -- pă -- rat.
 }
 
@@ -58,31 +59,31 @@ altoStanzaOne = \lyricmode {
   La __ Vit -- le -- em
   La Vit -- le -- em co -- lo-n jos __
   Ce -- rul ar -- de lu -- mi -- nos, __
-  Prea -- cu -- ra -- ta naş -- te as -- tăzi pe Hris -- tos.
+  Prea -- cu -- ra -- ta naș -- te as -- tăzi pe Hris -- tos.
 
   Nu mai plân -- ge, mai -- ca mea,
   Nu __ mai plân -- ge, mai -- ca __ mea, __
 
   Nu mai plân -- ge, mai -- ca mea, __
-  Scu -- te -- ce -- le noi ţi-om da, __
-  Prea -- cu -- ra -- tă, Prun -- cul Sfânt de-i în -- fă -- şa. __
+  Scu -- te -- ce -- le noi ți-om da, __
+  Prea -- cu -- ra -- tă, Prun -- cul Sfânt de-i în -- fă -- șa. __
 
   La Vit -- le -- em co -- lo-n jos... __
 }
 
 altoStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Naş -- te-n ies -- lea
-  Naş -- te-n ies -- lea bo -- i -- lor __
+  Naș -- te-n ies -- lea
+  Naș -- te-n ies -- lea bo -- i -- lor __
   Pe-m -- pă -- ra -- tul tu -- tu -- ror, __
-  Prea -- cu -- ra -- ta stă şi plân -- ge-n -- ce -- ti -- şor.
+  Prea -- cu -- ra -- ta stă și plân -- ge-n -- ce -- ti -- șor.
 }
 
 altoStanzaThree = \lyricmode {
   \set stanza = "3."
   N-a -- re scu -- tec
-  N-a -- re scu -- tec de-n -- fă -- şat __
-  Nici hăi -- nu -- ţe de-m -- bră -- cat __
+  N-a -- re scu -- tec de-n -- fă -- șat __
+  Nici hăi -- nu -- țe de-m -- bră -- cat __
   Prea -- cu -- ra -- ta pen -- tru prun -- cul de-m -- pă -- rat.
 }
 
@@ -91,29 +92,29 @@ tenorStanzaOne = \lyricmode {
   La Vit -- le -- em co -- lo-n jos, __
   co -- lo-n jos
   Ce -- rul ar -- de lu -- mi -- nos, __
-  Naş -- te as -- tăzi pe Hris -- tos.
+  Naș -- te as -- tăzi pe Hris -- tos.
 
   Nu __ mai plân -- ge,
   Nu __ mai plân -- ge, mai -- ca mea, __
 
   Nu __ mai plân -- ge,
-  Scu -- te -- ce -- le noi __ ţi-om da, __
-  Prun -- cul Sfânt de-i în -- fă -- şa. __
+  Scu -- te -- ce -- le noi __ ți-om da, __
+  Prun -- cul Sfânt de-i în -- fă -- șa. __
 }
 
 tenorStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Naş -- te-n ies -- lea bo -- i -- lor, __
+  Naș -- te-n ies -- lea bo -- i -- lor, __
   bo -- i -- lor
   Pe-m -- pă -- ra -- tul tu -- tu -- ror, __
-  Stă şi plân -- ge-n -- ce -- ti -- şor.
+  Stă și plân -- ge-n -- ce -- ti -- șor.
 }
 
 tenorStanzaThree = \lyricmode {
   \set stanza = "3."
-  N-a -- re scu -- tec de-n -- fă -- şat, __
-  de-n -- fă -- şat
-  Nici hăi -- nu -- ţe de-m -- bră -- cat __
+  N-a -- re scu -- tec de-n -- fă -- șat, __
+  de-n -- fă -- șat
+  Nici hăi -- nu -- țe de-m -- bră -- cat __
   Pen -- tru prun -- cul de-m -- pă -- rat.
 }
 
@@ -122,36 +123,36 @@ bassStanzaOne = \lyricmode {
   La __ Vit -- le -- em __
   co -- lo-n jos
   Ce -- rul ar -- de lu -- mi -- nos, __
-  Naş -- te as -- tăzi pe Hris -- tos.
+  Naș -- te as -- tăzi pe Hris -- tos.
 
   Nu __ mai __ plân -- ge,
   Nu __ mai plân -- ge, mai -- ca __ mea, __
 
   Nu __ mai plân -- ge,
-  Scu -- te -- ce -- le noi ţi-om da, __
-  Prun -- cul Sfânt de-i în -- fă -- şa. __
+  Scu -- te -- ce -- le noi ți-om da, __
+  Prun -- cul Sfânt de-i în -- fă -- șa. __
 }
 
 bassStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Naş -- te-n ies -- lea __
+  Naș -- te-n ies -- lea __
   bo -- i -- lor
   Pe-m -- pă -- ra -- tul tu -- tu -- ror, __
-  Stă şi plân -- ge-n -- ce -- ti -- şor.
+  Stă și plân -- ge-n -- ce -- ti -- șor.
 }
 
 bassStanzaThree = \lyricmode {
   \set stanza = "3."
   N-a -- re scu -- tec __
-  de-n -- fă -- şat
-  Nici hăi -- nu -- ţe de-m -- bră -- cat __
+  de-n -- fă -- șat
+  Nici hăi -- nu -- țe de-m -- bră -- cat __
   Pen -- tru prun -- cul de-m -- pă -- rat.
 }
 
-sopMusic = \transpose g f \relative {
+sopMusic = \transpose g f \relative c' {
   \repeat volta 3 {
     R2 R2 R2 R2
-  
+
     e4^\mp^\( b'4
     a4 b4
     g4 a4
@@ -168,7 +169,7 @@ sopMusic = \transpose g f \relative {
     a4.^\accent^\( b8
     a4 g4
   } \alternative {
-    { fis4 e4^\> e2\!\)^\fermata \bar ":|" }
+    { fis4 e4^\> e2\!\)^\fermata \bar ":|." }
   }
   \break
 
@@ -180,7 +181,7 @@ sopMusic = \transpose g f \relative {
 
   % Nu mai plânge maica mea
   e2~^\(^\markup {
-    \musicglyph #"f"
+    \musicglyph "f"
     \hspace #2.0
     \bold "poco rit..."
   }
@@ -192,11 +193,11 @@ sopMusic = \transpose g f \relative {
   b2~^\>
   b4.\)\! r8
 
-  % Nu mai plânge maica mea, scutecele noi ţi-om da...
+  % Nu mai plânge maica mea, scutecele noi ți-om da...
   e,4^\(^\markup {
-    \musicglyph #"m"
+    \musicglyph "m"
     \hspace #-1.0
-    \musicglyph #"p"
+    \musicglyph "p"
     \hspace #2.0
     \bold "a tempo"
   } b'4
@@ -218,9 +219,9 @@ sopMusic = \transpose g f \relative {
 
   % La Vitleem colo-n jos...
   e4^\(^\markup {
-    \musicglyph #"m"
+    \musicglyph "m"
     \hspace #-1.0
-    \musicglyph #"p"
+    \musicglyph "p"
     \hspace #2.0
     \bold "coda a tempo"
   } b'4
@@ -236,7 +237,7 @@ sopMusic = \transpose g f \relative {
   \bar "|."
 }
 
-altoMusic = \transpose g f \relative {
+altoMusic = \transpose g f \relative c' {
   \repeat volta 3 {
     e2~^\p
     e4 e4
@@ -277,7 +278,7 @@ altoMusic = \transpose g f \relative {
   g2~^\>
   g4.\)\! r8
 
-  % Nu mai plânge maica mea, scutecele noi ţi-om da...
+  % Nu mai plânge maica mea, scutecele noi ți-om da...
   e4^\(^\mp g4
   fis4 g4
   e4 fis4
@@ -308,7 +309,7 @@ altoMusic = \transpose g f \relative {
   e4^\fermata r4
 }
 
-tenorMusic = \transpose g f \relative {
+tenorMusic = \transpose g f \relative c' {
   \repeat volta 3 {
     b4^\mp c4
     b4 c4
@@ -348,8 +349,8 @@ tenorMusic = \transpose g f \relative {
   e2
   e2~^\>
   e4.\)\! r8
-  
-  % Nu mai plânge maica mea, scutecele noi ţi-om da...
+
+  % Nu mai plânge maica mea, scutecele noi ți-om da...
   e2~^\(^\p
   e4 e4
   e4( c4)
@@ -379,7 +380,7 @@ tenorMusic = \transpose g f \relative {
   b4^\fermata r4
 }
 
-bassMusic = \transpose g f \relative {
+bassMusic = \transpose g f \relative c' {
   \repeat volta 3 {
     e,2~^\p
     e4 e4
@@ -419,8 +420,8 @@ bassMusic = \transpose g f \relative {
   b4( c4)
   b2(^\>
   e,4.)\)\! r8
-  
-  % Nu mai plânge maica mea, scutecele noi ţi-om da...
+
+  % Nu mai plânge maica mea, scutecele noi ți-om da...
   e2~^\(^\p
   e4 e4
   e2
@@ -451,19 +452,19 @@ bassMusic = \transpose g f \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #9.0
+  \override SpacingSpanner.shortest-duration-space = #9.0
 } <<
   \new ChoirStaff <<
     \new Staff \new Voice { \global \sopMusic }
     \addlyrics { \sopStanzaOne }
     \addlyrics { \sopStanzaTwo }
     \addlyrics { \sopStanzaThree }
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoStanzaOne }
     \addlyrics { \altoStanzaTwo }
     \addlyrics { \altoStanzaThree }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
@@ -471,7 +472,7 @@ myScore = \new Score \with {
       \addlyrics { \tenorStanzaTwo }
       \addlyrics { \tenorStanzaThree }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }

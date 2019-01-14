@@ -1,10 +1,11 @@
-\version "2.8.6"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0\in
+  top-margin = 0.5\in
+  bottom-margin = 0.5\in
 }
 
 \header {
@@ -14,10 +15,10 @@
   tagline = ""
 }
 
+#(set-global-staff-size 14)
+
 global = {
-  #(set-global-staff-size 14)
-  \override Score.VerticalAxisGroup #'remove-first = ##t
-  \override ChoirStaff.SystemStartBracket #'collapse-height = #0.0
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \set Staff.midiInstrument = "clarinet"
   \key f \minor
   \time 2/4
@@ -33,9 +34,9 @@ sopStanzaOne = \lyricmode {
 
 sopStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Şi ei vin me -- reu, me -- reu,
+  Și ei vin me -- reu, me -- reu,
   Flo -- ri -- le-s dal -- be,
-  Şi ne-a -- duc pe Dum -- ne -- zeu.
+  Și ne-a -- duc pe Dum -- ne -- zeu.
 }
 
 sopStanzaThree = \lyricmode {
@@ -54,9 +55,9 @@ tenorStanzaOne = \lyricmode {
 
 tenorStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Şi ei vin me -- reu, me -- reu,
+  Și ei vin me -- reu, me -- reu,
   Flo -- ri -- le-s dal -- be,
-  Şi ne-a -- duc pe, duc pe Dum -- ne -- zeu.
+  Și ne-a -- duc pe, duc pe Dum -- ne -- zeu.
 }
 
 tenorStanzaThree = \lyricmode {
@@ -70,7 +71,7 @@ bassStanzaOne = \lyricmode {
   \set stanza = "1.-3."
   Co -- lin -- dă, co -- lin -- dă, co -- lin -- dă, co -- lin -- dă,
   co -- lin -- dă, co -- lin -- dă, co -- lin -- dă,
-  Flo -- ri -- le-s dal -- be,  
+  Flo -- ri -- le-s dal -- be,
   Noap- tea pe la cân -- tă -- tori.
   Co -- lin -- dă, co -- lin -- dă, co -- lind. __
 }
@@ -79,7 +80,7 @@ bassStanzaTwo = \lyricmode {
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
-  Şi ne-a -- duc pe Dum -- ne -- zeu.
+  Și ne-a -- duc pe Dum -- ne -- zeu.
 }
 
 bassStanzaThree = \lyricmode {
@@ -89,8 +90,8 @@ bassStanzaThree = \lyricmode {
   Soa -- re-n ra -- ze lu -- mi -- nat.
 }
 
-sopMusic = \transpose a f \relative {
-  \set Staff.vocNam = "S."
+sopMusic = \transpose a f \relative c' {
+  \set Staff.shortVocalName = "S."
   s2 s2
   \repeat volta 3 {
     s2 s2
@@ -99,7 +100,7 @@ sopMusic = \transpose a f \relative {
     e'8^\p e8 d8 d8
     c4 b4
     a4. r8
-    
+
     d8^\mf^\< e4 f8\!
     e8.([^\> d16 c8)] d8\!
     \break
@@ -114,20 +115,20 @@ sopMusic = \transpose a f \relative {
   \bar "|."
 }
 
-altoMusic = \transpose a f \relative {
-  \set Staff.vocNam = "A."
+altoMusic = \transpose a f \relative c' {
+  \set Staff.shortVocalName = "A."
   s2 s2
 
   \repeat volta 3 {
     s2 s2
-    
+
     c'8^\p c8 b8 b8
     a4 e8([ gis8)]
     a4. r8
-    
+
     g8^\mf^\< c4 d8\!
     c8.([^\> g16 e8)] g8\!
-    
+
     c8^\p c8 b8 b8
     a4 e8([ gis8)]
     a4. r8
@@ -137,20 +138,20 @@ altoMusic = \transpose a f \relative {
   R2 R2
 }
 
-tenorMusic = \transpose a f \relative {
-  \set Staff.vocNam = "T."
+tenorMusic = \transpose a f \relative c' {
+  \set Staff.shortVocalName = "T."
   s2 s2
 
   \repeat volta 3 {
     s2 s2
-    
+
     e8^\p e8 e8 e8
     e4 d4
     c4. r8
-    
+
     r8 g8^\mf^\< e'8 g,8\!
     r8 g8([^\> e'8)] g,8\!
-    
+
     g'8^\p g8 f8 f8
     e8 e8 e8 e8
     e4. r8
@@ -160,20 +161,20 @@ tenorMusic = \transpose a f \relative {
   R2 R2
 }
 
-bassMusic = \transpose a f \relative {
+bassMusic = \transpose a f \relative c' {
   \set Staff.vocalName = "B."
-  \set Staff.vocNam = "B."
+  \set Staff.shortVocalName = "B."
   a,8^\p e'4^\accent e8^\<
   a,8 e'4^\accent e8\!
 
   \repeat volta 3 {
     a,8 e'4^\accent e8
     a,8 e'4^\accent e8
-    
+
     a,8^\p e'4^\accent e8
     a,8 e'4^\accent e8
     a,8 e'4 e8
-    
+
     <<
       {
         \voiceOne
@@ -192,7 +193,7 @@ bassMusic = \transpose a f \relative {
       }
     >>
     \oneVoice
-    
+
     a,8^\< e'4 e8\!
     a,8 e'4 e8
   }
@@ -206,12 +207,12 @@ myScore = \new Score <<
     \addlyrics { \sopStanzaOne }
     \addlyrics { \sopStanzaTwo }
     \addlyrics { \sopStanzaThree }
-    
+
     \new Staff \new Voice = "altos" { \global \altoMusic }
     \addlyrics { \sopStanzaOne }
     \addlyrics { \sopStanzaTwo }
     \addlyrics { \sopStanzaThree }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice = "tenors" { \global \tenorMusic }
@@ -219,7 +220,7 @@ myScore = \new Score <<
       \addlyrics { \tenorStanzaTwo }
       \addlyrics { \tenorStanzaThree }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice = "basses" { \global \bassMusic }
@@ -234,14 +235,17 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }
 
-midiOutput = \midi {
-  \tempo 4 = 108
-}
+midiOutput =
+  \midi {
+    \tempo 4 = 108
+    }
+
+
 
 \score {
   \unfoldRepeats
