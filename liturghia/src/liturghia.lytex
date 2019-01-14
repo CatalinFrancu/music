@@ -1,11 +1,7 @@
 % Copyright (c) 2006 Catalin Francu.
-%
-% Permission is granted to copy, distribute and/or modify this document
-% under the terms of the GNU Free Documentation License, Version 1.2
-% or any later version published by the Free Software Foundation;
-% with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
-% Texts.  A copy of the license is available at
-% <http://www.gnu.org/copyleft/fdl.html>.
+
+% This work is licensed under a Creative Commons Attribution 4.0 International
+% License.
 
 \documentclass[11pt,letterpaper]{book}
 \usepackage[utf8x]{inputenc}
@@ -43,18 +39,13 @@
   \begin{footnotesize}
     Copyright \copyright 2006-2008 Cătălin Frâncu şi Raluca Balaban.
 
-    Aveţi permisiunea de a copia, distribui şi/sau modifica acest
-    document conform termenilor Licenţei GNU pentru Documentaţie
-    Liberă, versiunea 1.2 sau orice versiune ulterioară publicată de
-    Free Software Foundation; fără Secţiuni Invariabile şi fără Texte
-    De Copertă. O copie electronică a acestei licenţe se află la
-    \href{http://www.gnu.org/copyleft/fdl.html}
-         {http://www.gnu.org/copyleft/fdl.html}.
+    Această operă este pusă la dispoziţie sub Licenţa Creative Commons
+    Atribuire 4.0 Internațional.
 
     Acest document a fost formatat folosind \LaTeX şi Lilypond. O
     versiune electronică a acestui document se află la \\
-    \href{http://catalin.francu.com/Music/liturghia}
-         {http://catalin.francu.com/Music/liturghia}.
+    \href{https://catalin.francu.com/Music/liturghia}
+         {https://catalin.francu.com/Music/liturghia}.
 
     Versiunea 1.3 (6 iunie 2008)
   \end{footnotesize}
