@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -14,8 +11,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key e \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = \mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = \mixedTimeSigMarkup
   \time 4/4
 }
 
@@ -34,20 +31,20 @@ menWords = \lyricmode {
   plin e ce -- rul şi pă -- mân -- tul de __ mă -- ri -- rea Ta.
   O -- sa -- na, o -- sa -- na, o -- sa -- na,
 
-  \override LyricExtender  #'minimum-length = #15.0
+  \override LyricExtender.minimum-length = #15.0
   o -- sa -- na __ în -- tru cei
-  \override LyricExtender  #'minimum-length = #7.0
+  \override LyricExtender.minimum-length = #7.0
   de __ sus.
-  \override LyricExtender  #'minimum-length = #0.0
+  \override LyricExtender.minimum-length = #0.0
   Bi __ ne es -- te __ cu -- vân -- tat cel ce vi -- ne
   în -- tru nu -- me -- le Dom -- nu -- lui. __
   O -- sa -- na, o -- sa -- na, o -- sa -- na,
-  \override LyricExtender  #'minimum-length = #7.0
+  \override LyricExtender.minimum-length = #7.0
   o -- sa -- na în -- tru cei de __ sus.
 }
 
-sopMusic = \relative {
-  #(set-accidental-style 'forget)
+sopMusic = \relative c' {
+  \accidentalStyle forget
   \cadenzaOn
 
   % Sfânt, Sfânt, Sfânt e Domnul Savaot,
@@ -80,7 +77,7 @@ sopMusic = \relative {
   e4^\accent b4 \bar "|"
   c4 b8([ a8)] g4 a4 \bar "|"
   b2 a4 d4 \bar "|"
-  d8([ c8 b8 c8)] b4~ \times 2/3 { b8([ a8 g8)] } \bar "|"
+  d8([ c8 b8 c8)] b4~ \tuplet 3/2 { b8([ a8 g8)] } \bar "|"
 
   % Întru numele Domnului.
   a4 a4 \bar "|"
@@ -99,7 +96,7 @@ sopMusic = \relative {
   e2. b4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Sfânt, Sfânt, Sfânt e Domnul Savaot,
@@ -125,7 +122,7 @@ altoMusic = \relative {
   g4 g2
   c4 d4
   e2 dis4 e4
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   dis4 b4
   b2
 
@@ -152,8 +149,8 @@ altoMusic = \relative {
   b2. b4\rest
 }
 
-tenorMusic = \relative {
-  #(set-accidental-style 'forget)
+tenorMusic = \relative c' {
+  \accidentalStyle forget
   \cadenzaOn
 
   % Sfânt, Sfânt, Sfânt e Domnul Savaot,
@@ -179,7 +176,7 @@ tenorMusic = \relative {
   g4 g2
   c4 c4
   b8([ c8] b4) b4 c4
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   b4 b8([ a8)]
   g2
 
@@ -206,8 +203,8 @@ tenorMusic = \relative {
   g2. d4\rest
 }
 
-bassMusic = \relative {
-  #(set-accidental-style 'forget)
+bassMusic = \relative c' {
+  \accidentalStyle forget
   \cadenzaOn
 
   % Sfânt, Sfânt, Sfânt e Domnul Savaot,
@@ -233,7 +230,7 @@ bassMusic = \relative {
   g4 g2
   c4 a4
   e2 fis4 g4
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   b4 b,4
   e2
 

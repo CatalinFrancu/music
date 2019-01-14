@@ -1,12 +1,10 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
-#(define myNoteSpacing 5.0)
-midiTempo = 
+#(define myNoteSpacing 5.25)
+#(define myStaffSpacing 1.5)
+midiTempo =
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -23,8 +21,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key g \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 womenWords = \lyricmode {
@@ -70,9 +68,9 @@ menWords = \lyricmode {
   să o le -- pă -- dăm, să o le -- pă -- dăm.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Noi care, care pe heruvimi, pe heruvimi
   g'4.(^\p a8) bes4( c4 \bar "|"
@@ -111,10 +109,10 @@ sopMusic = \relative {
   d2 d2\! \bar "|"
 
   % şi făcătoarei de viaţă Treimi
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   e4.(^\f f8) e4 f4 \bar "|"
   d2^\< d2 \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   e4 f4\! \bar "|"
   g2.( a8[ g8] \bar "|"
   f2 e4 g8[ f8)] \bar "|"
@@ -137,13 +135,13 @@ sopMusic = \relative {
   d2 \breathe d8([ c8)] d8([ e8)] \bar "|"
   f4.( e8 g2 \bar "|"
   f4 e8[ d8]) d2 \bar "|"
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   es4( f) es d \bar "|"
   d8( c4 d8) bes2 \bar "|"
 
   % grija lumească, acum grija lumească
   c4( d4) es4 d8([ es)] \bar "|"
-  \times 2/3 { f8[( es8 d8] } d8[ es8]) es4. f8 \bar "|"
+  \tuplet 3/2 { f8[( es8 d8] } d8[ es8]) es4. f8 \bar "|"
   g4(^\< f4) es4( d4) \bar "|"
   es4 f4\! \bar "|"
   g8.([ as16 g8 f8] es8[ f8 g8 as8)] \bar "|"
@@ -170,7 +168,7 @@ sopMusic = \relative {
   g1^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Noi care, care pe heruvimi, pe heruvimi
@@ -240,7 +238,7 @@ altoMusic = \relative {
 
   % grija lumească, acum grija lumească
   a4( bes4) c4 bes8([ c8)]
-  \times 2/3 { d8[( c8 bes8] } bes8[ c8]) c4. d8
+  \tuplet 3/2 { d8[( c8 bes8] } bes8[ c8]) c4. d8
   es4( d4) c4( bes4)
   c4 d4
   es8.([ f16 es8 d8] c8[ d8 es8 f8)]
@@ -268,8 +266,8 @@ altoMusic = \relative {
   g1
 }
 
-tenorMusic = \relative {
-  #(set-accidental-style 'forget)
+tenorMusic = \relative c' {
+  \accidentalStyle forget
   \cadenzaOn
 
   % Noi care, care pe heruvimi, pe heruvimi
@@ -327,7 +325,7 @@ tenorMusic = \relative {
   d4 d4 d2
   d2. d4\rest
 
-  % Toată, toată grija, toată grija, grija lumească,  
+  % Toată, toată grija, toată grija, grija lumească,
   bes'4.( f8 g8[ a8 bes8 c8)]
   bes2 bes4 bes4
   bes4( g4) g4.( a8)
@@ -364,8 +362,8 @@ tenorMusic = \relative {
   g1^\fermata
 }
 
-bassMusic = \relative {
-  #(set-accidental-style 'forget)
+bassMusic = \relative c' {
+  \accidentalStyle forget
   \cadenzaOn
 
   % Noi care, care pe heruvimi, pe heruvimi
@@ -426,7 +424,7 @@ bassMusic = \relative {
   d4 d4 g,8([ a8] bes4)
   g2. d'4\rest
 
-  % Toată, toată grija, toată grija, grija lumească,  
+  % Toată, toată grija, toată grija, grija lumească,
   bes'4.( f8 g8[ a8 bes8 c8)]
   bes2 bes4 bes4
   bes4( g4) g4.( a8)

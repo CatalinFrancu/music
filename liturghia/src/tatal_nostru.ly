@@ -1,12 +1,9 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 8.0)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -21,11 +18,11 @@ midiTempo =
 
 ppAndFermataMarkup = \markup{
   \hspace #-5.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 mixedTimeSigMarkup = \markup {
@@ -40,8 +37,8 @@ mixedTimeSigMarkup = \markup {
 global = {
   \globalPreamble
   \key e \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 sopWords = \lyricmode {
@@ -108,9 +105,9 @@ bassWords = \lyricmode {
   ci ne iz -- bă -- veş -- te de cel vi -- clean. __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
 
   % Tatăl nostru, Carele eşti în ceruri,
   g'2^\p^\accent fis4 \bar "|"
@@ -125,7 +122,7 @@ sopMusic = \relative {
   d4( c4) b4^\> a4 \bar "|"
   g4( fis4) e4\! dis4 \bar "|"
   e2. r4 \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   g2^\accent d4 d4 \bar "|"
   e4 fis4 g8([ a8)] fis4 \bar "|"
   g2 \bar "|"
@@ -168,7 +165,7 @@ sopMusic = \relative {
   dis4(\!^\ritMarkup c8.[^\> b16)]\! b2^\ppAndFermataMarkup \bar "|"
 
   % ci ne izbăveşte de cel viclean.
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   a'4^\mf a4^\atempoMarkup b4^\< cis4 \bar "|"
   d4(\! c4 b4 a4) \bar "|"
   g4 fis4 \bar "|"
@@ -176,9 +173,9 @@ sopMusic = \relative {
   e2~^\> e4\!^\fermata r4 \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Tatăl nostru, Carele eşti în ceruri,
   e2^\pp^\accent e4
@@ -211,14 +208,14 @@ altoMusic = \relative {
   e2 d2
   dis4( e8[ fis8)] e4 e4
   dis4(^\<
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   fis8[ e8)] dis2\!
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   dis2^\accent e4^\> e4
   dis4\!
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   e4 fis4( e8[ dis8)]
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   e2~ e8 r8 r4
 
   % şi ne iartă nouă greşalele noastre,
@@ -249,9 +246,9 @@ altoMusic = \relative {
   g2~^\> g4\!^\fermata r4
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Tatăl nostru, Carele eşti în ceruri,
   b2^\p^\accent a4
@@ -273,9 +270,9 @@ tenorMusic = \relative {
   % facă-se voia Ta, precum în cer aşa şi pre pământ.
   b2^\accent b4^\< b4
   b4 e4\! dis4. \breathe
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   dis8
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   e4 fis4 e2~
   e4.^\fermata \breathe c8^\p
   b4 b4 b4 a4
@@ -334,9 +331,9 @@ tenorMusic = \relative {
   e2~^\> e4\!^\fermata r4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Tatăl nostru, Carele eşti în ceruri,
   e,2^\pp^\accent e4

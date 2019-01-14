@@ -1,6 +1,7 @@
-\version "2.12.0"
+\version "2.19.80"
 #(set-global-staff-size 14)
 #(define myNoteSpacing 7.0)
+#(define myStaffSpacing 2.0)
 #(define raggedRight #f)
 
 atempoMarkup = \markup {
@@ -27,20 +28,17 @@ mixedTimeSigMarkup = \markup {
   }
 }
 
-midiTempo = 
+midiTempo =
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 108 4)
-      }
+    \tempo 4 = 108
     }
 
 
 
 prepareBox = {
   % The box-padding property is documented, but causes warnings
-  % \once \override TextScript #'box-padding = #0.4
-  \once \override TextScript #'font-size = #4
+  % \once \override TextScript.box-padding = #0.4
+  \once \override TextScript.font-size = #4
 }
 
 rallMarkup = \markup {
@@ -56,5 +54,5 @@ ritMarkup = \markup {
 }
 
 wholeNotesOverlap = {
-  \once \override NoteColumn #'force-hshift = #-0.5
+  \once \override NoteColumn.force-hshift = #-0.5
 }

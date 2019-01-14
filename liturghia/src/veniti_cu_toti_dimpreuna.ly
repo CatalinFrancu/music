@@ -1,6 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
-#(define myNoteSpacing 6.0)
+#(define myNoteSpacing 7.0)
 \include "preamble.ly"
 
 \header {
@@ -78,7 +78,7 @@ allWords = <<
   }
 >>
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \autoBeamOff
 
   a'4^\p b4
@@ -102,7 +102,7 @@ sopMusic = \relative {
   a4~ a8 b8\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \autoBeamOff
 
   a'4 gis4
@@ -126,7 +126,7 @@ altoMusic = \relative {
   e4~ e8 b'8\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \autoBeamOff
 
   a4^\p e4
@@ -150,7 +150,7 @@ tenorMusic = \relative {
   cis4~ cis8 b'8\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \autoBeamOff
 
   a4 e4

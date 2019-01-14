@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 140 4)
-      }
+    \tempo 4 = 140
     }
 
 
@@ -18,8 +15,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key g \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
 }
 
@@ -32,7 +29,7 @@ altoWords = \sopWords
 tenorWords = \sopWords
 bassWords = \sopWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   % Mărire Tatălui şi Fiului şi Sfântului Duh.
@@ -52,7 +49,7 @@ sopMusic = \relative {
   b1\! \bar "||"
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Mărire Tatălui şi Fiului şi Sfântului Duh.
@@ -72,7 +69,7 @@ altoMusic = \relative {
   b1\!
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   % Mărire Tatălui şi Fiului şi Sfântului Duh.
@@ -92,7 +89,7 @@ tenorMusic = \relative {
   b1\!
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
   % Mărire Tatălui şi Fiului şi Sfântului Duh.
   e,8^\mf

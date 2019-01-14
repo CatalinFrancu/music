@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 140 4)
-      }
+    \tempo 4 = 140
     }
 
 
@@ -20,8 +17,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 sopWords = \lyricmode {
@@ -35,7 +32,7 @@ altoWords = \sopWords
 tenorWords = \sopWords
 bassWords = \sopWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   % Bine este cuvântat Cel ce vine întru numele Domnului.
@@ -55,7 +52,7 @@ sopMusic = \relative {
   as4(^\accent g4)^\> f2\!^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Bine este cuvântat Cel ce vine întru numele Domnului.
@@ -75,7 +72,7 @@ altoMusic = \relative {
   as4(^\accent g4)^\> f2\!^\fermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   % Bine este cuvântat Cel ce vine întru numele Domnului.
@@ -95,7 +92,7 @@ tenorMusic = \relative {
   as4(^\accent g4)^\> f2\!^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   % Bine este cuvântat Cel ce vine întru numele Domnului.

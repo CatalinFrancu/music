@@ -1,12 +1,9 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 6.0)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -22,8 +19,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key d \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 womenWords = \lyricmode {
@@ -78,9 +75,9 @@ menWords = \lyricmode {
   mă -- ri -- re ţi -- e.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
   d4^\p \bar "|"
@@ -168,9 +165,9 @@ sopMusic = \relative {
   d2.^\fermata bes4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
   d4
@@ -258,9 +255,9 @@ altoMusic = \relative {
   a2. bes4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
   d,4^\p
@@ -300,9 +297,9 @@ tenorMusic = \relative {
   f4. f8 bes8([ a8)] g4 fis4 g4
   g2 fis4( g4)
   fis8.([ g16
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   fis8
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   es8)] d8([ es8] d4)
   d2. d4
   f!4( e!4) d2
@@ -352,9 +349,9 @@ tenorMusic = \relative {
   d2.^\fermata d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
   d,4
@@ -394,9 +391,9 @@ bassMusic = \relative {
   f4. f8 bes8([ a8)] g4 fis4 g4
   g2 fis4( g4)
   fis8.([ g16
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   fis8
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   es8)] d8([ es8] d4)
   d2. d4
   f!4( e!4) d2

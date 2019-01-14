@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 9.0)
 \include "preamble.ly"
@@ -46,7 +46,7 @@ menWords = \new Lyrics \lyricsto "basses" {
   A __ A __ A __ A __ A __
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   \oneVoice
   R2.
   \repeat volta 5 {
@@ -61,7 +61,7 @@ womenMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \voiceOne
   e,2.~^\p
   \repeat volta 5 {
@@ -76,7 +76,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \voiceTwo
   c,2.~
   \repeat volta 5 {
@@ -92,7 +92,7 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #myNoteSpacing
+  \override SpacingSpanner.shortest-duration-space = #myNoteSpacing
 } <<
   \new ChoirStaff <<
     \new Staff <<

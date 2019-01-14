@@ -1,11 +1,9 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
-midiTempo = 
+#(define myStaffSpacing 1.5)
+midiTempo =
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 124 4)
-      }
+    \tempo 4 = 124
     }
 
 
@@ -21,8 +19,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key g \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
 }
 
@@ -38,12 +36,12 @@ womenWords = \lyricmode {
   Doam -- ne mi -- lu -- ieş -- te.
   Doam -- ne mi -- lu -- ieş -- te,
   Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te.  
+  Doam -- ne mi -- lu -- ieş -- te.
 }
 
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   \prepareBox
@@ -70,7 +68,7 @@ sopMusic = \relative {
   c4( b4 c4) a4 \bar "|"
   e'4. e8 e4 e4 \bar "|"
   d4( cis4 d4) b4 \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   a4. b8 c4 e4 \bar "|"
   d2( c2) \bar "|"
   b2. b4\rest \bar "||"
@@ -86,7 +84,7 @@ sopMusic = \relative {
   b2. b4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   g'4. fis8 g4 a4
@@ -124,7 +122,7 @@ altoMusic = \relative {
   g2. b4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   g4.^\mf fis8 g4 a4
@@ -156,14 +154,14 @@ tenorMusic = \relative {
   g2. g4
   d4. d8 d4 d4
   d2. dis4
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   e4. e8 e4 e4
   g2( fis4 e4
   d1)
   g2. d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   g4. fis8 g4 a4
@@ -197,7 +195,7 @@ bassMusic = \relative {
   g2. g4
   d4. d8 d4 d4
   d2. dis4
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   e4. e8 e4 e4
   c4( a4 b4 c4
   \wholeNotesOverlap

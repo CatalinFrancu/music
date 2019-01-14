@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -14,8 +11,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key e \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = \mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = \mixedTimeSigMarkup
   \time 4/4
 }
 
@@ -34,7 +31,7 @@ menWords = \lyricmode {
   şi ne -- des păr -- ţi -- tă.  
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   % Cu vrednicie şi cu dreptate
@@ -44,14 +41,14 @@ sopMusic = \relative {
   b8( c8) a4 \bar "|"
 
   % este a ne închina
-  d8([ c8 b8 c8)] b4( \times 2/3 { b8[ a8 g8)] } \bar "|"
+  d8([ c8 b8 c8)] b4( \tuplet 3/2 { b8[ a8 g8)] } \bar "|"
   a8([^\p c8)] b8([ a8)] g8([ fis8)] e8([ dis8)] \bar "|"
   e2 \bar "|"
 
   % Tatălui şi Fiului şi Sfântului Duh,
   e'8.([ fis16 e8)] d8 c8([ b8)] a4 \bar "|"
   d8.([ e16 d8)] c8 b8([ a8)] g4 \bar "|"
-  a8([ c8 b8 a8)] \times 2/3 { a8([ g8 fis8)] } g8([ a8)] \bar "|"
+  a8([ c8 b8 a8)] \tuplet 3/2 { a8([ g8 fis8)] } g8([ a8)] \bar "|"
   b2.
 
   % Treimei cei de o fiinţă şi nedespărţită.
@@ -64,7 +61,7 @@ sopMusic = \relative {
   e2.^\fermata b'4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Cu vrednicie şi cu dreptate
@@ -74,14 +71,14 @@ altoMusic = \relative {
   g8( a8) fis4
 
   % este a ne închina
-  b8([ a8 g8 a8)] g4( \times 2/3 { g8[ fis8 e8)] }
+  b8([ a8 g8 a8)] g4( \tuplet 3/2 { g8[ fis8 e8)] }
   fis8([ a8)] g8([ fis8)] e8([ fis8)] e8([ dis8)]
   e2
 
   % Tatălui şi Fiului şi Sfântului Duh,
   c'4. b8 a8([ g8)] fis4
   b4. a8 g8([ fis8)] g4
-  fis8([ a8 g8 fis8)] \times 2/3 { fis8([ e8 fis8)] } e8([ fis8)]
+  fis8([ a8 g8 fis8)] \tuplet 3/2 { fis8([ e8 fis8)] } e8([ fis8)]
   g2.
 
   % Treimei cei de o fiinţă şi nedespărţită.
@@ -94,7 +91,7 @@ altoMusic = \relative {
   e2. b'4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Cu vrednicie şi cu dreptate
   \cadenzaOff
   \oneVoice R1 \voiceOne
@@ -126,7 +123,7 @@ tenorMusic = \relative {
   e2.^\fermata d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Cu vrednicie şi cu dreptate
   \cadenzaOff
   \oneVoice R1 \voiceTwo

@@ -1,20 +1,20 @@
-\version "2.12.0"
+\version "2.19.80"
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #myNoteSpacing
+  \override SpacingSpanner.shortest-duration-space = #myNoteSpacing
 } <<
   \new ChoirStaff <<
     \new Staff \new Voice { \global \sopMusic }
     \addlyrics { \sopWords }
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoWords }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorWords }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }
@@ -25,7 +25,10 @@ myScore = \new Score \with {
 
 \score {
   \myScore
-  \layout { }
+  \layout {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #myStaffSpacing
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #myStaffSpacing
+  }
 }
 
 \score {

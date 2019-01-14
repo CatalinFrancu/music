@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 \include "preamble.ly"
 
@@ -12,7 +12,7 @@ monoWords = \lyricmode {
   Doam -- ne mi -- lu -- ieş -- te.
 }
 
-monoMusic = \relative {
+monoMusic = \relative c' {
   \partial 2 a'2
   g2 f4( g4)
   a4. a8 bes4 a4

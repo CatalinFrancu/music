@@ -1,5 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
+#(define myNoteSpacing 10.0)
 \include "preamble.ly"
 
 \header {
@@ -12,8 +13,8 @@
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 4/4
 }
 
@@ -22,7 +23,7 @@ womenWords = \lyricmode {
 }
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
   g'4^\p f e f \bar "|"
   g4.( a8 g4 a) \bar "|"
@@ -32,7 +33,7 @@ sopMusic = \relative {
   f2. bes4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
   g'4 f e f
   g4.( a8 g4 a)
@@ -42,24 +43,24 @@ altoMusic = \relative {
   f2. bes4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
   g4^\p f e f
   g4.( a8 g4 a)
   f2
   c4. c8 f4 c
   d2 c
-  f2. bes4\rest
+  f2. d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
   g4 f e f
   g4.( a8 g4 a)
   f2
   c4. c8 f4 c
   d2 c
-  f2. bes4\rest
+  f2. d4\rest
 }
 
 \include "two-staves.ly"

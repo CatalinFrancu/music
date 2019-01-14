@@ -7,10 +7,12 @@
 % Texts.  A copy of the license is available at
 % <http://www.gnu.org/copyleft/fdl.html>.
 
-\documentclass[11pt,letterpaper]{book} \usepackage{ucs}
-\usepackage[utf8x]{inputenc} \usepackage{palatino}
-\usepackage{hyperref}
-\usepackage[T1]{fontenc}
+\documentclass[11pt,letterpaper]{book}
+\usepackage[utf8x]{inputenc}
+\usepackage[unicode]{hyperref}
+\usepackage[romanian]{babel}
+% fix problem with missing ligatures (such as "fi" in "Sfinte")
+\pdfinclusioncopyfonts=1
 
 \topmargin      -0.6in
 \headheight     0.1in
@@ -40,7 +42,7 @@
 
   \begin{footnotesize}
     Copyright \copyright 2006-2008 Cătălin Frâncu şi Raluca Balaban.
-    
+
     Aveţi permisiunea de a copia, distribui şi/sau modifica acest
     document conform termenilor Licenţei GNU pentru Documentaţie
     Liberă, versiunea 1.2 sau orice versiune ulterioară publicată de
@@ -59,11 +61,11 @@
   \pagebreak
 
   \pagestyle{headings}
-  
+
   \mychapter{I. Cântări şi răspunsuri liturgice}
 
   \mysection{Liturghia catehumenilor}
-  
+
   {\bf Preotul:} Binecuvântată este împărăţia Tatălui şi a Fiului şi a
   Sfântului Duh, acum şi pururea şi în vecii vecilor.
 
@@ -125,7 +127,7 @@
   {\bf Preotul:} Pentru Preşedintele ţării nostre {\bf (N)} {\em (aici
   se pomeneşte conducătorul statului),} pentru autorităţile civile şi
   militare şi pentru toţi cei în autoritate, Domnului să ne rugăm.
-  
+
   {\bf Preotul:} Pentru sfânt locaşul acesta, ţara aceasta şi pentru
   toate oraşele şi satele şi pentru cei ce cu credinţă locuiesc
   într-ânsele, Domnului să ne rugăm.
@@ -197,10 +199,11 @@
   \pagebreak
 
   \lilypondfile{antifonul_1-part1.ly}
+
   \lilypondfile{antifonul_1-part2.ly}
 
   \mysection{Ectenia mică}
-  
+
   {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -220,7 +223,7 @@
   {\bf Preotul:} Pe preasfânta, curata, prea binecuvântata, mărita
   Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
   cu toţi sfinţii să o pomenim.
-  
+
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
@@ -244,11 +247,12 @@
   \pagebreak
 
   \lilypondfile{antifonul_2-part1.ly}
+
   \lilypondfile{antifonul_2-part2.ly}
   \pagebreak
 
   \mysection{Ectenia mică}
-    
+
   {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -268,7 +272,7 @@
   Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
   cu toţi sfinţii să o pomenim.
   \pagebreak
-  
+
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
@@ -323,6 +327,7 @@
   {\bf Cantorul:}
 
   \lilypondfile{doamne_mantuieste.ly}
+
   \begin{center}
     {\em (de trei ori)}
   \end{center}
@@ -353,8 +358,11 @@
   \end{center}
 
   \lilypondfile{sfinte_dumnezeule_2.ly}
+
   \lilypondfile{sfinte_dumnezeule_3.ly}
+
   \lilypondfile{sfinte_dumnezeule_4.ly}
+  \pagebreak
 
   \label{cati_in_hristos}
   \lilypondfile{cati_in_hristos.ly}
@@ -382,6 +390,7 @@
   {\bf Preotul:} Pace ţie, cititorule.
 
   {\bf Cantorul:} Şi duhului tău.
+  \pagebreak
 
   \lilypondfile{aliluia.ly}
 
@@ -427,7 +436,7 @@
 
   {\em Aici preotul zice ectenii pentru diferite cereri, iar corul
     cântă câte o ectenie întreită din cele de mai jos.}
-  
+
   \lilypondfile{ectenia_intreita.ly}
 
   {\bf Preotul:} Că milostiv şi iubitor de oameni Dumnezeu eşti şi Ţie
@@ -591,16 +600,14 @@
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.
-
+  {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
   {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
-  Dumnezeule, cu harul Tău.
-
+  Dumnezeule, cu harul Tău.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_5.ly}
@@ -617,7 +624,7 @@
   \vspace{0.8in}
 
   \lilypondfile{heruvic_2.ly}
-  
+
   \mysection{Ieşirea cu Cinstitele Daruri}
 
   {\bf Preotul:} Pe voi pe toţi, dreptmăritorilor creştini, să vă
@@ -625,7 +632,7 @@
   pururea şi în vecii vecilor.
 
   {\bf Cantorul:}
-    
+
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
@@ -644,7 +651,7 @@
   {\bf Preotul:} Pe fraţii noştri: preoţi, ieromonahi, ierodiaconi,
   diaconi, monahi şi monahii şi tot clerul bisericesc să-i pomenească
   Domnul Dumnezeu întru împărăţia Sa.
-    
+
   {\bf Cantorul:} Amin.
 
   {\bf Preotul:} Pe fericiţii şi pururea pomeniţii ctitori ai sfânt
@@ -675,7 +682,7 @@
   moşi, părinţi, fraţi, surori şi pe toţi cei dintr-o rudenie cu noi,
   pe fiecare după numele său, să-i pomenească Domnul Dumnezeu întru
   împărăţia Sa.
-   
+
   {\bf Cantorul:} Amin.
 
   {\bf Preotul:} Şi pe voi pe toţi, dreptmăritorilor creştini, să vă
@@ -737,7 +744,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_1.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Înger de pace, credincios îndreptător, păzitor al
   sufletelor şi al trupurilor noastre, la Domnul să cerem.
@@ -745,23 +752,21 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_2.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Milă şi iertare de păcatele şi de greşelile noastre
-  la Domnul să cerem.
-
+  la Domnul să cerem.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_3.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Cele bune şi de folos sufletelor noastre şi pace
-  lumii la Domnul să cerem.
-
+  lumii la Domnul să cerem.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_4.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Cealaltă vreme a vieţii noastre în pace şi întru
   pocăinţă a o săvârşi la Domnul să cerem.
@@ -769,7 +774,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_5.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Sfârşit creştinesc vieţii noastre, fără durere,
   neînfruntat, în pace şi răspuns bun la înfricoşătoarea judecată a
@@ -778,7 +783,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_6.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Pe preasfânta, curata, prea binecuvântata, mărita
   Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
@@ -800,7 +805,7 @@
   {\bf Preotul:} Cu îndurările Unuia-Născut Fiului Tău, cu Care eşti
   binecuvântat, împreună cu Preasfântul şi bunul şi de viaţă făcătorul
   Tău Duh, acum şi pururea şi în vecii vecilor.
-  
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_2.ly}
@@ -809,7 +814,7 @@
   \mysection{Sărutul păcii}
 
   {\bf Preotul:} Pace tuturor.
-  
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{si_duhului_tau.ly}
@@ -826,42 +831,42 @@
   {\em Aici uneori preotul cântă {\bf Iubi-Te-voi, Doamne.}}
 
   {\bf Preotul:} Uşile, uşile, cu înţelepciune să luăm aminte!
-  
+
   \mysection{Crezul}
 
   {\large \bf
     Cred întru unul Dumnezeu, Tatăl atotţiitorul, Făcătorul cerului şi
     al pământului, al tuturor celor văzute şi nevăzute.
-    
+
     Şi întru unul Domn Iisus Hristos, Fiul lui Dumnezeu, Unul Născut,
     Care din Tatăl S-a născut mai înainte de toţi vecii: Lumină din
     Lumină, Dumnezeu adevărat din Dumnezeu adevărat, născut, iar nu
     făcut, Cel de o fiinţă cu Tatăl, prin Care toate s-au făcut;
-    
+
     Care, pentru noi oamenii şi pentru a noastră mântuire, S-a pogorât
     din ceruri şi S-a întrupat de la Duhul Sfânt şi din Maria Fecioara
     şi S-a făcut om;
-    
+
     Şi S-a răstignit pentru noi în zilele lui Ponţiu Pilat şi a pătimit
     şi S-a îngropat;
-    
+
     Şi a înviat a treia zi, după Scripturi;
-    
+
     Şi S-a suit la ceruri şi şade de-a dreapta Tatălui;
-    
+
     Şi iarăşi va să vină cu slavă să judece viii şi morţii, a Căruia
     împărăţie nu va avea sfârşit.
-    
+
     Şi întru Duhul Sfânt, Domnul de viaţă Făcătorul, Care din Tatăl
     purcede, Cel ce împreună cu Tatăl şi cu Fiul este închinat şi mărit,
     Care a grăit prin proroci.
-    
+
     Întru una, sfântă, sobornicească şi apostolească Biserică;
-    
+
     Mărturisesc un botez spre iertarea păcatelor;
-    
+
     Aştept învierea morţilor;
-    
+
     Şi viaţa veacului ce va să vie. Amin.
   }
   \pagebreak
@@ -912,7 +917,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_3.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Beţi dintru acesta toţi, acesta este Sângele Meu, al
   Legii celei noi, Care pentru voi şi pentru mulţi se varsă spre
@@ -1003,16 +1008,14 @@
   \end{center}
 
   {\bf Preotul:} Pentru ca să fim izbăviţi noi de tot necazul, mânia,
-  primejdia şi nevoia, Domnului să ne rugăm.
-
+  primejdia şi nevoia, Domnului să ne rugăm.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_4.ly}
   \end{center}
 
   {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
-  Dumnezeule, cu harul Tău.
-
+  Dumnezeule, cu harul Tău.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_5.ly}
@@ -1024,7 +1027,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_1.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Înger de pace, credincios îndreptător, păzitor al
   sufletelor şi al trupurilor noastre, la Domnul să cerem.
@@ -1032,7 +1035,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_2.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Milă şi iertare de păcatele şi de greşelile noastre
   la Domnul să cerem.
@@ -1040,7 +1043,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_3.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Cele bune şi de folos sufletelor noastre şi pace
   lumii la Domnul să cerem.
@@ -1048,7 +1051,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_4.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Cealaltă vreme a vieţii noastre în pace şi întru
   pocăinţă a o săvârşi la Domnul să cerem.
@@ -1056,7 +1059,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_5.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Sfârşit creştinesc vieţii noastre, fără durere,
   neînfruntat, în pace şi răspuns bun la înfricoşătoarea judecată a
@@ -1065,7 +1068,7 @@
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_6.ly}
-  \end{center}  
+  \end{center}
 
   {\bf Preotul:} Unirea credinţei şi împărtăşirea Sfântului Duh
   cerând, pe noi înşine şi unii pe alţii şi toată viaţa noastră lui
@@ -1122,7 +1125,7 @@
   {\bf Cantorul:}
 
   \lilypondfile{unul_sfant.ly}
-  
+
   \mysection{Sfânta Împărtăşanie}
 
   {\bf Preotul:} Cu frică de Dumnezeu, cu credinţă şi cu dragoste să
@@ -1284,7 +1287,7 @@
   \begin{center}
     \lilypondfile{amin_6.ly}
   \end{center}
-  
+
   \raggedbottom
   \pagebreak
 

@@ -1,5 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
+#(define myNoteSpacing 8.0)
 \include "preamble.ly"
 
 \header {
@@ -9,18 +10,18 @@
 global = {
   \globalPreamble
   \key as \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
 }
 
 ppAndFermata = \markup {
   \hspace #-5.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 sopWords = \lyricmode {
@@ -39,7 +40,7 @@ bassWords = \lyricmode {
   A -- li -- lu -- i -- a.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   f4^\p g^\< \bar "|"
@@ -52,7 +53,7 @@ sopMusic = \relative {
   f2^\ppAndFermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   f4^\p f^\<
@@ -65,7 +66,7 @@ altoMusic = \relative {
   c2^\ppAndFermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   as4^\p bes^\<
@@ -78,7 +79,7 @@ tenorMusic = \relative {
   as2^\ppAndFermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   <<
@@ -113,7 +114,7 @@ bassMusic = \relative {
       f2
     }
   >>
-  \oneVoice  
+  \oneVoice
 }
 
 \include "four-staves.ly"

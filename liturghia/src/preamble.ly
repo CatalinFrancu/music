@@ -1,8 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 
 globalPreamble = {
   \set Staff.midiInstrument = "clarinet"
-  \override BreathingSign #'text = \breathMarkup
+  \override BreathingSign.text = \breathMarkup
 }
 
 midiDirectives = \midi {

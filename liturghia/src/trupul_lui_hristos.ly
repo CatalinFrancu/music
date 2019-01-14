@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -20,8 +17,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 sopWords = \lyricmode {
@@ -80,7 +77,7 @@ bassWords = \lyricmode {
   a -- li -- lu -- i -- a.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
@@ -135,7 +132,7 @@ sopMusic = \relative {
   f2^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
@@ -190,7 +187,7 @@ altoMusic = \relative {
   c2^\fermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
@@ -245,7 +242,7 @@ tenorMusic = \relative {
   a2^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.

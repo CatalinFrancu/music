@@ -1,6 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #myNoteSpacing
+  \override SpacingSpanner.shortest-duration-space = #myNoteSpacing
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -20,7 +20,10 @@ myScore = \new Score \with {
 
 \score {
   \myScore
-  \layout { }
+  \layout {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #myStaffSpacing
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #myStaffSpacing
+  }
 }
 
 \score {

@@ -1,5 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
+#(define myStaffSpacing 1.5)
 \include "preamble.ly"
 
 \header {
@@ -11,17 +12,17 @@
 
 ppAndFermataMarkup = \markup{
   \hspace #-5.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'break-visibility = #begin-of-line-invisible
+  \override Staff.TimeSignature.break-visibility = #begin-of-line-invisible
   \time 3/4
 }
 
@@ -42,7 +43,7 @@ womenWords = \lyricmode {
 
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   % Amin
   \cadenzaOn
   a'2 a2 \bar "|."
@@ -107,7 +108,7 @@ sopMusic = \relative {
   f2.^\ppAndFermataMarkup \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   % Amin
   \cadenzaOn
   f2 f2
@@ -172,7 +173,7 @@ altoMusic = \relative {
   c2.
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Amin
   \cadenzaOn
   c2 c2
@@ -237,7 +238,7 @@ tenorMusic = \relative {
   a2.^\ppAndFermataMarkup
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Amin
   \cadenzaOn
   f,2 f2

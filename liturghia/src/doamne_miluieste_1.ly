@@ -1,13 +1,10 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 124 4)
-      }
+    \tempo 4 = 124
     }
 
 
@@ -16,11 +13,11 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'style = #'()
+  \override Staff.TimeSignature.style = #'()
   \time 4/4
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.instrumentName = \markup { \bold \huge \larger 1. }
   a'^\p a g^\< f
   g(\! a)^\> f~ f8\! r \bar "|."
@@ -30,21 +27,21 @@ sopWords = \lyricmode {
   Doam -- ne mi -- lu -- ieş -- te. __
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   f4^\p f c^\< f
   e2\! c4~^\> c8\! r8
 }
 
 altoWords = \sopWords
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   c4^\p c bes^\< a
   bes2\! a4~^\> a8\! r8
 }
 
 tenorWords = \sopWords
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   f,4^\p f e^\< f
   c2\! <f f,>4~^\> <f f,>8\! r8
 }

@@ -1,5 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
+#(define myNoteSpacing 8.0)
 \include "preamble.ly"
 
 \header {
@@ -11,8 +12,8 @@
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 sopWords = \lyricmode {
@@ -27,7 +28,7 @@ bassWords = \lyricmode {
   Mă -- ri -- re Ţi -- e, Doam -- ne, __ mă -- ri -- re Ţi -- e! __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   f4^\mf \bar "|"
@@ -40,7 +41,7 @@ sopMusic = \relative {
   a4^\fermata r4 r4 \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   f4^\mf
@@ -53,7 +54,7 @@ altoMusic = \relative {
   f4^\fermata r4 r4
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   a4^\mf
@@ -66,7 +67,7 @@ tenorMusic = \relative {
   c4^\fermata r4 r4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   f,4^\mf

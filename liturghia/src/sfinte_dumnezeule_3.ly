@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -18,8 +15,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key g \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #""
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #""
   \time 2/4
 }
 
@@ -40,7 +37,7 @@ bassWords = \lyricmode {
   mi -- lu -- ieş -- te- -- ne pre noi.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte făr' de moarte
@@ -53,7 +50,7 @@ sopMusic = \relative {
   e2.^\pp r4 \bar "||"
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte făr' de moarte
@@ -66,7 +63,7 @@ altoMusic = \relative {
   b2.^\pp r4
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte făr' de moarte
@@ -101,7 +98,7 @@ tenorMusic = \relative {
   g2.^\pp r4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte făr' de moarte

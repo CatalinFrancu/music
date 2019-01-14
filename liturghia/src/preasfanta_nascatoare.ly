@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
-midiTempo = 
+midiTempo =
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 124 4)
-      }
+    \tempo 4 = 124
     }
 
 
@@ -13,18 +10,18 @@ midiTempo =
 
 mfAndFermataMarkup = \markup {
   \hspace #-5.0
-  \musicglyph #"m"
+  \musicglyph "m"
   \hspace #-1.0
-  \musicglyph #"f"
+  \musicglyph "f"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 4/4
 }
 
@@ -36,7 +33,7 @@ altoWords = \sopWords
 tenorWords = \sopWords
 bassWords = \sopWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
   f^\p \bar "|"
   a a^\crescendoMarkup a a \bar "|"
@@ -48,7 +45,7 @@ sopMusic = \relative {
   a\! r \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
   f4^\p
   f f^\crescendoMarkup f f
@@ -60,7 +57,7 @@ altoMusic = \relative {
   f\! r
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
   a4^\p
   c c^\crescendoMarkup d d
@@ -72,7 +69,7 @@ tenorMusic = \relative {
   c\! r
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
   f,4^\p
   f f^\crescendoMarkup d d

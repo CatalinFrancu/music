@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 6.0)
 \include "preamble.ly"
@@ -41,7 +41,7 @@ menWords = \lyricmode {
   a -- li -- lu -- i -- a.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   % Ca pe Împăratul tuturor primind
   f4.^\mf g8
   a4 bes4
@@ -98,7 +98,7 @@ sopMusic = \relative {
   f2 ^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   % Ca pe Împăratul tuturor primind
   f4. g8
   a4 bes4
@@ -155,7 +155,7 @@ altoMusic = \relative {
   f2
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Ca pe Împăratul tuturor primind
   f,4.^\mf g8
   a4 bes4
@@ -208,7 +208,7 @@ tenorMusic = \relative {
   f2 ^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Same notes as the tenor, but no dynamics
 
   % Ca pe Împăratul tuturor primind

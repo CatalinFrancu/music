@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 \include "preamble.ly"
 
@@ -21,7 +21,7 @@ womenWords = \lyricmode {
 }
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \autoBeamOff
 
   % Câţi în Hristos v-aţi botezat,
@@ -42,7 +42,7 @@ sopMusic = \relative {
   c2^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \autoBeamOff
 
   % Câţi în Hristos v-aţi botezat,
@@ -63,7 +63,7 @@ altoMusic = \relative {
   g2_\fermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \autoBeamOff
 
   % Câţi în Hristos v-aţi botezat,
@@ -84,7 +84,7 @@ tenorMusic = \relative {
   e2^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \autoBeamOff
 
   % Câţi în Hristos v-aţi botezat,

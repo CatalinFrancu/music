@@ -1,12 +1,9 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 6.0)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 80 4)
-      }
+    \tempo 4 = 80
     }
 
 
@@ -40,14 +37,14 @@ menWords = \lyricmode {
   Ne ru -- găm, __ ne ru -- găm. __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   % Pre Tine Te lăudăm,
   \partial 4 b'4\rest
   b4\rest a4
   f'2
-  \times 2/3 { g8[( f8 e8~)] } e4
-  \times 2/3 { f8[( e8 d8~)] } d4
-  \times 2/3 { e8[( d8 c8~)] } c4
+  \tuplet 3/2 { g8[( f8 e8~)] } e4
+  \tuplet 3/2 { f8[( e8 d8~)] } d4
+  \tuplet 3/2 { e8[( d8 c8~)] } c4
   d4( c8[ d8])
   e2~
   e4
@@ -56,11 +53,11 @@ sopMusic = \relative {
   b4\rest
   b4\rest a4^\p
   f'4( a4)
-  \times 2/3 { g8[( f8 e8~)] } e4
-  \times 2/3 { f8[( e8 d8~)] } d4
-  \times 2/3 { e8[( d8 c8~)] } c4
-  \times 2/3 { d8[( c8 b8~)] } b4
-  \times 2/3 { c8[( b8 a8~)] } a4
+  \tuplet 3/2 { g8[( f8 e8~)] } e4
+  \tuplet 3/2 { f8[( e8 d8~)] } d4
+  \tuplet 3/2 { e8[( d8 c8~)] } c4
+  \tuplet 3/2 { d8[( c8 b8~)] } b4
+  \tuplet 3/2 { c8[( b8 a8~)] } a4
   gis4( fis8[ gis8)]
   a2~^\>
   a4\! b4\rest
@@ -96,14 +93,14 @@ sopMusic = \relative {
   a4^\fermata b4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   % Pre Tine Te lăudăm,
   \partial 4 b'4\rest
   b4\rest a4
   d2
-  \times 2/3 { e8[( d8 c8~)] } c4
-  \times 2/3 { d8[( c8 b8~)] } b4
-  \times 2/3 { c8[( b8 a8~)] } a4
+  \tuplet 3/2 { e8[( d8 c8~)] } c4
+  \tuplet 3/2 { d8[( c8 b8~)] } b4
+  \tuplet 3/2 { c8[( b8 a8~)] } a4
   a2
   gis2~
   gis4
@@ -112,11 +109,11 @@ altoMusic = \relative {
   b4\rest
   b4\rest a4
   d4( f4)
-  \times 2/3 { e8[( d8 c8~)] } c4
-  \times 2/3 { d8[( c8 b8~)] } b4
-  \times 2/3 { c8[( b8 a8~)] } a4
-  \times 2/3 { b8[( a8 gis8~)] } gis4
-  \times 2/3 { a8[( gis8 a8~)] } a4
+  \tuplet 3/2 { e8[( d8 c8~)] } c4
+  \tuplet 3/2 { d8[( c8 b8~)] } b4
+  \tuplet 3/2 { c8[( b8 a8~)] } a4
+  \tuplet 3/2 { b8[( a8 gis8~)] } gis4
+  \tuplet 3/2 { a8[( gis8 a8~)] } a4
   gis4( fis8[ gis8)]
   a2~
   a4 b4\rest
@@ -152,7 +149,7 @@ altoMusic = \relative {
   a4 b4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Pre Tine Te lăudăm,
   \partial 4 a4^\pp
   a2~
@@ -211,7 +208,7 @@ tenorMusic = \relative {
   e4^\fermata d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Pre Tine Te lăudăm,
   \partial 4 a4
   a2~

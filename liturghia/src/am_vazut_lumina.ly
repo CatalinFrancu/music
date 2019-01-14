@@ -1,12 +1,9 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(set-global-staff-size 13)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 140 4)
-      }
+    \tempo 4 = 140
     }
 
 
@@ -21,8 +18,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 sopWords = \lyricmode {
@@ -61,9 +58,9 @@ bassWords = \lyricmode {
   că A -- cea -- sta ne-a mân -- tu -- it __ pre __ noi. __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Am văzut lumina cea adevărată,
   bes'4^\p c4 c4 c4 \bar "|"
@@ -76,7 +73,7 @@ sopMusic = \relative {
   es8([ des8)]^\< c4 des4 es4\! \bar "|"
   f2^\fermata
 
-  % am aflat credinţa cea adevărată,
+  % am a-flat credinţa cea adevărată,
   es4^\< f4\! \bar "|"
   g4 f4 \bar "|"
   es4(^\accent des4)^\> c4( bes4)\! \bar "|"
@@ -98,9 +95,9 @@ sopMusic = \relative {
   f4^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Am văzut lumina cea adevărată,
   bes'4^\p c4 c4 as4
@@ -113,7 +110,7 @@ altoMusic = \relative {
   f4^\< f4 bes4 bes4\!
   as2^\fermata
 
-  % am aflat credinţa cea adevărată,
+  % am a-flat credinţa cea adevărată,
   c4^\< c4\!
   c4 des4
   c4(^\accent bes4)^\> as4( g4)\!
@@ -131,17 +128,17 @@ altoMusic = \relative {
   f'4^\< ges4\!
   ges2^\> f4 es4\!
   d4
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   d4
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   es4(^\accent d4) es2~
   es2^\> f2~^\pp\!
   f4^\fermata \bar "|."
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Am văzut lumina cea adevărată,
   bes4^\p c4
@@ -172,7 +169,7 @@ tenorMusic = \relative {
   >>
   \oneVoice
 
-  % am aflat credinţa cea adevărată,
+  % am a-flat credinţa cea adevărată,
   <<
     {
       \voiceOne
@@ -204,9 +201,9 @@ tenorMusic = \relative {
   a4^\fermata \bar "|."
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Am văzut lumina cea adevărată,
   bes4^\p c4 c4 f,4
@@ -219,7 +216,7 @@ bassMusic = \relative {
   c8([ bes8)]^\< as4 bes4 c4\!
   des2^\fermata
 
-  % am aflat credinţa cea adevărată,
+  % am a-flat credinţa cea adevărată,
   c4^\< c4\!
   c4 des4
   c4(^\accent bes4)^\> as4( es4)\!

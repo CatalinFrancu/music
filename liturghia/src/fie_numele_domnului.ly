@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 160 4)
-      }
+    \tempo 4 = 160
     }
 
 
@@ -35,7 +32,7 @@ womenWords = \lyricmode {
 
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   % Fie numele Domnului binecuvântat, de acum şi până-n veac.
   \repeat volta 2 {
     f4^\p f4
@@ -75,7 +72,7 @@ sopMusic = \relative {
   f2^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   % Fie numele Domnului binecuvântat, de acum şi până-n veac.
   \repeat volta 2 {
     f4 f4
@@ -113,7 +110,7 @@ altoMusic = \relative {
   f2
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Fie numele Domnului binecuvântat, de acum şi până-n veac.
   \repeat volta 2 {
     f,4^\p f4
@@ -151,7 +148,7 @@ tenorMusic = \relative {
   f2^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Fie numele Domnului binecuvântat, de acum şi până-n veac.
   \repeat volta 2 {
     f,4 f4

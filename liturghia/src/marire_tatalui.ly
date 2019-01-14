@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 160 4)
-      }
+    \tempo 4 = 160
     }
 
 
@@ -14,8 +11,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = ""
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = ""
 }
 
 monoWords = \lyricmode {
@@ -28,7 +25,7 @@ monoWords = \lyricmode {
   pă -- rin -- te, bi -- ne -- cu -- vin -- tea -- ză.
 }
 
-monoMusic = \relative {
+monoMusic = \relative c' {
   \cadenzaOn
   \autoBeamOff
 

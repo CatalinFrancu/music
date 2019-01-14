@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -21,8 +18,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key d \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
 }
 
@@ -58,9 +55,9 @@ menWords = \lyricmode {
   te mă -- rim, te mă -- rim.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a'8^\mp \bar "|"
@@ -88,9 +85,9 @@ sopMusic = \relative {
   a8 \bar "|"
   bes4 a4 bes4 cis4 \bar "|"
   d4.( cis8
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   b8[ cis8 d8 e8)] \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   d4.
 
   % şi Maica Dumnezeului nostru.
@@ -116,9 +113,9 @@ sopMusic = \relative {
   a2 \bar "|"
   bes4 a4 bes4 cis4 \bar "|"
   d4.( cis8
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   b8[ cis8 d8 e8)] \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   d4.
 
   % decât serafimii;
@@ -145,9 +142,9 @@ sopMusic = \relative {
   d4 cis4 \bar "|"
   d8([ cis8 d8 bes8)] a4 a4 \bar "|"
   b2 cis8([ d8]
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   cis4) \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   d2
 
   % Născătoare de Dumnezeu
@@ -164,9 +161,9 @@ sopMusic = \relative {
   d2.^\fermata b'4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a'8
@@ -261,9 +258,9 @@ altoMusic = \relative {
   d2. b'4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a8^\mp
@@ -358,9 +355,9 @@ tenorMusic = \relative {
   d2. d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a8

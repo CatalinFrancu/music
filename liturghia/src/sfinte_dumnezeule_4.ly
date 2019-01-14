@@ -1,11 +1,10 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
-midiTempo = 
+#(define myNoteSpacing 8.0)
+#(define myStaffSpacing 1.5)
+midiTempo =
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 80 4)
-      }
+    \tempo 4 = 80
     }
 
 
@@ -18,18 +17,18 @@ midiTempo =
 global = {
   \globalPreamble
   \key g \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #""
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #""
   \time 2/4
 }
 
 ppAndFermata = \markup {
   \hspace #-5.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 sopWords = \lyricmode {
@@ -50,13 +49,13 @@ tenorWords = \altoWords
 
 bassWords = \altoWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte Dumnezeule
   b'4^\accent^\mf a g8([ fis)] e([ fis)] \bar "|"
   g4^\< a b2\! \bar "|"
-  
+
   % Sfinte tare
   g'4^\f^\< e fis(\! dis) \bar "|"
   e1^\> \bar "|"
@@ -71,7 +70,7 @@ sopMusic = \relative {
   e2^\ppAndFermata r \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte Dumnezeule
@@ -102,19 +101,19 @@ altoMusic = \relative {
   b2^\ppAndFermata r
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte Dumnezeule
   d4^\accent^\mf d b b
   b^\< e dis2\!
 
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   % Sfinte tare
   e4^\f^\< e dis(\! fis)
   e1^\>
 
-  #(set-accidental-style 'default)
+  \accidentalStyle default
   % Sfinte făr' de moarte
   e4\!^\accent^\mf d^\descrescendoMarkup c c
   <<
@@ -146,7 +145,7 @@ tenorMusic = \relative {
   g2^\ppAndFermata r2
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
 
   % Sfinte Dumnezeule

@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 96 4)
-      }
+    \tempo 4 = 96
     }
 
 
@@ -31,8 +28,8 @@ mixedTimeSigMarkup = \markup {
 global = {
   \globalPreamble
   \key g \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
 womenWords = \lyricmode {
@@ -73,10 +70,10 @@ menWords = \lyricmode {
   ce -- lui năs -- cut, __ năs -- cut al tău, __ al tău.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
   \autoBeamOff
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Îngerul a strigat către cea plină de daruri Curată Fecioră: Bucură-te!
   b'4(^\p a8[ b8)] g4 g4 \bar "|"
@@ -144,7 +141,7 @@ sopMusic = \relative {
   fis4( a8) a8 g2 \bar "|"
 
   % Saltă acum şi te bucură Sioane iar tu Curată Născătoare de Dumnezeu
-  \override Staff.TimeSignature #'text = ""
+  \override Staff.TimeSignature.text = ""
   d'8([^\f c8 b8 e8] d8[ c8 b8 c8)] \bar "|"
   \break
   a8([ b8)] g4 \bar "|"
@@ -181,10 +178,10 @@ sopMusic = \relative {
   a4.^\> b8 g2)\!^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
   \autoBeamOff
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Îngerul a strigat către cea plină de daruri Curată Fecioră: Bucură-te!
   b'4( a8[ b8)] g4 g4
@@ -275,10 +272,10 @@ altoMusic = \relative {
   fis4. g8 g2)
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
   \autoBeamOff
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Îngerul a strigat către cea plină de daruri Curată Fecioră: Bucură-te!
   b4(^\p a8[ b8)] g4 g4
@@ -339,7 +336,7 @@ tenorMusic = \relative {
 
   % Saltă acum şi te bucură Sioane iar tu Curată Născătoare de Dumnezeu
   \cadenzaOff
-  \override Staff.TimeSignature #'text = ""
+  \override Staff.TimeSignature.text = ""
   \time 4/4
   R1
   \time 2/4
@@ -376,10 +373,10 @@ tenorMusic = \relative {
   d2^\> g2\!^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
   \autoBeamOff
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Îngerul a strigat către cea plină de daruri Curată Fecioră: Bucură-te!
   b4( a8[ b8)] g4 g4

@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(set-global-staff-size 12)
 \include "preamble.ly"
@@ -10,7 +10,7 @@
 }
 
 mpMusicGlyphs = \markup {
-  \musicglyph #"m" \hspace #-1.0 \musicglyph #"p"
+  \musicglyph "m" \hspace #-1.0 \musicglyph "p"
 }
 
 meterAndMpMarkup = \markup {
@@ -23,8 +23,8 @@ meterAndMpMarkup = \markup {
 global = {
   \globalPreamble
   \key g \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 4/4
 }
 
@@ -71,7 +71,7 @@ bassWords = \lyricmode {
 
 bassAlternateWords = \womenAlternateWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
   % Veniţi să ne închinăm şi să cădem la Hristos.
   b'4^\mf \bar "|"
@@ -107,7 +107,7 @@ sopMusic = \relative {
 
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
   % Veniţi să ne închinăm şi să cădem la Hristos.
   b'4^\mf
@@ -142,7 +142,7 @@ altoMusic = \relative {
   e4\!^\fermata r r
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
   % Veniţi să ne închinăm şi să cădem la Hristos.
   b4^\mf
@@ -177,7 +177,7 @@ tenorMusic = \relative {
   b4^\fermata r r
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
   % Veniţi să ne închinăm şi să cădem la Hristos.
   b4^\mf
@@ -214,7 +214,7 @@ bassMusic = \relative {
 
 % Do not include four-staves.ly, since we need a second stanza of lyrics.
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #myNoteSpacing
+  \override SpacingSpanner.shortest-duration-space = #myNoteSpacing
 } <<
   \new ChoirStaff <<
     \new Staff \new Voice { \global \sopMusic }

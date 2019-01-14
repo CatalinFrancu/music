@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
@@ -7,15 +7,15 @@
 global = {
   \globalPreamble
   \key c \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = ""
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = ""
 }
 
 monoWords = \lyricmode {
   A -- min.
 }
 
-monoMusic = \relative {
+monoMusic = \relative c' {
   \cadenzaOn
   c4 \bar "|"
   e2. r4 \bar "|."

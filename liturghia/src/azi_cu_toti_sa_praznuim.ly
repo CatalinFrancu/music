@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 \include "preamble.ly"
 
@@ -64,7 +64,7 @@ allWords = <<
   }
 >>
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \autoBeamOff
 
   g'4. a8
@@ -90,7 +90,7 @@ sopMusic = \relative {
   g4 g8 b8\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \autoBeamOff
 
   g'4. a8
@@ -114,7 +114,7 @@ altoMusic = \relative {
   g4 g8 b8\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \autoBeamOff
   \slurDashed
 

@@ -1,4 +1,4 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 6.0)
 \include "preamble.ly"
@@ -52,7 +52,7 @@ allWords = <<
   }
 >>
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \autoBeamOff
 
   % Veniţi norii de mulţime
@@ -94,7 +94,7 @@ sopMusic = \relative {
   c2^\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \autoBeamOff
 
   % Veniţi norii de mulţime
@@ -136,7 +136,7 @@ altoMusic = \relative {
   a2
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \autoBeamOff
   \oneVoice
 
@@ -179,7 +179,7 @@ tenorMusic = \relative {
   f2^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
 }
 
 \include "lyrics-in-between.ly"

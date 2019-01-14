@@ -1,13 +1,10 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 72 4)
-      }
+    \tempo 4 = 72
     }
 
 
@@ -29,22 +26,22 @@ global = {
 womenWords = \lyricmode { A -- min. }
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   b'2(^\pp c2) \bar "|"
   b1 \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   g'2( a2)
   g1
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   e2(^\pp a,2)
   e'1
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   e,2( a2)
   e1
 }

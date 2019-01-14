@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 156 4)
-      }
+    \tempo 4 = 156
     }
 
 
@@ -30,25 +27,25 @@ mixedTimeSigMarkup = \markup {
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
   \time 2/4
   \autoBeamOff
   f8^\p f f f\bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   a^\accent g f e f g \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   a4 \breathe a8^\< a\! \bar  "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   c4 bes8 bes^\> a bes\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   a4( g)^\rallMarkup \bar "|"
   f2~ \bar "|"
@@ -316,21 +313,21 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
   \time 2/4
   \autoBeamOff
   c8^\p c c c\bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   c^\accent c c c c e \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   f4 \breathe f8^\< f\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   f4 f8 f^\> f f\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   f4( e) \bar "|"
   c2~ \bar "|"
@@ -510,21 +507,21 @@ altoMusic = \relative {
   c4^\fermata r
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
   \time 2/4
   \autoBeamOff
   a8^\p a a a \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   c^\accent bes a bes a c \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   c4 \breathe c8^\< c\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   es4 d8 d^\> c d\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   c4( bes) \bar "|"
   a2~ \bar "|"
@@ -729,21 +726,21 @@ tenorMusic = \relative {
   a4^\fermata r
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
   \time 2/4
   \autoBeamOff
   f,8^\p f f f \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   f^\accent f f g f c \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   f4 \breathe f8^\< f\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 3/4
   f4 f8 f^\> f bes,\! \bar "|"
-  \once \override Staff.TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 2/4
   c2 \bar "|"
   <f f,>2~ \bar "|"

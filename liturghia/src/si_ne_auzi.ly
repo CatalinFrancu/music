@@ -1,5 +1,6 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
+#(define myNoteSpacing 8.0)
 \include "preamble.ly"
 
 \header {
@@ -25,7 +26,7 @@ menWords = \lyricmode {
   şi ne a -- uzi pe noi, pe __ noi.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \oneVoice
   R2
   \voiceOne
@@ -44,7 +45,7 @@ sopMusic = \relative {
   f2\fermata \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   s2
   f8([ g f g)]
   f4 g
@@ -61,7 +62,7 @@ altoMusic = \relative {
   f2\fermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   f,2~^\p
   f
   f4 f
@@ -78,7 +79,7 @@ tenorMusic = \relative {
   f2\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   f,2~
   f
   f4 f

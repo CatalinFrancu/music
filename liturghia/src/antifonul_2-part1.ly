@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
-midiTempo = 
+midiTempo =
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 156 4)
-      }
+    \tempo 4 = 156
     }
 
 
@@ -21,8 +18,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
 }
 
@@ -34,11 +31,11 @@ menWords = \lyricmode {
   Şi a -- cum şi pu -- ru -- rea şi în ve -- cii ve -- ci -- lor, A -- min.
 }
 
-sopMusicOne = \relative {
+sopMusicOne = \relative c' {
   \voiceOne
   \partial 4 f^\mf
   c'^\< d\!
-  \override Staff.TimeSignature #'text = \markup { }
+  \override Staff.TimeSignature.text = \markup { }
   \time 4/4
   es^\accent d c d
   c^\accent c a a
@@ -58,9 +55,9 @@ sopMusicOne = \relative {
   \bar "||"
 }
 
-sopMusicTwo = \relative {
+sopMusicTwo = \relative c' {
   \voiceTwo
-  \partial 4 f4^\mf
+  \partial 4 f4
   a bes
   \time 4/4
   c bes a bes
@@ -78,10 +75,10 @@ sopMusicTwo = \relative {
   s1
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \partial 4 f4^\mf
   f^\< f\!
-  \override Staff.TimeSignature #'text = \markup { }
+  \override Staff.TimeSignature.text = \markup { }
   \time 4/4
   f^\accent f f f
   f^\accent f f f
@@ -96,10 +93,10 @@ altoMusic = \relative {
   R1
 }
 
-tenorMusicOne = \relative {
+tenorMusicOne = \relative c' {
   \partial 4 r4
   R2
-  \override Staff.TimeSignature #'text = \markup { }
+  \override Staff.TimeSignature.text = \markup { }
   \time 4/4
   R1
   R1
@@ -120,10 +117,10 @@ tenorMusicOne = \relative {
   r4
 }
 
-tenorMusicTwo = \relative {
+tenorMusicTwo = \relative c' {
   \partial 4 s4
   s2
-  \override Staff.TimeSignature #'text = \markup { }
+  \override Staff.TimeSignature.text = \markup { }
   \time 4/4
   s1
   s1
@@ -144,10 +141,10 @@ tenorMusicTwo = \relative {
   s4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \partial 4 r4
   R2
-  \override Staff.TimeSignature #'text = \markup { }
+  \override Staff.TimeSignature.text = \markup { }
   \time 4/4
   R1
   R1
@@ -164,7 +161,7 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #myNoteSpacing
+  \override SpacingSpanner.shortest-duration-space = #myNoteSpacing
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -172,17 +169,17 @@ myScore = \new Score \with {
       \addlyrics { \womenWords }
       \new Voice { \global \sopMusicTwo }
     >>
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \womenWords }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusicOne }
       \addlyrics { \menWords }
       \new Voice { \global \tenorMusicTwo }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }

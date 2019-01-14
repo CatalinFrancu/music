@@ -1,12 +1,12 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 \include "preamble.ly"
 
 global = {
   \globalPreamble
   \key d \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = ""
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = ""
 }
 
 monoWords = \lyricmode {
@@ -15,7 +15,7 @@ monoWords = \lyricmode {
   şi ne -- des -- păr -- ţi -- tă.
 }
 
-monoMusic = \relative {
+monoMusic = \relative c' {
   \cadenzaOn
 
   c4 f2 f4 f4 g4 g4 f4 e4 f4 g4 a2~ a8 r8

@@ -1,13 +1,10 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 90 4)
-      }
+    \tempo 4 = 90
     }
 
 
@@ -24,8 +21,8 @@ midiTempo =
 global = {
   \globalPreamble
   \key e \minor
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 4/4
 }
 
@@ -34,7 +31,7 @@ womenWords = \lyricmode {
 }
 menWords = \womenWords
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
   e'4^\mf b4 \bar "|"
   c4( b8 a8) g2 \bar "|"
@@ -42,7 +39,7 @@ sopMusic = \relative {
   e,2. b'4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
   b'4 b4
   c4( b8 a8) g2
@@ -50,14 +47,14 @@ altoMusic = \relative {
   e2. b'4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   e,8(^\mf fis8) g4
   a4( g8 fis8) e2
   e4 e4 dis4 dis4
   e2. d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   e,8( fis8) g4
   a4( g8 fis8) e2
   e4 e4 b4 b4

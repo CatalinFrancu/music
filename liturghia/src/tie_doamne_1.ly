@@ -1,13 +1,10 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 #(define myNoteSpacing 5.0)
 #(define raggedRight #t)
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 124 4)
-      }
+    \tempo 4 = 124
     }
 
 
@@ -19,7 +16,7 @@ global = {
   \time 4/4
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   c'^\mf c g( a
   bes g)^\> f4~ f8\! r \bar "|."
 }
@@ -28,7 +25,7 @@ sopWords = \lyricmode {
   Ţi -- e Doam -- ne. __
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   r2 g'4^\mf f
   <<
     { \voiceOne e2 c4~ c8 }
@@ -39,14 +36,14 @@ altoMusic = \relative {
 
 altoWords = \sopWords
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   c4^\mf c c2(
   g4 bes)^\> a4~ a8\! r
 }
 
 tenorWords = \sopWords
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   r2 e,4^\mf f
   <<
     { \voiceOne c2 <f f,>4~ <f f,>8  }

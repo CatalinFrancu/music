@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 156 4)
-      }
+    \tempo 4 = 156
     }
 
 
@@ -14,21 +11,21 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'transparent = ##t
+  \override Staff.TimeSignature.transparent = ##t
   \time 2/4
 }
 
 % Define new markup for \mf to prevent overlaps with the fermata
 mfMarkup = \markup {
   \hspace #-5.0
-  \musicglyph #"m"
+  \musicglyph "m"
   \hspace #-1.0
-  \musicglyph #"f"
+  \musicglyph "f"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   a'4^\mp g
   a bes
   c( d)
@@ -56,7 +53,7 @@ sopMusic = \relative {
   f2\fermata\! \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   f4 e
   f g
   a( bes)
@@ -84,7 +81,7 @@ altoMusic = \relative {
   f2\fermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   f,4^\mp e
   d c
   f2
@@ -112,7 +109,7 @@ tenorMusic = \relative {
   f\fermata\!
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   f,4 e
   d c
   f2

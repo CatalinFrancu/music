@@ -1,11 +1,8 @@
-\version "2.12.0"
+\version "2.19.80"
 \include "defines.ly"
 midiTempo = 
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 156 4)
-      }
+    \tempo 4 = 156
     }
 
 
@@ -14,11 +11,11 @@ midiTempo =
 global = {
   \globalPreamble
   \key f \major
-  \override Staff.TimeSignature #'transparent = ##t
+  \override Staff.TimeSignature.transparent = ##t
   \time 2/4
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   % Unule născut, Fiule şi Cuvântul lui Dumnezeu
   f4 e
   f g
@@ -127,7 +124,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   % Unule născut, Fiule şi Cuvântul lui Dumnezeu
   f4 e
   f g
@@ -235,7 +232,7 @@ altoMusic = \relative {
   f2\fermata
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   % Unule născut, Fiule şi Cuvântul lui Dumnezeu
   f,4 e
   d c
@@ -332,7 +329,7 @@ tenorMusic = \relative {
   f2\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   % Unule născut, Fiule şi Cuvântul lui Dumnezeu
   f,4 e
   d c
