@@ -1,12 +1,12 @@
-\version "2.11.57"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  %print-page-number = false
-  top-margin = 0.25\in
-  bottom-margin = 0.5\in
+  print-page-number = false
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -15,8 +15,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 18)
+
 global = {
-  #(set-global-staff-size 18)
   \set Staff.midiInstrument = "clarinet"
   \key f \major
   \time 3/4
@@ -35,7 +36,7 @@ womenWords = \lyricmode {
   as a lit -- tle child! __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \voiceOne
 
   % Today the Virgin gives birth
@@ -109,7 +110,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \voiceTwo
 
   % Today the Virgin gives birth
@@ -183,7 +184,7 @@ altoMusic = \relative {
   \bar "|."
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \voiceOne
 
   % Today the Virgin gives birth
@@ -257,7 +258,7 @@ tenorMusic = \relative {
   \bar "|."
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \voiceTwo
 
   % Today the Virgin gives birth
@@ -332,8 +333,8 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #5.0
-  \override TimeSignature #'style = #'numbered % Display 4/4, not C (Common)
+  \override SpacingSpanner.shortest-duration-space = #5.0
+  \override TimeSignature.style = #'numbered % Display 4/4, not C (Common)
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -356,9 +357,7 @@ myScore = \new Score \with {
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 100 4)
-  }
+  \tempo 4 = 100
   \context {
     \Voice
     \remove "Dynamic_performer"

@@ -1,12 +1,12 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  after-title-space = 20\mm
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -18,7 +18,7 @@
 }
 
 descrescendoMarkup = \markup{
-  \italic \bold \bigger "descrescendo"
+  \italic \bold \larger "descrescendo"
 }
 
 mixedTimeSigMarkup = \markup {
@@ -31,33 +31,34 @@ mixedTimeSigMarkup = \markup {
 
 prepareBox = {
   % The box-padding property is documented, but causes warnings
-  % \once \override TextScript #'box-padding = #0.4
-  \once \override TextScript #'font-size = #4
+  % \once \override TextScript.box-padding = #0.4
+  \once \override TextScript.font-size = #4
 }
 
 rallMarkup = \markup {
-  \bold \bigger "rall..."
+  \bold \larger "rall..."
 }
 
 ritMarkup = \markup {
-  \italic \bold \bigger "rit."
+  \italic \bold \larger "rit."
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \set Staff.midiInstrument = "clarinet"
   \key f \major
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
   \autoBeamOff
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \autoBeamOff
   \cadenzaOn
-  
-  % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
+
+  % Întru-mpărăția Ta când vei veni, pomenește-ne pe noi, Doamne
   f8^\p f f f\bar "|"
   a^\accent g f e f g \bar "|"
   \break
@@ -69,10 +70,10 @@ sopMusic = \relative {
   f4^\fermata r \bar "||"
   \pageBreak
   \autoBeamOn
-  \once \override Staff.TimeSignature #'text = \markup { }
+  \once \override Staff.TimeSignature.text = \markup { }
   \cadenzaOff
 
-  % 1. Fericiţi cei săraci cu duhul, că acelora este împărăţia cerurilor
+  % 1. Fericiți cei săraci cu duhul, că acelora este împărăția cerurilor
   \prepareBox
   <<
     {
@@ -122,8 +123,8 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 2. Fericiţi cei ce plâng, că aceia se vor mângâia
-  \prepareBox 
+  % 2. Fericiți cei ce plâng, că aceia se vor mângâia
+  \prepareBox
   <<
     { s2^\markup{\bold \box 2} }
     { R2 }
@@ -135,7 +136,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 3. Fericiţi cei blânzi, că aceia vor moşteni pământul
+  % 3. Fericiți cei blânzi, că aceia vor moșteni pământul
   \prepareBox
   f4^\p^\markup{\hspace #-4.0 \bold \box 3}^\< g
   a8(\! bes) g4^\>
@@ -153,7 +154,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 4. Fericiţi cei flămânzi şi însetaţi de dreptate, că aceia se vor sătura
+  % 4. Fericiți cei flămânzi și însetați de dreptate, că aceia se vor sătura
   \prepareBox
   c'^\mf^\markup{\hspace #-5.0 \bold \box 4} d
   es( d)^\>
@@ -178,7 +179,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 5. Fericiţi cei milostivi, că aceia se vor milui
+  % 5. Fericiți cei milostivi, că aceia se vor milui
   \prepareBox
   e4^\pp^\markup{\hspace #-4.0 \bold \box 5}^\< f\!
   g f
@@ -196,7 +197,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 6. Fericiţi cei curaţi cu inima, că aceia vor vedea pe Dumnezeu
+  % 6. Fericiți cei curați cu inima, că aceia vor vedea pe Dumnezeu
   \prepareBox
   a4^\p^\markup{\hspace #-4.0 \bold \box 6}^\< bes
   c2
@@ -219,7 +220,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 7. Fericiţi făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
+  % 7. Fericiți făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
   \prepareBox
   c'4^\mf^\markup{\hspace #-5.0 \bold \box 7} c
   f2
@@ -245,7 +246,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 8. Fericiţi cei goniţi pentru dreptate, că acelora este împărăţia cerurilor
+  % 8. Fericiți cei goniți pentru dreptate, că acelora este împărăția cerurilor
   \prepareBox
   <<
     {
@@ -300,8 +301,8 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % 9. Fericiţi veţi fi când vă vor ocărî pe voi şi vă vor prigoni
-  % şi vor zice tot cuvântul rău împotriva voastră, minţind pentru mine
+  % 9. Fericiți veți fi când vă vor ocărî pe voi și vă vor prigoni
+  % și vor zice tot cuvântul rău împotriva voastră, mințind pentru mine
   \prepareBox
   a4^\mf^\markup{\hspace #-5.0 \bold \box 9} bes
   c8( d) bes4^\<
@@ -342,7 +343,7 @@ sopMusic = \relative {
   \bar "||"
   \break
 
-  % Bucuraţi-vă şi vă veseliţi, că plata voastră multă este în ceruri
+  % Bucurați-vă și vă veseliți, că plata voastră multă este în ceruri
   c'4^\mf c4
   f2
   es4( d)
@@ -382,11 +383,11 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \autoBeamOff
   \cadenzaOn
 
-  % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
+  % Întru-mpărăția Ta când vei veni, pomenește-ne pe noi, Doamne
   c8^\p c c c\bar "|"
   c^\accent c c c c e \bar "|"
   f4 \breathe f8^\< f\! \bar "|"
@@ -395,10 +396,10 @@ altoMusic = \relative {
   c2~ \bar "|"
   c4^\fermata r \bar "|"
   \autoBeamOn
-  \once \override Staff.TimeSignature #'text = \markup { }
+  \once \override Staff.TimeSignature.text = \markup { }
   \cadenzaOff
 
-  % 1. Fericiţi cei săraci cu duhul, că acelora este împărăţia cerurilor
+  % 1. Fericiți cei săraci cu duhul, că acelora este împărăția cerurilor
   f4^\p f
   f2
   f4^\< f\!
@@ -416,10 +417,10 @@ altoMusic = \relative {
   d4 c
   f2
 
-  % 2. Fericiţi cei ce plâng, că aceia se vor mângâia
+  % 2. Fericiți cei ce plâng, că aceia se vor mângâia
   R2 * 11
-  
-  % 3. Fericiţi cei blânzi, că aceia vor moşteni pământul
+
+  % 3. Fericiți cei blânzi, că aceia vor moșteni pământul
   f4^\p^\< f
   f\! f^\>
   f2\! \breathe
@@ -432,7 +433,7 @@ altoMusic = \relative {
   c2~\!
   c4 r
 
-  % 4. Fericiţi cei flămânzi şi însetaţi de dreptate, că aceia se vor sătura
+  % 4. Fericiți cei flămânzi și însetați de dreptate, că aceia se vor sătura
   a'^\mf bes
   c( bes)^\>
   a bes\!
@@ -450,7 +451,7 @@ altoMusic = \relative {
   c2~
   c4 r
 
-  % 5. Fericiţi cei milostivi, că aceia se vor milui
+  % 5. Fericiți cei milostivi, că aceia se vor milui
   e^\pp^\< f\!
   g f
   e^\> d
@@ -463,7 +464,7 @@ altoMusic = \relative {
   c2~
   c4 r
 
-  % 6. Fericiţi cei curaţi cu inima, că aceia vor vedea pe Dumnezeu
+  % 6. Fericiți cei curați cu inima, că aceia vor vedea pe Dumnezeu
   f^\p^\< f
   f2
   f4 f\!
@@ -479,7 +480,7 @@ altoMusic = \relative {
   c2~\!
   c4 r
 
-  % 7. Fericiţi făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
+  % 7. Fericiți făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
   c'^\mf c
   a2
   a4 bes
@@ -498,7 +499,7 @@ altoMusic = \relative {
   c2~\!
   c4 r
 
-  % 8. Fericiţi cei goniţi pentru dreptate, că acelora este împărăţia cerurilor
+  % 8. Fericiți cei goniți pentru dreptate, că acelora este împărăția cerurilor
   f^\p^\< f
   f2\!
   f4 f
@@ -518,8 +519,8 @@ altoMusic = \relative {
   f2~\!
   f4 r
 
-  % 9. Fericiţi veţi fi când vă vor ocărî pe voi şi vă vor prigoni
-  % şi vor zice tot cuvântul rău împotriva voastră, minţind pentru mine
+  % 9. Fericiți veți fi când vă vor ocărî pe voi și vă vor prigoni
+  % și vor zice tot cuvântul rău împotriva voastră, mințind pentru mine
   f^\mf f
   f bes^\<
   a2\!
@@ -549,7 +550,7 @@ altoMusic = \relative {
   c2~\!
   c4 r
 
-  % Bucuraţi-vă şi vă veseliţi, că plata voastră multă este în ceruri
+  % Bucurați-vă și vă veseliți, că plata voastră multă este în ceruri
   c'^\mf c
   a2
   a4( bes)
@@ -570,11 +571,11 @@ altoMusic = \relative {
   c4^\fermata r
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \autoBeamOff
   \cadenzaOn
 
-  % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
+  % Întru-mpărăția Ta când vei veni, pomenește-ne pe noi, Doamne
   a8^\p a a a \bar "|"
   c^\accent bes a bes a c \bar "|"
   c4 \breathe c8^\< c\! \bar "|"
@@ -583,14 +584,14 @@ tenorMusic = \relative {
   a2~ \bar "|"
   a4^\fermata r \bar "|"
   \autoBeamOn
-  \once \override Staff.TimeSignature #'text = \markup { }
+  \once \override Staff.TimeSignature.text = \markup { }
   \cadenzaOff
-  
-  % 1. Fericiţi cei săraci cu duhul, că acelora este împărăţia cerurilor
+
+  % 1. Fericiți cei săraci cu duhul, că acelora este împărăția cerurilor
   \time 2/4
   R2 * 16
 
-  % 2. Fericiţi cei ce plâng, că aceia se vor mângâia
+  % 2. Fericiți cei ce plâng, că aceia se vor mângâia
   <<
     {
       \voiceOne
@@ -624,7 +625,7 @@ tenorMusic = \relative {
   \oneVoice
   r
 
-  % 3. Fericiţi cei blânzi, că aceia vor moşteni pământul
+  % 3. Fericiți cei blânzi, că aceia vor moșteni pământul
   a4^\p^\< bes
   c8(\! d) bes4^\>
   c2\! \breathe
@@ -637,7 +638,7 @@ tenorMusic = \relative {
   a2~\!
   a4 r
 
-  % 4. Fericiţi cei flămânzi şi însetaţi de dreptate, că aceia se vor sătura
+  % 4. Fericiți cei flămânzi și însetați de dreptate, că aceia se vor sătura
   c4^\mf bes
   a( bes)^\>
   c d\!
@@ -655,7 +656,7 @@ tenorMusic = \relative {
   a2~
   a4 r
 
-  % 5. Fericiţi cei milostivi, că aceia se vor milui
+  % 5. Fericiți cei milostivi, că aceia se vor milui
   e^\pp^\< f\!
   g f
   e^\> d
@@ -668,7 +669,7 @@ tenorMusic = \relative {
   a2~
   a4 r
 
-  % 6. Fericiţi cei curaţi cu inima, că aceia vor vedea pe Dumnezeu
+  % 6. Fericiți cei curați cu inima, că aceia vor vedea pe Dumnezeu
   c4^\p^\< c
   c2
   c4 c\!
@@ -684,7 +685,7 @@ tenorMusic = \relative {
   a2~\!
   a4 r
 
-  % 7. Fericiţi făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
+  % 7. Fericiți făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
   c4^\mf c
   c( d)
   es d
@@ -703,11 +704,11 @@ tenorMusic = \relative {
   a2~\!
   a4 r
 
-  % 8. Fericiţi cei goniţi pentru dreptate, că acelora este împărăţia cerurilor
+  % 8. Fericiți cei goniți pentru dreptate, că acelora este împărăția cerurilor
   R2 * 18
 
-  % 9. Fericiţi veţi fi când vă vor ocărî pe voi şi vă vor prigoni
-  % şi vor zice tot cuvântul rău împotriva voastră, minţind pentru mine
+  % 9. Fericiți veți fi când vă vor ocărî pe voi și vă vor prigoni
+  % și vor zice tot cuvântul rău împotriva voastră, mințind pentru mine
   c4^\mf bes
   a bes8(^\< d)
   c2\!
@@ -737,7 +738,7 @@ tenorMusic = \relative {
   a~\!
   a4 r
 
-  % Bucuraţi-vă şi vă veseliţi, că plata voastră multă este în ceruri
+  % Bucurați-vă și vă veseliți, că plata voastră multă este în ceruri
   c4^\mf c4
   <<
     {
@@ -784,11 +785,11 @@ tenorMusic = \relative {
   a4^\fermata r
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \autoBeamOff
   \cadenzaOn
 
-  % Întru-mpărăţia Ta când vei veni, pomeneşte-ne pe noi, Doamne
+  % Întru-mpărăția Ta când vei veni, pomenește-ne pe noi, Doamne
   f,8^\p f f f \bar "|"
   f^\accent f f g f c \bar "|"
   f4 \breathe f8^\< f\! \bar "|"
@@ -797,13 +798,13 @@ bassMusic = \relative {
   <f f,>2~ \bar "|"
   <f f,>4^\fermata r \bar "|"
   \autoBeamOn
-  \once \override Staff.TimeSignature #'text = \markup { }
+  \once \override Staff.TimeSignature.text = \markup { }
   \cadenzaOff
 
-  % 1. Fericiţi cei săraci cu duhul, că acelora este împărăţia cerurilor
+  % 1. Fericiți cei săraci cu duhul, că acelora este împărăția cerurilor
   R2 * 16
 
-  % 2. Fericiţi cei ce plâng, că aceia se vor mângâia
+  % 2. Fericiți cei ce plâng, că aceia se vor mângâia
   f4^\p f^\<
   f2\!
   e4^\> f
@@ -816,7 +817,7 @@ bassMusic = \relative {
   f2~
   f4\! r
 
-  % 3. Fericiţi cei blânzi, că aceia vor moşteni pământul
+  % 3. Fericiți cei blânzi, că aceia vor moșteni pământul
   f4^\p^\< f
   f\! f^\>
   f2\! \breathe
@@ -829,7 +830,7 @@ bassMusic = \relative {
   f2~\!
   f4 r
 
-  % 4. Fericiţi cei flămânzi şi însetaţi de dreptate, că aceia se vor sătura
+  % 4. Fericiți cei flămânzi și însetați de dreptate, că aceia se vor sătura
   f4^\mf f
   f2^\>
   f4 f\!
@@ -847,7 +848,7 @@ bassMusic = \relative {
   f2~
   f4 r
 
-  % 5. Fericiţi cei milostivi, că aceia se vor milui
+  % 5. Fericiți cei milostivi, că aceia se vor milui
   e^\pp^\< f\!
   g f
   e^\> d
@@ -860,7 +861,7 @@ bassMusic = \relative {
   f2~
   f4 r
 
-  % 6. Fericiţi cei curaţi cu inima, că aceia vor vedea pe Dumnezeu
+  % 6. Fericiți cei curați cu inima, că aceia vor vedea pe Dumnezeu
   f^\p^\< g
   a2
   a4 a\!
@@ -886,8 +887,8 @@ bassMusic = \relative {
   f c
   f2~\!
   f4 r
-  
-  % 7. Fericiţi făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
+
+  % 7. Fericiți făcătorii de pace, că aceia fiii lui Dumnezeu se vor chema
   c'^\mf c
   f,2
   f4 f
@@ -906,11 +907,11 @@ bassMusic = \relative {
   f2~\!
   f4 r
 
-  % 8. Fericiţi cei goniţi pentru dreptate, că acelora este împărăţia cerurilor
+  % 8. Fericiți cei goniți pentru dreptate, că acelora este împărăția cerurilor
   R2 * 18
 
-  % 9. Fericiţi veţi fi când vă vor ocărî pe voi şi vă vor prigoni
-  % şi vor zice tot cuvântul rău împotriva voastră, minţind pentru mine
+  % 9. Fericiți veți fi când vă vor ocărî pe voi și vă vor prigoni
+  % și vor zice tot cuvântul rău împotriva voastră, mințind pentru mine
   f4^\mf f
   f f^\<
   f2\!
@@ -940,7 +941,7 @@ bassMusic = \relative {
   f2~\!
   f4 r
 
-  % Bucuraţi-vă şi vă veseliţi, că plata voastră multă este în ceruri
+  % Bucurați-vă și vă veseliți, că plata voastră multă este în ceruri
   c'^\mf c
   f,( c')
   c( bes)
@@ -962,154 +963,154 @@ bassMusic = \relative {
 }
 
 sopWords = \lyricmode {
-  În -- tru-m -- pă -- ră -- ţi -- a Ta când vei ve -- ni,
-  po -- me -- neş -- te- -- ne pe noi Doam -- ne! __
+  În -- tru-m -- pă -- ră -- ți -- a Ta când vei ve -- ni,
+  po -- me -- neș -- te- -- ne pe noi Doam -- ne! __
 
-  Fe -- ri -- ciţi cei să -- raci cu du -- hul,
-  Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  Fe -- ri -- ciți cei să -- raci cu du -- hul,
+  Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   ce -- ru -- ri -- lor.
 
-  % Fe -- ri -- ciţi __ cei ce plâng, __ că a -- ce -- ia se vor
+  % Fe -- ri -- ciți __ cei ce plâng, __ că a -- ce -- ia se vor
   % mân -- gâ -- ia! __
 
-  Fe -- ri -- ciţi __ cei blânzi, că a -- ce -- ia vor moş -- te -- ni
+  Fe -- ri -- ciți __ cei blânzi, că a -- ce -- ia vor moș -- te -- ni
   pă -- mân -- tul. __
 
-  Fe -- ri -- ciţi __ cei flă -- mânzi şi în -- se -- taţi __ de
+  Fe -- ri -- ciți __ cei flă -- mânzi și în -- se -- tați __ de
   drep -- ta -- te, că a -- ce -- ia se vor să -- tu -- ra! __
 
-  Fe -- ri -- ciţi cei mi -- los -- tivi, că a -- ce -- ia se vor
+  Fe -- ri -- ciți cei mi -- los -- tivi, că a -- ce -- ia se vor
   mi -- lu -- i! __
 
-  Fe -- ri -- ciţi cei cu -- raţi cu i -- ni -- ma, că a -- ce -- ia
+  Fe -- ri -- ciți cei cu -- rați cu i -- ni -- ma, că a -- ce -- ia
   vor ve dea pre Dum -- ne -- zeu! __
 
-  Fe -- ri -- ciţi fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
+  Fe -- ri -- ciți fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
   fi -- ii lui Dum -- ne -- zeu se vor che -- ma! __
 
-  Fe -- ri -- ciţi cei go -- niţi pen -- tru drep -- ta -- te,
-  că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  Fe -- ri -- ciți cei go -- niți pen -- tru drep -- ta -- te,
+  că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   ce -- ru -- ri -- lor! __
 
-  Fe -- ri -- ciţi __ veţi fi când vă vor o -- că -- rî pre voi __
-  şi vă vor pri -- go -- ni şi vor zi -- ce tot cu -- vân -- tul rău
-  îm -- po -- tri -- va voa -- stră, __ min -- ţind __ pen -- tru mi -- ne! __
+  Fe -- ri -- ciți __ veți fi când vă vor o -- că -- rî pre voi __
+  și vă vor pri -- go -- ni și vor zi -- ce tot cu -- vân -- tul rău
+  îm -- po -- tri -- va voa -- stră, __ min -- țind __ pen -- tru mi -- ne! __
 
-  Bu -- cu -- ra -- ţi- -- vă şi vă ve -- se -- liţi, __ că pla -- ta
+  Bu -- cu -- ra -- ți- -- vă și vă ve -- se -- liți, __ că pla -- ta
   voa -- stră mul -- tă es -- te în ce -- ruri! __
 }
 
 altoWords = \lyricmode {
-  În -- tru-m -- pă -- ră -- ţi -- a Ta când vei ve -- ni,
-  po -- me -- neş -- te- -- ne pe noi Doam -- ne! __
+  În -- tru-m -- pă -- ră -- ți -- a Ta când vei ve -- ni,
+  po -- me -- neș -- te- -- ne pe noi Doam -- ne! __
 
-  Fe -- ri -- ciţi cei să -- raci cu du -- hul,
-  Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  Fe -- ri -- ciți cei să -- raci cu du -- hul,
+  Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   ce -- ru -- ri -- lor.
 
-  % Fe -- ri -- ciţi __ cei ce plâng, că a -- ce -- ia se vor
+  % Fe -- ri -- ciți __ cei ce plâng, că a -- ce -- ia se vor
   % mân -- gâ -- ia! __
 
-  Fe -- ri -- ciţi cei blânzi, că a -- ce -- ia vor moş -- te -- ni
+  Fe -- ri -- ciți cei blânzi, că a -- ce -- ia vor moș -- te -- ni
   pă -- mân -- tul. __
 
-  Fe -- ri -- ciţi __ cei flă -- mânzi şi în -- se -- taţi de
+  Fe -- ri -- ciți __ cei flă -- mânzi și în -- se -- tați de
   drep -- ta -- te, că a -- ce -- ia se vor să -- tu -- ra! __
 
-  Fe -- ri -- ciţi cei mi -- los -- tivi, că a -- ce -- ia se vor
+  Fe -- ri -- ciți cei mi -- los -- tivi, că a -- ce -- ia se vor
   mi -- lu -- i! __
 
-  Fe -- ri -- ciţi cei cu -- raţi cu i -- ni -- ma, că a -- ce -- ia
+  Fe -- ri -- ciți cei cu -- rați cu i -- ni -- ma, că a -- ce -- ia
   vor ve dea pre Dum -- ne -- zeu! __
 
-  Fe -- ri -- ciţi fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
+  Fe -- ri -- ciți fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
   fi -- ii lui Dum -- ne -- zeu se vor che -- ma! __
 
-  Fe -- ri -- ciţi cei go -- niţi pen -- tru drep -- ta -- te,
-  că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  Fe -- ri -- ciți cei go -- niți pen -- tru drep -- ta -- te,
+  că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   ce -- ru -- ri -- lor! __
 
-  Fe -- ri -- ciţi veţi fi când __ vă vor o -- că -- rî pre voi __
-  şi vă vor pri -- go -- ni şi vor zi -- ce tot cu -- vân -- tul rău
-  îm -- po -- tri -- va voa -- stră, __ min -- ţind __ pen -- tru mi -- ne! __
+  Fe -- ri -- ciți veți fi când __ vă vor o -- că -- rî pre voi __
+  și vă vor pri -- go -- ni și vor zi -- ce tot cu -- vân -- tul rău
+  îm -- po -- tri -- va voa -- stră, __ min -- țind __ pen -- tru mi -- ne! __
 
-  Bu -- cu -- ra -- ţi- -- vă şi vă ve -- se -- liţi, __ că pla -- ta
+  Bu -- cu -- ra -- ți- -- vă și vă ve -- se -- liți, __ că pla -- ta
   voa -- stră mul -- tă es -- te în ce -- ruri! __
 }
 
 tenorWords = \lyricmode {
-  În -- tru-m -- pă -- ră -- ţi -- a Ta când vei ve -- ni,
-  po -- me -- neş -- te- -- ne pe noi Doam -- ne! __
+  În -- tru-m -- pă -- ră -- ți -- a Ta când vei ve -- ni,
+  po -- me -- neș -- te- -- ne pe noi Doam -- ne! __
 
-  % Fe -- ri -- ciţi cei să -- raci cu du -- hul,
-  % Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  % Fe -- ri -- ciți cei să -- raci cu du -- hul,
+  % Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   % ce -- ru -- ri -- lor.
 
-  Fe -- ri -- ciţi __ cei ce plâng, că a -- ce -- ia se vor
+  Fe -- ri -- ciți __ cei ce plâng, că a -- ce -- ia se vor
   mân -- gâ -- ia! __
 
-  Fe -- ri -- ciţi__ cei blânzi, că a -- ce -- ia vor moş -- te -- ni
+  Fe -- ri -- ciți__ cei blânzi, că a -- ce -- ia vor moș -- te -- ni
   pă -- mân -- tul. __
 
-  Fe -- ri -- ciţi __ cei flă -- mânzi şi în -- se -- taţi __ de
+  Fe -- ri -- ciți __ cei flă -- mânzi și în -- se -- tați __ de
   drep -- ta -- te, că a -- ce -- ia se vor să -- tu -- ra! __
 
-  Fe -- ri -- ciţi cei mi -- los -- tivi, că a -- ce -- ia se vor
+  Fe -- ri -- ciți cei mi -- los -- tivi, că a -- ce -- ia se vor
   mi -- lu -- i! __
 
-  Fe -- ri -- ciţi cei cu -- raţi cu i -- ni -- ma, că a -- ce -- ia
+  Fe -- ri -- ciți cei cu -- rați cu i -- ni -- ma, că a -- ce -- ia
   vor ve dea pre Dum -- ne -- zeu! __
 
-  Fe -- ri -- ciţi __ fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
+  Fe -- ri -- ciți __ fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
   fi -- ii lui Dum -- ne -- zeu se vor che -- ma! __
 
-  % Fe -- ri -- ciţi cei go -- niţi pen -- tru drep -- ta -- te,
-  % că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  % Fe -- ri -- ciți cei go -- niți pen -- tru drep -- ta -- te,
+  % că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   % ce -- ru -- ri -- lor! __
 
-  Fe -- ri -- ciţi veţi __ fi când __ vă vor o -- că -- rî pre voi __
-  şi vă vor pri -- go -- ni şi vor zi -- ce tot cu -- vân -- tul rău
-  îm -- po -- tri -- va voa -- stră, __ min -- ţind __ pen -- tru mi -- ne! __
+  Fe -- ri -- ciți veți __ fi când __ vă vor o -- că -- rî pre voi __
+  și vă vor pri -- go -- ni și vor zi -- ce tot cu -- vân -- tul rău
+  îm -- po -- tri -- va voa -- stră, __ min -- țind __ pen -- tru mi -- ne! __
 
-  Bu -- cu -- ra -- ţi- -- vă şi vă ve -- se -- liţi, __ că pla -- ta
+  Bu -- cu -- ra -- ți- -- vă și vă ve -- se -- liți, __ că pla -- ta
   voa -- stră mul -- tă e în ce -- ruri! __
 }
 
 bassWords = \lyricmode {
-  În -- tru-m -- pă -- ră -- ţi -- a Ta când vei ve -- ni,
-  po -- me -- neş -- te- -- ne pe noi Doam -- ne! __
+  În -- tru-m -- pă -- ră -- ți -- a Ta când vei ve -- ni,
+  po -- me -- neș -- te- -- ne pe noi Doam -- ne! __
 
-  % Fe -- ri -- ciţi cei să -- raci cu du -- hul,
-  % Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  % Fe -- ri -- ciți cei să -- raci cu du -- hul,
+  % Că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   % ce -- ru -- ri -- lor.
 
-  Fe -- ri -- ciţi cei ce plâng, că a -- ce -- ia se vor
+  Fe -- ri -- ciți cei ce plâng, că a -- ce -- ia se vor
   mân -- gâ -- ia! __
 
-  Fe -- ri -- ciţi cei blânzi, că a -- ce -- ia vor moş -- te -- ni
+  Fe -- ri -- ciți cei blânzi, că a -- ce -- ia vor moș -- te -- ni
   pă -- mân -- tul. __
 
-  Fe -- ri -- ciţi cei flă -- mânzi şi în -- se -- taţi de
+  Fe -- ri -- ciți cei flă -- mânzi și în -- se -- tați de
   drep -- ta -- te, că a -- ce -- ia se vor să -- tu -- ra! __
 
-  Fe -- ri -- ciţi cei mi -- los -- tivi, că a -- ce -- ia se vor
+  Fe -- ri -- ciți cei mi -- los -- tivi, că a -- ce -- ia se vor
   mi -- lu -- i! __
 
-  Fe -- ri -- ciţi cei cu -- raţi cu i -- ni -- ma, că a -- ce -- ia
+  Fe -- ri -- ciți cei cu -- rați cu i -- ni -- ma, că a -- ce -- ia
   vor ve dea pre Dum -- ne -- zeu! __
 
-  Fe -- ri -- ciţi fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
+  Fe -- ri -- ciți fă -- că -- to -- rii de pa -- ce, că a -- ce -- ia
   fi -- ii lui Dum -- ne -- zeu se vor che -- ma! __
 
-  % Fe -- ri -- ciţi cei go -- niţi pen -- tru drep -- ta -- te,
-  % că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ţi -- a
+  % Fe -- ri -- ciți cei go -- niți pen -- tru drep -- ta -- te,
+  % că a -- ce -- lo -- ra es -- te îm -- pă -- ră -- ți -- a
   % ce -- ru -- ri -- lor! __
 
-  Fe -- ri -- ciţi veţi fi când vă vor o -- că -- rî pre voi __
-  şi vă vor pri -- go -- ni şi vor zi -- ce tot cu -- vân -- tul rău
-  îm -- po -- tri -- va voa -- stră, __ min -- ţind __ pen -- tru mi -- ne! __
+  Fe -- ri -- ciți veți fi când vă vor o -- că -- rî pre voi __
+  și vă vor pri -- go -- ni și vor zi -- ce tot cu -- vân -- tul rău
+  îm -- po -- tri -- va voa -- stră, __ min -- țind __ pen -- tru mi -- ne! __
 
-  Bu -- cu -- ra -- ţi- -- vă şi vă ve -- se -- liţi, __ că pla -- ta
+  Bu -- cu -- ra -- ți- -- vă și vă ve -- se -- liți, __ că pla -- ta
   voa -- stră mul -- tă es -- te în ce -- ruri! __
 }
 
@@ -1117,16 +1118,16 @@ myScore = \new Score <<
   \new ChoirStaff <<
     \new Staff \new Voice { \global \sopMusic }
     \addlyrics { \sopWords }
-    
+
     \new Staff \new Voice { \global \altoMusic }
     \addlyrics { \altoWords }
-    
+
     \new Staff <<
       \clef "G_8"
       \new Voice { \global \tenorMusic }
       \addlyrics { \tenorWords }
     >>
-    
+
     \new Staff <<
       \clef bass
       \new Voice { \global \bassMusic }
@@ -1141,9 +1142,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 156 4)
-  }
+  \tempo 4 = 156
   \context {
     \Voice
     \remove "Dynamic_performer"

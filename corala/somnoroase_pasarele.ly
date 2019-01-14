@@ -1,11 +1,12 @@
-\version "2.10.14"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -15,9 +16,10 @@
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
-  \override Score.VerticalAxisGroup #'remove-first = ##t
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \key f \major
   \time 3/4
   \autoBeamOff
@@ -27,15 +29,15 @@ soloStanzaOne = \lyricmode {
   \set stanza = "1."
   Doar iz -- voa -- re -- le sus -- pi -- nă,
   Pe când co -- drul ne -- gru ta -- ce;
-  Dorm şi flo -- ri -- le-n gră -- di -- nă,
+  Dorm și flo -- ri -- le-n gră -- di -- nă,
   Dormi în pa -- ce!
 }
 
 soloStanzaTwo = \lyricmode {
   \set stanza = "2."
-  Pes -- te-a nop -- ţii fe -- e -- ri -- e
+  Pes -- te-a nop -- ții fe -- e -- ri -- e
   Se ri -- di -- că mân -- dra lu -- nă.
-  To -- tu-i vis şi ar -- mo -- ni -- e,
+  To -- tu-i vis și ar -- mo -- ni -- e,
   Noap -- te bu -- nă!
 }
 
@@ -55,7 +57,7 @@ sopStanzaTwo = \lyricmode {
   \skip 8 \skip 8
   le -- bă -- da pe a -- pe
   În -- tre tres -- tii să se cul -- ce,
-  Fi -- e-ţi în -- ge -- rii a -- proa -- pe,
+  Fi -- e-ți în -- ge -- rii a -- proa -- pe,
   Som -- nul dul -- ce! Som -- nul dul -- ce!
 
   \skip 8 \skip 8
@@ -82,7 +84,7 @@ tenorStanzaTwo = \lyricmode {
   \skip 8 \skip 8
   le -- bă -- da pe a -- pe
   În -- tre tres -- tii să se cul -- ce,
-  Fi -- e-ţi în -- ge -- rii a -- proa -- pe,
+  Fi -- e-ți în -- ge -- rii a -- proa -- pe,
   Som -- nul dul -- ce! dul -- ce!
 
   \skip 8 \skip 8
@@ -93,7 +95,7 @@ tenorStanzaTwo = \lyricmode {
   bu -- nă!
 }
 
-soloMusic = \relative {
+soloMusic = \relative c' {
   \set Staff.midiInstrument = "clarinet"
 
   \partial 4 s4
@@ -115,7 +117,7 @@ soloMusic = \relative {
   }
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "S"
 
@@ -151,7 +153,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "A"
 
@@ -182,7 +184,7 @@ altoMusic = \relative {
   }
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "T"
 
@@ -193,12 +195,12 @@ tenorMusic = \relative {
     c4 c4 r4
     c8. c16 d8 c8 bes8 a8
     c4 bes2
-    
+
     bes8. bes16 bes8. bes16 c8 bes8
     bes4 a4 f8 g8
     a4 c4 r4
     bes4 a2
-    
+
     c4\( \melisma d4 es4~
     es4 d4 des4
     bes2.
@@ -213,7 +215,7 @@ tenorMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "B"
 
@@ -224,12 +226,12 @@ bassMusic = \relative {
     g4 g4 r4
     d8. d16 d8 d8 d8 d8
     g4 g2
-    
+
     c,8. c16 c8. c16 c8 c8
     cis4 d4 des8 des8
     c4 c4 r4
     c4 f2
-    
+
     <f f,>2.(
     bes,2.)
     des2( es4
@@ -277,15 +279,13 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 72 4)
-  }
+  \tempo 4 = 72
 }
 
 \score {

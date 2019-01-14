@@ -1,11 +1,12 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -17,13 +18,14 @@
   meter = "Andante"
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \key f \minor
   \time 6/8
   \autoBeamOff
   \set Staff.midiInstrument = "clarinet"
-  \override BreathingSign #'text = #(make-musicglyph-markup "scripts.caesura")
+  \override BreathingSign.text = #(make-musicglyph-markup "scripts.caesura.curved")
 }
 
 atempoMarkup = \markup { \hspace #-3.0 \bold "a tempo" }
@@ -38,59 +40,59 @@ markupC = \markup { \bold \italic "espress." }
 markupD = \markup { \bold "molto rall. e dim." }
 markupE = \markup { \column {
   { \bold "Tutti" }
-  { \musicglyph #"p" }
+  { \musicglyph "p" }
 }}
 markupF = \markup { \bold \italic "espress. dolce" }
 markupG = \markup { \bold \italic "sentito" }
 markupH = \markup { \bold "ben ritmato" }
-markupI = \markup { \hspace #8.5 \musicglyph #"scripts.ufermata" }
+markupI = \markup { \hspace #8.5 \musicglyph "scripts.ufermata" }
 markupJ = \markup { \hspace #3.0 \bold \italic "morendo" }
 markupK = \markup { \column {
   { \line {
-    \hspace #-1.5 \musicglyph #"p"
-    \hspace #-1.0 \musicglyph #"p"
-    \hspace #-1.0 \musicglyph #"p"
+    \hspace #-1.5 \musicglyph "p"
+    \hspace #-1.0 \musicglyph "p"
+    \hspace #-1.0 \musicglyph "p"
   } }
-  { \line { \hspace #0.5 \musicglyph #"scripts.ufermata" } }
+  { \line { \hspace #0.5 \musicglyph "scripts.ufermata" } }
 }}
 
 womenWords = \lyricmode {
   Cu cren -- gi -- le la pă -- mânt? __
-  De ce nu m-aş le -- gă -- na,
+  De ce nu m-aș le -- gă -- na,
   Da -- că tre -- ce vre -- mea mea?
-  Zi -- ua sca -- de, noap -- tea creş -- te
-  Şi frun -- zi -- şul mi-l ră -- reş te.
+  Zi -- ua sca -- de, noap -- tea creș -- te
+  Și frun -- zi -- șul mi-l ră -- reș te.
 
   Ba -- te vân -- tul frun -- za-n dun -- gă,
-  Cân -- tă -- re -- ţii mi-i a -- lun -- gă;
+  Cân -- tă -- re -- ții mi-i a -- lun -- gă;
   Ba -- te vân -- tul din -- tr-o par -- te,
   Iar -- na-i ici, va -- ra-i de -- par -- te.
 
   Ce te le -- geni, co -- dru -- le,
   ce te le -- geni, co -- dru -- le,
   Cu cren -- gi -- le la __ pă -- mânt? __
-  Şi de ce să nu mă plec,
+  Și de ce să nu mă plec,
   Da -- că pă -- să -- ri -- le trec?
 
   Pes -- te vârf de ră -- mu -- re -- le
   Trec în sto -- luri rân -- du -- ne -- le,
   Du -- când gân -- du -- ri -- le me -- le
-  Şi no -- ro -- cul meu cu e -- le...
+  Și no -- ro -- cul meu cu e -- le...
 
-  Şi se duc pe rând, pe rând,
+  Și se duc pe rând, pe rând,
   Za -- rea lu -- mii-n -- tu -- ne -- când;
 
-  Şi se duc ca cli -- pe -- le,
+  Și se duc ca cli -- pe -- le,
   Scu -- tu -- rând a -- ri -- pi -- le
-  Şi mă la -- să pus -- ti -- it, __
-  Veş -- te -- jit şi a -- mor -- ţit...
+  Și mă la -- să pus -- ti -- it, __
+  Veș -- te -- jit și a -- mor -- țit...
 
-  Şi se duc ca cli -- pe -- le,
+  Și se duc ca cli -- pe -- le,
   Scu -- tu -- rând a -- ri -- pi -- le
-  Şi mă la -- să pus -- ti -- it,
-  Veş -- te -- jit şi a -- mor -- ţit...
+  Și mă la -- să pus -- ti -- it,
+  Veș -- te -- jit și a -- mor -- țit...
 
-  Şi cu do -- rul sin -- gu -- rel,
+  Și cu do -- rul sin -- gu -- rel,
   De mă-n -- gân nu -- mai cu el,
   De mă-n -- gân nu -- mai cu el! __
 
@@ -102,23 +104,23 @@ menWords = \lyricmode {
   Fă -- ră ploa -- ie, fă -- ră vânt,
   Cu cren -- gi -- le la pă -- mânt, __ la pă -- mânt? __
 
-  De ce nu m-aş le -- gă -- na,
+  De ce nu m-aș le -- gă -- na,
   Da -- că tre -- ce
 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
 
   M __
   M __
   M __
   M __
-  Şi se duc ca cli -- pe -- le,
+  Și se duc ca cli -- pe -- le,
   Scu -- tu -- rând "a -"
 
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
@@ -132,7 +134,7 @@ menWords = \lyricmode {
   Cu cren -- gi -- le la pă -- mânt? __
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   R2.
   R2.
   r4. r4 f8^\p
@@ -215,7 +217,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-menMusic = \relative {
+menMusic = \relative c' {
   f,8.^\mp f16 f16 f16 f8 e8 f8
   as8. g16 f16 e16 f8 f8 f8
   des8.^\> f16 f16 f16 es!4 des8\!
@@ -323,9 +325,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 72 4)
-  }
+  \tempo 4 = 72
   \context {
     \Voice
     \remove "Dynamic_performer"

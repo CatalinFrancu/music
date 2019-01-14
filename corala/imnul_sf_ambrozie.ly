@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
@@ -12,71 +12,69 @@
 \header {
   title = "Pe Tine, Dumnezeule, Te lăudăm"
   subtitle = "Imnul Sf. Ambrozie"
-  composer =  \markup \center-column { "Sf. Ambrozie al Mediolanului" \small 
-  "arm. prof. Ov. Giulvezan"  \small "Timişoara, aug. 2011" }
+  composer =  \markup \center-column { "Sf. Ambrozie al Mediolanului" \small
+  "arm. prof. Ov. Giulvezan"  \small "Timișoara, aug. 2011" }
   meter = "Moderato"
   tagline = ""
 }
 
-% diacritice: ă â î ş ţ Ţ Ş Ă
-
 global = {
   \key c \major
   \time 4/4
-  \override Staff.TimeSignature #'stencil = ##f
+  \override Staff.TimeSignature.stencil = ##f
   \set Timing.defaultBarType = ""
   \set Score.barNumberVisibility = ##f
   \autoBeamOff
   \set Staff.midiInstrument = "clarinet"
 }
 
-stanzaOne = \lyricmode { 
+stanzaOne = \lyricmode {
 	Pe Ti -- ne Dum -- ne -- ze -- u -- le, Te lă -- u -- dăm,
-	pe Ti -- ne Doam -- ne Te măr -- tu -- ri -- sim; 
-	pe Ti -- ne prea veş -- ni -- cu -- le Pă -- rin -- te, tot pă -- mân -- 
-	tul Te mă -- reş -- te.
-	Ţi -- e toţi în -- ge -- rii, Ţi -- e, ce -- ru -- ri -- le şi toa -- te
-	pu -- te -- ri -- le, Ţi -- e, He -- ru -- vi -- mii şi Se -- ra -- fi
-	-- mii, cu ne -- în -- ce -- tat glas îţi stri -- gă: 
-	Sfânt, Sfânt, Sfânt, Dom -- nul Dum -- ne -- zeu Sa -- va -- ot! Pli -- ne 
-	sunt ce -- ru -- ri -- le şi pă -- mân -- tul de  mă -- ri -- rea 
+	pe Ti -- ne Doam -- ne Te măr -- tu -- ri -- sim;
+	pe Ti -- ne prea veș -- ni -- cu -- le Pă -- rin -- te, tot pă -- mân --
+	tul Te mă -- reș -- te.
+	Ți -- e toți în -- ge -- rii, Ți -- e, ce -- ru -- ri -- le și toa -- te
+	pu -- te -- ri -- le, Ți -- e, He -- ru -- vi -- mii și Se -- ra -- fi
+	-- mii, cu ne -- în -- ce -- tat glas îți stri -- gă:
+	Sfânt, Sfânt, Sfânt, Dom -- nul Dum -- ne -- zeu Sa -- va -- ot! Pli -- ne
+	sunt ce -- ru -- ri -- le și pă -- mân -- tul de  mă -- ri -- rea
 	sla -- vei Ta -- le.
-	Mân -- tu -- ieş -- te, Doam -- ne, po -- po -- rul Tău şi bi -- ne -- 
-	cu -- vin -- tea -- ză_ moş -- te -- ni -- rea Ta şi paş -- te -- o pe
-	dân -- sa şi -- 'nal -- ţă -- o în veci.
-	Spre Ti -- ne Doam -- ne am nă -- dăj -- du -- it, să nu ne ru -- şi --
+	Mân -- tu -- ieș -- te, Doam -- ne, po -- po -- rul Tău și bi -- ne --
+	cu -- vin -- tea -- ză_ moș -- te -- ni -- rea Ta și paș -- te -- o pe
+	dân -- sa și -- 'nal -- ță -- o în veci.
+	Spre Ti -- ne Doam -- ne am nă -- dăj -- du -- it, să nu ne ru -- și --
 	năm în veci A -- min
 }
 
 sopranMusic = \relative c'' {
-	g4 c-> b a b 
-	\acciaccatura { d8 } c4 b8[( a)] g4 g a b c4. b8 d4-> b 
-	\acciaccatura { d8 } c4( b8[ a]) g2 a4 f e f g4. g8 c4-> ( b) a g 
-	\acciaccatura { b8 } a4( g) f8[( e]) d4 e f g( a) g2 g4 
-	\acciaccatura { a8 } g4 g f e d e8[( f g e]) c2 
+	g4 c-> b a b
+	\acciaccatura { d8 } c4 b8[( a)] g4 g a b c4. b8 d4-> b
+	\acciaccatura { d8 } c4( b8[ a]) g2 a4 f e f g4. g8 c4-> ( b) a g
+	\acciaccatura { b8 } a4( g) f8[( e]) d4 e f g( a) g2 g4
+	\acciaccatura { a8 } g4 g f e d e8[( f g e]) c2
 	\bar "||" \break
-	c'4-> ( b) a c c8[( d]) b4 c2 c4-> b c8[( d] c4) b a g4. g8 f4( e) f g 
-	a f g2 c4-> b a g 
-	\acciaccatura { b8 } a4( g) f8[( e]) d4 e f g( a) g2 g4 g g g 
+	c'4-> ( b) a c c8[( d]) b4 c2 c4-> b c8[( d] c4) b a g4. g8 f4( e) f g
+	a f g2 c4-> b a g
+	\acciaccatura { b8 } a4( g) f8[( e]) d4 e f g( a) g2 g4 g g g
 	\acciaccatura { b8 } a4( g) f8[( e]) d4 e8[( f g e)] c2
 	\bar "||" \break
-	c'2 b c f,4 f e f g2 a4 b c2 
-	\acciaccatura { d8 } c4( b) a b c8[( d] c4) b a g( f8[ e]) f4 g 
+	c'2 b c f,4 f e f g2 a4 b c2
+	\acciaccatura { d8 } c4( b) a b c8[( d] c4) b a g( f8[ e]) f4 g
 	a( bes) g2 g4 g c->( b) a( g) f8[( e]) d4 e8[( f g e]) c2
 	\bar "||" \break
-	g'4 g c-> b c->( b8[ a]) g4 g a b c4. b8 d4-> b a b 
-	\acciaccatura { d8 } c4( b8[ a]) g4( f8[ e]) 
-	f4 g a-> f g4. g8 c8.[( d16 c8)] bes a4 g a8[( bes a g)] f[( e)] d4 g-> 
+	g'4 g c-> b c->( b8[ a]) g4 g a b c4. b8 d4-> b a b
+	\acciaccatura { d8 } c4( b8[ a]) g4( f8[ e])
+	f4 g a-> f g4. g8 c8.[( d16 c8)] bes a4 g a8[( bes a g)] f[( e)] d4 g->
 	f e d8[( e)] c2
 	\bar "||" \break
-	g'4 c-> b c->( b8[ a)] g2 g4 g a b c4. g8 c[( d c]) bes a4 g f8[( e)] d4 
-	e8[( f] g) e d2( c4 b a b c2)	
+	g'4 c-> b c->( b8[ a)] g2 g4 g a b c4. g8 c[( d c]) bes a4 g f8[( e)] d4
+	e8[( f] g) e d2( c4 b a b c2)
 	\bar "|."
-  
+
 }
 
-altMusic = \relative c' { 
-	g4 e d c d 
+altMusic = \relative c' {
+	g4 e d c d
 	\acciaccatura { f8 } e4 f g g f g a4. g8 f4 g
 	\acciaccatura { b8 } a4( g8[ f]) e2 f4 d c d e4. e8 a4( g) f e
 	\acciaccatura { d8 } c4( e)  f8[( e]) d4 c d e( f) g2 b,4
@@ -97,7 +95,7 @@ altMusic = \relative c' {
 	g'4 e d c( g'8[( f]) e2 c4 e f g a4. b8 c[( bes a]) g f4 e d8[( c]) b4
 	c8[(d] e) e f2( e4 d c g' c,2)
 	\bar "|."
-	
+
 }
 
 myScore = \new Score <<
@@ -105,13 +103,13 @@ myScore = \new Score <<
     \new Staff <<
     \new Voice { \global \sopranMusic }
     \addlyrics { \stanzaOne }
-    
+
     \new Staff <<
     \clef "G_8"
     \new Voice { \global \altMusic }
     %  \addlyrics { \stanzaOne }
     >>
-    
+
     >>
   >>
 >>
@@ -122,9 +120,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 60 4)
-  }
+  \tempo 4 = 60
 }
 
 \score {

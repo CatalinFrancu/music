@@ -1,15 +1,16 @@
-\version "2.16.0"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 1\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Românaşului îi place"
+  title = "Românașului îi place"
   composer = "Melodie veche"
   tagline = ""
   meter = "Allegretto"
@@ -25,9 +26,9 @@ global = {
 
 stanzaOne = \lyricmode {
   \set stanza = "1."
-  Ro -- mâ -- na -- şu -- lui îi pla -- ce
+  Ro -- mâ -- na -- șu -- lui îi pla -- ce
   Sus la mun -- te, sus la mun -- te, la iz -- vor,
-  Li -- ber şi să fi -- e-n pa -- ce
+  Li -- ber și să fi -- e-n pa -- ce
   Al na -- tu -- rii, al na -- tu -- rii dom -- ni -- tor!
 
   Un -- de prin -- tre stânci bă -- trâ -- ne
@@ -42,8 +43,8 @@ stanzaTwo = \lyricmode {
   Un -- de bra -- dul dă ră -- coa -- re
   La tot o -- mul, la tot o -- mul că -- lă -- tor,
 
-  Un -- de mi -- o -- ri -- ţa zbia -- ră
-  Flu -- ie -- raş cân -- tând de sea -- ră
+  Un -- de mi -- o -- ri -- ța zbia -- ră
+  Flu -- ie -- raș cân -- tând de sea -- ră
   În -- tr-un glas sus -- pi -- nă -- tor, sus -- pi -- nă -- tor.
 }
 
@@ -51,15 +52,15 @@ stanzaThree = \lyricmode {
   \set stanza = "3."
   De a -- ce -- ea lui îi pla -- ce
   Sus la mun -- te, sus la mun -- te, la iz -- vor,
-  Li -- ber şi să fi -- e-n pa -- ce
+  Li -- ber și să fi -- e-n pa -- ce
   Al na -- tu -- rii, al na -- tu -- rii dom -- ni -- tor!
 
   Să tră -- ias -- că-n fe -- ri -- ci -- re,
-  Li -- ber -- ta -- te şi iu -- bi -- re
+  Li -- ber -- ta -- te și iu -- bi -- re
   Tim -- pul iu -- te, tim -- pul iu -- te tre -- că -- tor!
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   fis4.^\mf g8
   a4 d4
   a4. b8
@@ -94,7 +95,7 @@ womenMusic = \relative {
   }
 }
 
-menMusic = \relative {
+menMusic = \relative c' {
   d,4.^\mf e8
   fis4 fis4
   fis4. g8

@@ -1,23 +1,25 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Miluieşte-mă, Dumnezeule (Psalmul 50)"
+  title = "Miluiește-mă, Dumnezeule (Psalmul 50)"
   subtitle = "Denia celor douăsprezece Evanghelii"
-  subsubtitle = "după Evanghelia a şaptea"
+  subsubtitle = "după Evanghelia a șaptea"
   composer = "Gh. Cucu"
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
   \key a \minor
   \time 4/4
@@ -25,8 +27,8 @@ global = {
 }
 
 myCaesura = {
-  \once \override BreathingSign #'text =
-  #(make-musicglyph-markup "scripts.caesura")
+  \once \override BreathingSign.text =
+  #(make-musicglyph-markup "scripts.caesura.curved")
   \breathe
 }
 
@@ -34,93 +36,93 @@ crescMarkup = \markup{ \large \italic "cresc" }
 ritMarkup = \markup{ \large \bold "rit." }
 
 sopWords = \lyricmode {
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
-  şi du -- pă mul -- ţi -- mea în -- du -- ră -- ri -- lor Ta -- le
+  și du -- pă mul -- ți -- mea în -- du -- ră -- ri -- lor Ta -- le
 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 
-  şter -- ge __ fă -- ră -- de -- le -- gea __ mea __
-  şter -- ge
-  şter -- ge
-  şter -- ge
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
+  șter -- ge __ fă -- ră -- de -- le -- gea __ mea __
+  șter -- ge
+  șter -- ge
+  șter -- ge
 }
 
 altoWords = \lyricmode {
-  Mi -- lu -- ieş -- te -- mă
-  Mi -- lu -- ieş -- te -- mă
-  Mi -- lu -- ieş -- te -- mă,
-  mi -- lu -- ieş -- te -- mă,
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  Mi -- lu -- ieș -- te -- mă
+  Mi -- lu -- ieș -- te -- mă
+  Mi -- lu -- ieș -- te -- mă,
+  mi -- lu -- ieș -- te -- mă,
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la Ta. __
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
-  mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
-  mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
+  mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
+  mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la __ Ta. __
 
-  şter -- ge __
-  şter -- ge __
-  şter -- ge __ fă -- ră -- de -- le -- gea __ mea,
-  şter -- ge fă -- ră -- de -- le -- gea __ mea __
-  şter -- ge __
-  şter -- ge __
+  șter -- ge __
+  șter -- ge __
+  șter -- ge __ fă -- ră -- de -- le -- gea __ mea,
+  șter -- ge fă -- ră -- de -- le -- gea __ mea __
+  șter -- ge __
+  șter -- ge __
 
   Mai vâr -- tos mă spa -- lă de fă -- ră -- de -- le -- gea mea __
-  şter -- ge __ fă -- ră -- de -- le -- gea __ mea __
-  şter -- ge __
-  şter -- ge __
-  şter -- ge __
-  şter -- ge __ fă -- ră -- de -- le -- gea __ mea __
+  șter -- ge __ fă -- ră -- de -- le -- gea __ mea __
+  șter -- ge __
+  șter -- ge __
+  șter -- ge __
+  șter -- ge __ fă -- ră -- de -- le -- gea __ mea __
   fă -- ră -- de le -- gea __ mea __
 
-  şi de pă -- ca -- tul meu cu -- ră -- ţeş -- te -- mă
-  şi de pă -- ca -- tul meu cu -- ră -- ţeş -- te -- mă.
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  și de pă -- ca -- tul meu cu -- ră -- țeș -- te -- mă
+  și de pă -- ca -- tul meu cu -- ră -- țeș -- te -- mă.
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la Ta. __
 }
 
 menWords = \lyricmode {
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la Ta. __
-  Mi -- lu -- ieş -- te -- mă
-  Mi -- lu -- ieş -- te -- mă
-  mi -- lu -- ieş -- te -- mă,
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  Mi -- lu -- ieș -- te -- mă
+  Mi -- lu -- ieș -- te -- mă
+  mi -- lu -- ieș -- te -- mă,
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la Ta. __
 
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
-  mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
-  mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
+  mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
+  mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la __ Ta. __
 
-  şter -- ge __
-  şter -- ge __
-  şter -- ge __ fă -- ră -- de -- le -- gea mea,
-  şter -- ge fă -- ră -- de -- le -- gea __ mea __
-  şter -- ge __
-  şter -- ge __
-  
+  șter -- ge __
+  șter -- ge __
+  șter -- ge __ fă -- ră -- de -- le -- gea mea,
+  șter -- ge fă -- ră -- de -- le -- gea __ mea __
+  șter -- ge __
+  șter -- ge __
+
   Mai vâr -- tos mă spa -- lă de fă -- ră -- de -- le -- gea mea __
-  şter -- ge __ fă -- ră -- de -- le -- gea mea __
-  şter -- ge __
-  şter -- ge __
-  şter -- ge __
-  şter -- ge __ fă -- ră -- de -- le -- gea mea __
+  șter -- ge __ fă -- ră -- de -- le -- gea mea __
+  șter -- ge __
+  șter -- ge __
+  șter -- ge __
+  șter -- ge __ fă -- ră -- de -- le -- gea mea __
   fă -- ră -- de -- le -- gea mea __
 
-  şi de pă -- ca -- tul meu cu -- ră -- ţeş -- te -- mă
-  şi de pă -- ca -- tul meu cu -- ră -- ţeş -- te -- mă.
-  Mi -- lu -- ieş -- te -- mă, Dum -- ne -- ze -- u -- le,
+  și de pă -- ca -- tul meu cu -- ră -- țeș -- te -- mă
+  și de pă -- ca -- tul meu cu -- ră -- țeș -- te -- mă.
+  Mi -- lu -- ieș -- te -- mă, Dum -- ne -- ze -- u -- le,
   du -- pă ma -- re mi -- la Ta. __
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \voiceOne
   \partial 4 bes'4\rest
   R1
@@ -217,7 +219,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \voiceTwo
   \partial 4 b'4\rest
   R1 |
@@ -300,7 +302,7 @@ altoMusic = \relative {
   e2)~ e4 b'4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \voiceOne
   \partial 4 a,8^\mf a8 |
   c4. b8 a4 b8 c8 |
@@ -335,7 +337,7 @@ tenorMusic = \relative {
 
   a4 d4 a4 d4 |
   a2)~ a8 d8\rest d4\rest |
-  \override Voice.MultiMeasureRest #'staff-position = #0
+  \override Voice.MultiMeasureRest.staff-position = #0
   R1 |
   d4-> e4~ e8 d8\rest d4\rest |
 
@@ -384,7 +386,7 @@ tenorMusic = \relative {
   a2)~ a4 d4\rest |
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \voiceTwo
   \partial 4 a,8 a8 |
   c4. b8 a4 b8 c8 |
@@ -419,7 +421,7 @@ bassMusic = \relative {
 
   a4 d4 a4 d4 |
   a2)~ a8 d8\rest d4\rest |
-  \override Voice.MultiMeasureRest #'staff-position = #0
+  \override Voice.MultiMeasureRest.staff-position = #0
   R1 |
   d4-> a4~ a8 d8\rest d4\rest |
 
@@ -493,9 +495,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 88 4)
-  }
+  \tempo 4 = 88
   \context {
     \Voice
     \remove "Dynamic_performer"

@@ -1,11 +1,12 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -15,10 +16,11 @@
   tagline = ""
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
-  \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-  \override Staff.TimeSignature #'text = ""
+  \override Staff.TimeSignature.stencil = #ly:text-interface::print
+  \override Staff.TimeSignature.text = ""
   \set Staff.midiInstrument = "clarinet"
   \key g \minor
   \autoBeamOff
@@ -28,7 +30,7 @@ global = {
 words = \lyricmode {
   As -- tăzi S-a răs -- tig -- nit pe lemn
 
-  Cel "ce a susţinut pământul" pe a -- pe.
+  Cel "ce a susținut pământul" pe a -- pe.
 
   Co -- roa -- "nă de spini a-ncununat Împăra" -- tul
   în -- ge -- ri -- lor.
@@ -41,7 +43,7 @@ words = \lyricmode {
 
   Cu "piroane S-a pironit Mirele" Bi -- se -- ri -- cii.
 
-  Cu "suliţa S-a-mpuns Fi" -- ul Fe -- cioa -- rei.
+  Cu "sulița S-a-mpuns Fi" -- ul Fe -- cioa -- rei.
 
   În -- "chinare Patimilor Tale," Hris -- toa -- se,
   în -- "chinare Patimilor Tale," Hris -- toa -- se,
@@ -49,13 +51,13 @@ words = \lyricmode {
   A -- "rată-ne nouă slăvită În" -- vi -- e -- rea Ta!
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \voiceOne
   % Astăzi S-a răstignit pe lemn
   g'4 g2 g4 g4 g4 fis2 fis4 g2
   \bar "||"
 
-  % Cel ce a susţinut pământul pe ape.
+  % Cel ce a susținut pământul pe ape.
   a4 a\breve^\< a4\! a2( bes2) a2.
   \bar "||"
 
@@ -79,7 +81,7 @@ sopMusic = \relative {
   g4 g\breve g4 fis!2-> fis4 g2 \breathe
   \bar "||"
 
-  % Cu suliţa S-a-mpuns Fiul Fecioarei.
+  % Cu sulița S-a-mpuns Fiul Fecioarei.
   a4 a\breve a4^\< a4 a2( bes2) a1\!
   \bar "||"
 
@@ -100,12 +102,12 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \voiceTwo
   % Astăzi S-a răstignit pe lemn
   d4 d2 d4 d4 d4 d2 d4 d2
 
-  % Cel ce a susţinut pământul pe ape.
+  % Cel ce a susținut pământul pe ape.
   f!4 f\breve f4 f2( g2) fis2.
 
   % Coroană de spini a-ncununat Împăratul îngerilor.
@@ -123,7 +125,7 @@ altoMusic = \relative {
   % Cu piroane S-a pironit Mirele Bisericii.
   d4 d\breve d4 d2 d4 d2
 
-  % Cu suliţa S-a-mpuns Fiul Fecioarei.
+  % Cu sulița S-a-mpuns Fiul Fecioarei.
   f!4 f\breve f4 f4 f2( g2) fis2( f2)
 
   % Închinare Patimilor Tale, Hristoase,
@@ -139,12 +141,12 @@ altoMusic = \relative {
   d4 d\breve d4 es2 d2 d1
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \voiceOne
   % Astăzi S-a răstignit pe lemn
   bes4 bes2 bes4 bes4 bes4 a2 a4 bes2
 
-  % Cel ce a susţinut pământul pe ape.
+  % Cel ce a susținut pământul pe ape.
   c4 c\breve^\< c4\! c2( d2) d2.
 
   % Coroană de spini a-ncununat Împăratul îngerilor.
@@ -162,7 +164,7 @@ tenorMusic = \relative {
   % Cu piroane S-a pironit Mirele Bisericii.
   bes4 bes\breve bes4 a2-> a4 bes2 \breathe
 
-  % Cu suliţa S-a-mpuns Fiul Fecioarei.
+  % Cu sulița S-a-mpuns Fiul Fecioarei.
   c4 c\breve c4^\< c4 c2( d2) d2(\! es2)
 
   % Închinare Patimilor Tale, Hristoase,
@@ -178,12 +180,12 @@ tenorMusic = \relative {
   bes4 bes\breve bes4 a2 a2 bes1^\fermata
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \voiceTwo
   % Astăzi S-a răstignit pe lemn
   <g g,>4 <g g,>2 <g g,>4 <g g,>4 <g g,>4 d2 d4 <g g,>2
 
-  % Cel ce a susţinut pământul pe ape.
+  % Cel ce a susținut pământul pe ape.
   <f f,>4 <f f,>\breve <f f,>4 <a a,>2( <g g,>2) d2.
 
   % Coroană de spini a-ncununat Împăratul îngerilor.
@@ -201,7 +203,7 @@ bassMusic = \relative {
   % Cu piroane S-a pironit Mirele Bisericii.
   <g g,>4 <g g,>\breve <g g,>4 d2 d4 <g g,>2
 
-  % Cu suliţa S-a-mpuns Fiul Fecioarei.
+  % Cu sulița S-a-mpuns Fiul Fecioarei.
   <f f,>4 <f f,>\breve <f f,>4 <f f,>4 <f f,>2( <g g,>2) d2( c2)
 
   % Închinare Patimilor Tale, Hristoase,
@@ -218,7 +220,7 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #6.0
+  \override SpacingSpanner.shortest-duration-space = #6.0
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -241,9 +243,7 @@ myScore = \new Score \with {
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 108 4)
-  }
+  \tempo 4 = 108
   \context {
     \Voice
     \remove "Dynamic_performer"

@@ -1,15 +1,16 @@
-\version "2.10.14"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Doruleţ, doruleţule!"
+  title = "Doruleț, dorulețule!"
   subtitle = "Melodie populară"
   poet = "Versuri populare"
   meter = \markup { Allegretto \note #"4" #1 = 88 }
@@ -26,13 +27,14 @@ dimMarkup = \markup {
 
 sfAndFermata = \markup {
   \hspace #0.1
-  \musicglyph #"scripts.ufermata"
-  \musicglyph #"s"
-  \musicglyph #"f"
+  \musicglyph "scripts.ufermata"
+  \musicglyph "s"
+  \musicglyph "f"
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
   \key fis \minor
   \time 2/4
@@ -41,14 +43,14 @@ global = {
 
 womenStanzaOne = \lyricmode {
   \set stanza = "1."
-  Frun -- zu -- li -- ţă, frun -- za mea, __
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, __
+  Frun -- zu -- li -- ță, frun -- za mea, __
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, __
   Vân -- tul când __ te-o le -- gă -- na. __
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le. __
+  Do -- ru -- leț, do -- ru -- le -- țu -- le. __
 
-  Do -- ru -- leţ, do -- ru -- leţ, do -- ru -- le -- ţu -- le,
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, I -- ha!
-  Do -- ru -- leţ, dor, do -- ru -- le! __
+  Do -- ru -- leț, do -- ru -- leț, do -- ru -- le -- țu -- le,
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, I -- ha!
+  Do -- ru -- leț, dor, do -- ru -- le! __
 
   Măi! __
 }
@@ -56,14 +58,14 @@ womenStanzaOne = \lyricmode {
 womenStanzaTwo = \lyricmode {
   \set stanza = "2."
   Du pă -- du -- rii, du în zbor, __
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, __
-  Cân -- te -- cul __ de drag şi dor!
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, __
+  Cân -- te -- cul __ de drag și dor!
 }
 
 womenStanzaThree = \lyricmode {
   \set stanza = "3."
   Du-l mai iu -- te, frun -- za mea, __
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, __
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, __
   Pân' nu vi -- ne iar -- na grea.
 }
 
@@ -71,10 +73,10 @@ womenStanzaFour = \lyricmode {
   \set stanza = "4."
   Ea îm -- bra -- că-n
   \set ignoreMelismata = ##t
-  şu -- ba groa -- \skip 16 să
+  șu -- ba groa -- \skip 16 să
   \unset ignoreMelismata
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, __
-  Şi pă -- du -- rea
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, __
+  Și pă -- du -- rea
   \set ignoreMelismata = ##t
   mea fru -- moa -- \skip 16 să.
   \unset ignoreMelismata
@@ -84,49 +86,49 @@ womenStanzaFive = \lyricmode {
   \set stanza = "5."
   Dru -- mul iar -- na
   \set ignoreMelismata = ##t
-  tro -- ie -- neş -- \skip 16 te
+  tro -- ie -- neș -- \skip 16 te
   \unset ignoreMelismata
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, __
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, __
   Do -- rul meu __ nu
   \set ignoreMelismata = ##t
-  mai răz -- beş -- \skip 16 te.
+  mai răz -- beș -- \skip 16 te.
   \unset ignoreMelismata
 }
 
 tenorStanzaOne = \lyricmode {
   \set stanza = "1."
-  Frun -- zu -- li -- ţă, frun -- za mea, __
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, __
+  Frun -- zu -- li -- ță, frun -- za mea, __
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, __
   Vân -- tul când __ te-o le -- gă -- na. __
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le. __
+  Do -- ru -- leț, do -- ru -- le -- țu -- le. __
 
-  Do -- ru -- leţ, do -- ru -- leţ, do -- ru -- le -- ţu -- le,
-  Do -- ru -- leţ, do -- ru -- le -- ţu -- le, I -- ha!
-  Do -- ru -- leţ, do -- ru -- leţ, do -- ru -- le -- ţu -- le,
-  dor, __ do -- ru -- le -- ţu -- le!
+  Do -- ru -- leț, do -- ru -- leț, do -- ru -- le -- țu -- le,
+  Do -- ru -- leț, do -- ru -- le -- țu -- le, I -- ha!
+  Do -- ru -- leț, do -- ru -- leț, do -- ru -- le -- țu -- le,
+  dor, __ do -- ru -- le -- țu -- le!
 
   Măi! __
 }
 
 bassWords = \lyricmode {
   \set stanza = "1.-5."
-  Măi, do -- ru -- le -- ţu -- le!
+  Măi, do -- ru -- le -- țu -- le!
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
 
-  Dor, do -- ru -- le -- ţu -- le, dor,
+  Dor, do -- ru -- le -- țu -- le, dor,
 
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 4
 
-  Dor, do -- ru -- le -- ţu -- le, dor!
+  Dor, do -- ru -- le -- țu -- le, dor!
 
-  Do -- ru -- leţ, dor, Do -- ru -- le, do -- ru leţ __
-  Do -- ru -- leţ, do -- ru -- leţ, do -- ru -- le -- ţu -- le
-  do -- ru -- le -- ţu -- le! __ Măi,
+  Do -- ru -- leț, dor, Do -- ru -- le, do -- ru leț __
+  Do -- ru -- leț, do -- ru -- leț, do -- ru -- le -- țu -- le
+  do -- ru -- le -- țu -- le! __ Măi,
 
   Măi! __
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   \set Staff.vocalName = "S. + A."
   R2
   R2
@@ -161,7 +163,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.vocalName = "T."
   R2
   R2
@@ -190,10 +192,10 @@ tenorMusic = \relative {
   ais8 r8 r4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.vocalName = "B."
   e,2^\sf_\accent
-  e16^\> fis16 cis16 d16\! e4 
+  e16^\> fis16 cis16 d16\! e4
   \repeat volta 5 {
     a8^\mp e8 a8 e8
     a8 e8^\> \slurDashed a,8([ cis8)]\! \slurSolid
@@ -252,9 +254,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 88 4)
-  }
+  \tempo 4 = 88
   \context {
     \Voice
     \remove "Dynamic_performer"

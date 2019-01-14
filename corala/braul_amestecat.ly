@@ -1,24 +1,25 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 2\mm
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
   title = "Brâul amestecat"
   poet = "versuri populare"
   composer = "muzica: Pretorian Vlaiculescu"
-  meter = "Mişcare potrivită de joc"
+  meter = "Mișcare potrivită de joc"
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
   \key f \major
   \time 2/4
@@ -28,68 +29,68 @@ global = {
 markupA = \markup {
   \column {
     { \large \bold "Grupa I" }
-    { \musicglyph #"f" }
+    { \musicglyph "f" }
   }
 }
 
 markupB = \markup {
   \column {
     { \large \bold "Grupa II" }
-    { \musicglyph #"f" }
+    { \musicglyph "f" }
   }
 }
 
 markupC = \markup { \italic "un strigător" }
 markupD = \markup { \italic "Reluare mai repede" }
-markupE = \markup { \hspace #4.5 \musicglyph #"scripts.ufermata" }
+markupE = \markup { \hspace #4.5 \musicglyph "scripts.ufermata" }
 markupF = \markup { \bold "Rar"}
 markupG = \markup { \bold "Glumind" }
 markupH = \markup { \italic "poco a" }
 markupI = \markup { \italic "poco accell." }
-markupJ = \markup { \italic "puţin mai rar" }
+markupJ = \markup { \italic "puțin mai rar" }
 
 womenWords = \lyricmode {
   Ui -- te brâ -- ul, tre -- ce râ -- ul
-  Şi mân -- dru -- ţa po -- te -- cu -- ţa,
+  Și mân -- dru -- ța po -- te -- cu -- ța,
   Hai, la brâu, la brâu, la brâu
-  Şi la se -- ce -- rat de grâu.
+  Și la se -- ce -- rat de grâu.
 
   Fo -- i -- ci -- că ver -- de, ver -- de din -- tre văi,
   I-a -- uzi brâ -- ul, ca la mun -- te, măi flă -- căi,
-  Ca la mun -- te, ca la câmp noi u -- na ştim,
-  Când ju -- căm un brâu cu toţi ne-n -- ve -- se -- lim.
+  Ca la mun -- te, ca la câmp noi u -- na știm,
+  Când ju -- căm un brâu cu toți ne-n -- ve -- se -- lim.
 
   Hei, hop, __
   hei, hop, __
-  ră -- mâ -- neţi.
+  ră -- mâ -- neți.
   Tri li ri li li li ri li li li ri li li li li
   Tri li ri li li li li
-  Tot na -- in -- te şi, şi, şi.
+  Tot na -- in -- te și, și, și.
 
-  Frun -- zu -- li -- ţă de pe lac,
+  Frun -- zu -- li -- ță de pe lac,
   Hai cu brâ -- ul de la cap.
 
-  şi, şi, şi.
-  Hai, hai, Ţin -- te bi -- ne mo -- şu -- le
+  și, și, și.
+  Hai, hai, Țin -- te bi -- ne mo -- șu -- le
   Hai, hai, C-ai să pierzi o -- pin -- ci -- le
-  Hai, hai, Şi-o să-ţi pi -- ce be -- te -- le
-  Hai, hai, Şi-o să râ -- dă fe -- te -- le.
+  Hai, hai, Și-o să-ți pi -- ce be -- te -- le
+  Hai, hai, Și-o să râ -- dă fe -- te -- le.
 
-  Ţi -- ne-a -- şa Da -- fi -- ne-n -- tru -- na n-o lă -- sa
-  Pâ -- nă când ră -- sa -- re lu -- na tot a -- şa,
-  Ca la Gorj şi Câm -- pu -- lung din zur -- gă -- lăi,
-  Ia mai ba -- teţi câ -- te u -- na măi flă -- căi.
+  Ți -- ne-a -- șa Da -- fi -- ne-n -- tru -- na n-o lă -- sa
+  Pâ -- nă când ră -- sa -- re lu -- na tot a -- șa,
+  Ca la Gorj și Câm -- pu -- lung din zur -- gă -- lăi,
+  Ia mai ba -- teți câ -- te u -- na măi flă -- căi.
 
   Hei, hop, __
   Hei, hop, __ bu -- su -- ioc.
 
   Tri li ri li li li ri li li li ri li li li li
   Tri li ri li li li li
-  Tot na -- in -- te şi, şi, şi
+  Tot na -- in -- te și, și, și
 
   Tri li ri li li li lui,
   Ia mai la -- s-o da -- tu -- lui!
-  Ia -- c-a -- şa, ia -- c-a -- şa, ia -- c-a -- şa, ia -- c-a -- şa.
+  Ia -- c-a -- șa, ia -- c-a -- șa, ia -- c-a -- șa, ia -- c-a -- șa.
 }
 
 tenorWords = \lyricmode {
@@ -100,34 +101,34 @@ tenorWords = \lyricmode {
   Dam, dim, dim, dam, dim, dim, dam, di, ri, dim,
   Dam, dim, dim, dam, dim, dim, dam, di, ri, dim,
 
-  Ca la mun -- te, ca la câmp noi u -- na ştim,
-  Când ju -- căm un brâu cu toţi ne-n -- ve -- se -- lim.
+  Ca la mun -- te, ca la câmp noi u -- na știm,
+  Când ju -- căm un brâu cu toți ne-n -- ve -- se -- lim.
 
-  Hei, hop, ca -- re vreţi, ca -- re pu -- teţi,
-  hei, hop, ca -- re nu mai ră -- mâ -- neţi.
+  Hei, hop, ca -- re vreți, ca -- re pu -- teți,
+  hei, hop, ca -- re nu mai ră -- mâ -- neți.
   Tri li li li li li
-  Tri __ li li 
-  Tot na -- in -- te şi, şi, şi.
+  Tri __ li li
+  Tot na -- in -- te și, și, și.
 
-  şi, şi, şi.
-  Hai, hai, Şi-o să-ţi pi -- ce be -- te -- le
-  Hai, hai, Şi-o să râ -- dă fe -- te -- le.
+  și, și, și.
+  Hai, hai, Și-o să-ți pi -- ce be -- te -- le
+  Hai, hai, Și-o să râ -- dă fe -- te -- le.
 
-  Ţi -- ne-a -- şa Da -- fi -- ne-n -- tru -- na n-o lă -- sa
-  Pâ -- nă când ră -- sa -- re lu -- na tot a -- şa,
-  Ca la Gorj şi Câm -- pu -- lung din zur -- gă -- lăi,
-  Ia mai ba -- teţi câ -- te u -- na măi flă -- căi.
+  Ți -- ne-a -- șa Da -- fi -- ne-n -- tru -- na n-o lă -- sa
+  Pâ -- nă când ră -- sa -- re lu -- na tot a -- șa,
+  Ca la Gorj și Câm -- pu -- lung din zur -- gă -- lăi,
+  Ia mai ba -- teți câ -- te u -- na măi flă -- căi.
 
-  Hei, hop, Şi-n -- c-o da -- tă ba -- te-n loc,
+  Hei, hop, Și-n -- c-o da -- tă ba -- te-n loc,
   Hei, hop, Să __ ră -- sa -- ră bu -- su -- ioc.
 
   Tri li li li li li
   Tri __ li li
-  Tot na -- in -- te şi, şi, şi
+  Tot na -- in -- te și, și, și
 
   Tri __ li lui,
   Ia mai la -- s-o da -- tu -- lui!
-  Ia -- c-a -- şa, ia -- c-a -- şa, ia -- c-a -- şa, ia -- c-a -- şa.
+  Ia -- c-a -- șa, ia -- c-a -- șa, ia -- c-a -- șa, ia -- c-a -- șa.
 }
 
 bassWords = \lyricmode {
@@ -147,9 +148,9 @@ bassWords = \lyricmode {
   Hai, Di -- ri -- dam, di -- ri -- dam,, Di -- ri, di -- ri -- dam,
   Hai, Di -- ri -- dam, di -- ri -- dam,, Di -- ri, di -- ri -- dam,
   Zi-i, __ măi, n-o lă -- sa
-  Ţi -- ne-o tot a -- şa,
+  Ți -- ne-o tot a -- șa,
 
-  Ca la Gorj şi Câm -- pu -- lung din zur -- gă -- lăi,
+  Ca la Gorj și Câm -- pu -- lung din zur -- gă -- lăi,
 
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
@@ -159,19 +160,19 @@ bassWords = \lyricmode {
   Tri li li
   Tri li li tri li li li
   Tri __ li li
-  Tot na -- in -- te şi, şi, şi,
+  Tot na -- in -- te și, și, și,
   Tri li li li li lui,
   Ia mai la -- s-o
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   \set Staff.vocalName = "I"
   \repeat volta 2 {
     R2 * 5
     \break
 
     R2
-    \override NoteHead #'style = #'cross
+    \override NoteHead.style = #'cross
     c'8^\markupA c8 c8 c8
     c8 c8 c8 c8
     R2
@@ -187,7 +188,7 @@ womenMusic = \relative {
     R2
     c8 c8 c8 c8
     c8 c8 c4
-    \revert NoteHead #'style
+    \revert NoteHead.style
     \break
 
     R2
@@ -217,26 +218,26 @@ womenMusic = \relative {
     \break
 
     bes8 a8 a4
-    a4 \times 2/3 { g8 a8 bes8 }
-    a4 \times 2/3 { g8 a8 bes8 }
-    a4 \times 2/3 { g8 a8 bes8 }
+    a4 \tuplet 3/2 { g8 a8 bes8 }
+    a4 \tuplet 3/2 { g8 a8 bes8 }
+    a4 \tuplet 3/2 { g8 a8 bes8 }
     a4 c8 c8
     \break
 
-    a4 \times 2/3 { g8 a8 bes8 }
+    a4 \tuplet 3/2 { g8 a8 bes8 }
     a8 a8 d4
     c8 bes8 a8 g8
   } \alternative {
     {
       f8 f8 f8 r8
-      \override NoteHead #'style = #'cross
+      \override NoteHead.style = #'cross
       c'8^\f c8^\markupC c8 c8
       \break
 
       c8 c8 c4
       c8 c8 c8 c8
       c8 c8 c4
-      \revert NoteHead #'style
+      \revert NoteHead.style
       R2
       R2^\markupD
       \break
@@ -256,7 +257,7 @@ womenMusic = \relative {
   f8 f'4.
   es8 d8 c8 a8
   \break
-  
+
   bes8 g8 a4
   f8 f'4.
   es8 d8 c8 a8
@@ -289,15 +290,15 @@ womenMusic = \relative {
   bes8 a8 a4
 
   \repeat volta 2 {
-    a4_^ \times 2/3 { g8 a8 bes8 }
+    a4_^ \tuplet 3/2 { g8 a8 bes8 }
     \break
 
-    a4_^ \times 2/3 { g8 a8 bes8 }
-    a4_^ \times 2/3 { g8 a8 bes8 }
+    a4_^ \tuplet 3/2 { g8 a8 bes8 }
+    a4_^ \tuplet 3/2 { g8 a8 bes8 }
     a4_^ c8 c8
   } \alternative {
     {
-      a4_^ \times 2/3 { g8 a8 bes8 }
+      a4_^ \tuplet 3/2 { g8 a8 bes8 }
       a8 a8 d4
       \break
 
@@ -305,7 +306,7 @@ womenMusic = \relative {
       f8 f8 f4
     }
     {
-      a4_^ \times 2/3 { g8 a8 bes8 }
+      a4_^ \tuplet 3/2 { g8 a8 bes8 }
       a8 a8 d4^\fermata
       c8--^\markupJ bes8-- a8-- g8--
       \break
@@ -319,7 +320,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.vocalName = "II"
   \repeat volta 2 {
     c,8^\mf a'4-> a8
@@ -454,7 +455,7 @@ tenorMusic = \relative {
   c16^\ff c16 c16 r16 r4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.vocalName = "III"
   \repeat volta 2 {
     R2 * 5
@@ -513,10 +514,10 @@ bassMusic = \relative {
       R2
       R2
       R2
-      \override NoteHead #'style = #'cross
+      \override NoteHead.style = #'cross
       f'4^\f-^\< f4-^
       f4-^ f4-^\!
-      \revert NoteHead #'style
+      \revert NoteHead.style
     }
     {
       f,8 f8 f8 r8
@@ -612,9 +613,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 120 4)
-  }
+  \tempo 4 = 120
   \context {
     \Voice
     \remove "Dynamic_performer"

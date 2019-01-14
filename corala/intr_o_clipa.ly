@@ -1,13 +1,13 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 8\mm
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
   ragged-last = ##t
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -18,8 +18,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \set Staff.midiInstrument = "clarinet"
   \key d \minor
   \time 4/4
@@ -28,11 +29,11 @@ global = {
 
 fermataAndPp = \markup {
   \hspace #0.5
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
   \hspace #0.5
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
 }
 
 sopWords = \lyricmode {
@@ -44,10 +45,10 @@ sopWords = \lyricmode {
 
 altoWords = \lyricmode {
   În -- tr-o cli -- pă-n -- vred -- ni -- ci -- t-ai Tu Doam -- ne
-  Pe tâl -- ha -- ru-n -- ţe -- lept în Rai.
+  Pe tâl -- ha -- ru-n -- țe -- lept în Rai.
   Pe mi -- ne lu -- mi -- nea -- ză
   Pe mi -- ne lu -- mi -- nea -- ză- mă cu lem -- nul Cru -- cii
-  şi mă mân -- tu -- ie.
+  și mă mân -- tu -- ie.
 }
 
 tenorWords = \lyricmode {
@@ -57,7 +58,7 @@ tenorWords = \lyricmode {
   Pe mi -- ne lu -- mi -- nea -- ză- mă, __ Pe
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4
-  şi mă mân -- tu -- ie.
+  și mă mân -- tu -- ie.
 }
 
 bassWords = \lyricmode {
@@ -66,10 +67,10 @@ bassWords = \lyricmode {
   \skip 4 \skip 4 \skip 4
   Pe mi -- ne lu -- mi -- nea -- ză- mă
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
-  şi mă mân -- tu -- ie.
+  și mă mân -- tu -- ie.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \partial 2
   d4 e4 |
 
@@ -97,7 +98,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \partial 2
   d4 d4 |
   d4. d8 d4 d4 |
@@ -120,7 +121,7 @@ altoMusic = \relative {
   a1
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \partial 2
   f,4 g4 |
   a4. f8 g4 a4 |
@@ -143,7 +144,7 @@ tenorMusic = \relative {
   f1^\fermataAndPp
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \partial 2
   d,4 d4 |
   d4. d8 d4 d4 |
@@ -167,7 +168,7 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #5.0
+  \override SpacingSpanner.shortest-duration-space = #5.0
 } <<
   \new ChoirStaff <<
     \new Lyrics = "sopLyrics"
@@ -196,9 +197,7 @@ myScore = \new Score \with {
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 68 4)
-  }
+  \tempo 4 = 68
   \context {
     \Voice
     \remove "Dynamic_performer"

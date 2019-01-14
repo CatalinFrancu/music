@@ -1,11 +1,13 @@
-\version "2.10.14"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
+  system-system-spacing.basic-distance = #25
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -15,8 +17,9 @@
   meter = "Allegretto"
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \key g \major
   \time 3/4
   \autoBeamOff
@@ -26,8 +29,8 @@ global = {
 stanzaOne = \lyricmode {
   \set stanza = "1."
   A ru -- gi -- nit frun -- za din vii
-  Şi rân -- du -- ni -- ci -- le-au ple -- cat,
-  Pus -- tii sunt la -- nuri şi câm -- pii,
+  Și rân -- du -- ni -- ci -- le-au ple -- cat,
+  Pus -- tii sunt la -- nuri și câm -- pii,
   Pus -- ti -- i-s ho -- re -- le din sat.
 
   M. __ m. __ m. __ m. __
@@ -36,20 +39,20 @@ stanzaOne = \lyricmode {
 stanzaTwo = \lyricmode {
   \set stanza = "2."
   Când vi -- o -- ri -- ca va-n -- flo -- ri
-  Şi rân -- du -- ni -- ca va so -- si,
-  A -- tunci va creş -- te iar, în bolţi,
+  Și rân -- du -- ni -- ca va so -- si,
+  A -- tunci va creș -- te iar, în bolți,
   Frun -- za bu -- tu -- ci -- lor în vii.
 }
 
 stanzaThree = \lyricmode {
   \set stanza = "3."
-  Iar când în flori şi fân co -- sit
+  Iar când în flori și fân co -- sit
   Va tre -- ce va -- ra pe câm -- pii,
   În a -- ur la -- nu -- ri -- le-or fi
-  Şi ho -- ra-n sat ne-on -- ve -- se -- li.
+  Și ho -- ra-n sat ne-on -- ve -- se -- li.
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   \partial 4. g'8^\mf g8 a8
   b4. b8 b8 b8
   d4. b8 b8 b8
@@ -75,7 +78,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-menMusic = \relative {
+menMusic = \relative c' {
   \partial 4. b,8^\mf b8 d8
   g4. g8 g8 g8
   b4. g8 g8 g8
@@ -121,9 +124,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 96 4)
-  }
+  \tempo 4 = 96
 }
 
 \score {

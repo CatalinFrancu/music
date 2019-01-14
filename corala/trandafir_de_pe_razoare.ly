@@ -1,11 +1,12 @@
-\version "2.10.14"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -16,8 +17,9 @@
   meter = "Poco rubato"
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \key g \major
   \time 4/8
   \autoBeamOff
@@ -26,20 +28,20 @@ global = {
 
 explanation = \markup {
   \pad-markup #3.0 {
-    "N.B. Acelaşi refren se cântă la ambele texte repetat."
+    "N.B. Același refren se cântă la ambele texte repetat."
     "Refrenul \"Ano, Leno\" se cântă mai rar."
   }
 }
 
 rubatoMarkup = \markup{
-  \column {{\large "Poco rubato"} {\musicglyph #"f"}}
+  \column {{\large "Poco rubato"} {\musicglyph "f"}}
 }
 
 fAndFermata = \markup {
   \hspace #-3.5
-  \musicglyph #"f"
+  \musicglyph "f"
   \hspace #1.0
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 instrMarkup = \markup {
@@ -59,14 +61,14 @@ fermataAndCoda = \markup {
   \override #'(baseline-skip . 5)
   \column {
     {\large \italic "CODA"}
-    {\musicglyph #"scripts.ufermata"}
+    {\musicglyph "scripts.ufermata"}
   }
 }
 
 sopStanzaOne = \lyricmode {
   \set stanza = "1."
-  Fu -- sei, mai -- că, la por -- ti -- ţă, A -- no, Le -- no,
-  De dă -- dui ba -- dii gu -- ri -- ţă, A -- no, Le -- no,
+  Fu -- sei, mai -- că, la por -- ti -- ță, A -- no, Le -- no,
+  De dă -- dui ba -- dii gu -- ri -- ță, A -- no, Le -- no,
 
   Tran -- da -- fir de pe ră -- zoa -- re,
   Ba -- de, i -- ni -- ma mă __ doa -- re, __
@@ -97,8 +99,8 @@ sopStanzaTwo = \lyricmode {
 
 altoStanzaOne = \lyricmode {
   \set stanza = "1."
-  Fu -- sei, mai -- că, la por -- ti -- ţă, A -- no, Le -- no,
-  De dă -- dui ba -- dii gu -- ri -- ţă, A -- no, Le -- no,
+  Fu -- sei, mai -- că, la por -- ti -- ță, A -- no, Le -- no,
+  De dă -- dui ba -- dii gu -- ri -- ță, A -- no, Le -- no,
 
   Tran -- da -- fir de pe ră -- zoa -- re,
   Ba -- de, i -- ni -- ma mă doa -- re,
@@ -131,8 +133,8 @@ altoStanzaTwo = \lyricmode {
 
 tenorStanzaOne = \lyricmode {
   \set stanza = "1."
-  Fu -- sei, mai -- că, la por -- ti -- ţă, A -- no, Le -- no,
-  De dă -- dui ba -- dii gu -- ri -- ţă, A -- no, Le -- no,
+  Fu -- sei, mai -- că, la por -- ti -- ță, A -- no, Le -- no,
+  De dă -- dui ba -- dii gu -- ri -- ță, A -- no, Le -- no,
 
   Tran -- da -- fir de pe ră -- zoa -- re,
   Ba -- de, i -- ni -- ma mă __ doa -- re,
@@ -161,18 +163,18 @@ tenorStanzaTwo = \lyricmode {
   A -- no, Le -- no!
 }
 
-sopMusic = \relative {
-  % Fusei, maică, la portiţă, Ano, Leno,
+sopMusic = \relative c' {
+  % Fusei, maică, la portiță, Ano, Leno,
   g'8^\rubatoMarkup g8^\markup{\italic "rustico"} a8 a8
   d8 d8 c16([ b16)] g8
-  c8([^\p \times 2/3 { c16 d16 e16)] } d4
+  c8([^\p \tuplet 3/2 { c16 d16 e16)] } d4
   c8.([ bes16)] a4
   \break
 
-  % De dădui badii guriţă, Ano, Leno,
+  % De dădui badii guriță, Ano, Leno,
   g8^\f g8 a8 a8
   d8 d8 c16([ b16)] g8
-  c8([^\p \times 2/3 { c16 d16 e16)] } d4
+  c8([^\p \tuplet 3/2 { c16 d16 e16)] } d4
   c8.([ bes16)] a4
 
   \repeat volta 2 {
@@ -195,30 +197,30 @@ sopMusic = \relative {
     R2
     fis2~
     fis2
-  
+
     a8^\markup{\italic "grazioso"} b8([~ b16 a16)] b8
     e16([ b16)] e8 b4
     \break
     a8 b8.([ a16)] b8
     a8 a16([ g16)] fis4
-  
+
     a8 b8.([ a16)] b8
     e16([ b16)] e8 b4
     a8 b8.([ a16)] b8
     a8 a16([ g16)] fis4
     \break
-  
+
     a8 a16([ g16)] fis8 fis16([ g16)]
     a8 a16([ g16)] fis4
     a8 a16([ g16)] fis8^\< fis16([ d16)]
     e8 e8 e4\!
-  
+
     a8^\pp a16([ g16)] fis8 fis16([ g16)]
     a8 a16([ g16)] fis4
     \break
     a8 a16([ g16)] fis8 fis16([ d16)]
     e8^\< e8 e4\!
-  
+
     e2~^\>
     e2\!
     fis2~^\>
@@ -235,17 +237,17 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
-  % Fusei, maică, la portiţă, Ano, Leno,
+altoMusic = \relative c' {
+  % Fusei, maică, la portiță, Ano, Leno,
   g'8^\f g8 a8 a8
   d8 d8 c16([ b16)] g8
-  e8([^\p \times 2/3 { e16 f16 g16)] } f4
+  e8([^\p \tuplet 3/2 { e16 f16 g16)] } f4
   e8.([ d16)] d4
 
-  % De dădui badii guriţă, Ano, Leno,
+  % De dădui badii guriță, Ano, Leno,
   g8^\f g8 fis8 fis8
   f8 f8 e8 d8
-  e8([^\p \times 2/3 { e16 f16 g16)] } f4
+  e8([^\p \tuplet 3/2 { e16 f16 g16)] } f4
   e8.([ g16)] fis4
 
   \repeat volta 2 {
@@ -266,12 +268,12 @@ altoMusic = \relative {
     d2~
     d2~
     d2
-  
+
     fis8 g8([~ g16 fis16)] g8~
     g8 g8 g4
     fis8 g8.([ fis16)] g8
     fis8 fis16([ e16)] d4
-  
+
     fis8 g8.([ fis16)] g8~
     g8 g8 g4
     fis8 g8.([ fis16)] g8
@@ -281,12 +283,12 @@ altoMusic = \relative {
     fis8 fis16([ e16)] d4
     fis8 fis16([ e16)] d8^\< d8~
     d8 cis8 cis4\!
-  
+
     fis8^\pp fis16([ e16)] d8 d16([ e16)]
     fis8 fis16([ e16)] d4
     fis8 fis16([ e16)] d8 d8~
     d8^\< cis8 cis4\!
-  
+
     cis2~^\>
     cis2\!
     d2~^\>
@@ -301,14 +303,14 @@ altoMusic = \relative {
   fis2^\fermata
 }
 
-tenorMusic = \relative {
-  % Fusei, maică, la portiţă, Ano, Leno,
+tenorMusic = \relative c' {
+  % Fusei, maică, la portiță, Ano, Leno,
   g8^\f g8 a8 a8
   d8 d8 c16([ b16)] g8
   g8.([^\p c16)] b4
   c8.([ g16)] fis4
 
-  % De dădui badii guriţă, Ano, Leno,
+  % De dădui badii guriță, Ano, Leno,
   g8^\f g8 g8 g8
   g8 g8 g8 g8
   g8.([^\p c16)] b4
@@ -337,22 +339,22 @@ tenorMusic = \relative {
     a8 a8 a4
     a8 a4 a8~
     a8 a8 a4
-  
+
     a8 a4 a8~
     a8 a8 a4
     a8 a4 a8~
     a8 a8 a4
-  
+
     a8 a4 a8~
     a8 a8 a4
     a8 a4 a8~^\<
     a8 a8 a4\!
-  
+
     a8^\pp a4 a8~
     a8 a8 a4
     a8 a4 a8~
     a8^\< a8 a4\!
-  
+
     r8 a8^\> a4\!
     r8 a8^\> a4\!
     r8 a8^\> r8 a8
@@ -367,14 +369,14 @@ tenorMusic = \relative {
   r8 a8^\> a4^\fermata\!
 }
 
-bassMusic = \relative {
-  % Fusei, maică, la portiţă, Ano, Leno,
+bassMusic = \relative c' {
+  % Fusei, maică, la portiță, Ano, Leno,
   g8^\f g8 a8 a8
   d8 d8 c16([ b16)] g8
   c,4^\p g'4
   c8.([ c,16)] d4
 
-  % De dădui badii guriţă, Ano, Leno,
+  % De dădui badii guriță, Ano, Leno,
   g8^\f_\explanation g8 g8 g8
   g8 g8 g8 g8
   c,4^\p g'4
@@ -403,12 +405,12 @@ bassMusic = \relative {
     d8 d8 d4
     d8 d4 d8~
     d8 d8 d4
-  
+
     d8 d4 d8~
     d8 d8 d4
     d8 d4 d8~
     d8 d8 d4
-  
+
     d8 d4 d8~
     d8 d8 d4
     d8 d4 d8~^\<
@@ -417,7 +419,7 @@ bassMusic = \relative {
       \new Voice = "split" { \autoBeamOff \voiceTwo d8 a8 a4 }
     >>
     \oneVoice
-  
+
     d8^\pp d4 d8~
     d8 d8 d4
     d8 d4 d8~
@@ -439,7 +441,7 @@ bassMusic = \relative {
       \new Voice = "split" { \autoBeamOff \voiceTwo a,8 a4 }
     >>
     \oneVoice
-  
+
     r8 d8^\> r8 d8
   } \alternative {
    { r8 d8 d4^\fermata\! }
@@ -482,9 +484,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 72 4)
-  }
+  \tempo 4 = 72
   \context {
     \Voice
     \remove "Dynamic_performer"

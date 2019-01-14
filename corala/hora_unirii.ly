@@ -1,11 +1,12 @@
-\version "2.10.14"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -16,8 +17,9 @@
   meter = "Tempo di Hora"
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \key g \major
   \time 6/8
   \autoBeamOff
@@ -28,38 +30,38 @@ stanzaOne = \lyricmode {
   \set stanza = "1."
   Hai să dăm mâ -- nă cu mâ -- nă
   Cei cu i -- ni -- ma __ ro -- mâ -- nă,
-  Să-n -- vâr -- tim ho -- ra fră -- ţi -- ei
+  Să-n -- vâr -- tim ho -- ra fră -- ți -- ei
   Pe pă -- mân -- tul Ro -- mâ -- ni -- ei!
 
   Iar -- ba rea din hol -- de pia -- ră,
-  Pia -- ră duş -- ma -- nii __ din ţa -- ră,
+  Pia -- ră duș -- ma -- nii __ din ța -- ră,
   În -- tre noi să nu __ mai fi -- e
-  De -- cât flori şi ar -- mo -- ni -- e!
+  De -- cât flori și ar -- mo -- ni -- e!
 }
 
 stanzaTwo = \lyricmode {
   \set stanza = "2."
   Măi mun -- te -- ne, măi ve -- ci -- ne,
   Vi -- no să te prinzi __ cu mi -- ne
-  Şi la via -- ţă cu u -- ni -- re
-  Şi la moar -- te cu-n -- fră -- ţi -- re!
+  Și la via -- ță cu u -- ni -- re
+  Și la moar -- te cu-n -- fră -- ți -- re!
 
   Un -- de-i u -- nul nu-i __ pu -- te -- re
-  La ne -- voi şi la __ du -- re -- re;
-  Un -- de-s doi, pu -- te -- rea creş -- te
-  Şi duş -- ma -- nul nu __ spo -- reş -- te.
+  La ne -- voi și la __ du -- re -- re;
+  Un -- de-s doi, pu -- te -- rea creș -- te
+  Și duș -- ma -- nul nu __ spo -- reș -- te.
 }
 
 stanzaThree = \lyricmode {
   \set stanza = "3."
   A -- mân -- doi sun -- tem de-o ma -- mă,
-  De-o făp -- tu -- ră şi __ de-o sea -- mă,
+  De-o făp -- tu -- ră și __ de-o sea -- mă,
   Ca doi brazi în -- tr-o tul -- pi -- nă,
   Ca doi ochi în -- tr-o __ lu -- mi -- nă.
 
   A -- mân -- doi a -- vem __ un nu -- me,
   A -- mân -- doi o soar -- tă-n lu -- me,
-  Eu ţi-s fra -- te, tu __ mi-eşti fra -- te,
+  Eu ți-s fra -- te, tu __ mi-ești fra -- te,
   În noi doi un su -- flet ba -- te.
 }
 
@@ -70,13 +72,13 @@ stanzaFour = \lyricmode {
   Ca să trea -- că dru -- mul ma -- re
   Pes -- te-a noas -- tre vechi __ ho -- ta -- re!
 
-  Şi să va -- dă sfân -- tul soa -- re,
+  Și să va -- dă sfân -- tul soa -- re,
   În -- tr-o zi de săr -- bă -- toa -- re,
-  Ho -- ra noas -- tră cea __ fră -- ţeas -- că
+  Ho -- ra noas -- tră cea __ fră -- țeas -- că
   Pe câm -- pi -- a ro -- mâ -- neas -- că!
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   g'4^\mf b8 e4 d8
   c4 b8 a4 b8
   c4 d8 b4 a8
@@ -103,7 +105,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-menMusic = \relative {
+menMusic = \relative c' {
   b4^\mf g8 c4 b8
   a4 g8 fis4 g8
   a4 fis8 g4 d8
@@ -150,9 +152,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 96 4)
-  }
+  \tempo 4 = 96
 }
 
 \score {

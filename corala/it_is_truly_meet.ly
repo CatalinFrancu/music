@@ -1,10 +1,10 @@
-\version "2.10.33"
+\version "2.19.80"
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
-  top-margin = 0.25\in
-  bottom-margin = 0.5\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 mixedTimeSigMarkup = \markup {
@@ -15,17 +15,18 @@ mixedTimeSigMarkup = \markup {
   }
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \set Staff.midiInstrument = "clarinet"
   \key d \minor
-  \override Staff.TimeSignature #'text = #mixedTimeSigMarkup
+  \override Staff.TimeSignature.text = #mixedTimeSigMarkup
   \time 2/4
   \autoBeamOff
 }
 
 rallMarkup = \markup {
-  \bold \bigger "rall..."
+  \bold \larger "rall..."
 }
 
 \header {
@@ -55,9 +56,9 @@ menWords = \lyricmode {
   The ve -- ry The -- o -- to -- kos, thee __ do we mag -- ni -- fy, __ mag -- ni -- fy, mag -- ni -- fy.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % It is truly meet
   a'8 ^\mp a8 \bar "|"
@@ -84,9 +85,9 @@ sopMusic = \relative {
   a8 \bar "|"
   bes4( a4 bes4 cis4) \bar "|"
   d4.( cis8
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   b8[ cis8 d8 e8)] \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   d4.
 
   % and Mother, the Mother of our God.
@@ -112,9 +113,9 @@ sopMusic = \relative {
   a2 \bar "|"
   bes4( a4) bes4( cis4) \bar "|"
   d4.( cis8
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   b8[ cis8 d8 e8)] \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   d4. bes8\rest \bar "|"
 
   % than the Seraphim.
@@ -140,9 +141,9 @@ sopMusic = \relative {
   d4 cis4 \bar "|"
   d8([ cis8 d8)] bes8 a4 a4 \bar "|"
   b2( cis8[ d8]
-  #(set-accidental-style 'no-reset)
+  \accidentalStyle no-reset
   cis4 \bar "|"
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
   d2)
 
   % do we magnify,
@@ -159,9 +160,9 @@ sopMusic = \relative {
   d2.^\fermata b'4\rest \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a'8 a8
@@ -184,13 +185,13 @@ altoMusic = \relative {
   f8([ g8 f8 e8] f8[ g8 a8 bes8)]
   a4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   a8
   bes4( a4 g4 a4)
   a1
   a4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   a8
   a4.( bes8) a2
   bes4\rest f4
@@ -198,7 +199,7 @@ altoMusic = \relative {
   f4( e4) d8([ e8 d8 cis8)]
   d2. b'4\rest
 
-  % Ceea ce eşti mai cinstită decât heruvimii
+  % Ceea ce ești mai cinstită decât heruvimii
   a4( g4) f8([ g8)] e8 f8
   d2 d4( e4)
   f4( g4) f8([ e8)] d8 e8
@@ -206,7 +207,7 @@ altoMusic = \relative {
   f8([ g8 f8 e8)] f8([ g8 a8 bes8)]
   a4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   a16 a16
   d4 cis4
   d4 cis8([ d8)] a4 a4
@@ -254,9 +255,9 @@ altoMusic = \relative {
   d2. b'4\rest
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a8 a8^\mp
@@ -264,7 +265,7 @@ tenorMusic = \relative {
   e8([ g8 f8 e8] f8[ e8 d8 e8]
   f2 c2
   f2)
-  
+
   % să te fericim Născătoare de Dumnezeu
   f4 f4
   e4 e4
@@ -279,21 +280,21 @@ tenorMusic = \relative {
   f8([ g8 f8 c8] d8[ e8 f8 g8)]
   f4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   f8
   g4( f4 e2)
   f4.( e8 d8[ e8 f8 g8)]
   f4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   a8
   f8([ e8 d8 g8)] f2
   d4\rest d4
   g8([ f8 e8 f8] d4) g4
   f4( e4) a,2
   d2. d4\rest
-  
-  % Ceea ce eşti mai cinstită decât heruvimii
+
+  % Ceea ce ești mai cinstită decât heruvimii
   a'4( g4) f8([ g8)] e8 f8
   d2 d4( e4)
   f4( g4) f8([ e8)] d8 e8
@@ -301,7 +302,7 @@ tenorMusic = \relative {
   f8([ g8 f8 c8)] d8([ e8 f8 g8)]
   f4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   d8\rest
   d4\rest d8\rest a'8
   a4 a4 a4.( g8)
@@ -341,7 +342,7 @@ tenorMusic = \relative {
   f4( e4 a,2
   d1
   d2)
-  
+
   % te mărim, te mărim
   a4 a4
   d2
@@ -349,9 +350,9 @@ tenorMusic = \relative {
   d2. d4\rest
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \cadenzaOn
-  #(set-accidental-style 'forget)
+  \accidentalStyle forget
 
   % Cuvine-se cu adevărat
   a8 a8
@@ -359,7 +360,7 @@ bassMusic = \relative {
   e8([ g8 f8 e8] f8[ e8 d8 e8]
   f2 c2
   f2)
-  
+
   % să te fericim Născătoare de Dumnezeu
   f4 f4
   e4 e4
@@ -374,21 +375,21 @@ bassMusic = \relative {
   f8([ g8 f8 c8] d8[ e8 f8 g8)]
   f4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   f8
   g4( f4 e4 a,4)
   d4.( e8 f8[ e8 d8 cis8)]
   d4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   a'8
   f8([ e8 d8 g8)] f2
   d4\rest d4
   g8([ f8 e8 f8] d4) g4
   f4( e4) a,2
   d2. d4\rest
-  
-  % Ceea ce eşti mai cinstită decât heruvimii
+
+  % Ceea ce ești mai cinstită decât heruvimii
   a'4( g4) f8([ g8)] e8 f8
   d2 d4( e4)
   f4( g4) f8([ e8)] d8 e8
@@ -396,7 +397,7 @@ bassMusic = \relative {
   f8([ g8 f8 c8)] d8([ e8 f8 g8)]
   f4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   d8\rest
   d4\rest d8\rest a'8
   d,8([ f8)] a4 a,2
@@ -436,7 +437,7 @@ bassMusic = \relative {
   f4( e4 a,2
   d1
   d2)
-  
+
   % te mărim, te mărim
   a4 a4
   d2
@@ -445,7 +446,7 @@ bassMusic = \relative {
 }
 
 myScore = \new Score \with {
-  \override SpacingSpanner #'shortest-duration-space = #5.0
+  \override SpacingSpanner.shortest-duration-space = #5.0
 } <<
   \new ChoirStaff <<
     \new Staff <<
@@ -469,9 +470,7 @@ myScore = \new Score \with {
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 72 4)
-  }
+  \tempo 4 = 72
   \context {
     \Voice
     \remove "Dynamic_performer"

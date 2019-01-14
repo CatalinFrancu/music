@@ -1,11 +1,13 @@
-\version "2.10.14"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
+  system-system-spacing.basic-distance = #20
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -16,8 +18,9 @@
   meter = "Moderato"
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \key g \major
   \time 2/4
   \autoBeamOff
@@ -26,44 +29,44 @@ global = {
 
 stanzaOne = \lyricmode {
   \set stanza = "1."
-  Mult e dul -- ce şi fru -- moa -- să
+  Mult e dul -- ce și fru -- moa -- să
   Lim -- ba ce vor -- bim, __
   Al -- tă lim -- bă-ar -- mo -- ni -- oa -- să
   Ca ea nu gă -- sim;
 
   Sal -- tă i -- ni -- ma-n plă -- ce -- re,
   Când o as -- cul -- tăm __
-  Şi pe bu -- ze-a -- du -- ce mie -- re
+  Și pe bu -- ze-a -- du -- ce mie -- re
   Când o cu -- vân -- tăm.
 }
 
 stanzaTwo = \lyricmode {
   \set stanza = "2."
-  Ro -- mâ -- na -- şul o iu -- beş -- te
+  Ro -- mâ -- na -- șul o iu -- beș -- te
   Ca su -- fle -- tul său; __
-  Vor -- biţi, scri -- eţi ro -- mâ -- neş -- te,
+  Vor -- biți, scri -- eți ro -- mâ -- neș -- te,
   Pen -- tru Dum -- ne -- zeu.
 
-  Fraţi ce-n dul -- cea Ro -- mâ -- ni -- e
-  Naş -- teţi şi mu -- riţi, __
-  Şi-n lu -- mi -- na ei cea vi -- e
-  Dul -- ce vie -- ţu -- iţi!
+  Frați ce-n dul -- cea Ro -- mâ -- ni -- e
+  Naș -- teți și mu -- riți, __
+  Și-n lu -- mi -- na ei cea vi -- e
+  Dul -- ce vie -- țu -- iți!
 }
 
 stanzaThree = \lyricmode {
   \set stanza = "3."
   De ce lim -- ba ro -- mâ -- neas -- că
   Să n-o cul -- ti -- văm? __
-  Au vo -- iţi ca să ro -- şeas -- că
-  Ţăr -- na ce-o căl -- căm?
+  Au vo -- iți ca să ro -- șeas -- că
+  Țăr -- na ce-o căl -- căm?
 
-  Lim -- ba, ţa -- ra, vor -- be sfin -- te
-  La stră -- moşi e -- rau; __
-  Vor -- biţi, scri -- eţi ro -- mâ -- neş -- te,
+  Lim -- ba, ța -- ra, vor -- be sfin -- te
+  La stră -- moși e -- rau; __
+  Vor -- biți, scri -- eți ro -- mâ -- neș -- te,
   Pen -- tru Dum -- ne -- zeu!
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   b'8^\p b8 c8 b8
   a8 g8 fis8 e8
   b'8 b8 c8 a8
@@ -89,7 +92,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-menMusic = \relative {
+menMusic = \relative c' {
   b8^\p b8 c8 b8
   a8 g8 fis8 e8
   g8 d8 e8 fis8
@@ -134,9 +137,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 72 4)
-  }
+  \tempo 4 = 72
 }
 
 \score {

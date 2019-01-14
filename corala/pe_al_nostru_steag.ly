@@ -1,11 +1,12 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -16,8 +17,9 @@
   tagline = ""
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \set Staff.midiInstrument = "clarinet"
   \key as \major
   \time 4/4
@@ -27,19 +29,19 @@ global = {
 stanzaOne = \lyricmode {
   \set stanza = "1."
   Pe-al nos -- tru steag e scris "\"U" -- ni -- re,
-  U -- ni -- re-n cu -- get şi-n sim -- "ţiri\""
-  Şi sub mă -- rea -- ţa lui um -- bri -- re
+  U -- ni -- re-n cu -- get și-n sim -- "țiri\""
+  Și sub mă -- rea -- ța lui um -- bri -- re
   Vom în -- frun -- ta ori -- ce lo -- viri.
 
   \set stanza = "1.-2."
   A -- ce -- la-n lup -- tă grea se te -- me
-  Ce în -- suşi e ră -- tă -- ci -- tor;
-  Iar noi, u -- niţi în ori -- ce vre -- me,
+  Ce în -- suși e ră -- tă -- ci -- tor;
+  Iar noi, u -- niți în ori -- ce vre -- me,
   Vom fi, vom fi în -- vin -- gă -- tori! __
 
   A -- ce -- la-n lup -- tă grea se te -- me
-  Ce în -- suşi e ră -- tă -- ci -- tor;
-  Iar noi, u -- niţi în ori -- ce vre -- me,
+  Ce în -- suși e ră -- tă -- ci -- tor;
+  Iar noi, u -- niți în ori -- ce vre -- me,
   Vom fi, vom fi în -- vin -- gă -- tori! __
 }
 
@@ -51,7 +53,7 @@ stanzaTwo = \lyricmode {
   Iar domn e a -- de -- vă -- rul sfânt.
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   \partial 4 es4^\f
 
   as4.\accent es8 c8 es8 as8 bes8
@@ -91,7 +93,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \partial 4 es,4^\f
 
   as4.\accent es8 c8 es8 as8 bes8
@@ -125,7 +127,7 @@ tenorMusic = \relative {
   as2~ as8 r8 s4
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \partial 4 es,4^\f
 
   as4.\accent es8 c8 es8 as8 es8
@@ -187,9 +189,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 120 4)
-  }
+  \tempo 4 = 120
   \context {
     \Voice
     \remove "Dynamic_performer"

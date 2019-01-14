@@ -1,23 +1,25 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Sârba-n căruţă"
+  title = "Sârba-n căruță"
   poet = "versuri: populare"
   composer = "muzica: Gheorghe Danga"
   tagline = ""
   meter = "Repede (Tempo de joc)"
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \key f \major
   \time 2/4
   \autoBeamOff
@@ -26,56 +28,56 @@ global = {
 
 sopWords = \lyricmode {
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba s-o ju -- căm cu to -- ţii, măi flă -- căi, __ cu to -- ţii,
+  sâr -- ba s-o ju -- căm cu to -- ții, măi flă -- căi, __ cu to -- ții,
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba s-o ju -- căm cu to -- ţii, măi flă -- căi, __
+  sâr -- ba s-o ju -- căm cu to -- ții, măi flă -- căi, __
 
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba s-o ju -- căm cu to -- ţii, măi flă -- căi, __ cu to -- ţii,
+  sâr -- ba s-o ju -- căm cu to -- ții, măi flă -- căi, __ cu to -- ții,
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba s-o ju -- căm cu to -- ţii, măi flă -- căi. __
+  sâr -- ba s-o ju -- căm cu to -- ții, măi flă -- căi. __
 
-  A -- şa şi iar a -- şa,
-  Sal -- t-o şi n-o lă -- sa,
+  A -- șa și iar a -- șa,
+  Sal -- t-o și n-o lă -- sa,
   O -- pin -- ca ba -- te de pă -- mânt __
-  Să şti -- e ci -- ne-o vrea,
-  Că-i joc în ţa -- ra mea
+  Să ști -- e ci -- ne-o vrea,
+  Că-i joc în ța -- ra mea
   Tra la la la la la la la
 
   la
 
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba în că -- ru -- ţă s-o ju -- căm flă -- căi, __ cu to -- ţii,
+  sâr -- ba în că -- ru -- ță s-o ju -- căm flă -- căi, __ cu to -- ții,
 
   s-o ju -- căm flă -- căi
 
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba s-o ju -- căm cu to -- ţii, măi flă -- căi, __ cu to -- ţii,
+  sâr -- ba s-o ju -- căm cu to -- ții, măi flă -- căi, __ cu to -- ții,
   Hai, __ sâr -- ba, hai, __
-  sâr -- ba s-o ju -- căm cu to -- ţii, măi flă -- căi! __
+  sâr -- ba s-o ju -- căm cu to -- ții, măi flă -- căi! __
 
-  A -- şa şi iar a -- şa,
-  Sal -- t-o şi n-o lă -- sa,
+  A -- șa și iar a -- șa,
+  Sal -- t-o și n-o lă -- sa,
   O -- pin -- ca ba -- te de pă -- mânt __
-  Să şti -- e ci -- ne-o vrea,
-  Că-i joc în ţa -- ra mea
+  Să ști -- e ci -- ne-o vrea,
+  Că-i joc în ța -- ra mea
   Tra la la la la la la la
-  
+
   Tra la la la la la __
   s-o ju -- căm flă -- căi!
 }
 
 altoWords = \lyricmode {
-  Hai __ 
+  Hai __
 
   Hai, __ hai, __
   s-o ju -- căm, s-o ju -- căm,
   Hai, __ hai __ hai __
 
-  A -- şa şi iar a -- şa, iar a -- şa,
-  O -- pin -- ca ba -- te de pă -- 
+  A -- șa și iar a -- șa, iar a -- șa,
+  O -- pin -- ca ba -- te de pă --
   O -- pin -- ca ba -- te de pă -- mânt,
-  Şti -- e ci -- ne-o vrea, ci -- ne-o vrea
+  Ști -- e ci -- ne-o vrea, ci -- ne-o vrea
   Tra la la la la la la
 
   la
@@ -100,10 +102,10 @@ altoWords = \lyricmode {
   zin -- ghi zan -- ghi
   zum.
 
-  A -- şa şi iar a -- şa, iar a -- şa,
-  O -- pin -- ca ba -- te de pă -- 
+  A -- șa și iar a -- șa, iar a -- șa,
+  O -- pin -- ca ba -- te de pă --
   O -- pin -- ca ba -- te de pă -- mânt,
-  Şti -- e ci -- ne-o vrea, ci -- ne-o vrea
+  Ști -- e ci -- ne-o vrea, ci -- ne-o vrea
   Tra la la la la la la
 
   Tra la la la la la __
@@ -114,9 +116,9 @@ tenorWords = \lyricmode {
   Hai, măi flă -- căi, hai hai hai hai hai __
   s-o ju -- căm, s-o ju -- căm, Hai, hai, __ hai __ hai __
 
-  A -- şa, Sal -- t-o şi n-o lă -- sa,
+  A -- șa, Sal -- t-o și n-o lă -- sa,
   Ba -- te, O -- pin -- ca ba -- te de pă -- mânt,
-  ci -- ne, Că-i joc în ţa -- ra mea,
+  ci -- ne, Că-i joc în ța -- ra mea,
   Tra la la la la la
 
   la
@@ -141,9 +143,9 @@ tenorWords = \lyricmode {
   zin -- ghi zan -- ghi
   zum.
 
-  A -- şa, Sal -- t-o şi n-o lă -- sa,
+  A -- șa, Sal -- t-o și n-o lă -- sa,
   Ba -- te, O -- pin -- ca ba -- te de pă -- mânt,
-  ci -- ne, Că-i joc în ţa -- ra mea,
+  ci -- ne, Că-i joc în ța -- ra mea,
   Tra la la la la la
 
   Tra la la la la la __
@@ -154,7 +156,7 @@ bassWords = \lyricmode {
   Hai, măi flă -- căi, hai hai hai hai __
   s-o ju -- căm __ hai __ hai __
 
-  A -- şa şi iar a -- şa, iar a -- şa,
+  A -- șa și iar a -- șa, iar a -- șa,
   O -- pin -- ca ba -- te, ba -- te,
   O -- pin -- ca ba -- te de pă -- mânt,
   ci -- ne, ci -- ne-o vrea,
@@ -182,7 +184,7 @@ bassWords = \lyricmode {
   zum zum
   zum zum zum zum
 
-  A -- şa şi iar a -- şa, iar a -- şa,
+  A -- șa și iar a -- șa, iar a -- șa,
   O -- pin -- ca ba -- te, ba -- te,
   O -- pin -- ca ba -- te de pă -- mânt,
   ci -- ne, ci -- ne-o vrea,
@@ -193,7 +195,7 @@ bassWords = \lyricmode {
   s-o ju -- căm flă -- căi!
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   f2~^\pp
   f4 g8 f8
   a2~
@@ -356,7 +358,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   f2~^\pp
   f2~
   f2~
@@ -498,7 +500,7 @@ altoMusic = \relative {
   a2
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   R2 * 4
 
   R2 * 4
@@ -588,7 +590,7 @@ tenorMusic = \relative {
   a8 a8 a8 a8
   a8 a8 a8 a8
   a8 a8 a8 a8
-  
+
   bes8 bes8 bes8 bes8
   bes8 bes8 bes8 bes8
   a8 a8 a8 a8
@@ -632,7 +634,7 @@ tenorMusic = \relative {
   c2
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   R2 * 4
 
   R2 * 4
@@ -793,9 +795,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 160 4)
-  }
+  \tempo 4 = 160
   \context {
     \Voice
     \remove "Dynamic_performer"

@@ -1,11 +1,12 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -19,35 +20,36 @@ bigMarkup = \markup {
   \column {
     { \large \bold "Meno mosso" }
     \line {
-      \musicglyph #"m"
+      \musicglyph "m"
       \hspace #-1.0
-      \musicglyph #"p"
+      \musicglyph "p"
       \italic "dolce"
     }
   }
 }
 
 fermataAndPp = \markup {
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
   \hspace #0.5
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
 }
 
 fermataAndPpp = \markup {
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
   \hspace #0.5
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
-  \override Score.VerticalAxisGroup #'remove-first = ##t
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \key g \major
   \time 2/4
   \autoBeamOff
@@ -57,19 +59,19 @@ soloStanzaOne = \lyricmode {
   \set stanza = "2."
   Par -- c-o __ văd a -- cas' pe ma -- ma
   Chip de sfân -- tă-n -- tr-un per -- vaz, __
-  Sla -- bă, __ sla -- bă, să -- ră -- cu -- ţa
-  Şi cu la -- crimi pe o -- braz! __
+  Sla -- bă, __ sla -- bă, să -- ră -- cu -- ța
+  Și cu la -- crimi pe o -- braz! __
 }
 
 soloStanzaTwo = \lyricmode {
   \set stanza = "3."
-  Stă la __ geam şi toar -- ce tris -- tă
+  Stă la __ geam și toar -- ce tris -- tă
   Alb fu -- ior din ve -- che
   \set ignoreMelismata = ##t
   fur -- că,
   \unset ignoreMelismata
   Stă la __ geam, dar gân -- dul dân -- sei
-  Tre -- ce văi şi dea -- luri
+  Tre -- ce văi și dea -- luri
   \set ignoreMelismata = ##t
   ur -- că.
   \unset ignoreMelismata
@@ -77,59 +79,59 @@ soloStanzaTwo = \lyricmode {
 
 womenWords = \lyricmode {
   \set stanza = "1."
-  E a -- şa se -- ni -- nă sla -- va
-  Şi-i a -- tâ -- ta pa -- ce-n a -- er
-  Stau cul -- cat şi ţes în -- tru -- na
+  E a -- șa se -- ni -- nă sla -- va
+  Și-i a -- tâ -- ta pa -- ce-n a -- er
+  Stau cul -- cat și țes în -- tru -- na
   Din -- tr-al gân -- du -- ri -- lor ca -- ier:
 
   M, m, M __
   M, m, M __
 
   \set stanza = "4."
-  Şi gân -- dind a -- şa la mi -- ne,
-  Ui -- tă fur -- că şi fu -- ior
-  Şi cu-n colţ de la ma -- ra -- mă-şi
-  şter -- ge o -- chii... bi -- ni -- şor.
+  Și gân -- dind a -- șa la mi -- ne,
+  Ui -- tă fur -- că și fu -- ior
+  Și cu-n colț de la ma -- ra -- mă-și
+  șter -- ge o -- chii... bi -- ni -- șor.
 }
 
 tenorWords = \lyricmode {
   \set stanza = "1."
-  E a -- şa se -- ni -- nă sla -- va
-  Şi-i a -- tâ -- ta pa -- ce-n a -- er
-  Stau cul -- cat şi ţes în -- tru -- na
+  E a -- șa se -- ni -- nă sla -- va
+  Și-i a -- tâ -- ta pa -- ce-n a -- er
+  Stau cul -- cat și țes în -- tru -- na
   Din -- tr-al gân -- du -- ri -- lor ca -- ier:
 
   M, m, M __
   M, m, M __
 
   \set stanza = "4."
-  Şi gân -- dind a -- şa la mi -- ne,
-  Ui -- tă fur -- că şi fu -- ior
-  Şi cu-n colţ de la ma -- ra -- mă-şi
-  şter -- ge o -- chii... bi -- ni -- şor.
+  Și gân -- dind a -- șa la mi -- ne,
+  Ui -- tă fur -- că și fu -- ior
+  Și cu-n colț de la ma -- ra -- mă-și
+  șter -- ge o -- chii... bi -- ni -- șor.
 }
 
 bassWords = \lyricmode {
   \set stanza = "1."
-  E a -- şa se -- nin
-  Şi-i a -- tâ -- ta pa -- ce
-  Stau cul -- cat şi ţes în -- tru -- na
+  E a -- șa se -- nin
+  Și-i a -- tâ -- ta pa -- ce
+  Stau cul -- cat și țes în -- tru -- na
   Din -- tr-al gân -- du -- ri -- lor ca -- ier:
 
   M __
   M __
 
   \set stanza = "4."
-  Şi gân -- dind a -- şa
-  Ui -- tă şi fu -- ior
-  Şi cu-n colţ de la ma -- ra -- mă-şi
-  şter -- ge o -- chii... bi -- ni -- şor.
+  Și gân -- dind a -- șa
+  Ui -- tă și fu -- ior
+  Și cu-n colț de la ma -- ra -- mă-și
+  șter -- ge o -- chii... bi -- ni -- șor.
 }
 
-soloMusic = \relative {
+soloMusic = \relative c' {
   \set Staff.midiInstrument = "alto sax"
   R2 * 8
-  
+
   \time 3/4
   \repeat volta 2 {
     g4.^\bigMarkup fis16([ e16)] d8 d8
@@ -180,7 +182,7 @@ soloMusic = \relative {
   R1
 }
 
-womenMusic = \relative {
+womenMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "I"
 
@@ -231,7 +233,7 @@ womenMusic = \relative {
   \bar "|."
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "II"
 
@@ -239,12 +241,12 @@ tenorMusic = \relative {
   g8^\> g8 fis8 fis8\!
   g8 g8 g8 g8
   g8^\> g8 fis8 fis8\!
-  
+
   g8^\pp g8 g8 g8
   fis8 fis8 fis8 fis8
   g8 g8^\< g8 g8\!
   g8 g8^\> fis8 fis8\!^\fermata
-  
+
   \time 3/4
   \repeat volta 2 {
     r4 g4^\p\tenuto g4 \tenuto
@@ -263,7 +265,7 @@ tenorMusic = \relative {
   g8 g8^\> fis8 fis8\!
   g8 g8 g8 g8
   g8^\> g8 fis4\!
-  
+
   g8^\pp g8 g8 g8
   fis8 fis8 fis8 fis8
   g8 g8^\< g8 g8\!
@@ -276,11 +278,11 @@ tenorMusic = \relative {
   g1\!^\fermataAndPpp
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.midiInstrument = "recorder"
   \set Staff.vocalName = "III"
 
-  g8^\p g8 e8 e8 
+  g8^\p g8 e8 e8
   d2^\>
   g8\! g8 e8 e8
   d4^\> d4\!
@@ -289,7 +291,7 @@ bassMusic = \relative {
   d8 d8 d8 d8
   g8 g8^\< e8 e8\!
   d8 d8^\> d8 d8\!^\fermata
-  
+
   \time 3/4
   \repeat volta 2 {
     R2.
@@ -351,15 +353,13 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 72 4)
-  }
+  \tempo 4 = 72
   \context {
     \Voice
     \remove "Dynamic_performer"

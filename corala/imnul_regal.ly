@@ -1,12 +1,12 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
-  between-system-padding = 0\mm
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
@@ -18,10 +18,11 @@
   tagline = ""
 }
 
+#(set-global-staff-size 16)
+
 global = {
-  #(set-global-staff-size 16)
   \set Staff.midiInstrument = "clarinet"
-  \override Score.VerticalAxisGroup #'remove-first = ##t
+  \override Score.VerticalAxisGroup.remove-first = ##t
   \key g \major
   \time 4/4
   \autoBeamOff
@@ -30,13 +31,13 @@ global = {
 % Use these instead of \p and \pp because the original document had something
 % like g1^\f_\pp, which lilypond doesn't like.
 myP = \markup {
-  \musicglyph #"p"
+  \musicglyph "p"
 }
 
 myPp = \markup {
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
 }
 
 dimMarkup = \markup { \italic "dim." }
@@ -45,8 +46,8 @@ finalNote = \markup {
   \bold
   \column {
     { \hspace #1.0 }
-    { "Repetiţia se face cu" }
-    { "nuanţarea însemnată" }
+    { "Repetiția se face cu" }
+    { "nuanțarea însemnată" }
     { "sub portativ." }
   }
 }
@@ -54,15 +55,15 @@ finalNote = \markup {
 sopStanzaOne = \lyricmode {
   \set stanza = "1."
   Tră -- ias -- că Re -- ge -- le
-  în pa -- ce şi o -- nor,
-  De ţa -- ră iu -- bi -- tor
-  Şi-a -- pă -- ră -- tor de __ ţa -- ră.
+  în pa -- ce și o -- nor,
+  De ța -- ră iu -- bi -- tor
+  Și-a -- pă -- ră -- tor de __ ța -- ră.
 
   Fi -- e Domn glo -- ri -- os __ glo -- ri -- os pes -- te noi,
   Fi -- e-n veci no -- ro -- cos, __ no -- ro -- cos în răz -- boi.
   O! Doam -- ne sfin -- te O! Doam -- ne __ sfin -- te
   ce -- resc pă -- rin -- te
-  sus -- ţi -- ne cu-a Ta mâ -- nă
+  sus -- ți -- ne cu-a Ta mâ -- nă
   co -- roa -- na, co -- roa -- na ro -- mâ -- nă.
 }
 
@@ -78,21 +79,21 @@ sopStanzaTwo = \lyricmode {
   O! Doam -- ne sfin -- te O! Doam -- ne __ sfin -- te
   ce -- resc pă -- rin -- te
   în -- tin -- de a Ta mâ -- nă
-  pe ţa -- ra, pe ţa -- ra ro -- "mâ -" \skip 2 nă.
+  pe ța -- ra, pe ța -- ra ro -- "mâ -" \skip 2 nă.
 }
 
 altoStanzaOne = \lyricmode {
   \set stanza = "1."
   Tră -- ias -- că Re -- ge -- le
-  în pa -- ce şi o -- nor,
-  De ţa -- ră iu -- bi -- tor
-  Şi-a -- pă -- ră -- tor de ţa -- ră.
+  în pa -- ce și o -- nor,
+  De ța -- ră iu -- bi -- tor
+  Și-a -- pă -- ră -- tor de ța -- ră.
 
   Fi -- e Domn glo -- ri -- os glo -- ri -- os pes -- te noi,
   Fi -- e-n veci no -- ro -- cos, no -- ro -- cos în răz -- boi.
   O! Doam -- ne sfin -- te O! Doam -- ne __ sfin -- te
   ce -- resc pă -- rin -- te
-  sus -- ţi -- ne cu-a Ta mâ -- nă
+  sus -- ți -- ne cu-a Ta mâ -- nă
   co -- roa -- na ro -- mâ -- nă.
 }
 
@@ -108,15 +109,15 @@ tenorStanzaTwo = \lyricmode {
   O! Doam -- ne O! Doam -- ne __ sfin -- te
   ce -- resc pă -- rin -- te
   în -- tin -- de a Ta mâ -- nă
-  pe ţa -- ra ro -- "mâ -" \skip 2 nă.
+  pe ța -- ra ro -- "mâ -" \skip 2 nă.
 }
 
 baritoneStanzaOne = \lyricmode {
   \set stanza = "1."
   Tră -- ias -- că Re -- ge -- le
-  în pa -- ce şi o -- nor,
-  De ţa -- ră iu -- bi -- tor
-  Şi-a -- pă -- ră -- tor de ţa -- ră.
+  în pa -- ce și o -- nor,
+  De ța -- ră iu -- bi -- tor
+  Și-a -- pă -- ră -- tor de ța -- ră.
 
   Fi -- e Domn glo -- ri -- os
   Fi -- e-n veci no -- ro -- cos
@@ -124,7 +125,7 @@ baritoneStanzaOne = \lyricmode {
   O! Doam -- ne sfin -- te
   O! O Doam -- ne sfin -- te __
   ce -- resc pă -- rin -- te __
-  sus -- ţi -- ne cu-a Ta mâ -- nă
+  sus -- ți -- ne cu-a Ta mâ -- nă
   co -- roa -- na ro -- mâ -- nă.
 }
 
@@ -142,14 +143,14 @@ baritoneStanzaTwo = \lyricmode {
   O! O Doam -- ne sfin -- te __
   ce -- resc pă -- rin -- te __
   în -- tin -- de a Ta mâ -- nă
-  pe ţa -- ra ro -- "mâ -" \skip 2 nă.
+  pe ța -- ra ro -- "mâ -" \skip 2 nă.
 }
 
 bassStanzaOne = \lyricmode {
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8 \skip 8
   \skip 8 \skip 8
-  Şi-a -- pă -- ră -- tor de ţa -- ră.
+  Și-a -- pă -- ră -- tor de ța -- ră.
 
   Fi -- e Domn glo -- ri -- os glo -- ri -- os pes -- te noi,
   Fi -- e-n veci no -- ro -- cos, no -- ro -- cos în răz -- boi.
@@ -169,7 +170,7 @@ bassStanzaTwo = \lyricmode {
   ce -- resc pă -- rin -- te
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \set Staff.vocalName = "Soprani"
   g'1^\p\<
   a2 b2\!
@@ -206,7 +207,7 @@ sopMusic = \relative {
     R1
     c2 e2
     \break
-    
+
     g1
     b,2 d2
     g2.( b,4)
@@ -244,7 +245,7 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \set Staff.vocalName = "Alti"
   d1^\p^\<
   d2 g2\!
@@ -276,7 +277,7 @@ altoMusic = \relative {
     d2 r2
     R1
     g2 g2
-    
+
     g1
     g2 g2
     g1
@@ -309,7 +310,7 @@ altoMusic = \relative {
   }
 }
 
-tenorOneMusic = \relative {
+tenorOneMusic = \relative c' {
   \set Staff.vocalName = "Tenori I"
   g'1^\p^\<
   fis2 f2\!
@@ -341,7 +342,7 @@ tenorOneMusic = \relative {
     b2 r2
     R1
     e2 e2
-    
+
     e1
     d2 d2
     d1
@@ -374,7 +375,7 @@ tenorOneMusic = \relative {
   }
 }
 
-tenorTwoMusic = \relative {
+tenorTwoMusic = \relative c' {
   \set Staff.vocalName = "Tenori II"
   b1^\p^\<
   a2 d2\!
@@ -406,7 +407,7 @@ tenorTwoMusic = \relative {
     g2 r2
     R1
     c2 c2
-    
+
     c1
     b2 b2
     b1
@@ -439,7 +440,7 @@ tenorTwoMusic = \relative {
   }
 }
 
-baritoneMusic = \relative {
+baritoneMusic = \relative c' {
   \set Staff.vocalName = "Baritoni"
   d,1^\p^\<
   d2 d2\!
@@ -471,7 +472,7 @@ baritoneMusic = \relative {
     r2 d,4 d4
     g2 g4 g4
     g2 r2
-    
+
     e4 g4 c2
     R1
     d,4 g4 b2
@@ -504,7 +505,7 @@ baritoneMusic = \relative {
   }
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \set Staff.vocalName = "Bassi"
   g,1^\p^\<
   g2 g2\!
@@ -609,15 +610,13 @@ myScore = \new Score <<
   \myScore
   \layout {
     \context {
-      \RemoveEmptyStaffContext
+      \Staff \RemoveEmptyStaves
     }
   }
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 240 4)
-  }
+  \tempo 4 = 240
 }
 
 \score {

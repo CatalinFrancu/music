@@ -1,23 +1,25 @@
-\version "2.10.13"
+\version "2.19.80"
 
 \paper {
   #(set-paper-size "letter")
   left-margin = 1\in
   line-width = 7\in
   print-page-number = false
-  top-margin = 0\in
+  top-margin = 0.7\in
+  bottom-margin = 0.7\in
 }
 
 \header {
-  title = "Şi era la ora a şasea"
+  title = "Și era la ora a șasea"
   subtitle = "Denia celor douăsprezece Evanghelii"
   composer = "Gh. Mandicevschi"
   meter = "Adagio"
   tagline = ""
 }
 
+#(set-global-staff-size 17)
+
 global = {
-  #(set-global-staff-size 17)
   \set Staff.midiInstrument = "clarinet"
   \key a \minor
   \time 4/4
@@ -29,52 +31,52 @@ marcatoMarkup = \markup{ \hspace #-5.0 \large \bold "marcato" }
 
 fermataAndPpp = \markup {
   \hspace #-6.2
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #-1.0
-  \musicglyph #"p"
+  \musicglyph "p"
   \hspace #0.5
-  \musicglyph #"scripts.ufermata"
+  \musicglyph "scripts.ufermata"
 }
 
 womenWords = \lyricmode {
-  Şi e -- ra la o -- ra a şa -- sea
-  şi s-a fă -- cut __ în -- tu ne -- ric pes -- te tot pă -- mân -- tul
+  Și e -- ra la o -- ra a șa -- sea
+  și s-a fă -- cut __ în -- tu ne -- ric pes -- te tot pă -- mân -- tul
   pâ -- nă la o -- ra a no -- ua.
 
-  Şi s-a în -- tu -- ne -- cat soa -- re -- le
-  şi s-a rupt ca -- ta -- pe -- teas -- ma tem -- plu -- lui prin mij -- loc.
+  Și s-a în -- tu -- ne -- cat soa -- re -- le
+  și s-a rupt ca -- ta -- pe -- teas -- ma tem -- plu -- lui prin mij -- loc.
 
-  Şi stri -- gând Ii -- sus cu vo -- ce ta -- re a zis:
+  Și stri -- gând Ii -- sus cu vo -- ce ta -- re a zis:
   "\"Pă" -- rin -- te, în mâi -- ni -- le Ta -- le
-  în -- cre -- din -- ţez Du -- hul "meu\"."
+  în -- cre -- din -- țez Du -- hul "meu\"."
 
-  Şi a -- ces -- tea zi -- când
-  şi-a dat __ Du -- hul
-  şi-a dat Du -- hul.
+  Și a -- ces -- tea zi -- când
+  și-a dat __ Du -- hul
+  și-a dat Du -- hul.
 }
 
 menWords = \lyricmode {
-  Şi e -- ra la o -- ra a şa -- sea
-  şi s-a fă -- cut __ în -- tu ne -- ric pes -- te tot pă -- mân -- tul
+  Și e -- ra la o -- ra a șa -- sea
+  și s-a fă -- cut __ în -- tu ne -- ric pes -- te tot pă -- mân -- tul
   pâ -- nă la o -- ra a no -- ua.
 
-  Şi s-a în -- tu -- ne -- cat soa -- re -- le
-  şi s-a rupt ca -- ta -- pe -- teas -- ma tem -- plu -- lui prin mij -- loc.
+  Și s-a în -- tu -- ne -- cat soa -- re -- le
+  și s-a rupt ca -- ta -- pe -- teas -- ma tem -- plu -- lui prin mij -- loc.
 
-  Şi stri -- gând Ii -- sus cu vo -- ce ta -- re a zis:
+  Și stri -- gând Ii -- sus cu vo -- ce ta -- re a zis:
   "\"Pă" -- rin -- te, în mâi -- ni -- le Ta -- le
-  în -- cre -- din -- ţez Du -- hul "meu\"."
+  în -- cre -- din -- țez Du -- hul "meu\"."
 
-  Şi a -- ces -- tea zi -- când
-  şi-a dat Du -- hul
-  şi-a dat Du -- hul.
+  Și a -- ces -- tea zi -- când
+  și-a dat Du -- hul
+  și-a dat Du -- hul.
 }
 
-sopMusic = \relative {
+sopMusic = \relative c' {
   \voiceOne
-  \override Voice.MultiMeasureRest #'staff-position = #0
+  \override Voice.MultiMeasureRest.staff-position = #0
   R1 |
   b'2\rest b4\rest e8.^\p e16 |
   e4. e8 c4 d8 e8 |
@@ -124,9 +126,9 @@ sopMusic = \relative {
   \bar "|."
 }
 
-altoMusic = \relative {
+altoMusic = \relative c' {
   \voiceTwo
-  \override Voice.MultiMeasureRest #'staff-position = #0
+  \override Voice.MultiMeasureRest.staff-position = #0
   R1 |
   b'2\rest b4\rest c8. c16 |
   c4. c8 c4 b8 bes8 |
@@ -169,7 +171,7 @@ altoMusic = \relative {
   a1 |
 }
 
-tenorMusic = \relative {
+tenorMusic = \relative c' {
   \voiceOne
   e,2^\mp\espressivo e2\espressivo |
   e2\espressivo e2\espressivo |
@@ -213,7 +215,7 @@ tenorMusic = \relative {
   e1^\fermataAndPpp |
 }
 
-bassMusic = \relative {
+bassMusic = \relative c' {
   \voiceTwo
   a,2 a2 |
   a2 a2 |
@@ -280,9 +282,7 @@ myScore = \new Score <<
 }
 
 midiOutput = \midi {
-  \context {
-    \Score tempoWholesPerMinute = #(ly:make-moment 60 4)
-  }
+  \tempo 4 = 60
   \context {
     \Voice
     \remove "Dynamic_performer"
