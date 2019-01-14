@@ -47,7 +47,7 @@
     \href{https://catalin.francu.com/Music/liturghia}
          {https://catalin.francu.com/Music/liturghia}.
 
-    Versiunea 1.3 (6 iunie 2008)
+    Versiunea 1.4 (14 ianuarie 2019)
   \end{footnotesize}
   \pagebreak
 
@@ -64,8 +64,6 @@
   \begin{center}
     \lilypondfile{amin_1.ly}
   \end{center}
-
-  \vspace{0.3in}
 
   \mysection{Ectenia Mare}
 
@@ -170,6 +168,7 @@
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
+  \pagebreak
 
   {\bf Preotul:} Pe noi înșine și unii pe alții și toată viața noastră
   lui Hristos Dumnezeu să o dăm.
@@ -275,6 +274,7 @@
   \begin{center}
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Că bun și iubitor de oameni Dumnezeu ești și Ție
   mărire înălțăm, Tatălui și Fiului și Sfântului Duh, acum și pururea
@@ -329,7 +329,8 @@
 
   \lilypondfile{si_ne_auzi.ly}
 
-  {\bf Preotul:} Și în vecii vecilor.\\
+  {\bf Preotul:} Și în vecii vecilor.
+
   {\bf Cantorul:} Amin.
 
   {\em La sărbătorile împărătești (Crăciunul, Botezul Domnului,
@@ -340,20 +341,23 @@
   Cruci, săptămâna a 3-a din Postul Paștilor) se cântă {\bf Crucii
   Tale ne închinăm, Stăpâne, și Sfântă Învierea Ta o lăudăm și o
   mărim.}}
-  \pagebreak
+
+  \vspace{1in}
 
   \lilypondfile{sfinte_dumnezeule_1.ly}
 
   \begin{center}
     {\em De trei ori. Apoi:}
   \end{center}
+  \pagebreak
 
   \lilypondfile{sfinte_dumnezeule_2.ly}
+  \pagebreak
 
   \lilypondfile{sfinte_dumnezeule_3.ly}
+  \pagebreak
 
   \lilypondfile{sfinte_dumnezeule_4.ly}
-  \pagebreak
 
   \label{cati_in_hristos}
   \lilypondfile{cati_in_hristos.ly}
@@ -384,17 +388,17 @@
   \pagebreak
 
   \lilypondfile{aliluia.ly}
+  \pagebreak
 
   {\bf Preotul:} Înțelepciune, drepți, să ascultăm Sfânta
   Evanghelie. Pace tuturor.
 
-  {\bf Cantorul:}\\[-10mm]
+  {\bf Cantorul:}
   \begin{center}
     \lilypondfile{si_duhului_tau.ly}
   \end{center}
 
   {\bf Preotul:} Din Sfânta Evanghelie de la ... citire.
-  \pagebreak
 
   {\bf Cantorul:}
 
@@ -435,6 +439,7 @@
   și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
+  \pagebreak
 
   \mysection{Ectenia pentru pomenirea morților}
 
@@ -509,7 +514,6 @@
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
-  \pagebreak
 
   {\bf Preotul:} Să-i învețe pe dânșii cuvântul adevărului.
 
@@ -591,14 +595,16 @@
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Iară și iară cu pace, Domnului să ne rugăm.\\
+  {\bf Preotul:} Iară și iară cu pace, Domnului să ne rugăm.
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
   {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
-  Dumnezeule, cu harul Tău.\\
+  Dumnezeule, cu harul Tău.
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_5.ly}
@@ -612,9 +618,11 @@
 
   \lilypondfile{heruvic_1.ly}
 
-  \vspace{0.8in}
+  \vspace{0.5in}
 
   \lilypondfile{heruvic_2.ly}
+
+  \vspace{0.5in}
 
   \mysection{Ieșirea cu Cinstitele Daruri}
 
@@ -683,6 +691,7 @@
   {\bf Cantorul:} Amin.
 
   \lilypondfile{ca_pe_imparatul.ly}
+  \pagebreak
 
   \mysection{Ectenia punerii-înainte}
 
@@ -736,6 +745,7 @@
   \begin{center}
     \lilypondfile{da_doamne_1.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Înger de pace, credincios îndreptător, păzitor al
   sufletelor și al trupurilor noastre, la Domnul să cerem.
@@ -746,14 +756,17 @@
   \end{center}
 
   {\bf Preotul:} Milă și iertare de păcatele și de greșelile noastre
-  la Domnul să cerem.\\
+  la Domnul să cerem.
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_3.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Cele bune și de folos sufletelor noastre și pace
-  lumii la Domnul să cerem.\\
+  lumii la Domnul să cerem.
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_4.ly}
@@ -770,6 +783,7 @@
   {\bf Preotul:} Sfârșit creștinesc vieții noastre, fără durere,
   neînfruntat, în pace și răspuns bun la înfricoșătoarea judecată a
   lui Hristos să cerem.
+  \pagebreak
 
   {\bf Cantorul:}
   \begin{center}
@@ -791,7 +805,6 @@
   \begin{center}
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
-  \pagebreak
 
   {\bf Preotul:} Cu îndurările Unuia-Născut Fiului Tău, cu Care ești
   binecuvântat, împreună cu Preasfântul și bunul și de viață făcătorul
@@ -801,6 +814,7 @@
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
+  \pagebreak
 
   \mysection{Sărutul păcii}
 
@@ -813,7 +827,6 @@
 
   {\bf Preotul:} Să ne iubim unii pe alții, ca într-un gând să
   mărturisim.
-  \pagebreak
 
   {\bf Cantorul:}
 
@@ -860,7 +873,6 @@
 
     Și viața veacului ce va să vie. Amin.
   }
-  \pagebreak
 
   \mysection{Pregătirea pentru Sfințirea Cinstitelor Daruri}
 
@@ -904,6 +916,7 @@
 
   {\bf Preotul:} Luați, mâncați, acesta este Trupul Meu, Care se
   frânge pentru voi spre iertarea păcatelor.
+  \pagebreak
 
   {\bf Cantorul:}
   \begin{center}
@@ -938,7 +951,6 @@
   speciale.}
 
   {\bf Cantorul:}
-  \pagebreak
 
   \lilypondfile{axion_1.ly}
 
@@ -968,6 +980,7 @@
   \begin{center}
     \lilypondfile{si_cu_duhul_tau.ly}
   \end{center}
+  \pagebreak
 
   \mysection{Ectenia dinainte de „Tatăl nostru“}
 
@@ -986,6 +999,7 @@
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Ca Iubitorul de oameni, Dumnezeul nostru, Cel ce le-a
   primit pe Dânsele în sfântul, cel mai presus de ceruri și
@@ -999,14 +1013,17 @@
   \end{center}
 
   {\bf Preotul:} Pentru ca să fim izbăviți noi de tot necazul, mânia,
-  primejdia și nevoia, Domnului să ne rugăm.\\
+  primejdia și nevoia, Domnului să ne rugăm.
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_4.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
-  Dumnezeule, cu harul Tău.\\
+  Dumnezeule, cu harul Tău.
+
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_5.ly}
@@ -1019,6 +1036,7 @@
   \begin{center}
     \lilypondfile{da_doamne_1.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Înger de pace, credincios îndreptător, păzitor al
   sufletelor și al trupurilor noastre, la Domnul să cerem.
@@ -1035,6 +1053,7 @@
   \begin{center}
     \lilypondfile{da_doamne_3.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Cele bune și de folos sufletelor noastre și pace
   lumii la Domnul să cerem.
@@ -1051,6 +1070,7 @@
   \begin{center}
     \lilypondfile{da_doamne_5.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Sfârșit creștinesc vieții noastre, fără durere,
   neînfruntat, în pace și răspuns bun la înfricoșătoarea judecată a
@@ -1073,10 +1093,12 @@
   {\bf Preotul:} Și ne învrednicește pe noi, Stăpâne, cu îndrăznire,
   fără de osândă, să cutezăm a Te chema pe Tine, Dumnezeul cel ceresc,
   Tată și a zice:
+  \pagebreak
 
   {\bf Cantorul:}
 
   \lilypondfile{tatal_nostru.ly}
+  \pagebreak
 
   {\bf Preotul:} Că a Ta este împărăția și puterea și mărirea, a
   Tatălui și a Fiului și a Sfântului Duh, acum și pururea și în vecii
@@ -1093,6 +1115,7 @@
   \begin{center}
     \lilypondfile{si_duhului_tau.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Capetele voastre, Domnului să le plecați.
 
@@ -1110,6 +1133,7 @@
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
+  \pagebreak
 
   {\bf Preotul:} Să luăm aminte. Sfintele, sfinților.
 
@@ -1121,7 +1145,6 @@
 
   {\bf Preotul:} Cu frică de Dumnezeu, cu credință și cu dragoste să
   vă apropiați.
-  \pagebreak
 
   {\bf Cantorul:}
 
@@ -1148,14 +1171,15 @@
 
   {\em În timpul împărtășirii credincioșilor, strana cântă {\bf Trupul
   lui Hristos.}}
+  \pagebreak
 
   {\bf Cantorul:}
 
   \lilypondfile{trupul_lui_hristos.ly}
-  \pagebreak
 
   {\bf Preotul:} Mântuiește, Doamne, poporul Tău și binecuvintează
   moștenirea Ta.
+  \pagebreak
 
   {\bf Cantorul:}
 
@@ -1278,8 +1302,6 @@
   \begin{center}
     \lilypondfile{amin_6.ly}
   \end{center}
-
-  \raggedbottom
   \pagebreak
 
   \mychapter{II. Alte cântări liturgice}
@@ -1302,5 +1324,6 @@
   \pagebreak
 
   \lilypondfile{doamne_iisuse_hristoase.ly}
+  \pagebreak
 
 \end{document}

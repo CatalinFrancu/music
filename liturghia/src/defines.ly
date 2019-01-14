@@ -1,7 +1,7 @@
 \version "2.19.80"
 #(set-global-staff-size 14)
 #(define myNoteSpacing 7.0)
-#(define myStaffSpacing 2.0)
+#(define myStaffSpacing 1.8)
 #(define raggedRight #f)
 
 atempoMarkup = \markup {
