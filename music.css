@@ -12,12 +12,21 @@ h2 {
   font-weight: bold;
 }
 
-div.license {
-  background: #f8f8f8;
-  border: 1px solid black;
+div.footer {
+  border-top: 1px solid #999;
+  color: #777;
   font-size: 90%;
   margin-top: 10px;
-  padding: 5px;
+  padding-top: 10px;
+}
+
+div.footer a {
+  color: #777;
+}
+
+.ccIcon {
+  float: left;
+  padding-right: 10px;
 }
 
 a.thumb img {
