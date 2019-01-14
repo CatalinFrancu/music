@@ -25,15 +25,15 @@ global = {
 womenWords = \lyricmode {
   Pre Ti -- ne __ Te __ lă -- u -- dăm, __
   Pre Ti -- ne __ bi -- ne __ Te __ cu -- vân -- tăm. __
-  Ţi -- e Îţi mul -- ţu -- mim __ Doam -- ne
-  şi ne ru -- găm __ Ţi -- e, Dum -- ne -- ze -- u -- lui __ nos -- tru. __
+  Ți -- e Îți mul -- țu -- mim __ Doam -- ne
+  și ne ru -- găm __ Ți -- e, Dum -- ne -- ze -- u -- lui __ nos -- tru. __
 }
 
 menWords = \lyricmode {
   Pre Ti -- ne Te lă -- u -- dăm, __
   Pre Ti -- ne bi -- ne __ Te cu -- vân -- tăm. __
-  Ţi -- e Îţi mul -- ţu -- mim Doam -- ne
-  şi ne ru -- găm Ţi -- e, Dum -- ne -- ze -- u -- lui __ nos -- tru. __
+  Ți -- e Îți mul -- țu -- mim Doam -- ne
+  și ne ru -- găm Ți -- e, Dum -- ne -- ze -- u -- lui __ nos -- tru. __
   Ne ru -- găm, __ ne ru -- găm. __
 }
 
@@ -62,7 +62,7 @@ sopMusic = \relative c' {
   a2~^\>
   a4\! b4\rest
 
-  % Ţie Îţi mulţumim, Doamne,
+  % Ție Îți mulțumim, Doamne,
   c4~^\accent c16([ b16 d16 c16])
   b2
   \autoBeamOff
@@ -72,7 +72,7 @@ sopMusic = \relative c' {
   d4( e8[ f8)]
   e2^\>
 
-  % Şi ne rugăm Ţie, Dumnezeului nostru
+  % Și ne rugăm Ție, Dumnezeului nostru
   \autoBeamOff
   e4\!^\p e8 e8
   \autoBeamOn
@@ -118,7 +118,7 @@ altoMusic = \relative c' {
   a2~
   a4 b4\rest
 
-  % Ţie Îţi mulţumim, Doamne,
+  % Ție Îți mulțumim, Doamne,
   a2
   g2
   \autoBeamOff
@@ -128,7 +128,7 @@ altoMusic = \relative c' {
   b4( c8[ d8)]
   c2
 
-  % Şi ne rugăm Ţie, Dumnezeului nostru
+  % Și ne rugăm Ție, Dumnezeului nostru
   \autoBeamOff
   c4 d8 d8
   \autoBeamOn
@@ -174,7 +174,7 @@ tenorMusic = \relative c' {
   e2~^\>
   e4\! d4\rest
 
-  % Ţie Îţi mulţumim, Doamne,
+  % Ție Îți mulțumim, Doamne,
   a'4(^\accent f4)^\>
   g2\!
   \autoBeamOff
@@ -183,7 +183,7 @@ tenorMusic = \relative c' {
   g2
   g2^\>
   
-  % Şi ne rugăm Ţie, Dumnezeului nostru  
+  % Și ne rugăm Ție, Dumnezeului nostru  
   c4\!^\p b8 gis8
   \autoBeamOn
   a2
@@ -233,7 +233,7 @@ bassMusic = \relative c' {
   a,2~
   a4 d4\rest
 
-  % Ţie Îţi mulţumim, Doamne,
+  % Ție Îți mulțumim, Doamne,
   a'4( f4)
   g2
   \autoBeamOff
@@ -242,7 +242,7 @@ bassMusic = \relative c' {
   g2
   c,2
   
-  % Şi ne rugăm Ţie, Dumnezeului nostru  
+  % Și ne rugăm Ție, Dumnezeului nostru  
   c'4 b8 gis8
   \autoBeamOn
   a2

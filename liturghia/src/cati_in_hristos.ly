@@ -3,7 +3,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Câţi în Hristos"
+  title = "Câți în Hristos"
   composer = "de G.Musicescu"
   meter = "Moderato"
 }
@@ -15,8 +15,8 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Câţi în Hris -- tos v-aţi bo -- te -- zat,
-  În Hris -- tos v-aţi şi-m -- bră -- cat, __
+  Câți în Hris -- tos v-ați bo -- te -- zat,
+  În Hris -- tos v-ați și-m -- bră -- cat, __
   A -- li -- lu -- ia.
 }
 menWords = \womenWords
@@ -24,13 +24,13 @@ menWords = \womenWords
 sopMusic = \relative c' {
   \autoBeamOff
 
-  % Câţi în Hristos v-aţi botezat,
+  % Câți în Hristos v-ați botezat,
   e'4^\p d8 d8
   c4 b4
   c4 d4
   e2
 
-  % În Hristos v-aţi şi-mbrăcat,
+  % În Hristos v-ați și-mbrăcat,
   d4 d4
   e4 d4
   c4 b4
@@ -45,13 +45,13 @@ sopMusic = \relative c' {
 altoMusic = \relative c' {
   \autoBeamOff
 
-  % Câţi în Hristos v-aţi botezat,
+  % Câți în Hristos v-ați botezat,
   c'4 b8 b8
   a4 g4
   a4 b4
   c2
 
-  % În Hristos v-aţi şi-mbrăcat,
+  % În Hristos v-ați și-mbrăcat,
   b4 b4
   c4 b4
   a4 g4
@@ -66,13 +66,13 @@ altoMusic = \relative c' {
 tenorMusic = \relative c' {
   \autoBeamOff
 
-  % Câţi în Hristos v-aţi botezat,
+  % Câți în Hristos v-ați botezat,
   g4^\p g8 g8
   e4 e4
   e4 g4
   g2
 
-  % În Hristos v-aţi şi-mbrăcat,
+  % În Hristos v-ați și-mbrăcat,
   g4 g4
   g4 g4
   e4 e4
@@ -87,13 +87,13 @@ tenorMusic = \relative c' {
 bassMusic = \relative c' {
   \autoBeamOff
 
-  % Câţi în Hristos v-aţi botezat,
+  % Câți în Hristos v-ați botezat,
   c,4 g8 g8
   a4 b4
   a4 g4
   c2
 
-  % În Hristos v-aţi şi-mbrăcat,
+  % În Hristos v-ați și-mbrăcat,
   g4 g4
   c4 g4
   a4 b4

@@ -139,9 +139,9 @@ bassMusic = \relative c' {
 
 womenWords = \lyricmode {
   Bi -- ne -- cu -- vin -- tea -- ză, su -- fle -- te al meu pe Dom -- nul
-  Şi toa -- te ce -- le din -- lă -- un -- trul meu,
+  Și toa -- te ce -- le din -- lă -- un -- trul meu,
   nu -- me -- le cel sfânt al Lui,
-  Bi -- ne -- cu -- vân -- tat eşti Doam -- ne.
+  Bi -- ne -- cu -- vân -- tat ești Doam -- ne.
 }
 menWords = \womenWords
 

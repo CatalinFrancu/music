@@ -42,74 +42,74 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Ta -- tăl no -- stru, Ca -- re -- le eşti în ce -- ruri,
-  sfin -- ţea -- scă- -- se nu -- me -- le Tău,
-  vi -- e îm -- pă -- ră -- ţi -- a Ta,
+  Ta -- tăl no -- stru, Ca -- re -- le ești în ce -- ruri,
+  sfin -- țea -- scă- -- se nu -- me -- le Tău,
+  vi -- e îm -- pă -- ră -- ți -- a Ta,
   fa -- că- -- se vo -- ia Ta,
-  pre -- cum în cer, în cer a -- şa şi pre pă -- mânt. __
+  pre -- cum în cer, în cer a -- șa și pre pă -- mânt. __
 
-  Pâi -- nea noa -- stră cea __ spre fi -- in -- ţă
+  Pâi -- nea noa -- stră cea __ spre fi -- in -- ță
   dă- -- ne- o no -- uă as -- tăzi __
-  şi ne iar -- tă no -- uă gre -- şa -- le -- le noa -- stre,
-  pre -- cum şi noi ier -- tăm __ gre -- şi -- ţi -- lor no -- ştri.
+  și ne iar -- tă no -- uă gre -- șa -- le -- le noa -- stre,
+  pre -- cum și noi ier -- tăm __ gre -- și -- ți -- lor no -- ștri.
 
-  Şi nu ne du -- ce pre noi __ în is -- pi -- tă,
-  ci ne iz -- bă -- veş -- te de cel vi -- clean. __
+  Și nu ne du -- ce pre noi __ în is -- pi -- tă,
+  ci ne iz -- bă -- veș -- te de cel vi -- clean. __
 }
 
 altoWords = \lyricmode {
-  Ta -- tăl no -- stru, Ca -- re -- le eşti în ce -- ruri,
-  sfin -- ţea -- scă- -- se nu -- me -- le Tău,
-  vi -- e îm -- pă -- ră -- ţi -- a Ta,
+  Ta -- tăl no -- stru, Ca -- re -- le ești în ce -- ruri,
+  sfin -- țea -- scă- -- se nu -- me -- le Tău,
+  vi -- e îm -- pă -- ră -- ți -- a Ta,
   fa -- că- -- se vo -- ia Ta,
-  pre -- cum în cer, în cer a -- şa şi pre pă -- mânt. __
+  pre -- cum în cer, în cer a -- șa și pre pă -- mânt. __
 
-  Pâi -- nea noa -- stră cea __ spre fi -- in -- ţă
+  Pâi -- nea noa -- stră cea __ spre fi -- in -- ță
   dă- -- ne- o no -- uă as -- tăzi __
-  şi ne iar -- tă gre -- şa -- le -- le noa -- stre,
-  pre -- cum şi noi ier -- tăm __ gre -- şi -- ţi -- lor no -- ştri.
+  și ne iar -- tă gre -- șa -- le -- le noa -- stre,
+  pre -- cum și noi ier -- tăm __ gre -- și -- ți -- lor no -- ștri.
 
-  Şi nu ne du -- ce pre noi __ în is -- pi -- tă,
-  ci ne iz -- bă -- veş -- te de cel vi -- clean. __
+  Și nu ne du -- ce pre noi __ în is -- pi -- tă,
+  ci ne iz -- bă -- veș -- te de cel vi -- clean. __
 }
 
 tenorWords = \lyricmode {
-  Ta -- tăl no -- stru, Ca -- re -- le eşti în ce -- ruri,
-  sfin -- ţea -- scă- -- se nu -- me -- le Tău,
-  vi -- e îm -- pă -- ră -- ţi -- a Ta,
+  Ta -- tăl no -- stru, Ca -- re -- le ești în ce -- ruri,
+  sfin -- țea -- scă- -- se nu -- me -- le Tău,
+  vi -- e îm -- pă -- ră -- ți -- a Ta,
   fa -- că- -- se vo -- ia Ta,
-  pre -- cum în cer __ a -- şa şi pre pă -- mânt. __
+  pre -- cum în cer __ a -- șa și pre pă -- mânt. __
 
-  Pâi -- nea noa -- stră cea spre fi -- in -- ţă
+  Pâi -- nea noa -- stră cea spre fi -- in -- ță
   dă- -- ne- o no -- uă as -- tăzi
-  şi __ ne iar -- tă gre -- şa -- le -- le noa -- stre,
-  pre -- cum şi noi ier -- tăm gre -- şi -- ţi -- lor no -- ştri.
+  și __ ne iar -- tă gre -- șa -- le -- le noa -- stre,
+  pre -- cum și noi ier -- tăm gre -- și -- ți -- lor no -- ștri.
 
-  Şi nu ne du -- ce în is -- pi -- tă,
-  ci ne iz -- bă -- veş -- te de cel vi -- clean. __
+  Și nu ne du -- ce în is -- pi -- tă,
+  ci ne iz -- bă -- veș -- te de cel vi -- clean. __
 }
 
 bassWords = \lyricmode {
-  Ta -- tăl no -- stru, Ca -- re -- le eşti în ce -- ruri,
-  sfin -- ţea -- scă- -- se nu -- me -- le Tău,
-  vi -- e îm -- pă -- ră -- ţi -- a Ta,
+  Ta -- tăl no -- stru, Ca -- re -- le ești în ce -- ruri,
+  sfin -- țea -- scă- -- se nu -- me -- le Tău,
+  vi -- e îm -- pă -- ră -- ți -- a Ta,
   fa -- că- -- se vo -- ia Ta,
-  pre -- cum în cer, în cer a -- şa, __ a -- şa şi pre pă -- mânt.
+  pre -- cum în cer, în cer a -- șa, __ a -- șa și pre pă -- mânt.
 
-  Pâi -- nea noa -- stră cea __ spre fi -- in -- ţă
+  Pâi -- nea noa -- stră cea __ spre fi -- in -- ță
   dă- -- ne- o no -- uă as -- tăzi __
-  şi ne iar -- tă gre -- şa -- le -- le noa -- stre,
-  pre -- cum şi noi ier -- tăm __ gre -- şi -- ţi -- lor no -- ştri. __
+  și ne iar -- tă gre -- șa -- le -- le noa -- stre,
+  pre -- cum și noi ier -- tăm __ gre -- și -- ți -- lor no -- ștri. __
 
-  Şi nu ne du -- ce pre noi în is -- pi -- tă,
-  ci ne iz -- bă -- veş -- te de cel vi -- clean. __
+  Și nu ne du -- ce pre noi în is -- pi -- tă,
+  ci ne iz -- bă -- veș -- te de cel vi -- clean. __
 }
 
 sopMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle no-reset
 
-  % Tatăl nostru, Carele eşti în ceruri,
+  % Tatăl nostru, Carele ești în ceruri,
   g'2^\p^\accent fis4 \bar "|"
   g4^\accent e2 \bar "|"
   a2^\accent g4 fis4 \bar "|"
@@ -117,7 +117,7 @@ sopMusic = \relative c' {
   b4.( cis8 d4^\> e4\!) \bar "|"
   b2. \breathe
 
-  % Sfinţească-se numele Tău, vie împărăţia Ta,
+  % Sfințească-se numele Tău, vie împărăția Ta,
   e4 \bar "|"
   d4( c4) b4^\> a4 \bar "|"
   g4( fis4) e4\! dis4 \bar "|"
@@ -127,7 +127,7 @@ sopMusic = \relative c' {
   e4 fis4 g8([ a8)] fis4 \bar "|"
   g2 \bar "|"
 
-  % facă-se voia Ta, precum în cer aşa şi pre pământ.
+  % facă-se voia Ta, precum în cer așa și pre pământ.
   a2^\accent g4^\< fis4 \bar "|"
   g4 a4\! b4. \breathe b8 \bar "|"
   e4 dis4 e4 b4 \bar "|"
@@ -136,7 +136,7 @@ sopMusic = \relative c' {
   e1~ \bar "|"
   e2. r4 \bar "|"
 
-  % Pâinea noastră cea spre fiinţă dă-ne-o nouă astăzi
+  % Pâinea noastră cea spre ființă dă-ne-o nouă astăzi
   g4 d4 \bar "|"
   e8([ fis8 g8 a8)] g2 \bar "|"
   a4( g8[ fis8)] g4 a8([ b8)] \bar "|"
@@ -145,26 +145,26 @@ sopMusic = \relative c' {
   g8([\! fis8)] e4 fis4( g4) \bar "|"
   e2~ e8 r8 r4 \bar "|"
 
-  % şi ne iartă nouă greşalele noastre,
+  % și ne iartă nouă greșalele noastre,
   e4 e4 c'4^\< b4 \bar "|"
   c2\! a4 a4 \bar "|"
   d8([ e8] d4) c4^\> b4\! \bar "|"
   a4(^\< b8[ c8)] b4.\! \breathe
 
-  % precum şi noi iertăm greşiţilor noştri.
+  % precum și noi iertăm greșiților noștri.
   b8^\accent \bar "|"
   e4 b4 c4 a4 \bar "|"
   b4( a4) g4 \bar "|"
   c4^\accent b4 a4^\> \bar "|"
   g4( fis8[\! g8)] e2 \bar "|"
 
-  % Şi nu ne duce pre noi în ispită,
+  % Și nu ne duce pre noi în ispită,
   r4 r8 b8 e4^\accent fis4 \bar "|"
   g4( fis4) e4 dis4 \bar "|"
   e4( fis8[ g8)] fis4 e4^\> \bar "|"
   dis4(\!^\ritMarkup c8.[^\> b16)]\! b2^\ppAndFermataMarkup \bar "|"
 
-  % ci ne izbăveşte de cel viclean.
+  % ci ne izbăvește de cel viclean.
   \accidentalStyle no-reset
   a'4^\mf a4^\atempoMarkup b4^\< cis4 \bar "|"
   d4(\! c4 b4 a4) \bar "|"
@@ -177,7 +177,7 @@ altoMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % Tatăl nostru, Carele eşti în ceruri,
+  % Tatăl nostru, Carele ești în ceruri,
   e2^\pp^\accent e4
   e4^\accent e2
   fis2^\accent g4 fis4
@@ -185,7 +185,7 @@ altoMusic = \relative c' {
   g4.( a8 b4^\> c!4\!)
   b2. \breathe
 
-  % Sfinţească-se numele Tău, vie împărăţia Ta,
+  % Sfințească-se numele Tău, vie împărăția Ta,
   fis4
   fis2 g4^\> a4
   g4( fis4) e4\! dis4
@@ -194,7 +194,7 @@ altoMusic = \relative c' {
   e4 d4 b4 d4
   d2
 
-  % facă-se voia Ta, precum în cer aşa şi pre pământ.
+  % facă-se voia Ta, precum în cer așa și pre pământ.
   dis2^\accent e4^\< fis4
   e4 e4\! fis4. \breathe b8
   g4 a4 g4 b4
@@ -203,7 +203,7 @@ altoMusic = \relative c' {
   e1~
   e2. r4
 
-  % Pâinea noastră cea spre fiinţă dă-ne-o nouă astăzi
+  % Pâinea noastră cea spre ființă dă-ne-o nouă astăzi
   g4 d4
   e2 d2
   dis4( e8[ fis8)] e4 e4
@@ -218,27 +218,27 @@ altoMusic = \relative c' {
   \accidentalStyle forget
   e2~ e8 r8 r4
 
-  % şi ne iartă nouă greşalele noastre,
+  % și ne iartă nouă greșalele noastre,
   r2
   e4^\< e4
   a2\! a4 a4
   g2 fis4^\> g4\!
   a4(^\< g8[ fis8)] g4.\! \breathe
 
-  % precum şi noi iertăm greşiţilor noştri.
+  % precum și noi iertăm greșiților noștri.
   e8
   e4^\accent g4 fis4 d!4
   d4( dis4) e4
   e4^\accent e4 e4^\>
   e4( dis4)\! b2
 
-  % Şi nu ne duce pre noi în ispită,
+  % Și nu ne duce pre noi în ispită,
   r2 r4 r8 b8
   e4^\accent fis4 g4 fis8 fis8
   e4( dis8[ e8)] fis4 e4^\>
   dis4(\! c8.[^\> b16)]\! b2^\ppAndFermataMarkup
 
-  % ci ne izbăveşte de cel viclean.
+  % ci ne izbăvește de cel viclean.
   r2 g'8^\mf g8 a8 a8
   fis2( g4 fis4)
   d!4 fis4
@@ -250,7 +250,7 @@ tenorMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % Tatăl nostru, Carele eşti în ceruri,
+  % Tatăl nostru, Carele ești în ceruri,
   b2^\p^\accent a4
   b4^\accent g2
   c2^\accent c4 c4
@@ -258,7 +258,7 @@ tenorMusic = \relative c' {
   d4.( cis8 d4^\> e4)\!
   b2. \breathe
 
-  % Sfinţească-se numele Tău, vie împărăţia Ta,
+  % Sfințească-se numele Tău, vie împărăția Ta,
   d4
   d2 d4^\> c4
   b2 b4\! a4
@@ -267,7 +267,7 @@ tenorMusic = \relative c' {
   c'4 a4 g4 a4
   b2
 
-  % facă-se voia Ta, precum în cer aşa şi pre pământ.
+  % facă-se voia Ta, precum în cer așa și pre pământ.
   b2^\accent b4^\< b4
   b4 e4\! dis4. \breathe
   \accidentalStyle no-reset
@@ -279,7 +279,7 @@ tenorMusic = \relative c' {
   g1~
   g2. r4
 
-  % Pâinea noastră cea spre fiinţă dă-ne-o nouă astăzi
+  % Pâinea noastră cea spre ființă dă-ne-o nouă astăzi
   g4 d4
   c'2 b2
   b2 b4 a4
@@ -288,7 +288,7 @@ tenorMusic = \relative c' {
   b4\! b4 a2
   g2 \breathe
 
-  % şi ne iartă nouă greşalele noastre,
+  % și ne iartă nouă greșalele noastre,
   e'2~
   e2. e4^\<
   <<
@@ -305,21 +305,21 @@ tenorMusic = \relative c' {
   d2 d4^\> d4\!
   d2^\< d4.\! \breathe
 
-  % precum şi noi iertăm greşiţilor noştri.
+  % precum și noi iertăm greșiților noștri.
   b8
   b4^\accent d4 d4 c4
   b2 b4
   a4^\accent b4 c4^\>
   b4( a4)\! g4. \breathe
 
-  % Şi nu ne duce pre noi în ispită,
+  % Și nu ne duce pre noi în ispită,
   b8
   b2.^\accent b4
   b2. b4
   b2. b4^\>
   b4(\! c8.[^\> b16)]\! b2^\ppAndFermataMarkup
 
-  % ci ne izbăveşte de cel viclean.
+  % ci ne izbăvește de cel viclean.
   \cadenzaOff
   R1
   \cadenzaOn
@@ -335,7 +335,7 @@ bassMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % Tatăl nostru, Carele eşti în ceruri,
+  % Tatăl nostru, Carele ești în ceruri,
   e,2^\pp^\accent e4
   e4^\accent e2
   d!2^\accent d4 d4
@@ -343,7 +343,7 @@ bassMusic = \relative c' {
   g4.( a8 b4^\> c!4)\!
   b2. \breathe
 
-  % Sfinţească-se numele Tău, vie împărăţia Ta,
+  % Sfințească-se numele Tău, vie împărăția Ta,
   c4
   b4( a4) g4^\> fis4
   <<
@@ -362,7 +362,7 @@ bassMusic = \relative c' {
   c4 d4 e4 d4
   g2
 
-  % facă-se voia Ta, precum în cer aşa şi pre pământ.
+  % facă-se voia Ta, precum în cer așa și pre pământ.
   fis2^\accent e4^\< dis4
   e4 c4\! b4. \breathe b'8
   b4 b4 c4 g4
@@ -386,7 +386,7 @@ bassMusic = \relative c' {
   \oneVoice
   r4
 
-  % Pâinea noastră cea spre fiinţă dă-ne-o nouă astăzi
+  % Pâinea noastră cea spre ființă dă-ne-o nouă astăzi
   g4 d4
   c2 g'2
   fis4( e8[ dis8)] e4 c4
@@ -396,7 +396,7 @@ bassMusic = \relative c' {
   e1~
   e2. r4
 
-  % şi ne iartă nouă greşalele noastre,
+  % și ne iartă nouă greșalele noastre,
   e4^\< e4 a4\! a8 a8
   b2 a4^\> g4\!
   <<
@@ -411,7 +411,7 @@ bassMusic = \relative c' {
   >>
   \oneVoice
 
-  % precum şi noi iertăm greşiţilor noştri.
+  % precum și noi iertăm greșiților noștri.
   g4^\accent g4 a4 fis4
   g4( fis4) e4
   a4^\accent g4 a4^\>
@@ -419,14 +419,14 @@ bassMusic = \relative c' {
   e1~
   e4 r8
 
-  % Şi nu ne duce pre noi în ispită,
+  % Și nu ne duce pre noi în ispită,
   b8 e4^\accent fis4
   \autoBeamOff
   g4 fis8 e8 dis4 e8^\> e8
   \autoBeamOn
   dis4(\! c8.[^\> b16)]\! b2^\ppAndFermataMarkup
 
-  % ci ne izbăveşte de cel viclean.
+  % ci ne izbăvește de cel viclean.
   \cadenzaOff
   R1
   \cadenzaOn

@@ -22,7 +22,7 @@ womenWords = \lyricmode {
   tu -- tu -- ror __ pri -- mind
 
   pe cel __ ne -- vă -- zut __ în -- con -- ju -- rat __
-  de ce -- te -- le în -- ge -- reşti. __
+  de ce -- te -- le în -- ge -- rești. __
 
   A -- li -- lu -- i -- a,
   a -- li -- lu -- i -- a,
@@ -34,7 +34,7 @@ menWords = \lyricmode {
   pe Îm -- pă -- ra -- tul, Îm -- pă -- ra -- tul
   tu -- tu -- ror __ pri -- mind
 
-  de ce -- te -- le în -- ge -- reşti. __
+  de ce -- te -- le în -- ge -- rești. __
 
   A -- li -- lu -- i -- a,
   a -- li -- lu -- i -- a,
@@ -74,7 +74,7 @@ sopMusic = \relative c' {
   c2~
   c4
 
-  % de cetele îngereşti.
+  % de cetele îngerești.
   c4
   d2
   d4 d4
@@ -131,7 +131,7 @@ altoMusic = \relative c' {
   a2~
   a4
 
-  % de cetele îngereşti.
+  % de cetele îngerești.
   a4
   bes2
   bes4 g4
@@ -184,7 +184,7 @@ tenorMusic = \relative c' {
   \voiceOne
   d4\rest  
 
-  % de cetele îngereşti.
+  % de cetele îngerești.
   f4
   bes2
   bes4 g4
@@ -239,7 +239,7 @@ bassMusic = \relative c' {
   \voiceTwo
   d4\rest  
 
-  % de cetele îngereşti.
+  % de cetele îngerești.
   f4
   bes2
   bes4 g4

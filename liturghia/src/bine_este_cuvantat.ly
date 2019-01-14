@@ -26,7 +26,7 @@ sopWords = \lyricmode {
   în -- tru nu -- me -- le Dom -- nu -- lui.
 
   Dumn -- ne -- zeu es -- te Dom -- nul
-  şi s-a a -- ră -- tat __ no -- uă!
+  și s-a a -- ră -- tat __ no -- uă!
 }
 altoWords = \sopWords
 tenorWords = \sopWords
@@ -43,7 +43,7 @@ sopMusic = \relative c' {
   \acciaccatura bes8 as4( g4) as4 bes4 \bar "|"
   as4^\> g4 f2\! \bar "|"
 
-  % Dumnezeu este Domnul şi s-a arătat nouă!
+  % Dumnezeu este Domnul și s-a arătat nouă!
   f4^\< g4\! \bar "|"
   as2^\ritMarkup g4 as4 \bar "|"
   bes2^\> bes2\! \breathe \bar "|"
@@ -63,7 +63,7 @@ altoMusic = \relative c' {
   f2^\accent f4 f4
   f4^\> es4 c2\!
 
-  % Dumnezeu este Domnul şi s-a arătat nouă!
+  % Dumnezeu este Domnul și s-a arătat nouă!
   c4^\< es4\!
   es2 es4 es4
   f2^\> f2\! \breathe
@@ -83,7 +83,7 @@ tenorMusic = \relative c' {
   c2^\accent c4 des4
   c4^\> bes4 as2\!
 
-  % Dumnezeu este Domnul şi s-a arătat nouă!
+  % Dumnezeu este Domnul și s-a arătat nouă!
   as4^\< bes4\!
   c2 des4 es4
   des2^\> des2\! \breathe
@@ -103,7 +103,7 @@ bassMusic = \relative c' {
   f2^\accent f4 f4
   c4^\> c4 f2\!
 
-  % Dumnezeu este Domnul şi s-a arătat nouă!
+  % Dumnezeu este Domnul și s-a arătat nouă!
   f4^\< es4\!
   as2 bes4 c4
   bes2^\> bes2\! \breathe

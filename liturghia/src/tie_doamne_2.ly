@@ -16,7 +16,7 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Ţi -- e Doam -- ne.
+  Ți -- e Doam -- ne.
 }
 altoWords = \sopWords
 tenorWords = \sopWords

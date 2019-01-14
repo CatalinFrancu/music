@@ -4,7 +4,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Veniţi norii de mulţime"
+  title = "Veniți norii de mulțime"
   subtitle = "Colind de Florii"
   composer = "de Gh. Cucu"
   meter = "Moderato"
@@ -20,12 +20,12 @@ allWords = <<
   \new Lyrics \lyricmode {
     \set associatedVoice = #"sopranos"
     \set stanza = "1. "
-    Ve4 -- niţi no -- rii de mul -- ţi -- me
-    Şi8 co8 -- pii2 __ şi4 ti -- ne -- ri -- me
+    Ve4 -- niți no -- rii de mul -- ți -- me
+    Și8 co8 -- pii2 __ și4 ti -- ne -- ri -- me
     A4. -- li8 -- lu4 -- ia,4
 
-    Toţi cu ra -- muri în -- ver -- zi -- te
-    Şi8 cu8 stâl2 -- pări4 în -- frun -- zi -- te
+    Toți cu ra -- muri în -- ver -- zi -- te
+    Și8 cu8 stâl2 -- pări4 în -- frun -- zi -- te
     A4. -- li8 -- lu4 -- ia,4 A4. -- li8 -- lu4 -- ia,4
 
     Să-n tâm -- pi -- năm ca tot __ o -- mul
@@ -42,7 +42,7 @@ allWords = <<
     A4. -- li8 -- lu4 -- ia,4
 
     Vrând ca să __ dea mân -- tu -- i -- re
-    Şi8 de8 toa2 -- te4 iz -- bă -- vi -- re
+    Și8 de8 toa2 -- te4 iz -- bă -- vi -- re
     A4. -- li8 -- lu4 -- ia,4 A4. -- li8 -- lu4 -- ia,4
 
     De a -- cum __ pâ -- nă-n ve -- ci -- e
@@ -55,13 +55,13 @@ allWords = <<
 sopMusic = \relative c' {
   \autoBeamOff
 
-  % Veniţi norii de mulţime
+  % Veniți norii de mulțime
   c'4 d4
   c8([ bes8]) a4
   g4 c8([ bes8)]
   a8([ g8)] f4
 
-  % Şi copii şi tinerime, Aliluia
+  % Și copii și tinerime, Aliluia
   f8 f8 g4~
   g4 bes4
   a4 g8([ a8)]
@@ -69,10 +69,10 @@ sopMusic = \relative c' {
   d'4. e8
   f4 c4
 
-  % Toţi cu ramuri înverzite
+  % Toți cu ramuri înverzite
   R2 * 4
 
-  % Şi cu stâlpări înfrunzite, Aliluia, Aliluia
+  % Și cu stâlpări înfrunzite, Aliluia, Aliluia
   R2 * 4
   d4. e8
   f4 c4
@@ -97,21 +97,21 @@ sopMusic = \relative c' {
 altoMusic = \relative c' {
   \autoBeamOff
 
-  % Veniţi norii de mulţime
+  % Veniți norii de mulțime
   R2 * 4
 
-  % Şi copii şi tinerime, Aliluia
+  % Și copii și tinerime, Aliluia
   R2 * 4
   bes'4. c8
   c4 a4
 
-  % Toţi cu ramuri înverzite
+  % Toți cu ramuri înverzite
   c4 d4
   c8([ bes8]) a4
   g4 c8([ bes8)]
   a8([ g8)] f4
 
-  % Şi cu stâlpări înfrunzite, Aliluia, Aliluia
+  % Și cu stâlpări înfrunzite, Aliluia, Aliluia
   f8 f8 g4~
   g4 bes4
   a4 g8([ a8)]
@@ -140,18 +140,18 @@ tenorMusic = \relative c' {
   \autoBeamOff
   \oneVoice
 
-  % Veniţi norii de mulţime
+  % Veniți norii de mulțime
   R2 * 4
 
-  % Şi copii şi tinerime, Aliluia
+  % Și copii și tinerime, Aliluia
   R2 * 4
   bes4. g8
   a4 f4
 
-  % Toţi cu ramuri înverzite
+  % Toți cu ramuri înverzite
   R2 * 4
 
-  % Şi cu stâlpări înfrunzite, Aliluia, Aliluia
+  % Și cu stâlpări înfrunzite, Aliluia, Aliluia
   R2 * 4
   bes4. g8
   a4 f4

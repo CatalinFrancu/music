@@ -9,7 +9,7 @@ global = {
 
 monoWords = \lyricmode {
   Dă Doam -- ne, __
-  Doam -- ne mi -- lu -- ieş -- te.
+  Doam -- ne mi -- lu -- ieș -- te.
 }
 
 monoMusic = \relative c' {

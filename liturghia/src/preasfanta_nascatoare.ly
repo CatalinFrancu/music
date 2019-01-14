@@ -27,7 +27,7 @@ global = {
 
 sopWords = \lyricmode {
   Prea -- sfân -- tă Năs -- că -- toa -- re de Dum -- ne -- zeu,
-  mi -- lu -- ieş -- te -- ne pre noi.
+  mi -- lu -- ieș -- te -- ne pre noi.
 }
 altoWords = \sopWords
 tenorWords = \sopWords

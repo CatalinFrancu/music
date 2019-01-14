@@ -13,7 +13,7 @@ midiTempo =
 \header {
   title = "Heruvic"
   subtitle = "glasul 5"
-  composer = "După I. Popescu-Pasărea şi N. Lungu"
+  composer = "După I. Popescu-Pasărea și N. Lungu"
   arranger = "Aranj. de N. Moldoveanu"
   meter = "Adagio"
 }
@@ -34,8 +34,8 @@ womenWords = \lyricmode {
   cu tai -- nă în -- chi -- pu -- im,
   în -- chi -- pu -- im __
 
-  şi fă -- că toa -- rei __ de __ vi -- a -- ţă
-  şi fă -- că -- toa -- rei de vi -- a -- ţă __ Tre -- imi,
+  și fă -- că toa -- rei __ de __ vi -- a -- ță
+  și fă -- că -- toa -- rei de vi -- a -- ță __ Tre -- imi,
   în -- tre -- it __ sfân -- tă cân -- ta -- re __
   cân -- ta -- re a -- du -- cem,
 
@@ -55,8 +55,8 @@ menWords = \lyricmode {
   cu tai -- nă în -- chi -- pu -- im,
   în -- chi -- pu -- im, în -- chi -- pu -- im
 
-  şi fă -- că toa -- rei de vi -- a -- ţă
-  şi fă -- că -- toa -- rei __ de vi -- a -- ţă Tre -- imi,
+  și fă -- că toa -- rei de vi -- a -- ță
+  și fă -- că -- toa -- rei __ de vi -- a -- ță Tre -- imi,
   în -- tre -- i -- tă cân -- ta -- re __
   cân -- ta -- re a -- du -- cem, a -- du -- cem.
 
@@ -101,14 +101,14 @@ sopMusic = \relative c' {
   g1~ \bar "|"
   g2. b4\rest \bar "|"
 
-  % şi făcătoarei de viaţă
+  % și făcătoarei de viață
   g4.(^\mf a8)^\< bes4 c4 \bar "|"
   d4.(\! es8 d4 c4)^\> \bar "|"
   bes4.( c8\! bes4 a4) \bar "|"
   g4.( c8 bes4)^\< c4 \bar "|"
   d2 d2\! \bar "|"
 
-  % şi făcătoarei de viaţă Treimi
+  % și făcătoarei de viață Treimi
   \accidentalStyle no-reset
   e4.(^\f f8) e4 f4 \bar "|"
   d2^\< d2 \bar "|"
@@ -201,14 +201,14 @@ altoMusic = \relative c' {
   g1~
   g2. b4\rest
 
-  % şi făcătoarei de viaţă
+  % și făcătoarei de viață
   g4.( a8) bes4 a4
   bes4.( c8 bes4 a4)
   g4.( a8 g4 f4)
   g2. a4
   bes2 bes2
 
-  % şi făcătoarei de viaţă Treimi
+  % și făcătoarei de viață Treimi
   c2 c4 c4
   bes2 bes2
   c4 d4
@@ -298,14 +298,14 @@ tenorMusic = \relative c' {
   d4 \breathe d4 es4 es4
   d2. d4\rest
 
-  % şi făcătoarei de viaţă
+  % și făcătoarei de viață
   d1\rest
   g2 g4 g4
   g2 g2
   g2. f4
   bes2 bes2
 
-  % şi făcătoarei de viaţă Treimi
+  % și făcătoarei de viață Treimi
   c2^\f c4 c4
   g2 g2~
   g2
@@ -395,14 +395,14 @@ bassMusic = \relative c' {
   g4 g4 c4 c4
   g2. d'4\rest
 
-  % şi făcătoarei de viaţă
+  % și făcătoarei de viață
   d1\rest
   g2 g4 g4
   g2 g2
   g2. f4
   bes2 bes2
 
-  % şi făcătoarei de viaţă Treimi
+  % și făcătoarei de viață Treimi
   c2 c4 c4
   g2 g2~
   g2

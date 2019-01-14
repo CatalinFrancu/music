@@ -19,7 +19,7 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Şi du -- hu -- lui tău.
+  Și du -- hu -- lui tău.
 }
 
 altoWords = \sopWords

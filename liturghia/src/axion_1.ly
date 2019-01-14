@@ -27,10 +27,10 @@ womenWords = \lyricmode {
   Cu -- vi -- ne- -- se cu __ a -- de -- vă -- rat
   să te fe -- ri -- cim __ Năs -- că -- toa -- re de Dum -- ne -- zeu,
   Cea pu -- ru -- rea __ fe -- ri -- ci -- tă
-  şi prea ne -- vi -- no -- va -- tă
-  şi Mai -- ca Dum -- ne -- ze -- u -- lui nos -- tru.
-  Ce -- ea __ ce __ eşti mai cin -- sti -- tă __ de -- cât he -- ru -- vi mii
-  şi mai mă -- ri -- tă făr' de-a -- se -- mă -- na -- re
+  și prea ne -- vi -- no -- va -- tă
+  și Mai -- ca Dum -- ne -- ze -- u -- lui nos -- tru.
+  Ce -- ea __ ce __ ești mai cin -- sti -- tă __ de -- cât he -- ru -- vi mii
+  și mai mă -- ri -- tă făr' de-a -- se -- mă -- na -- re
   de -- cât __ se -- ra -- fi -- mii;
   ca -- rea __ fă -- ră stri -- că -- ciu -- ne
   pe Dum -- ne -- zeu __ Cu -- vân -- tul __ ai __ năs -- cut,
@@ -43,10 +43,10 @@ menWords = \lyricmode {
   Cu -- vi -- ne- -- se cu __ a -- de -- vă -- rat
   să te fe -- ri -- cim Năs -- că -- toa -- re de Dum -- ne -- zeu,
   Cea pu -- ru -- rea __ fe -- ri -- ci -- tă
-  şi prea ne -- vi -- no -- va -- tă
-  şi Mai -- ca Dum -- ne -- ze -- u -- lui nos -- tru.
-  Ce -- ea __ ce __ eşti mai cin -- sti -- tă __ de -- cât he -- ru -- vi mii
-  şi mai __ mă -- ri -- tă făr' de-a -- se -- mă -- na -- re
+  și prea ne -- vi -- no -- va -- tă
+  și Mai -- ca Dum -- ne -- ze -- u -- lui nos -- tru.
+  Ce -- ea __ ce __ ești mai cin -- sti -- tă __ de -- cât he -- ru -- vi mii
+  și mai __ mă -- ri -- tă făr' de-a -- se -- mă -- na -- re
   de -- cât __ se -- ra -- fi -- mii;
   ca -- rea __ fă -- ră stri -- că -- ciu -- ne
   pe Dum -- ne -- zeu __ Cu -- vân -- tul __ ai __ năs -- cut,
@@ -81,7 +81,7 @@ sopMusic = \relative c' {
   a8([ bes8 a8 g8] f8[ g8 a8 bes8)] \bar "|"
   a4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   a8 \bar "|"
   bes4 a4 bes4 cis4 \bar "|"
   d4.( cis8
@@ -90,7 +90,7 @@ sopMusic = \relative c' {
   \accidentalStyle forget
   d4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   cis8 \bar "|"
   d8([ cis8 d8 bes8)] a2 \bar "|"
   a4 a4 \bar "|"
@@ -98,7 +98,7 @@ sopMusic = \relative c' {
   a4( g4 f8[ e8 d8 cis8)] \bar "|"
   d2. b'4\rest \bar "|"
 
-  % Ceea ce eşti mai cinstită decât heruvimii
+  % Ceea ce ești mai cinstită decât heruvimii
   a4( g4) f8([ g8)] e8([ f8)] \bar "|"
   d2 d4 e4 \bar "|"
   f4( g4) f8([ e8)] d8 e8 \bar "|"
@@ -106,7 +106,7 @@ sopMusic = \relative c' {
   a8([ bes8 a8 g8] f8[ g8 a8 bes8)] \bar "|"
   a4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   a8 \bar "|"
   d4 e4 \bar "|"
   f4( e8[ d8] cis4 d4) \bar "|"
@@ -187,13 +187,13 @@ altoMusic = \relative c' {
   f8([ g8 f8 e8] f8[ g8 a8 bes8)]
   a4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   a8
   bes4 a4 g4 a4
   a1
   a4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   a8
   a4.( bes8) a2
   f4 f4
@@ -201,7 +201,7 @@ altoMusic = \relative c' {
   f4( e4 d8[ e8 d8 cis8)]
   d2. b'4\rest
 
-  % Ceea ce eşti mai cinstită decât heruvimii
+  % Ceea ce ești mai cinstită decât heruvimii
   a4( g4) f8([ g8)] e8([ f8)]
   d2 d4 e4
   f4( g4) f8([ e8)] d8 e8
@@ -209,7 +209,7 @@ altoMusic = \relative c' {
   f8([ g8 f8 e8] f8[ g8 a8 bes8)]
   a4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   a8
   d4 cis4
   d4( cis8[ d8] a2)
@@ -284,13 +284,13 @@ tenorMusic = \relative c' {
   f8([ g8 f8 c8] d8[ e8 f8 g8)]
   f4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   f8
   g4 f4 e4 e4
   f4.( e8 d8[ e8 f8 g8)]
   f4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   a8
   f8([ e8 d8 g8)] f2
   d4 d4
@@ -298,7 +298,7 @@ tenorMusic = \relative c' {
   f4( e4 a,2)
   d2. d4\rest
   
-  % Ceea ce eşti mai cinstită decât heruvimii
+  % Ceea ce ești mai cinstită decât heruvimii
   a'4( g4) f8([ g8)] e8([ f8)]
   d2 d4 e4
   f4( g4) f8([ e8)] d8 e8
@@ -306,7 +306,7 @@ tenorMusic = \relative c' {
   f8([ g8 f8 c8] d8[ e8 f8 g8)]
   f4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   d8\rest
   d4\rest d8\rest a'8
   a4 a4 a4.( g8)
@@ -381,13 +381,13 @@ bassMusic = \relative c' {
   f8([ g8 f8 c8] d8[ e8 f8 g8)]
   f4.
 
-  % şi prea nevinovată
+  % și prea nevinovată
   f8
   g4 f4 e4 a,4
   d4.( e8 f8[ e8 d8 cis8)]
   d4.
 
-  % şi Maica Dumnezeului nostru.
+  % și Maica Dumnezeului nostru.
   a'8
   f8([ e8 d8 g8)] f2
   d4 d4
@@ -395,7 +395,7 @@ bassMusic = \relative c' {
   f4( e4 a,2)
   d2. d4\rest
   
-  % Ceea ce eşti mai cinstită decât heruvimii
+  % Ceea ce ești mai cinstită decât heruvimii
   a'4( g4) f8([ g8)] e8([ f8)]
   d2 d4 e4
   f4( g4) f8([ e8)] d8 e8
@@ -403,7 +403,7 @@ bassMusic = \relative c' {
   f8([ g8 f8 c8] d8[ e8 f8 g8)]
   f4.
 
-  % şi mai mărită făr' de-asemănare
+  % și mai mărită făr' de-asemănare
   d8\rest
   d4\rest d8\rest a'8
   d,8([ f8)] a4 a,2

@@ -24,7 +24,7 @@ sopMusic = \relative c' {
 }
 
 sopWords = \lyricmode {
-  Doam -- ne mi -- lu -- ieş -- te. __
+  Doam -- ne mi -- lu -- ieș -- te. __
 }
 
 altoMusic = \relative c' {

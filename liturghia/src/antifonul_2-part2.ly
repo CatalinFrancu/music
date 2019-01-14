@@ -16,7 +16,7 @@ global = {
 }
 
 sopMusic = \relative c' {
-  % Unule născut, Fiule şi Cuvântul lui Dumnezeu
+  % Unule născut, Fiule și Cuvântul lui Dumnezeu
   f4 e
   f g
   a( bes)
@@ -28,7 +28,7 @@ sopMusic = \relative c' {
   a bes
   c2
 
-  % Cela ce eşti fără de moarte
+  % Cela ce ești fără de moarte
   c
   g4 a
   bes a
@@ -36,7 +36,7 @@ sopMusic = \relative c' {
   g(^\> a)
   f2\!
 
-  % Şi ai primit pentru mântuirea noastră
+  % Și ai primit pentru mântuirea noastră
   f4 e
   f^\< g\!
   a2
@@ -57,7 +57,7 @@ sopMusic = \relative c' {
   a bes
   c2~
 
-  % Şi pururea Fecioara Maria
+  % Și pururea Fecioara Maria
   c4 c
   d c
   bes a
@@ -74,7 +74,7 @@ sopMusic = \relative c' {
   a bes
   c2~
 
-  % Şi răstignindu-Te Hristoase Dumnezeule
+  % Și răstignindu-Te Hristoase Dumnezeule
   c4 \breathe bes
   c d
   es d
@@ -102,7 +102,7 @@ sopMusic = \relative c' {
   c( d)
   c2
 
-  % Împreună mărit cu Tatăl şi cu Duhul Sfânt
+  % Împreună mărit cu Tatăl și cu Duhul Sfânt
   c4 d
   es( f)
   es d
@@ -112,7 +112,7 @@ sopMusic = \relative c' {
   a bes
   c2\fermata
 
-  % Mântuieşte-ne pe noi, mântuieşte-ne pe noi
+  % Mântuiește-ne pe noi, mântuiește-ne pe noi
   c4 c
   d c
   bes^\> a
@@ -125,7 +125,7 @@ sopMusic = \relative c' {
 }
 
 altoMusic = \relative c' {
-  % Unule născut, Fiule şi Cuvântul lui Dumnezeu
+  % Unule născut, Fiule și Cuvântul lui Dumnezeu
   f4 e
   f g
   a( bes)
@@ -137,7 +137,7 @@ altoMusic = \relative c' {
   f g
   a2
 
-  % Cela ce eşti fără de moarte
+  % Cela ce ești fără de moarte
   a
   g4 f
   g f
@@ -145,7 +145,7 @@ altoMusic = \relative c' {
   e2
   f
 
-  % Şi ai primit pentru mântuirea noastră
+  % Și ai primit pentru mântuirea noastră
   f4 e
   f g
   f2
@@ -166,7 +166,7 @@ altoMusic = \relative c' {
   f g
   a2~
 
-  % Şi pururea Fecioara Maria
+  % Și pururea Fecioara Maria
   a4 a
   bes a
   g f
@@ -183,7 +183,7 @@ altoMusic = \relative c' {
   f g
   a2~
 
-  % Şi răstignindu-Te Hristoase Dumnezeule
+  % Și răstignindu-Te Hristoase Dumnezeule
   a4 g
   a bes
   c bes
@@ -211,7 +211,7 @@ altoMusic = \relative c' {
   a( bes)
   a2
 
-  % Împreună mărit cu Tatăl şi cu Duhul Sfânt
+  % Împreună mărit cu Tatăl și cu Duhul Sfânt
   a4 bes
   c2
   c4 bes
@@ -221,7 +221,7 @@ altoMusic = \relative c' {
   f g
   a2\fermata
 
-  % Mântuieşte-ne pe noi, mântuieşte-ne pe noi
+  % Mântuiește-ne pe noi, mântuiește-ne pe noi
   a4 a
   bes a
   g f
@@ -233,7 +233,7 @@ altoMusic = \relative c' {
 }
 
 tenorMusic = \relative c' {
-  % Unule născut, Fiule şi Cuvântul lui Dumnezeu
+  % Unule născut, Fiule și Cuvântul lui Dumnezeu
   f,4 e
   d c
   f2
@@ -245,7 +245,7 @@ tenorMusic = \relative c' {
   f f
   f2
 
-  % Cela ce eşti fără de moarte
+  % Cela ce ești fără de moarte
   f
   e4 f
   c c
@@ -253,7 +253,7 @@ tenorMusic = \relative c' {
   c2^\>
   f\!
 
-  % Şi ai primit pentru mântuirea noastră
+  % Și ai primit pentru mântuirea noastră
   f4 e
   d^\< c\!
   f2
@@ -268,7 +268,7 @@ tenorMusic = \relative c' {
   R2 * 9
   \voiceOne
 
-  % Şi pururea Fecioara Maria
+  % Și pururea Fecioara Maria
   d4\rest f
   bes a
   g f
@@ -285,7 +285,7 @@ tenorMusic = \relative c' {
   f f
   f2~
 
-  % Şi răstignindu-Te Hristoase Dumnezeule
+  % Și răstignindu-Te Hristoase Dumnezeule
   f4 d4\rest
   \oneVoice
   R2 * 8
@@ -308,7 +308,7 @@ tenorMusic = \relative c' {
   f2
   f2
 
-  % Împreună mărit cu Tatăl şi cu Duhul Sfânt
+  % Împreună mărit cu Tatăl și cu Duhul Sfânt
   c'4 c
   c2
   a4 bes
@@ -318,7 +318,7 @@ tenorMusic = \relative c' {
   f f
   f2\fermata
 
-  % Mântuieşte-ne pe noi, mântuieşte-ne pe noi
+  % Mântuiește-ne pe noi, mântuiește-ne pe noi
   f4 f
   bes a
   g^\> f
@@ -330,7 +330,7 @@ tenorMusic = \relative c' {
 }
 
 bassMusic = \relative c' {
-  % Unule născut, Fiule şi Cuvântul lui Dumnezeu
+  % Unule născut, Fiule și Cuvântul lui Dumnezeu
   f,4 e
   d c
   f2
@@ -342,7 +342,7 @@ bassMusic = \relative c' {
   f f
   f2
 
-  % Cela ce eşti fără de moarte
+  % Cela ce ești fără de moarte
   f
   e4 f
   c c
@@ -350,7 +350,7 @@ bassMusic = \relative c' {
   c2
   f
 
-  % Şi ai primit pentru mântuirea noastră
+  % Și ai primit pentru mântuirea noastră
   f4 e
   d c
   f2
@@ -363,7 +363,7 @@ bassMusic = \relative c' {
   % A Te întrupa din Sfânta Născătoare de Dumnezeu
   s2 * 9
 
-  % Şi pururea Fecioara Maria
+  % Și pururea Fecioara Maria
   d4\rest f
   bes a
   g f
@@ -380,7 +380,7 @@ bassMusic = \relative c' {
   f f
   f2~
 
-  % Şi răstignindu-Te Hristoase Dumnezeule
+  % Și răstignindu-Te Hristoase Dumnezeule
   f4 d4\rest
   s2 * 8
 
@@ -401,7 +401,7 @@ bassMusic = \relative c' {
   f2
   f2
 
-  % Împreună mărit cu Tatăl şi cu Duhul Sfânt
+  % Împreună mărit cu Tatăl și cu Duhul Sfânt
   c'4 c
   c2
   a4 bes
@@ -411,7 +411,7 @@ bassMusic = \relative c' {
   f f
   f2\fermata
 
-  % Mântuieşte-ne pe noi, mântuieşte-ne pe noi
+  % Mântuiește-ne pe noi, mântuiește-ne pe noi
   f4 f
   bes a
   g f
@@ -424,42 +424,42 @@ bassMusic = \relative c' {
 
 womenWords = \lyricmode {
   U -- nu -- le năs -- cut,
-  Fi -- u -- le şi Cu -- vân -- tul lui Dum -- ne -- zeu,
-  Ce -- la ce eşti fă -- ră de moar -- te
+  Fi -- u -- le și Cu -- vân -- tul lui Dum -- ne -- zeu,
+  Ce -- la ce ești fă -- ră de moar -- te
 
-  şi ai pri -- i -- mit pen -- tru mân -- tu -- i -- rea noas -- tră
+  și ai pri -- i -- mit pen -- tru mân -- tu -- i -- rea noas -- tră
   a Te în -- tru -- pa
   din Sfân -- ta Năs -- că -- toa -- re de Dum -- ne -- zeu __
-  şi pu -- ru -- rea Fe -- cioa -- ra Ma -- ri -- a;
+  și pu -- ru -- rea Fe -- cioa -- ra Ma -- ri -- a;
 
   Ca -- re -- le ne -- schim -- bat Te-ai în -- tru -- pat __
-  şi răs -- tig -- nin -- du- -- Te, Hris -- toa -- se
+  și răs -- tig -- nin -- du- -- Te, Hris -- toa -- se
   Dum -- ne -- ze -- u -- le,
   cu moar -- tea pe moar -- te ai căl -- cat.
 
   U -- nul fi -- ind din Sfân -- ta Tre -- i -- me,
-  îm -- pre -- u -- nă mă -- rit cu Ta -- tăl şi cu Du -- hul Sfânt,
-  mân -- tu -- ieş -- te- -- ne pe noi,
-  mân -- tu -- ieş -- te- -- ne pe noi.
+  îm -- pre -- u -- nă mă -- rit cu Ta -- tăl și cu Du -- hul Sfânt,
+  mân -- tu -- ieș -- te- -- ne pe noi,
+  mân -- tu -- ieș -- te- -- ne pe noi.
 }
 
 menWords = \lyricmode {
   U -- nu -- le năs -- cut,
-  Fi -- u -- le şi Cu -- vân -- tul lui Dum -- ne -- zeu,
-  Ce -- la ce eşti fă -- ră de moar -- te
+  Fi -- u -- le și Cu -- vân -- tul lui Dum -- ne -- zeu,
+  Ce -- la ce ești fă -- ră de moar -- te
 
-  şi ai pri -- i -- mit pen -- tru mân -- tu -- i -- rea noas -- tră
+  și ai pri -- i -- mit pen -- tru mân -- tu -- i -- rea noas -- tră
   % tenors and bases take five
-  şi pu -- ru -- rea Fe -- cioa -- ra Ma -- ri -- a;
+  și pu -- ru -- rea Fe -- cioa -- ra Ma -- ri -- a;
 
   Ca -- re -- le ne -- schim -- bat Te-ai în -- tru -- pat __
   % second coffee break
   cu moar -- tea pe moar -- te ai căl -- cat.
 
   U -- nul fi -- ind din Sfân -- ta Tre -- i -- me,
-  îm -- pre -- u -- nă mă -- rit cu Ta -- tăl şi cu Du -- hul Sfânt,
-  mân -- tu -- ieş -- te- -- ne pe noi,
-  mân -- tu -- ieş -- te- -- ne pe noi.
+  îm -- pre -- u -- nă mă -- rit cu Ta -- tăl și cu Du -- hul Sfânt,
+  mân -- tu -- ieș -- te- -- ne pe noi,
+  mân -- tu -- ieș -- te- -- ne pe noi.
 }
 
 \include "two-staves.ly"

@@ -25,18 +25,18 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te.
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te.
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te.
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te.
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te.
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te.
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te.
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te.
 }
 
 menWords = \womenWords

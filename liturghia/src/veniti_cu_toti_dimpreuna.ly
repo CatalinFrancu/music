@@ -4,7 +4,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Veniţi cu toţi dimpreună"
+  title = "Veniți cu toți dimpreună"
   subtitle = "Cântec de Florii"
   composer = "de Tim. Popovici"
   meter = "Moderato"
@@ -19,12 +19,12 @@ global = {
 allWords = <<
   \new Lyrics \lyricsto "sopranos" {
     \set stanza = "1. "
-    Ve -- niţi cu __ toţi dim -- pre -- u -- nă
-    Să-m -- ple -- tim __ şi noi cu --
+    Ve -- niți cu __ toți dim -- pre -- u -- nă
+    Să-m -- ple -- tim __ și noi cu --
     \set ignoreMelismata = ##t
     nu -- nă
     De o -- dras -- le în -- flo -- ri -- te
-    Şi de stâl -- pări în -- ver -- zi -- te.
+    Și de stâl -- pări în -- ver -- zi -- te.
     \unset ignoreMelismata
 
     O! __ mi -- nu -- ne! __
@@ -33,10 +33,10 @@ allWords = <<
   \new Lyrics \lyricsto "sopranos" {
     \set stanza = "2. "
     Pe Ii -- sus __ să-n -- tâm -- pi -- năm __ \skip 8
-    Şi Lui să __ ne în -- chi -- năm __
+    Și Lui să __ ne în -- chi -- năm __
     \set ignoreMelismata = ##t
-    Şi a -- le noas -- tre veş -- min -- te
-    Să le-aş -- ter -- nem î -- na -- in -- te.
+    Și a -- le noas -- tre veș -- min -- te
+    Să le-aș -- ter -- nem î -- na -- in -- te.
     \unset ignoreMelismata
 
     O! __ mi -- nu -- ne! __
@@ -47,8 +47,8 @@ allWords = <<
     Că azi pe __ mânz de a -- sin __ \skip 8
     In -- tră în __ Ie -- ru -- sa -- lim __
     \set ignoreMelismata = ##t
-    Hris -- tos Dom -- nul cu blân -- de -- ţe,
-    Pe po -- por ca să-l în -- ve -- ţe.
+    Hris -- tos Dom -- nul cu blân -- de -- țe,
+    Pe po -- por ca să-l în -- ve -- țe.
     \unset ignoreMelismata
 
     O! __ mi -- nu -- ne! __
@@ -57,7 +57,7 @@ allWords = <<
   \new Lyrics \lyricsto "sopranos" {
     \set stanza = "4. "
     Azi pe Dom -- nul să-L mă -- rim __ \skip 8
-    Şi cu toţi __ să prăz -- nu -- im __
+    Și cu toți __ să prăz -- nu -- im __
     E zi -- ua Flo -- ri -- i -- lor, __
     Mult do -- ri -- tă tu -- tu -- ror. __
 
@@ -66,12 +66,12 @@ allWords = <<
 
   \new Lyrics \lyricsto "sopranos" {
     \set stanza = "5. "
-    Şi de-a -- cum __ pâ -- nă-n ve -- ci -- e
+    Și de-a -- cum __ pâ -- nă-n ve -- ci -- e
     Vo -- ia Dom -- nu -- lui să
     \set ignoreMelismata = ##t
     fi -- e
     Tu -- tu -- ror de ve -- se li -- e,
-    La creş -- tini  de bu -- cu -- ri -- e.
+    La creș -- tini  de bu -- cu -- ri -- e.
     \unset ignoreMelismata
 
     O! __ mi -- nu -- ne! __

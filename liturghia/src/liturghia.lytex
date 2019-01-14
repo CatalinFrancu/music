@@ -37,12 +37,12 @@
   \pagebreak
 
   \begin{footnotesize}
-    Copyright \copyright 2006-2008 Cătălin Frâncu şi Raluca Balaban.
+    Copyright \copyright 2006-2008 Cătălin Frâncu și Raluca Balaban.
 
-    Această operă este pusă la dispoziţie sub Licenţa Creative Commons
+    Această operă este pusă la dispoziție sub Licența Creative Commons
     Atribuire 4.0 Internațional.
 
-    Acest document a fost formatat folosind \LaTeX şi Lilypond. O
+    Acest document a fost formatat folosind \LaTeX și Lilypond. O
     versiune electronică a acestui document se află la \\
     \href{https://catalin.francu.com/Music/liturghia}
          {https://catalin.francu.com/Music/liturghia}.
@@ -53,12 +53,12 @@
 
   \pagestyle{headings}
 
-  \mychapter{I. Cântări şi răspunsuri liturgice}
+  \mychapter{I. Cântări și răspunsuri liturgice}
 
   \mysection{Liturghia catehumenilor}
 
-  {\bf Preotul:} Binecuvântată este împărăţia Tatălui şi a Fiului şi a
-  Sfântului Duh, acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Binecuvântată este împărăția Tatălui și a Fiului și a
+  Sfântului Duh, acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
@@ -77,7 +77,7 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Pentru pacea de sus şi pentru mântuirea sufletelor
+  {\bf Preotul:} Pentru pacea de sus și pentru mântuirea sufletelor
   noastre, Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -86,7 +86,7 @@
   \end{center}
 
   {\bf Preotul:} Pentru pacea a toată lumea, pentru bunăstarea
-  sfintelor lui Dumnezeu biserici şi pentru unirea tuturor, Domnului
+  sfintelor lui Dumnezeu biserici și pentru unirea tuturor, Domnului
   să ne rugăm.
 
   {\bf Cantorul:}
@@ -95,8 +95,8 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Pentru sfântă biserica aceasta şi pentru cei ce cu
-  credinţă, cu evlavie şi cu frică de Dumnezeu intră şi se roagă
+  {\bf Preotul:} Pentru sfântă biserica aceasta și pentru cei ce cu
+  credință, cu evlavie și cu frică de Dumnezeu intră și se roagă
   într-ânsa, Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -104,9 +104,9 @@
     \lilypondfile{doamne_miluieste_4.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru Prea Sfinţitul Episcopul nostru {\bf (N)} {\em
-  (Arhiepiscop, Mitropolit, Patriarh),} pentru cinsita preoţime şi
-  întru Hristos diaconime, pentru tot clerul şi poporul, Domnului să
+  {\bf Preotul:} Pentru Prea Sfințitul Episcopul nostru {\bf (N)} {\em
+  (Arhiepiscop, Mitropolit, Patriarh),} pentru cinsita preoțime și
+  întru Hristos diaconime, pentru tot clerul și poporul, Domnului să
   ne rugăm.
 
   {\bf Cantorul:}
@@ -115,12 +115,12 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Pentru Preşedintele ţării nostre {\bf (N)} {\em (aici
-  se pomeneşte conducătorul statului),} pentru autorităţile civile şi
-  militare şi pentru toţi cei în autoritate, Domnului să ne rugăm.
+  {\bf Preotul:} Pentru Președintele țării nostre {\bf (N)} {\em (aici
+  se pomenește conducătorul statului),} pentru autoritățile civile și
+  militare și pentru toți cei în autoritate, Domnului să ne rugăm.
 
-  {\bf Preotul:} Pentru sfânt locaşul acesta, ţara aceasta şi pentru
-  toate oraşele şi satele şi pentru cei ce cu credinţă locuiesc
+  {\bf Preotul:} Pentru sfânt locașul acesta, țara aceasta și pentru
+  toate orașele și satele și pentru cei ce cu credință locuiesc
   într-ânsele, Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -128,8 +128,8 @@
     \lilypondfile{doamne_miluieste_1.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru bună întocmirea aerului, pentru îmbelşugarea
-  roadelor pământului şi pentru vremuri paşnice, Domnului să ne rugăm.
+  {\bf Preotul:} Pentru bună întocmirea aerului, pentru îmbelșugarea
+  roadelor pământului și pentru vremuri pașnice, Domnului să ne rugăm.
 
   {\bf Cantorul:}
   \begin{center}
@@ -137,8 +137,8 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Pentru cei ce călătoresc pe ape, pe uscat şi prin
-  aer, pentru cei bolnavi, pentru cei robiţi şi pentru mântuirea lor,
+  {\bf Preotul:} Pentru cei ce călătoresc pe ape, pe uscat și prin
+  aer, pentru cei bolnavi, pentru cei robiți și pentru mântuirea lor,
   Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -146,15 +146,15 @@
     \lilypondfile{doamne_miluieste_3.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru ca să fim izbăviţi noi de tot necazul, mânia,
-  primejdia şi nevoia, Domnului să ne rugăm.
+  {\bf Preotul:} Pentru ca să fim izbăviți noi de tot necazul, mânia,
+  primejdia și nevoia, Domnului să ne rugăm.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_4.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.
   \pagebreak
 
@@ -164,14 +164,14 @@
   \end{center}
 
   {\bf Preotul:} Pe preasfânta, curata, prea binecuvântata, mărita
-  Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
-  cu toţi sfinţii să o pomenim.
+  Stăpâna noastră, de Dumnezeu Născătoarea și pururea Fecioara Maria,
+  cu toți sfinții să o pomenim.
 
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
 
-  {\bf Preotul:} Pe noi înşine şi unii pe alţii şi toată viaţa noastră
+  {\bf Preotul:} Pe noi înșine și unii pe alții și toată viața noastră
   lui Hristos Dumnezeu să o dăm.
 
   {\bf Cantorul:}
@@ -179,9 +179,9 @@
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
 
-  {\bf Preotul:} Că Ţie se cuvinte toată mărirea, cinstea şi
-  închinăciunea, Tatălui şi Fiului şi Sfântului Duh, acum şi pururea
-  şi în vecii vecilor.
+  {\bf Preotul:} Că Ție se cuvinte toată mărirea, cinstea și
+  închinăciunea, Tatălui și Fiului și Sfântului Duh, acum și pururea
+  și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
@@ -195,14 +195,14 @@
 
   \mysection{Ectenia mică}
 
-  {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.
+  {\bf Preotul:} Iară și iară cu pace, Domnului să ne rugăm.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.
   \pagebreak
 
@@ -212,14 +212,14 @@
   \end{center}
 
   {\bf Preotul:} Pe preasfânta, curata, prea binecuvântata, mărita
-  Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
-  cu toţi sfinţii să o pomenim.
+  Stăpâna noastră, de Dumnezeu Născătoarea și pururea Fecioara Maria,
+  cu toți sfinții să o pomenim.
 
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
 
-  {\bf Preotul:} Pe noi înşine şi unii pe alţii şi toată viaţa noastră
+  {\bf Preotul:} Pe noi înșine și unii pe alții și toată viața noastră
   lui Hristos Dumnezeu să o dăm.
 
   {\bf Cantorul:}
@@ -227,9 +227,9 @@
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
 
-  {\bf Preotul:} Că a Ta este stăpânirea şi a Ta este împărăţia şi
-  puterea şi mărirea, a Tatălui şi a Fiului şi a Sfântului Duh, acum
-  şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Că a Ta este stăpânirea și a Ta este împărăția și
+  puterea și mărirea, a Tatălui și a Fiului și a Sfântului Duh, acum
+  și pururea și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
@@ -244,14 +244,14 @@
 
   \mysection{Ectenia mică}
 
-  {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.
+  {\bf Preotul:} Iară și iară cu pace, Domnului să ne rugăm.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.
 
   {\bf Cantorul:}
@@ -260,15 +260,15 @@
   \end{center}
 
   {\bf Preotul:} Pe preasfânta, curata, prea binecuvântata, mărita
-  Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
-  cu toţi sfinţii să o pomenim.
+  Stăpâna noastră, de Dumnezeu Născătoarea și pururea Fecioara Maria,
+  cu toți sfinții să o pomenim.
   \pagebreak
 
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
 
-  {\bf Preotul:} Pe noi înşine şi unii pe alţii şi toată viaţa noastră
+  {\bf Preotul:} Pe noi înșine și unii pe alții și toată viața noastră
   lui Hristos Dumnezeu să o dăm.
 
   {\bf Cantorul:}
@@ -276,9 +276,9 @@
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
 
-  {\bf Preotul:} Că bun şi iubitor de oameni Dumnezeu eşti şi Ţie
-  mărire înălţăm, Tatălui şi Fiului şi Sfântului Duh, acum şi pururea
-  şi în vecii vecilor.
+  {\bf Preotul:} Că bun și iubitor de oameni Dumnezeu ești și Ție
+  mărire înălțăm, Tatălui și Fiului și Sfântului Duh, acum și pururea
+  și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
@@ -290,13 +290,13 @@
 
   \mysection{Intrarea mică}
 
-  {\bf Preotul:} Înţelepciune, drepţi!
+  {\bf Preotul:} Înțelepciune, drepți!
 
   {\bf Cantorul:}
 
   \lilypondfile{veniti_sa_ne_inchinam.ly}
   \begin{center}
-    {\em În acest moment se cântă troparele şi condacele zilei.}
+    {\em În acest moment se cântă troparele și condacele zilei.}
   \end{center}
 
   {\bf Preotul:} Domnului să ne rugăm.
@@ -306,12 +306,12 @@
     \lilypondfile{doamne_miluieste_1.ly}
   \end{center}
 
-  {\bf Preotul:} Că sfânt eşti, Dumnezeul nostru, şi Ţie mărire
-  înălţăm, Tatălui şi Fiului şi Sfântului Duh, acum şi pururea, Doamne,
-  mântuieşte pe cei bine credincioşi.
+  {\bf Preotul:} Că sfânt ești, Dumnezeul nostru, și Ție mărire
+  înălțăm, Tatălui și Fiului și Sfântului Duh, acum și pururea, Doamne,
+  mântuiește pe cei bine credincioși.
 
-  {\em Dacă preotul nu spune {\bf Doamne, mântuieşte pe cei bine
-  credincioşi,} ci direct {\bf şi în vecii vecilor,} atunci cantorul
+  {\em Dacă preotul nu spune {\bf Doamne, mântuiește pe cei bine
+  credincioși,} ci direct {\bf și în vecii vecilor,} atunci cantorul
   sare la {\bf Amin.}}
   \pagebreak
 
@@ -323,22 +323,22 @@
     {\em (de trei ori)}
   \end{center}
 
-  {\bf Preotul:} Şi ne auzi pe noi.
+  {\bf Preotul:} Și ne auzi pe noi.
 
   {\bf Cantorul:}
 
   \lilypondfile{si_ne_auzi.ly}
 
-  {\bf Preotul:} Şi în vecii vecilor.\\
+  {\bf Preotul:} Și în vecii vecilor.\\
   {\bf Cantorul:} Amin.
 
-  {\em La sărbătorile împărăteşti (Crăciunul, Botezul Domnului,
-  Sâmbăta Floriilor, Sâmbăta Paştilor, Învierea Domnului, Rusaliile),
-  în loc de {\bf Sfinte Dumnezeule} se cântă {\bf Câţi în Hristos
-  v-aţi botezat, în Hristos v-aţi şi îmbrăcat, aliluia} (pagina
-  \pageref{cati_in_hristos}). La sărbătorile Crucii (Înălţarea Sfintei
-  Cruci, săptămâna a 3-a din Postul Paştilor) se cântă {\bf Crucii
-  Tale ne închinăm, Stăpâne, şi Sfântă Învierea Ta o lăudăm şi o
+  {\em La sărbătorile împărătești (Crăciunul, Botezul Domnului,
+  Sâmbăta Floriilor, Sâmbăta Paștilor, Învierea Domnului, Rusaliile),
+  în loc de {\bf Sfinte Dumnezeule} se cântă {\bf Câți în Hristos
+  v-ați botezat, în Hristos v-ați și îmbrăcat, aliluia} (pagina
+  \pageref{cati_in_hristos}). La sărbătorile Crucii (Înălțarea Sfintei
+  Cruci, săptămâna a 3-a din Postul Paștilor) se cântă {\bf Crucii
+  Tale ne închinăm, Stăpâne, și Sfântă Învierea Ta o lăudăm și o
   mărim.}}
   \pagebreak
 
@@ -358,34 +358,34 @@
   \label{cati_in_hristos}
   \lilypondfile{cati_in_hristos.ly}
 
-  \mysection{Apostolul şi Evanghelia}
+  \mysection{Apostolul și Evanghelia}
 
   {\bf Preotul:} Să luăm aminte. Pace tuturor.
 
-  {\bf Cantorul:} Şi duhului tău.
+  {\bf Cantorul:} Și duhului tău.
 
   \begin{center}
-    {\em Cantorul citeşte prochimenul Apostolului.}
+    {\em Cantorul citește prochimenul Apostolului.}
   \end{center}
 
-  {\bf Preotul:} Înţelepciune.
+  {\bf Preotul:} Înțelepciune.
 
   {\bf Cantorul:} Din epistola către ... citire.
 
   {\bf Preotul:} Să luăm aminte.
 
   \begin{center}
-    {\em Cantorul citeşte Apostolul.}
+    {\em Cantorul citește Apostolul.}
   \end{center}
 
-  {\bf Preotul:} Pace ţie, cititorule.
+  {\bf Preotul:} Pace ție, cititorule.
 
-  {\bf Cantorul:} Şi duhului tău.
+  {\bf Cantorul:} Și duhului tău.
   \pagebreak
 
   \lilypondfile{aliluia.ly}
 
-  {\bf Preotul:} Înţelepciune, drepţi, să ascultăm Sfânta
+  {\bf Preotul:} Înțelepciune, drepți, să ascultăm Sfânta
   Evanghelie. Pace tuturor.
 
   {\bf Cantorul:}\\[-10mm]
@@ -400,13 +400,13 @@
 
   \lilypondfile{marire_tie_doamne.ly}
 
-  {\em Preotul citeşte Sfânta Evanghelie, după care se repetă {\bf
-  Mărire Ţie, Doamne.} Când slujeşte Arhiereu, în acest moment se
-  cântă {\bf Întru mulţi ani, Stăpâne!}}
+  {\em Preotul citește Sfânta Evanghelie, după care se repetă {\bf
+  Mărire Ție, Doamne.} Când slujește Arhiereu, în acest moment se
+  cântă {\bf Întru mulți ani, Stăpâne!}}
 
   \mysection{Ectenia cererii stăruitoare}
 
-  {\bf Preotul:} Să zicem toţi, din tot sufletul şi din tot cugetul
+  {\bf Preotul:} Să zicem toți, din tot sufletul și din tot cugetul
   nostru să zicem.
 
   {\bf Cantorul:}
@@ -414,49 +414,49 @@
     \lilypondfile{doamne_miluieste_1.ly}
   \end{center}
 
-  {\bf Preotul:} Doamne, Atotstăpânitorule, Dumnezeul părinţilor
-  noştri, rugămu-ne Ţie, auzi-ne şi ne miluieşte.
+  {\bf Preotul:} Doamne, Atotstăpânitorule, Dumnezeul părinților
+  noștri, rugămu-ne Ție, auzi-ne și ne miluiește.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
-  {\bf Preotul:} Miluieşte-ne pe noi, Dumnezeule, după mare mila Ta,
-  rugămu-ne Ţie, auzi-ne şi ne miluieşte.
+  {\bf Preotul:} Miluiește-ne pe noi, Dumnezeule, după mare mila Ta,
+  rugămu-ne Ție, auzi-ne și ne miluiește.
 
   {\em Aici preotul zice ectenii pentru diferite cereri, iar corul
     cântă câte o ectenie întreită din cele de mai jos.}
 
   \lilypondfile{ectenia_intreita.ly}
 
-  {\bf Preotul:} Că milostiv şi iubitor de oameni Dumnezeu eşti şi Ţie
-  mărire înălţăm, Tatălui şi Fiului şi Sfântului Duh, acum şi pururea
-  şi în vecii vecilor.
+  {\bf Preotul:} Că milostiv și iubitor de oameni Dumnezeu ești și Ție
+  mărire înălțăm, Tatălui și Fiului și Sfântului Duh, acum și pururea
+  și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
 
-  \mysection{Ectenia pentru pomenirea morţilor}
+  \mysection{Ectenia pentru pomenirea morților}
 
-  {\bf Preotul:} Miluieşte-ne pe noi, Dumnezeule, după mare mila Ta,
-  rugămu-ne Ţie, auzi-ne şi ne miluieşte.
+  {\bf Preotul:} Miluiește-ne pe noi, Dumnezeule, după mare mila Ta,
+  rugămu-ne Ție, auzi-ne și ne miluiește.
 
   {\bf Cantorul:}
 
   \lilypondfile{ectenia_mortilor_1.ly}
 
-  {\bf Preotul:} Încă ne rugăm pentru odihna sufletelor adormiţilor
-  robilor lui Dumnezeu {\bf (N)} şi pentru ca să li se ierte lor toată
-  greşeala cea de voie şi cea fără de voie.
+  {\bf Preotul:} Încă ne rugăm pentru odihna sufletelor adormiților
+  robilor lui Dumnezeu {\bf (N)} și pentru ca să li se ierte lor toată
+  greșeala cea de voie și cea fără de voie.
 
   {\bf Cantorul:}
 
   \lilypondfile{ectenia_mortilor_2.ly}
 
-  {\bf Preotul:} Ca Domnul Dumnezeu să aşeze sufletele lor unde
-  drepţii se odihnesc. Mila lui Dumnezeu, împărăţia cerurilor şi
+  {\bf Preotul:} Ca Domnul Dumnezeu să așeze sufletele lor unde
+  drepții se odihnesc. Mila lui Dumnezeu, împărăția cerurilor și
   iertarea păcatelor lor, de la Hristos, Împăratul cel fără de moarte
-  şi Dumnezeul nostru, să cerem. Domnului să ne rugăm.
+  și Dumnezeul nostru, să cerem. Domnului să ne rugăm.
 
   {\bf Cantorul:}
 
@@ -469,41 +469,41 @@
     \lilypondfile{ectenia_mortilor_4.ly}
   \end{center}
 
-  {\bf Preotul:} Dumnezeul duhurilor şi al tot trupul, Care ai călcat
-  moartea şi pe diavolul l-ai surpat şi ai dăruit viaţă lumii Tale,
-  Însuţi Doamne, odihneşte sufletele adormiţilor robilor Tăi {\bf (N)}
-  în loc luminat, în loc cu verdeaţă, în loc de odihnă, de unde a
-  fugit toată durerea, întristarea şi suspinarea. Şi orice greşeală au
-  săvârşit ei cu cuvântul, cu lucrul sau cu gândul, ca un Dumnezeu bun
-  şi iubitor de oameni, iartă-le lor. Că nu este om care să fie viu şi
-  să nu greşească; numai Tu singur eşti fără de păcat; dreptatea Ta
-  este dreptate în veac şi cuvântul Tău, adevărul. Că Tu eşti învierea
-  şi viaţa şi odihna adormiţilor robilor Tăi {\bf (N),} Hristoase,
-  Dumnezeul nostru şi Ţie mărire înălţăm, împreună şi celui fără de
-  început al Tău Părinte şi Preasfântului şi Bunului şi de viaţă
-  făcătorului Tău Duh, acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Dumnezeul duhurilor și al tot trupul, Care ai călcat
+  moartea și pe diavolul l-ai surpat și ai dăruit viață lumii Tale,
+  Însuți Doamne, odihnește sufletele adormiților robilor Tăi {\bf (N)}
+  în loc luminat, în loc cu verdeață, în loc de odihnă, de unde a
+  fugit toată durerea, întristarea și suspinarea. Și orice greșeală au
+  săvârșit ei cu cuvântul, cu lucrul sau cu gândul, ca un Dumnezeu bun
+  și iubitor de oameni, iartă-le lor. Că nu este om care să fie viu și
+  să nu greșească; numai Tu singur ești fără de păcat; dreptatea Ta
+  este dreptate în veac și cuvântul Tău, adevărul. Că Tu ești învierea
+  și viața și odihna adormiților robilor Tăi {\bf (N),} Hristoase,
+  Dumnezeul nostru și Ție mărire înălțăm, împreună și celui fără de
+  început al Tău Părinte și Preasfântului și Bunului și de viață
+  făcătorului Tău Duh, acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Întru fericita adormire, veşnică odihnă dă, Doamne,
-  sufletelor adormiţilor robilor Tăi celor ce s-au pomenit acum şi le
-  fă lor veşnica pomenire.
+  {\bf Preotul:} Întru fericita adormire, veșnică odihnă dă, Doamne,
+  sufletelor adormiților robilor Tăi celor ce s-au pomenit acum și le
+  fă lor veșnica pomenire.
 
   {\bf Cantorul:}
 
   \lilypondfile{vesnica_pomenire.ly}
 
-  \mysection{Ectenia pentru cei chemaţi}
+  \mysection{Ectenia pentru cei chemați}
 
-  {\bf Preotul:} Rugaţi-vă, cei chemaţi, Domnului.
+  {\bf Preotul:} Rugați-vă, cei chemați, Domnului.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_1.ly}
   \end{center}
 
-  {\bf Preotul:} Cei credincioşi, pentru cei chemaţi să ne rugăm, ca
-  Domnul să-i miluiască pe dânşii.
+  {\bf Preotul:} Cei credincioși, pentru cei chemați să ne rugăm, ca
+  Domnul să-i miluiască pe dânșii.
 
   {\bf Cantorul:}
   \begin{center}
@@ -511,14 +511,14 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Să-i înveţe pe dânşii cuvântul adevărului.
+  {\bf Preotul:} Să-i învețe pe dânșii cuvântul adevărului.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_3.ly}
   \end{center}
 
-  {\bf Preotul:} Să le descopere lor evanghelia dreptăţii.
+  {\bf Preotul:} Să le descopere lor evanghelia dreptății.
 
   {\bf Cantorul:}
   \begin{center}
@@ -526,7 +526,7 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Să-i unească pe dânşii cu Sfânta Sa sobornicească şi
+  {\bf Preotul:} Să-i unească pe dânșii cu Sfânta Sa sobornicească și
   apostolească Biserică.
 
   {\bf Cantorul:}
@@ -534,7 +534,7 @@
     \lilypondfile{doamne_miluieste_5.ly}
   \end{center}
 
-  {\bf Preotul:} Mântuieşte, miluieşte, apără şi-i păzeşte pe dânşii,
+  {\bf Preotul:} Mântuiește, miluiește, apără și-i păzește pe dânșii,
   Dumnezeule, cu harul Tău.
 
   {\bf Cantorul:}
@@ -543,30 +543,30 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Cei chemaţi, capetele voastre Domnului să le plecaţi.
+  {\bf Preotul:} Cei chemați, capetele voastre Domnului să le plecați.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
 
-  {\bf Preotul:} Ca şi aceştia împreună cu noi să mărească
-  preacinstitul şi de mare cuviinţă numele Tău, al Tatălui şi al
-  Fiului şi al Sfântului Duh, acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Ca și aceștia împreună cu noi să mărească
+  preacinstitul și de mare cuviință numele Tău, al Tatălui și al
+  Fiului și al Sfântului Duh, acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Câţi sunteţi chemaţi, ieşiţi. Cei chemaţi,
-  ieşiţi. Câţi sunteţi chemaţi, ieşiţi. Ca nimeni dintre cei chemaţi
+  {\bf Preotul:} Câți sunteți chemați, ieșiți. Cei chemați,
+  ieșiți. Câți sunteți chemați, ieșiți. Ca nimeni dintre cei chemați
   să nu rămână.
   \pagebreak
 
-  \mysection{Liturghia credincioşilor}
+  \mysection{Liturghia credincioșilor}
 
-  {\bf Preotul:} Câţi suntem credincioşi, iară şi iară cu pace
+  {\bf Preotul:} Câți suntem credincioși, iară și iară cu pace
   Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -574,7 +574,7 @@
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.
 
   {\bf Cantorul:}
@@ -582,31 +582,31 @@
     \lilypondfile{doamne_miluieste_5.ly}
   \end{center}
 
-  {\bf Preotul:} Că Ţie se cuvinte toată mărirea, cinstea şi
-  închinăciunea, Tatălui şi Fiului şi Sfântului Duh, acum şi pururea
-  şi în vecii vecilor.
+  {\bf Preotul:} Că Ție se cuvinte toată mărirea, cinstea și
+  închinăciunea, Tatălui și Fiului și Sfântului Duh, acum și pururea
+  și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Iară şi iară cu pace, Domnului să ne rugăm.\\
+  {\bf Preotul:} Iară și iară cu pace, Domnului să ne rugăm.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_5.ly}
   \end{center}
 
-  {\bf Preotul:} Înţelepciune! Ca sub stăpânirea Ta totdeauna fiind
-  păziţi, Ţie mărire să înălţăm, Tatălui şi Fiului şi Sfântului Duh,
-  acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Înțelepciune! Ca sub stăpânirea Ta totdeauna fiind
+  păziți, Ție mărire să înălțăm, Tatălui și Fiului și Sfântului Duh,
+  acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
 
@@ -616,11 +616,11 @@
 
   \lilypondfile{heruvic_2.ly}
 
-  \mysection{Ieşirea cu Cinstitele Daruri}
+  \mysection{Ieșirea cu Cinstitele Daruri}
 
-  {\bf Preotul:} Pe voi pe toţi, dreptmăritorilor creştini, să vă
-  pomenească Domnul Dumnezeu întru împărăţia Sa, totdeauna, acum şi
-  pururea şi în vecii vecilor.
+  {\bf Preotul:} Pe voi pe toți, dreptmăritorilor creștini, să vă
+  pomenească Domnul Dumnezeu întru împărăția Sa, totdeauna, acum și
+  pururea și în vecii vecilor.
 
   {\bf Cantorul:}
 
@@ -628,57 +628,57 @@
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Pe Preasfinţitul Episcopul nostru {\bf (N)} {\em
+  {\bf Preotul:} Pe Preasfințitul Episcopul nostru {\bf (N)} {\em
   (Arhiepiscop, Mitropolit, Patriarh),} să-l pomenească Domnul
-  Dumnezeu întru împărăţia Sa.
+  Dumnezeu întru împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe Preşedintele acestei ţări (aici se pomeneşte conducătorul
-  statului), să-l pomenească Domnul Dumnezeu întru împărăţia Sa.
+  {\bf Preotul:} Pe Președintele acestei țări (aici se pomenește conducătorul
+  statului), să-l pomenească Domnul Dumnezeu întru împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe fraţii noştri: preoţi, ieromonahi, ierodiaconi,
-  diaconi, monahi şi monahii şi tot clerul bisericesc să-i pomenească
-  Domnul Dumnezeu întru împărăţia Sa.
+  {\bf Preotul:} Pe frații noștri: preoți, ieromonahi, ierodiaconi,
+  diaconi, monahi și monahii și tot clerul bisericesc să-i pomenească
+  Domnul Dumnezeu întru împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe fericiţii şi pururea pomeniţii ctitori ai sfânt
-  locaşului acestuia şi pe alţi ctitori, miluitori şi făcători de
-  bine, să-i pomenească Domnul Dumnezeu întru împărăţia Sa.
+  {\bf Preotul:} Pe fericiții și pururea pomeniții ctitori ai sfânt
+  locașului acestuia și pe alți ctitori, miluitori și făcători de
+  bine, să-i pomenească Domnul Dumnezeu întru împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe ostaşii români căzuţi pe câmpurile de luptă pentru
-  apărarea ţării, să-i pomenească Domnul Dumnezeu întru împărăţia Sa.
+  {\bf Preotul:} Pe ostașii români căzuți pe câmpurile de luptă pentru
+  apărarea țării, să-i pomenească Domnul Dumnezeu întru împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe cei ce au adus aceste daruri şi pe cei pentru care
-  s-au adus, vii şi morţi, să-i pomenească Domnul Dumnezeu întru
-  împărăţia Sa.
+  {\bf Preotul:} Pe cei ce au adus aceste daruri și pe cei pentru care
+  s-au adus, vii și morți, să-i pomenească Domnul Dumnezeu întru
+  împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe robii lui Dumnezeu fraţii noştri bolnavi şi în
-  suferinţă, pe cei persecutaţi, pe cei din închisori, pe cei care
-  călătoresc pe uscat, pe apă şi prin aer, să-i pomenească Domnul
-  Dumnezeu întru împărăţia Sa.
+  {\bf Preotul:} Pe robii lui Dumnezeu frații noștri bolnavi și în
+  suferință, pe cei persecutați, pe cei din închisori, pe cei care
+  călătoresc pe uscat, pe apă și prin aer, să-i pomenească Domnul
+  Dumnezeu întru împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Pe toţi cei adormiţi din neamurile noastre, strămoşi,
-  moşi, părinţi, fraţi, surori şi pe toţi cei dintr-o rudenie cu noi,
+  {\bf Preotul:} Pe toți cei adormiți din neamurile noastre, strămoși,
+  moși, părinți, frați, surori și pe toți cei dintr-o rudenie cu noi,
   pe fiecare după numele său, să-i pomenească Domnul Dumnezeu întru
-  împărăţia Sa.
+  împărăția Sa.
 
   {\bf Cantorul:} Amin.
 
-  {\bf Preotul:} Şi pe voi pe toţi, dreptmăritorilor creştini, să vă
-  pomenească Domnul Dumnezeu întru împărăţia Sa, totdeauna, acum şi
-  pururea şi în vecii vecilor.
+  {\bf Preotul:} Și pe voi pe toți, dreptmăritorilor creștini, să vă
+  pomenească Domnul Dumnezeu întru împărăția Sa, totdeauna, acum și
+  pururea și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
 
@@ -702,8 +702,8 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Pentru sfântă biserica aceasta şi pentru cei ce cu
-  credinţă, cu evlavie şi cu frică de Dumnezeu intră şi se roagă
+  {\bf Preotul:} Pentru sfântă biserica aceasta și pentru cei ce cu
+  credință, cu evlavie și cu frică de Dumnezeu intră și se roagă
   într-ânsa, Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -711,8 +711,8 @@
     \lilypondfile{doamne_miluieste_3.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru ca să fim izbăviţi noi de tot
-  necazul, mânia, primejdia şi nevoia, Domnului să ne
+  {\bf Preotul:} Pentru ca să fim izbăviți noi de tot
+  necazul, mânia, primejdia și nevoia, Domnului să ne
   rugăm.
 
   {\bf Cantorul:}
@@ -721,7 +721,7 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.
 
   {\bf Cantorul:}
@@ -729,7 +729,7 @@
     \lilypondfile{doamne_miluieste_5.ly}
   \end{center}
 
-  {\bf Preotul:} Ziua toată desăvârşită, sfântă, în pace şi fără de
+  {\bf Preotul:} Ziua toată desăvârșită, sfântă, în pace și fără de
   păcat la Domnul să cerem.
 
   {\bf Cantorul:}
@@ -738,37 +738,37 @@
   \end{center}
 
   {\bf Preotul:} Înger de pace, credincios îndreptător, păzitor al
-  sufletelor şi al trupurilor noastre, la Domnul să cerem.
+  sufletelor și al trupurilor noastre, la Domnul să cerem.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_2.ly}
   \end{center}
 
-  {\bf Preotul:} Milă şi iertare de păcatele şi de greşelile noastre
+  {\bf Preotul:} Milă și iertare de păcatele și de greșelile noastre
   la Domnul să cerem.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_3.ly}
   \end{center}
 
-  {\bf Preotul:} Cele bune şi de folos sufletelor noastre şi pace
+  {\bf Preotul:} Cele bune și de folos sufletelor noastre și pace
   lumii la Domnul să cerem.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_4.ly}
   \end{center}
 
-  {\bf Preotul:} Cealaltă vreme a vieţii noastre în pace şi întru
-  pocăinţă a o săvârşi la Domnul să cerem.
+  {\bf Preotul:} Cealaltă vreme a vieții noastre în pace și întru
+  pocăință a o săvârși la Domnul să cerem.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_5.ly}
   \end{center}
 
-  {\bf Preotul:} Sfârşit creştinesc vieţii noastre, fără durere,
-  neînfruntat, în pace şi răspuns bun la înfricoşătoarea judecată a
+  {\bf Preotul:} Sfârșit creștinesc vieții noastre, fără durere,
+  neînfruntat, în pace și răspuns bun la înfricoșătoarea judecată a
   lui Hristos să cerem.
 
   {\bf Cantorul:}
@@ -777,14 +777,14 @@
   \end{center}
 
   {\bf Preotul:} Pe preasfânta, curata, prea binecuvântata, mărita
-  Stăpâna noastră, de Dumnezeu Născătoarea şi pururea Fecioara Maria,
-  cu toţi sfinţii să o pomenim.
+  Stăpâna noastră, de Dumnezeu Născătoarea și pururea Fecioara Maria,
+  cu toți sfinții să o pomenim.
 
   {\bf Cantorul:}
 
   \lilypondfile{preasfanta_nascatoare.ly}
 
-  {\bf Preotul:} Pe noi înşine şi unii pe alţii şi toată viaţa noastră
+  {\bf Preotul:} Pe noi înșine și unii pe alții și toată viața noastră
   lui Hristos Dumnezeu să o dăm.
 
   {\bf Cantorul:}
@@ -793,9 +793,9 @@
   \end{center}
   \pagebreak
 
-  {\bf Preotul:} Cu îndurările Unuia-Născut Fiului Tău, cu Care eşti
-  binecuvântat, împreună cu Preasfântul şi bunul şi de viaţă făcătorul
-  Tău Duh, acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Cu îndurările Unuia-Născut Fiului Tău, cu Care ești
+  binecuvântat, împreună cu Preasfântul și bunul și de viață făcătorul
+  Tău Duh, acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
@@ -811,7 +811,7 @@
     \lilypondfile{si_duhului_tau.ly}
   \end{center}
 
-  {\bf Preotul:} Să ne iubim unii pe alţii, ca într-un gând să
+  {\bf Preotul:} Să ne iubim unii pe alții, ca într-un gând să
   mărturisim.
   \pagebreak
 
@@ -821,48 +821,48 @@
 
   {\em Aici uneori preotul cântă {\bf Iubi-Te-voi, Doamne.}}
 
-  {\bf Preotul:} Uşile, uşile, cu înţelepciune să luăm aminte!
+  {\bf Preotul:} Ușile, ușile, cu înțelepciune să luăm aminte!
 
   \mysection{Crezul}
 
   {\large \bf
-    Cred întru unul Dumnezeu, Tatăl atotţiitorul, Făcătorul cerului şi
-    al pământului, al tuturor celor văzute şi nevăzute.
+    Cred întru unul Dumnezeu, Tatăl atotțiitorul, Făcătorul cerului și
+    al pământului, al tuturor celor văzute și nevăzute.
 
-    Şi întru unul Domn Iisus Hristos, Fiul lui Dumnezeu, Unul Născut,
-    Care din Tatăl S-a născut mai înainte de toţi vecii: Lumină din
+    Și întru unul Domn Iisus Hristos, Fiul lui Dumnezeu, Unul Născut,
+    Care din Tatăl S-a născut mai înainte de toți vecii: Lumină din
     Lumină, Dumnezeu adevărat din Dumnezeu adevărat, născut, iar nu
-    făcut, Cel de o fiinţă cu Tatăl, prin Care toate s-au făcut;
+    făcut, Cel de o ființă cu Tatăl, prin Care toate s-au făcut;
 
-    Care, pentru noi oamenii şi pentru a noastră mântuire, S-a pogorât
-    din ceruri şi S-a întrupat de la Duhul Sfânt şi din Maria Fecioara
-    şi S-a făcut om;
+    Care, pentru noi oamenii și pentru a noastră mântuire, S-a pogorât
+    din ceruri și S-a întrupat de la Duhul Sfânt și din Maria Fecioara
+    și S-a făcut om;
 
-    Şi S-a răstignit pentru noi în zilele lui Ponţiu Pilat şi a pătimit
-    şi S-a îngropat;
+    Și S-a răstignit pentru noi în zilele lui Ponțiu Pilat și a pătimit
+    și S-a îngropat;
 
-    Şi a înviat a treia zi, după Scripturi;
+    Și a înviat a treia zi, după Scripturi;
 
-    Şi S-a suit la ceruri şi şade de-a dreapta Tatălui;
+    Și S-a suit la ceruri și șade de-a dreapta Tatălui;
 
-    Şi iarăşi va să vină cu slavă să judece viii şi morţii, a Căruia
-    împărăţie nu va avea sfârşit.
+    Și iarăși va să vină cu slavă să judece viii și morții, a Căruia
+    împărăție nu va avea sfârșit.
 
-    Şi întru Duhul Sfânt, Domnul de viaţă Făcătorul, Care din Tatăl
-    purcede, Cel ce împreună cu Tatăl şi cu Fiul este închinat şi mărit,
+    Și întru Duhul Sfânt, Domnul de viață Făcătorul, Care din Tatăl
+    purcede, Cel ce împreună cu Tatăl și cu Fiul este închinat și mărit,
     Care a grăit prin proroci.
 
-    Întru una, sfântă, sobornicească şi apostolească Biserică;
+    Întru una, sfântă, sobornicească și apostolească Biserică;
 
     Mărturisesc un botez spre iertarea păcatelor;
 
-    Aştept învierea morţilor;
+    Aștept învierea morților;
 
-    Şi viaţa veacului ce va să vie. Amin.
+    Și viața veacului ce va să vie. Amin.
   }
   \pagebreak
 
-  \mysection{Pregătirea pentru Sfinţirea Cinstitelor Daruri}
+  \mysection{Pregătirea pentru Sfințirea Cinstitelor Daruri}
 
   {\bf Preotul:} Să stăm bine, să stăm cu frică, să luăm aminte,
   Sfânta Jertfă cu pace a o aduce.
@@ -872,8 +872,8 @@
     \lilypondfile{raspunsurile_mari_1.ly}
   \end{center}
 
-  {\bf Preotul:} Harul Domnului nostru Iisus Hristos şi dragostea lui
-  Dumnezeu Tatăl şi împărtăşirea Sfântului Duh să fie cu voi cu toţi.
+  {\bf Preotul:} Harul Domnului nostru Iisus Hristos și dragostea lui
+  Dumnezeu Tatăl și împărtășirea Sfântului Duh să fie cu voi cu toți.
 
   {\bf Cantorul:}
   \begin{center}
@@ -887,22 +887,22 @@
     \lilypondfile{raspunsurile_mari_3.ly}
   \end{center}
 
-  {\bf Preotul:} Să mulţumim Domnului.
+  {\bf Preotul:} Să mulțumim Domnului.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{raspunsurile_mari_4.ly}
   \end{center}
 
-  {\bf Preotul:} Cântare de biruinţă cântând, strigând, glas înălţând
-  şi grăind:
+  {\bf Preotul:} Cântare de biruință cântând, strigând, glas înălțând
+  și grăind:
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{raspunsurile_mari_5.ly}
   \end{center}
 
-  {\bf Preotul:} Luaţi, mâncaţi, acesta este Trupul Meu, Care se
+  {\bf Preotul:} Luați, mâncați, acesta este Trupul Meu, Care se
   frânge pentru voi spre iertarea păcatelor.
 
   {\bf Cantorul:}
@@ -910,8 +910,8 @@
     \lilypondfile{amin_3.ly}
   \end{center}
 
-  {\bf Preotul:} Beţi dintru acesta toţi, acesta este Sângele Meu, al
-  Legii celei noi, Care pentru voi şi pentru mulţi se varsă spre
+  {\bf Preotul:} Beți dintru acesta toți, acesta este Sângele Meu, al
+  Legii celei noi, Care pentru voi și pentru mulți se varsă spre
   iertarea păcatelor.
 
   {\bf Cantorul:}
@@ -919,7 +919,7 @@
     \lilypondfile{amin_4.ly}
   \end{center}
 
-  {\bf Preotul:} Ale Tale dintru ale Tale, Ţie Ţi-aducem de toate şi
+  {\bf Preotul:} Ale Tale dintru ale Tale, Ție Ți-aducem de toate și
   pentru toate.
 
   {\bf Cantorul:}
@@ -927,12 +927,12 @@
   \lilypondfile{pe_tine_te_laudam.ly}
 
   {\bf Preotul:} Mai ales pentru Preasfânta, curata, prea
-  binecuvântata, mărita stăpâna noastră de Dumnezeu Născătoarea şi
+  binecuvântata, mărita stăpâna noastră de Dumnezeu Născătoarea și
   pururea Fecioara Maria.
 
   {\em La Liturghia Sfântului Vasile (în Postul Mare), în loc de {\bf
   Cuvine-se cu adevărat} se cântă axionul {\bf De tine se bucură}
-  (pagina \pageref{de_tine_se_bucura}). Între Înviere şi Înălţare se
+  (pagina \pageref{de_tine_se_bucura}). Între Înviere și Înălțare se
   cântă {\bf Îngerul a strigat} (pagina
   \pageref{ingerul_a_strigat}). La sărbătorile mari se cântă axioane
   speciale.}
@@ -942,27 +942,27 @@
 
   \lilypondfile{axion_1.ly}
 
-  {\bf Preotul:} Întâi pomeneşte, Doamne, pe Prea Sfinţitul Episcopul
+  {\bf Preotul:} Întâi pomenește, Doamne, pe Prea Sfințitul Episcopul
   nostru {\bf (N)} (Arhiepiscop, Mitropolit, Patriarh), pe care îl
-  dăruieşte sfintelor Tale biserici în pace, întreg, cinsitit,
-  sănătos, îndelungat în zile, drept învăţând cuvântul adevărului Tău.
+  dăruiește sfintelor Tale biserici în pace, întreg, cinsitit,
+  sănătos, îndelungat în zile, drept învățând cuvântul adevărului Tău.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{pe_toti_si_pe_toate.ly}
   \end{center}
 
-  {\bf Preotul:} Şi ne dă nouă, cu o gură şi cu o inimă, a mări şi a
-  cânta preacinstitul şi de mare cuviinţă numele Tău, al Tatălui şi al
-  Fiului şi al Sfântului Duh, acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Și ne dă nouă, cu o gură și cu o inimă, a mări și a
+  cânta preacinstitul și de mare cuviință numele Tău, al Tatălui și al
+  Fiului și al Sfântului Duh, acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Şi să fie milele marelui Dumnezeu şi Mântuitorului
-  nostru Iisus Hristos cu voi cu toţi.
+  {\bf Preotul:} Și să fie milele marelui Dumnezeu și Mântuitorului
+  nostru Iisus Hristos cu voi cu toți.
 
   {\bf Cantorul:}
   \begin{center}
@@ -971,7 +971,7 @@
 
   \mysection{Ectenia dinainte de „Tatăl nostru“}
 
-  {\bf Preotul:} Pe toţi sfinţii pomenindu-i, iară şi iară cu pace,
+  {\bf Preotul:} Pe toți sfinții pomenindu-i, iară și iară cu pace,
   Domnului să ne rugăm.
 
   {\bf Cantorul:}
@@ -979,8 +979,8 @@
     \lilypondfile{doamne_miluieste_1.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru Cinstitele Daruri ce s-au adus şi s-au
-  sfinţit, Domnului să ne rugăm.
+  {\bf Preotul:} Pentru Cinstitele Daruri ce s-au adus și s-au
+  sfințit, Domnului să ne rugăm.
 
   {\bf Cantorul:}
   \begin{center}
@@ -988,9 +988,9 @@
   \end{center}
 
   {\bf Preotul:} Ca Iubitorul de oameni, Dumnezeul nostru, Cel ce le-a
-  primit pe Dânsele în sfântul, cel mai presus de ceruri şi
+  primit pe Dânsele în sfântul, cel mai presus de ceruri și
   duhovnicesul său jertfelnic, întru miros de bună mireasmă
-  duhovnicească, să ne trimită nouă dumnezeiescul har şi darul
+  duhovnicească, să ne trimită nouă dumnezeiescul har și darul
   Sfântului Duh, să ne rugăm.
 
   {\bf Cantorul:}
@@ -998,21 +998,21 @@
     \lilypondfile{doamne_miluieste_3.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru ca să fim izbăviţi noi de tot necazul, mânia,
-  primejdia şi nevoia, Domnului să ne rugăm.\\
+  {\bf Preotul:} Pentru ca să fim izbăviți noi de tot necazul, mânia,
+  primejdia și nevoia, Domnului să ne rugăm.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_4.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.\\
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{doamne_miluieste_5.ly}
   \end{center}
 
-  {\bf Preotul:} Ziua toată desăvârşită, sfântă, în pace şi fără de
+  {\bf Preotul:} Ziua toată desăvârșită, sfântă, în pace și fără de
   păcat la Domnul să cerem.
 
   {\bf Cantorul:}
@@ -1021,14 +1021,14 @@
   \end{center}
 
   {\bf Preotul:} Înger de pace, credincios îndreptător, păzitor al
-  sufletelor şi al trupurilor noastre, la Domnul să cerem.
+  sufletelor și al trupurilor noastre, la Domnul să cerem.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_2.ly}
   \end{center}
 
-  {\bf Preotul:} Milă şi iertare de păcatele şi de greşelile noastre
+  {\bf Preotul:} Milă și iertare de păcatele și de greșelile noastre
   la Domnul să cerem.
 
   {\bf Cantorul:}
@@ -1036,7 +1036,7 @@
     \lilypondfile{da_doamne_3.ly}
   \end{center}
 
-  {\bf Preotul:} Cele bune şi de folos sufletelor noastre şi pace
+  {\bf Preotul:} Cele bune și de folos sufletelor noastre și pace
   lumii la Domnul să cerem.
 
   {\bf Cantorul:}
@@ -1044,16 +1044,16 @@
     \lilypondfile{da_doamne_4.ly}
   \end{center}
 
-  {\bf Preotul:} Cealaltă vreme a vieţii noastre în pace şi întru
-  pocăinţă a o săvârşi la Domnul să cerem.
+  {\bf Preotul:} Cealaltă vreme a vieții noastre în pace și întru
+  pocăință a o săvârși la Domnul să cerem.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{da_doamne_5.ly}
   \end{center}
 
-  {\bf Preotul:} Sfârşit creştinesc vieţii noastre, fără durere,
-  neînfruntat, în pace şi răspuns bun la înfricoşătoarea judecată a
+  {\bf Preotul:} Sfârșit creștinesc vieții noastre, fără durere,
+  neînfruntat, în pace și răspuns bun la înfricoșătoarea judecată a
   lui Hristos să cerem.
 
   {\bf Cantorul:}
@@ -1061,8 +1061,8 @@
     \lilypondfile{da_doamne_6.ly}
   \end{center}
 
-  {\bf Preotul:} Unirea credinţei şi împărtăşirea Sfântului Duh
-  cerând, pe noi înşine şi unii pe alţii şi toată viaţa noastră lui
+  {\bf Preotul:} Unirea credinței și împărtășirea Sfântului Duh
+  cerând, pe noi înșine și unii pe alții și toată viața noastră lui
   Hristos Dumnezeu să o dăm.
 
   {\bf Cantorul:}
@@ -1070,16 +1070,16 @@
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
 
-  {\bf Preotul:} Şi ne învredniceşte pe noi, Stăpâne, cu îndrăznire,
+  {\bf Preotul:} Și ne învrednicește pe noi, Stăpâne, cu îndrăznire,
   fără de osândă, să cutezăm a Te chema pe Tine, Dumnezeul cel ceresc,
-  Tată şi a zice:
+  Tată și a zice:
 
   {\bf Cantorul:}
 
   \lilypondfile{tatal_nostru.ly}
 
-  {\bf Preotul:} Că a Ta este împărăţia şi puterea şi mărirea, a
-  Tatălui şi a Fiului şi a Sfântului Duh, acum şi pururea şi în vecii
+  {\bf Preotul:} Că a Ta este împărăția și puterea și mărirea, a
+  Tatălui și a Fiului și a Sfântului Duh, acum și pururea și în vecii
   vecilor.
 
   {\bf Cantorul:}
@@ -1094,59 +1094,59 @@
     \lilypondfile{si_duhului_tau.ly}
   \end{center}
 
-  {\bf Preotul:} Capetele voastre, Domnului să le plecaţi.
+  {\bf Preotul:} Capetele voastre, Domnului să le plecați.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{tie_doamne_1.ly}
   \end{center}
 
-  {\bf Preotul:} Cu harul şi cu îndurările şi cu iubirea de oameni a
-  Unuia-Născut Fiului Tău, cu care eşti binecuvântat, împreună cu
-  Preasfântul şi bunul şi de viaţă făcătorul Tău Duh, acum şi pururea
-  şi în vecii vecilor.
+  {\bf Preotul:} Cu harul și cu îndurările și cu iubirea de oameni a
+  Unuia-Născut Fiului Tău, cu care ești binecuvântat, împreună cu
+  Preasfântul și bunul și de viață făcătorul Tău Duh, acum și pururea
+  și în vecii vecilor.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Să luăm aminte. Sfintele, sfinţilor.
+  {\bf Preotul:} Să luăm aminte. Sfintele, sfinților.
 
   {\bf Cantorul:}
 
   \lilypondfile{unul_sfant.ly}
 
-  \mysection{Sfânta Împărtăşanie}
+  \mysection{Sfânta Împărtășanie}
 
-  {\bf Preotul:} Cu frică de Dumnezeu, cu credinţă şi cu dragoste să
-  vă apropiaţi.
+  {\bf Preotul:} Cu frică de Dumnezeu, cu credință și cu dragoste să
+  vă apropiați.
   \pagebreak
 
   {\bf Cantorul:}
 
   \lilypondfile{bine_este_cuvantat.ly}
 
-  {\bf Preotul:} Cred, Doamne, şi mărturisesc că Tu eşti cu adevărat
+  {\bf Preotul:} Cred, Doamne, și mărturisesc că Tu ești cu adevărat
   Hristos, Fiul lui Dumnezeu celui viu, Care ai venit în lume să
-  mântuieşti pe cei păcătoşi, dintre care cel dintâi sunt eu. Încă
-  cred că Acesta este însuşi Preacurat Trupul Tău şi Acesta este
-  însuşi Scump Sângele Tău. Deci mă rog Ţie: Miluieşte-mă şi-mi iartă
-  greşelile mele cele de voie şi cele fără de voie, cele cu cuvântul
-  sau cu lucrul, cele întru ştiinţă şi întru neştiinţă. Şi mă
-  învredniceşte, fără de osândă, să mă împărtăşesc cu Preacuratele
-  Tale Taine, spre iertarea păcatelor şi spre viaţa de veci. Amin.
+  mântuiești pe cei păcătoși, dintre care cel dintâi sunt eu. Încă
+  cred că Acesta este însuși Preacurat Trupul Tău și Acesta este
+  însuși Scump Sângele Tău. Deci mă rog Ție: Miluiește-mă și-mi iartă
+  greșelile mele cele de voie și cele fără de voie, cele cu cuvântul
+  sau cu lucrul, cele întru știință și întru neștiință. Și mă
+  învrednicește, fără de osândă, să mă împărtășesc cu Preacuratele
+  Tale Taine, spre iertarea păcatelor și spre viața de veci. Amin.
 
   {\bf Preotul:} Cinei Tale celei de taină, Fiul lui Dumnezeu, astăzi,
-  părtaş mă primeşte, că nu voi spune vrăjmaşilor Tăi Taina Ta nici
-  sărutare Îţi voi da ca Iuda, ci ca tâlharul mărturisindu-mă strig
-  Ţie: Pomeneşte-mă, Doamne, întru împărăţia Ta.
+  părtaș mă primește, că nu voi spune vrăjmașilor Tăi Taina Ta nici
+  sărutare Îți voi da ca Iuda, ci ca tâlharul mărturisindu-mă strig
+  Ție: Pomenește-mă, Doamne, întru împărăția Ta.
 
   {\bf Preotul:} Nu spre judecată sau spre osândă să-mi fie mie
-  împărtăşirea cu Sfintele Tale Taine, Doamne, ci spre tămăduirea
-  sufletului şi a trupului.
+  împărtășirea cu Sfintele Tale Taine, Doamne, ci spre tămăduirea
+  sufletului și a trupului.
 
-  {\em În timpul împărtăşirii credincioşilor, strana cântă {\bf Trupul
+  {\em În timpul împărtășirii credincioșilor, strana cântă {\bf Trupul
   lui Hristos.}}
 
   {\bf Cantorul:}
@@ -1154,28 +1154,28 @@
   \lilypondfile{trupul_lui_hristos.ly}
   \pagebreak
 
-  {\bf Preotul:} Mântuieşte, Doamne, poporul Tău şi binecuvintează
-  moştenirea Ta.
+  {\bf Preotul:} Mântuiește, Doamne, poporul Tău și binecuvintează
+  moștenirea Ta.
 
   {\bf Cantorul:}
 
   \lilypondfile{am_vazut_lumina.ly}
 
-  {\bf Preotul:} Totdeauna, acum şi pururea şi în vecii vecilor.
+  {\bf Preotul:} Totdeauna, acum și pururea și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
 
   {\bf Cantorul:} Să se umple gurile noastre de lauda Ta, Doamne, ca
-  să lăudăm mărirea Ta; că ne-ai învrednicit pe noi să ne împărtăşim
-  cu sfintele, dumnezeieştile, nemuritoarele, preacuratele şi de viaţă
-  făcătoarele Tale Taine. Întăreşte-ne pe noi întru sfinţenia Ta,
-  toată ziua să ne învăţăm dreptatea Ta. Aliluia, aliluia, aliluia!
+  să lăudăm mărirea Ta; că ne-ai învrednicit pe noi să ne împărtășim
+  cu sfintele, dumnezeieștile, nemuritoarele, preacuratele și de viață
+  făcătoarele Tale Taine. Întărește-ne pe noi întru sfințenia Ta,
+  toată ziua să ne învățăm dreptatea Ta. Aliluia, aliluia, aliluia!
 
-  \mysection{Ectenia de mulţumire}
+  \mysection{Ectenia de mulțumire}
 
-  {\bf Preotul:} Drepţi, primind dumnezeieştile, sfintele,
-  preacuratele, nemuritoarele, cereştile şi de viaţă făcătoarele,
-  înfricoşătoarele lui Hristos Taine, cu vrednicie să mulţumim
+  {\bf Preotul:} Drepți, primind dumnezeieștile, sfintele,
+  preacuratele, nemuritoarele, cereștile și de viață făcătoarele,
+  înfricoșătoarele lui Hristos Taine, cu vrednicie să mulțumim
   Domnului.
 
   {\bf Cantorul:}
@@ -1183,7 +1183,7 @@
     \lilypondfile{doamne_miluieste_2.ly}
   \end{center}
 
-  {\bf Preotul:} Apără, mântuieşte, miluieşte şi ne păzeşte pe noi,
+  {\bf Preotul:} Apără, mântuiește, miluiește și ne păzește pe noi,
   Dumnezeule, cu harul Tău.
 
   {\bf Cantorul:}
@@ -1191,8 +1191,8 @@
     \lilypondfile{doamne_miluieste_5.ly}
   \end{center}
 
-  {\bf Preotul:} Ziua toată desăvârşită, sfântă, în pace şi fără de
-  păcat cerând, pe noi înşine şi unii pe alţii şi toată viaţa noastră
+  {\bf Preotul:} Ziua toată desăvârșită, sfântă, în pace și fără de
+  păcat cerând, pe noi înșine și unii pe alții și toată viața noastră
   lui Hristos Dumnezeu să o dăm.
 
   {\bf Cantorul:}
@@ -1200,15 +1200,15 @@
     \lilypondfile{tie_doamne_2.ly}
   \end{center}
 
-  {\bf Preotul:} Că Tu eşti sfinţirea noastră şi Ţie slavă înălţăm,
-  Tatălui şi Fiului şi Sfântului Duh, acum şi pururea şi în vecii
+  {\bf Preotul:} Că Tu ești sfințirea noastră și Ție slavă înălțăm,
+  Tatălui și Fiului și Sfântului Duh, acum și pururea și în vecii
   vecilor.
 
   \begin{center}
     \lilypondfile{amin_2.ly}
   \end{center}
 
-  {\bf Preotul:} Cu pace să ieşim.
+  {\bf Preotul:} Cu pace să ieșim.
 
   {\bf Cantorul:}
   \begin{center}
@@ -1225,54 +1225,54 @@
   \mysection{Rugăciunea amvonului}
 
   {\bf Preotul:} Cel ce binecuvintezi pe cei ce Te binecuvintează,
-  Doamne, şi sfinţeşti pe cei ce nădăjduiesc întru Tine, mântuieşte
-  poporul Tău şi binecuvântează moştenirea Ta. Plinirea Bisericii Tale
-  o păzeşte; sfinţeşte pe cei ce iubesc podoaba casei Tale; Tu pe
-  aceştia îi preamăreşte cu dumnezeiască puterea Ta; şi nu ne lăsa pe
-  noi cei ce nădăjduim întru Tine. Pace lumii Tale dăruieşte,
-  bisericilor Tale, preoţilor, {\em (aici se pomeneşte Cârmuirea ţării,
-  după îndrumările Sfântului Sinod)} şi la tot poporul Tău. Că toată
-  darea cea bună şi tot darul desăvârşit de sus este, pogorând de la
-  Tine, Părintele luminilor, şi Ţie mărire şi mulţumire şi
-  închinăciune înălţăm, Tatălui şi Fiului şi Sfântului Duh, acum şi
-  pururea şi în vecii vecilor.
+  Doamne, și sfințești pe cei ce nădăjduiesc întru Tine, mântuiește
+  poporul Tău și binecuvântează moștenirea Ta. Plinirea Bisericii Tale
+  o păzește; sfințește pe cei ce iubesc podoaba casei Tale; Tu pe
+  aceștia îi preamărește cu dumnezeiască puterea Ta; și nu ne lăsa pe
+  noi cei ce nădăjduim întru Tine. Pace lumii Tale dăruiește,
+  bisericilor Tale, preoților, {\em (aici se pomenește Cârmuirea țării,
+  după îndrumările Sfântului Sinod)} și la tot poporul Tău. Că toată
+  darea cea bună și tot darul desăvârșit de sus este, pogorând de la
+  Tine, Părintele luminilor, și Ție mărire și mulțumire și
+  închinăciune înălțăm, Tatălui și Fiului și Sfântului Duh, acum și
+  pururea și în vecii vecilor.
 
   {\bf Cantorul:} Amin.
 
   \lilypondfile{fie_numele_domnului.ly}
 
-  {\bf Preotul:} Binecuvântarea Domnului peste voi toţi cu al Său har
-  şi cu a Sa iubire de oameni, totdeauna, acum şi pururea şi în vecii
+  {\bf Preotul:} Binecuvântarea Domnului peste voi toți cu al Său har
+  și cu a Sa iubire de oameni, totdeauna, acum și pururea și în vecii
   vecilor.
 
   {\bf Cantorul:} Amin.
 
   \mysection{Otpustul}
 
-  {\bf Preotul:} Mărire Ţie, Hristoase Dumnezeule, nădejdea noastră,
-  mărire Ţie.
+  {\bf Preotul:} Mărire Ție, Hristoase Dumnezeule, nădejdea noastră,
+  mărire Ție.
 
   {\bf Cantorul:}
 
   \lilypondfile{marire_tatalui.ly}
 
-  {\bf Preotul:} Cel ce a înviat din morţi, Hristos, Adevăratul
+  {\bf Preotul:} Cel ce a înviat din morți, Hristos, Adevăratul
   Dumnezeul nostru, pentru rugăciunile Preacuratei Maicii Sale, ale
-  Sfinţilor, măriţilor şi întru tot lăudaţilor Apostoli, ale Sfântului
+  Sfinților, măriților și întru tot lăudaților Apostoli, ale Sfântului
   {\bf (N)} {\em (al cărui hram îl poartă biserica),} ale celui
-  între sfinţi Părintelui nostru Ioan Gură de Aur, arhiepiscopul
+  între sfinți Părintelui nostru Ioan Gură de Aur, arhiepiscopul
   Constantinopolului, ale Sfântului {\bf (N),} a cărui pomenire o
-  săvârşim, ale Sfinţilor şi drepţilor dumnezeieşti Părinţi Ioachim şi
-  Ana şi pentru ale tuturor sfinţilor, să ne miluiască şi să ne
-  mântuiască pe noi, ca un bun şi de oameni iubitor.
+  săvârșim, ale Sfinților și drepților dumnezeiești Părinți Ioachim și
+  Ana și pentru ale tuturor sfinților, să ne miluiască și să ne
+  mântuiască pe noi, ca un bun și de oameni iubitor.
 
   {\bf Cantorul:}
   \begin{center}
     \lilypondfile{amin_5.ly}
   \end{center}
 
-  {\bf Preotul:} Pentru rugăciunile sfinţilor părinţilor noştri,
-  Doamne Iisuse Hristoase, Dumnezeul nostru, miluieşte-ne pe noi.
+  {\bf Preotul:} Pentru rugăciunile sfinților părinților noștri,
+  Doamne Iisuse Hristoase, Dumnezeul nostru, miluiește-ne pe noi.
 
   {\bf Cantorul:}
   \begin{center}

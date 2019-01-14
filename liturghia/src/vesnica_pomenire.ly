@@ -16,9 +16,9 @@ global = {
 }
 
 monoWords = \lyricmode {
-  Veş -- ni -- ca po -- me -- ni -- re,
-  veş -- ni -- ca po -- me -- ni -- re,
-  veş -- ni -- ca lor __ po -- me -- ni -- re.
+  Veș -- ni -- ca po -- me -- ni -- re,
+  veș -- ni -- ca po -- me -- ni -- re,
+  veș -- ni -- ca lor __ po -- me -- ni -- re.
 }
 
 monoMusic = \relative c' {

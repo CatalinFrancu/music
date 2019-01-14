@@ -12,7 +12,7 @@ global = {
 }
 
 monoWords = \lyricmode {
-  Pe toţi şi pe toa -- te.
+  Pe toți și pe toa -- te.
 }
 
 monoMusic = \relative c' {

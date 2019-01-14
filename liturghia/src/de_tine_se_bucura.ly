@@ -25,16 +25,16 @@ global = {
 
 womenWords = \lyricmode {
   De ti -- ne se bu -- cu -- ră,
-  ce -- ea ce eşti pli -- nă de dar,
+  ce -- ea ce ești pli -- nă de dar,
   toa -- tă făp -- tu -- ra:
   so -- bo -- rul __ în -- ge -- resc
-  şi nea -- mul __ o -- me -- nesc;
+  și nea -- mul __ o -- me -- nesc;
 
-  ce -- ea ce __ eşti Bi -- se -- ri -- că sfin -- ţi -- tă
-  şi rai cu -- vân -- tă -- tor,
+  ce -- ea ce __ ești Bi -- se -- ri -- că sfin -- ți -- tă
+  și rai cu -- vân -- tă -- tor,
   la -- u -- da __ fe -- cio -- ri -- ei
   din ca -- re Dum -- ne -- zeu S-a __ în -- tru -- pat
-  şi prunc __ s-a fă -- cut,
+  și prunc __ s-a fă -- cut,
   Cel ce es -- te mai 'na -- in -- te de veci,
   Dum -- ne -- ze -- ul __ nos -- tru,
 
@@ -42,25 +42,25 @@ womenWords = \lyricmode {
   ri -- le __ l-a __ lu -- crat.
 
   De ti -- ne se bu -- cu -- ră,
-  ce -- ea ce eşti pli -- nă de dar,
+  ce -- ea ce ești pli -- nă de dar,
   toa -- tă făp -- tu -- ra.
 
-  Mă -- ri -- re __ ţi -- e,
-  mă -- ri -- re ţi -- e.
+  Mă -- ri -- re __ ți -- e,
+  mă -- ri -- re ți -- e.
 }
 
 menWords = \lyricmode {
   De ti -- ne se bu -- cu -- ră,
-  ce -- ea ce eşti pli -- nă de dar,
+  ce -- ea ce ești pli -- nă de dar,
   toa -- tă făp -- tu -- ra:
   so -- bo -- rul în -- ge -- resc
-  şi nea -- mul __ o -- me -- nesc;
+  și nea -- mul __ o -- me -- nesc;
 
-  ce -- ea ce eşti Bi -- se -- ri -- că sfin -- ţi -- tă
-  şi rai cu -- vân -- tă -- tor,
+  ce -- ea ce ești Bi -- se -- ri -- că sfin -- ți -- tă
+  și rai cu -- vân -- tă -- tor,
   la -- u -- da __ fe -- cio -- ri -- ei
   din ca -- re Dum -- ne -- zeu S-a __ în -- tru -- pat
-  şi prunc __ s-a fă -- cut,
+  și prunc __ s-a fă -- cut,
   Cel ce es -- te mai 'na -- in -- te de veci,
   Dum -- ne -- ze -- ul __ nos -- tru,
 
@@ -68,18 +68,18 @@ menWords = \lyricmode {
   ri -- le l-a lu -- crat.
 
   De ti -- ne se bu -- cu -- ră,
-  ce -- ea ce eşti pli -- nă de dar,
+  ce -- ea ce ești pli -- nă de dar,
   toa -- tă făp -- tu -- ra.
 
-  Mă -- ri -- re __ ţi -- e,
-  mă -- ri -- re ţi -- e.
+  Mă -- ri -- re __ ți -- e,
+  mă -- ri -- re ți -- e.
 }
 
 sopMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura:
   d4^\p \bar "|"
   f4(^\accent e4) \bar "|"
   f4 g4 \bar "|"
@@ -92,7 +92,7 @@ sopMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4) \bar "|"
   d2. bes'8\rest
 
-  % soborul îngeresc şi neamul omenesc;
+  % soborul îngeresc și neamul omenesc;
   a8^\< \bar "|"
   d2\! c4( d4) \bar "|"
   c8.([ d16 c8 bes8)]^\> a8([ bes8] a4)\! \bar "|"
@@ -101,7 +101,7 @@ sopMusic = \relative c' {
   f8.([ g16 f8 e8)] d8([ e8] d4) \bar "|"
   d2 \bar "|"
 
-  % ceea ce eşti biserică sfinţită şi rai cuvântător
+  % ceea ce ești biserică sfințită și rai cuvântător
   g8([ a8] g4) f2 \bar "|"
   g8([ a8] g4) a4. a8 \bar "|"
   c4 bes4 a2 \bar "|"
@@ -110,7 +110,7 @@ sopMusic = \relative c' {
   bes4 a4 g4 fis4 \bar "|"
   g2 \bar "|"
 
-  % lauda fecioriei din care Dumnezeu S-a întrupat şi prunc s-a făcut
+  % lauda fecioriei din care Dumnezeu S-a întrupat și prunc s-a făcut
   a4( g4) f8([ e8)] d8([ e8)] \bar "|"
   f4 g4 \bar "|"
   a8.([ bes16 a8 f8] g4 a4) \bar "|"
@@ -142,7 +142,7 @@ sopMusic = \relative c' {
   c8.([ d16 c8 bes8)] a8([ bes8] a4) \bar "|"
   a2. \breathe
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura.
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura.
   d,4 \bar "|"
   f4( e4) \bar "|"
   f4 g4 \bar "|"
@@ -155,7 +155,7 @@ sopMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4) \bar "|"
   d2. bes'8\rest
 
-  % Mărire ţie, mărire ţie.
+  % Mărire ție, mărire ție.
   d,8 \bar "|"
   a'2 \bar "|"
   f4( g4 a4 c4) \bar "|"
@@ -169,7 +169,7 @@ altoMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura:
   d4
   f4( e4)
   d4 e4
@@ -182,7 +182,7 @@ altoMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4)
   d2. bes'8\rest
 
-  % soborul îngeresc şi neamul omenesc;
+  % soborul îngeresc și neamul omenesc;
   f8
   bes2 a2
   a4.( g8) f8([ g8] f4)
@@ -191,7 +191,7 @@ altoMusic = \relative c' {
   f8.([ g16 f8 e8)] d8([ e8] d4)
   d2
 
-  % ceea ce eşti biserică sfinţită şi rai cuvântător
+  % ceea ce ești biserică sfințită și rai cuvântător
   g8([ a8] g4) f2
   e8([ f8] e4) f4. f8
   a4 g4 f2
@@ -200,7 +200,7 @@ altoMusic = \relative c' {
   g4 fis4 g4 fis4
   g2
 
-  % lauda fecioriei din care Dumnezeu S-a întrupat şi prunc s-a făcut
+  % lauda fecioriei din care Dumnezeu S-a întrupat și prunc s-a făcut
   a4( g4) f8([ e8)] d8([ e8)]
   f4 e4
   f2( e4 f4)
@@ -232,7 +232,7 @@ altoMusic = \relative c' {
   a4.( g8) f8([ g8] f4)
   f2.
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura.
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura.
   d4
   f4( e4)
   d4 e4
@@ -245,7 +245,7 @@ altoMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4)
   d2. bes'8\rest
 
-  % Mărire ţie, mărire ţie.
+  % Mărire ție, mărire ție.
   d,8
   f2
   d4( e4 f4 a4)
@@ -259,7 +259,7 @@ tenorMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura:
   d,4^\p
   f4(^\accent e4)
   d4 e4
@@ -272,7 +272,7 @@ tenorMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4)
   d2. d8\rest
 
-  % soborul îngeresc şi neamul omenesc;
+  % soborul îngeresc și neamul omenesc;
   d8^\<
   bes'2\! a2
   a4.( g8)^\> f8([ g8] f4)\!
@@ -281,7 +281,7 @@ tenorMusic = \relative c' {
   f8.([ g16 f8 e8)] d8([ e8] d4)
   d2
 
-  % ceea ce eşti biserică sfinţită şi rai cuvântător
+  % ceea ce ești biserică sfințită și rai cuvântător
   g8([ a8] g4) f2
   c2 f4. f8
   f4 c4 d2
@@ -290,7 +290,7 @@ tenorMusic = \relative c' {
   g4 d4 g4 fis4
   g2
 
-  % lauda fecioriei din care Dumnezeu S-a întrupat şi prunc s-a făcut
+  % lauda fecioriei din care Dumnezeu S-a întrupat și prunc s-a făcut
   a4( g4) f8([ e8)] d8([ e8)]
   f4 c4
   f2( c4 f4)
@@ -326,7 +326,7 @@ tenorMusic = \relative c' {
   d2 d2
   d2. \breathe
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura.
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura.
   d4
   f4( e4)
   d4 c4
@@ -339,7 +339,7 @@ tenorMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4)
   d2. d8\rest
 
-  % Mărire ţie, mărire ţie.
+  % Mărire ție, mărire ție.
   d8
   d2
   d4( e4 f2)
@@ -353,7 +353,7 @@ bassMusic = \relative c' {
   \cadenzaOn
   \accidentalStyle forget
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura:
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura:
   d,4
   f4( e4)
   d4 c4
@@ -366,7 +366,7 @@ bassMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4)
   d2. d8\rest
 
-  % soborul îngeresc şi neamul omenesc;
+  % soborul îngeresc și neamul omenesc;
   d8
   bes'2 a2
   a4.( g8) f8([ g8] f4)
@@ -375,7 +375,7 @@ bassMusic = \relative c' {
   f8.([ g16 f8 e8)] d8([ e8] d4)
   d2
 
-  % ceea ce eşti biserică sfinţită şi rai cuvântător
+  % ceea ce ești biserică sfințită și rai cuvântător
   g8([ a8] g4) f2
   c2 f4. f8
   f4 c4 d2
@@ -384,7 +384,7 @@ bassMusic = \relative c' {
   g4 d4 g4 fis4
   g2
 
-  % lauda fecioriei din care Dumnezeu S-a întrupat şi prunc s-a făcut
+  % lauda fecioriei din care Dumnezeu S-a întrupat și prunc s-a făcut
   a4( g4) f8([ e8)] d8([ e8)]
   f4 c4
   f2( c4 f4)
@@ -420,7 +420,7 @@ bassMusic = \relative c' {
   d2 d2
   d2.
 
-  % De tine se bucură, ceea ce eşti plină de dar, toată făptura.
+  % De tine se bucură, ceea ce ești plină de dar, toată făptura.
   d4
   f4( e4)
   d4 c4
@@ -433,7 +433,7 @@ bassMusic = \relative c' {
   f8.([ g16 f8 e8] d8[ e8] d4)
   d2. d8\rest
 
-  % Mărire ţie, mărire ţie.
+  % Mărire ție, mărire ție.
   d8
   d2
   d4( e4 f2)

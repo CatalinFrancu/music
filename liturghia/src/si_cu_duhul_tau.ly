@@ -13,7 +13,7 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Şi cu du -- hul tău.
+  Și cu du -- hul tău.
 }
 menWords = \womenWords
 

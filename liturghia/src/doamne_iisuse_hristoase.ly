@@ -18,12 +18,12 @@ womenWords = <<
   \new Lyrics \lyricsto "women" {
     \set stanza = "1. "
     Doam -- ne Ii -- su -- se Hris -- toa -- se, __
-    Tu eşti zori prea -- lu -- mi -- noa -- se.
+    Tu ești zori prea -- lu -- mi -- noa -- se.
   }
   \new Lyrics \lyricsto "women" {
     \set stanza = "2. "
-    Tu eşti ra -- za cea cu -- ra -- tă __
-    Şi lu -- mi -- n-a -- de -- vă -- ra -- tă.
+    Tu ești ra -- za cea cu -- ra -- tă __
+    Și lu -- mi -- n-a -- de -- vă -- ra -- tă.
   }
   \new Lyrics \lyricsto "women" {
     \set stanza = "3. "
@@ -32,13 +32,13 @@ womenWords = <<
   }
   \new Lyrics \lyricsto "women" {
     \set stanza = "4. "
-    Şi Te-ai dat spre răs -- tig -- ni -- re __
+    Și Te-ai dat spre răs -- tig -- ni -- re __
     Pen -- tru-a noas -- tră mân -- tu -- i -- re.
   }
   \new Lyrics \lyricsto "women" {
     \set stanza = "5. "
     O, Ii -- su -- se, nu -- me dul -- ce, __
-    Ne-ai scă -- pat prin Sfân -- ta-Ţi cru -- ce.
+    Ne-ai scă -- pat prin Sfân -- ta-Ți cru -- ce.
   }
 >>
 

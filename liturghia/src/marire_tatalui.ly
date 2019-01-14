@@ -16,11 +16,11 @@ global = {
 }
 
 monoWords = \lyricmode {
-  Mă -- ri -- re Ta -- tă -- lui şi Fi -- u -- lui -- şi Sfân -- tu -- lui Duh
-  şi a -- cum şi pu -- ru -- rea şi în ve -- cii ve -- ci -- lor, a -- min.
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te,
-  Doam -- ne mi -- lu -- ieş -- te.
+  Mă -- ri -- re Ta -- tă -- lui și Fi -- u -- lui -- și Sfân -- tu -- lui Duh
+  și a -- cum și pu -- ru -- rea și în ve -- cii ve -- ci -- lor, a -- min.
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te,
+  Doam -- ne mi -- lu -- ieș -- te.
   În -- tru nu -- me -- le Dom -- nu -- lui,
   pă -- rin -- te, bi -- ne -- cu -- vin -- tea -- ză.
 }

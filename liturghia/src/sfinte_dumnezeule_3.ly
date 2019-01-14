@@ -22,19 +22,19 @@ global = {
 
 sopWords = \lyricmode {
   Sfin -- te făr' de moar -- te, __
-  mi -- lu -- ieş -- te- -- ne __ pre __ noi.
+  mi -- lu -- ieș -- te- -- ne __ pre __ noi.
 }
 
 altoWords = \lyricmode {
   Sfin -- te făr' de moar -- te, __
-  mi -- lu -- ieş -- te- -- ne pre noi.
+  mi -- lu -- ieș -- te- -- ne pre noi.
 }
 
 tenorWords = \altoWords
 
 bassWords = \lyricmode {
   Sfin -- te făr' __ de __ moar -- te, __
-  mi -- lu -- ieş -- te- -- ne pre noi.
+  mi -- lu -- ieș -- te- -- ne pre noi.
 }
 
 sopMusic = \relative c' {
@@ -44,7 +44,7 @@ sopMusic = \relative c' {
   e'4^\mf e^\< e\! e \bar "|"
   d(^\accent c)^\> b( a)\! \bar "|"
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   g^\p^\< a\! \bar "|"
   b^\rallMarkup a g8([^\> a)] fis([ g)]\! \bar "|"
   e2.^\pp r4 \bar "||"
@@ -57,7 +57,7 @@ altoMusic = \relative c' {
   g'4^\mf g^\< g\! g
   g(^\accent fis)^\> g( fis)\!
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   e^\p^\< e\!
   e e e^\> dis\!
   b2.^\pp r4
@@ -81,7 +81,7 @@ tenorMusic = \relative c' {
   >>
   \oneVoice
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   <<
     {
       \voiceOne
@@ -116,7 +116,7 @@ bassMusic = \relative c' {
   >>
   \oneVoice
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   <<
     {
       \voiceOne

@@ -4,7 +4,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Mărire Ţie, Doamne"
+  title = "Mărire Ție, Doamne"
   subtitle = "glasul 8"
   meter = "Maestoso"
 }
@@ -17,7 +17,7 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Mă -- ri -- re Ţi -- e, Doam -- ne, mă -- ri -- re Ţi -- e! __
+  Mă -- ri -- re Ți -- e, Doam -- ne, mă -- ri -- re Ți -- e! __
 }
 
 altoWords = \sopWords
@@ -25,7 +25,7 @@ altoWords = \sopWords
 tenorWords = \sopWords
 
 bassWords = \lyricmode {
-  Mă -- ri -- re Ţi -- e, Doam -- ne, __ mă -- ri -- re Ţi -- e! __
+  Mă -- ri -- re Ți -- e, Doam -- ne, __ mă -- ri -- re Ți -- e! __
 }
 
 sopMusic = \relative c' {

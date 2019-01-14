@@ -10,9 +10,9 @@ global = {
 }
 
 monoWords = \lyricmode {
-  Pe Ta -- tăl, pe Fi -- ul şi pe Sfân -- tul Duh, __
-  Tre -- i -- mea cea de o __ fi -- in -- ţă
-  şi ne -- des -- păr -- ţi -- tă.
+  Pe Ta -- tăl, pe Fi -- ul și pe Sfân -- tul Duh, __
+  Tre -- i -- mea cea de o __ fi -- in -- ță
+  și ne -- des -- păr -- ți -- tă.
 }
 
 monoMusic = \relative c' {

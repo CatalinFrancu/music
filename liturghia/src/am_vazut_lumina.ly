@@ -25,8 +25,8 @@ global = {
 sopWords = \lyricmode {
   Am vă -- zut lu -- mi -- na cea a -- de -- vă ra -- tă,
   am pri -- mit Du -- hul cel ce -- resc;
-  am a -- flat cre -- din -- ţa __ cea a -- de -- vă -- ra -- tă,
-  % ne -- des -- păr -- ţi -- tei Sfin -- tei Tre -- imi __
+  am a -- flat cre -- din -- ța __ cea a -- de -- vă -- ra -- tă,
+  % ne -- des -- păr -- ți -- tei Sfin -- tei Tre -- imi __
   % în -- chi -- nân -- du- -- ne,
   că A -- cea -- sta ne-a mân -- tu -- it __ pre __ noi. __
 }
@@ -34,8 +34,8 @@ sopWords = \lyricmode {
 altoWords = \lyricmode {
   Am vă -- zut lu -- mi -- na cea a -- de -- vă ra -- tă,
   am pri -- mit Du -- hul cel ce -- resc;
-  am a -- flat cre -- din -- ţa __ cea a -- de -- vă -- ra -- tă,
-  ne -- des -- păr -- ţi -- tei Sfin -- tei Tre -- imi __
+  am a -- flat cre -- din -- ța __ cea a -- de -- vă -- ra -- tă,
+  ne -- des -- păr -- ți -- tei Sfin -- tei Tre -- imi __
   în -- chi -- nân -- du- -- ne, __
   că A -- cea -- sta ne-a mân -- tu -- it __ pre __ noi. __
 }
@@ -43,8 +43,8 @@ altoWords = \lyricmode {
 tenorWords = \lyricmode {
   Am vă -- zut lu -- mi -- na cea a -- de -- vă ra -- tă,
   am pri -- mit __ Du -- hul cel ce -- resc;
-  am a -- flat cre -- din -- ţa __ cea a -- de -- vă -- ra -- tă,
-  % ne -- des -- păr -- ţi -- tei Sfin -- tei Tre -- imi __
+  am a -- flat cre -- din -- ța __ cea a -- de -- vă -- ra -- tă,
+  % ne -- des -- păr -- ți -- tei Sfin -- tei Tre -- imi __
   % în -- chi -- nân -- du- -- ne,
   că A -- cea -- sta ne-a mân -- tu -- it __ pre noi. __
 }
@@ -52,8 +52,8 @@ tenorWords = \lyricmode {
 bassWords = \lyricmode {
   Am vă -- zut lu -- mi -- na cea a -- de -- vă ra -- tă,
   am pri -- mit __ Du -- hul cel ce -- resc;
-  am a -- flat cre -- din -- ţa __ cea a -- de -- vă -- ra -- tă,
-  ne -- des -- păr -- ţi -- tei Sfin -- tei Tre -- imi __
+  am a -- flat cre -- din -- ța __ cea a -- de -- vă -- ra -- tă,
+  ne -- des -- păr -- ți -- tei Sfin -- tei Tre -- imi __
   în -- chi -- nân -- du- -- ne, __
   că A -- cea -- sta ne-a mân -- tu -- it __ pre __ noi. __
 }
@@ -73,14 +73,14 @@ sopMusic = \relative c' {
   es8([ des8)]^\< c4 des4 es4\! \bar "|"
   f2^\fermata
 
-  % am a-flat credinţa cea adevărată,
+  % am a-flat credința cea adevărată,
   es4^\< f4\! \bar "|"
   g4 f4 \bar "|"
   es4(^\accent des4)^\> c4( bes4)\! \bar "|"
   as4^\< bes8([ c8)] bes4\! as4 \bar "|"
   \acciaccatura bes8 as4(^\> g4) f4.\! r8 \bar "|"
 
-  % nedespărţitei Sfintei Treimi închinându-ne,
+  % nedespărțitei Sfintei Treimi închinându-ne,
   \cadenzaOff
   R1 * 4
   \cadenzaOn
@@ -110,14 +110,14 @@ altoMusic = \relative c' {
   f4^\< f4 bes4 bes4\!
   as2^\fermata
 
-  % am a-flat credinţa cea adevărată,
+  % am a-flat credința cea adevărată,
   c4^\< c4\!
   c4 des4
   c4(^\accent bes4)^\> as4( g4)\!
   f4^\< f4 f4\! f4
   f4(^\> es4) f4.\! \breathe es8
 
-  % nedespărţitei Sfintei Treimi închinându-ne,
+  % nedespărțitei Sfintei Treimi închinându-ne,
   f4 ges4 bes4^\accent bes4
   as4(^\accent ges4) f4 es4
   des4( es8[ f8)] es4 des8([ es8)]^\ritMarkup
@@ -169,7 +169,7 @@ tenorMusic = \relative c' {
   >>
   \oneVoice
 
-  % am a-flat credinţa cea adevărată,
+  % am a-flat credința cea adevărată,
   <<
     {
       \voiceOne
@@ -186,7 +186,7 @@ tenorMusic = \relative c' {
   c4^\< des4 des4\! c4
   c4(^\> bes4) as4.\! r8
 
-  % nedespărţitei Sfintei Treimi închinându-ne,
+  % nedespărțitei Sfintei Treimi închinându-ne,
   \cadenzaOff
   R1 * 4
   \cadenzaOn
@@ -216,14 +216,14 @@ bassMusic = \relative c' {
   c8([ bes8)]^\< as4 bes4 c4\!
   des2^\fermata
 
-  % am a-flat credinţa cea adevărată,
+  % am a-flat credința cea adevărată,
   c4^\< c4\!
   c4 des4
   c4(^\accent bes4)^\> as4( es4)\!
   f4^\< f4 f4\! f4
   c2^\> f4.\! \breathe es8
 
-  % nedespărţitei Sfintei Treimi închinându-ne,
+  % nedespărțitei Sfintei Treimi închinându-ne,
   f4 ges4 bes4^\accent bes4
   as4(^\accent ges4) f4 es4
   des4( es8[ f8)] es4 des8([ es8)]

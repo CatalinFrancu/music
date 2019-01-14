@@ -18,7 +18,7 @@ global = {
 
 womenWords = \lyricmode {
   Sfânt, Sfânt, Sfânt e Dom -- nul __ Sa -- va -- ot,
-  plin e ce -- rul şi pă -- mân -- tul de __ mă -- ri -- rea Ta.
+  plin e ce -- rul și pă -- mân -- tul de __ mă -- ri -- rea Ta.
   O -- sa -- na, o -- sa -- na, o -- sa -- na,
   o -- sa -- na __ în -- tru cei de sus.
   Bi -- ne es -- te __ cu -- vân -- tat cel ce vi -- ne __
@@ -28,7 +28,7 @@ womenWords = \lyricmode {
 }
 menWords = \lyricmode {
   Sfânt, Sfânt, Sfânt e Dom -- nul __ Sa -- va -- ot,
-  plin e ce -- rul şi pă -- mân -- tul de __ mă -- ri -- rea Ta.
+  plin e ce -- rul și pă -- mân -- tul de __ mă -- ri -- rea Ta.
   O -- sa -- na, o -- sa -- na, o -- sa -- na,
 
   \override LyricExtender.minimum-length = #15.0
@@ -54,7 +54,7 @@ sopMusic = \relative c' {
   c4 b8([ a8)] g4 a4 \bar "|"
   b2
 
-  % Plin e cerul şi pământul de mărirea Ta
+  % Plin e cerul și pământul de mărirea Ta
   e4 fis4 \bar "|"
   g4.( fis8 e8([ dis8 e8 fis8)] \bar "|"
   e2 \bar "|"
@@ -106,7 +106,7 @@ altoMusic = \relative c' {
   c4 b8([ a8)] g4 fis4
   g2
 
-  % Plin e cerul şi pământul de mărirea Ta
+  % Plin e cerul și pământul de mărirea Ta
   g4 b4
   e4.( dis8 b2)
   b2
@@ -160,7 +160,7 @@ tenorMusic = \relative c' {
   a4 g8([ fis8)] e4 d4
   g2
 
-  % Plin e cerul şi pământul de mărirea Ta
+  % Plin e cerul și pământul de mărirea Ta
   d2\rest
   b'4. a8 g8([ fis8 g8 a8)]
   g2
@@ -214,7 +214,7 @@ bassMusic = \relative c' {
   a4 g8([ fis8)] e4 d4
   g2
 
-  % Plin e cerul şi pământul de mărirea Ta
+  % Plin e cerul și pământul de mărirea Ta
   d2\rest
   e4. fis8 g8([ fis8 e8 dis8)]
   e2

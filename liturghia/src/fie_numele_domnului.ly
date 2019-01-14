@@ -23,17 +23,17 @@ global = {
 
 womenWords = \lyricmode {
   Fi -- e nu -- me -- le Dom -- nu -- lui bi -- ne -- cu -- vân -- tat,
-  de a -- cum şi pâ -- nă-n veac.
+  de a -- cum și pâ -- nă-n veac.
 
   Fi -- e nu -- me -- le Dom -- nu -- lui bi -- ne -- cu -- vân -- tat, __
-  de a -- cum şi pâ -- nă-n veac,
-  de a -- cum şi pâ -- nă-n veac.
+  de a -- cum și pâ -- nă-n veac,
+  de a -- cum și pâ -- nă-n veac.
 }
 
 menWords = \womenWords
 
 sopMusic = \relative c' {
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac.
   \repeat volta 2 {
     f4^\p f4
     a4( g4)
@@ -51,8 +51,8 @@ sopMusic = \relative c' {
 
   \break
 
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac, de acum
-  % şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac, de acum
+  % și până-n veac.
   f4^\mf f4
   a4( g4)
   a4 bes4
@@ -73,7 +73,7 @@ sopMusic = \relative c' {
 }
 
 altoMusic = \relative c' {
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac.
   \repeat volta 2 {
     f4 f4
     a4( g4)
@@ -89,8 +89,8 @@ altoMusic = \relative c' {
     f2
   }
 
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac, de acum
-  % şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac, de acum
+  % și până-n veac.
   f4 f4
   a4( g4)
   a4 bes4
@@ -111,7 +111,7 @@ altoMusic = \relative c' {
 }
 
 tenorMusic = \relative c' {
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac.
   \repeat volta 2 {
     f,4^\p f4
     f2
@@ -127,8 +127,8 @@ tenorMusic = \relative c' {
     f2
   }
 
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac, de acum
-  % şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac, de acum
+  % și până-n veac.
   f4^\mf f4
   f2
   f4 g4
@@ -149,7 +149,7 @@ tenorMusic = \relative c' {
 }
 
 bassMusic = \relative c' {
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac.
   \repeat volta 2 {
     f,4 f4
     f2
@@ -165,8 +165,8 @@ bassMusic = \relative c' {
     f2
   }
 
-  % Fie numele Domnului binecuvântat, de acum şi până-n veac, de acum
-  % şi până-n veac.
+  % Fie numele Domnului binecuvântat, de acum și până-n veac, de acum
+  % și până-n veac.
   f4 f4
   f2
   f4 g4

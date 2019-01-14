@@ -4,7 +4,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Şi ne auzi"
+  title = "Și ne auzi"
   subtitle = "glasul 8"
   composer = "Armonizat de N. Lungu"
   meter = "Adagio"
@@ -17,13 +17,13 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Şi __ ne a -- uzi şi ne a -- uzi __ pe __ noi
-  şi ne a -- uzi pe __ noi, pe __ noi.
+  Și __ ne a -- uzi și ne a -- uzi __ pe __ noi
+  și ne a -- uzi pe __ noi, pe __ noi.
 }
 
 menWords = \lyricmode {
-  Şi __ ne a -- uzi şi ne a -- uzi pe noi
-  şi ne a -- uzi pe noi, pe __ noi.
+  Și __ ne a -- uzi și ne a -- uzi pe noi
+  și ne a -- uzi pe noi, pe __ noi.
 }
 
 sopMusic = \relative c' {

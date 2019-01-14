@@ -17,24 +17,24 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Cu vred -- ni -- ci -- e __ şi cu drep -- ta -- te
+  Cu vred -- ni -- ci -- e __ și cu drep -- ta -- te
   es -- te __ a __ ne __ în -- chi -- na
-  Ta -- tă -- lui şi Fi -- u -- lui şi Sfân -- tu -- lui Duh,
-  Tre -- i -- mei __ cei de o fi -- in -- ţă __
-  şi ne -- des păr -- ţi -- tă.
+  Ta -- tă -- lui și Fi -- u -- lui și Sfân -- tu -- lui Duh,
+  Tre -- i -- mei __ cei de o fi -- in -- ță __
+  și ne -- des păr -- ți -- tă.
 }
 menWords = \lyricmode {
-  şi cu drep -- ta -- te
+  și cu drep -- ta -- te
   es -- te a ne în -- chi -- na
-  Ta -- tă -- lui şi Fi -- u -- lui şi Sfân -- tu -- lui Duh,
-  Tre -- i -- mei __ cei de o fi -- in -- ţă
-  şi ne -- des păr -- ţi -- tă.  
+  Ta -- tă -- lui și Fi -- u -- lui și Sfân -- tu -- lui Duh,
+  Tre -- i -- mei __ cei de o fi -- in -- ță
+  și ne -- des păr -- ți -- tă.  
 }
 
 sopMusic = \relative c' {
   \cadenzaOn
 
-  % Cu vrednicie şi cu dreptate
+  % Cu vrednicie și cu dreptate
   b'4\rest b4 b4 b8([ e8)] \bar "|"
   \acciaccatura fis8 e8([ d8 c8 d8)] b8( c8) a4 \bar "|"
   g4 a4 \bar "|"
@@ -45,13 +45,13 @@ sopMusic = \relative c' {
   a8([^\p c8)] b8([ a8)] g8([ fis8)] e8([ dis8)] \bar "|"
   e2 \bar "|"
 
-  % Tatălui şi Fiului şi Sfântului Duh,
+  % Tatălui și Fiului și Sfântului Duh,
   e'8.([ fis16 e8)] d8 c8([ b8)] a4 \bar "|"
   d8.([ e16 d8)] c8 b8([ a8)] g4 \bar "|"
   a8([ c8 b8 a8)] \tuplet 3/2 { a8([ g8 fis8)] } g8([ a8)] \bar "|"
   b2.
 
-  % Treimei cei de o fiinţă şi nedespărţită.
+  % Treimei cei de o ființă și nedespărțită.
   b4 \bar "|"
   g'2 g4.( fis8) \bar "|"
   fis4. e8 e4. d8 \bar "|"
@@ -64,7 +64,7 @@ sopMusic = \relative c' {
 altoMusic = \relative c' {
   \cadenzaOn
 
-  % Cu vrednicie şi cu dreptate
+  % Cu vrednicie și cu dreptate
   b'4\rest b4 b4 b8([ a8)]
   g8([ fis8 e8 fis8)] g4 fis4
   e4 fis4
@@ -75,13 +75,13 @@ altoMusic = \relative c' {
   fis8([ a8)] g8([ fis8)] e8([ fis8)] e8([ dis8)]
   e2
 
-  % Tatălui şi Fiului şi Sfântului Duh,
+  % Tatălui și Fiului și Sfântului Duh,
   c'4. b8 a8([ g8)] fis4
   b4. a8 g8([ fis8)] g4
   fis8([ a8 g8 fis8)] \tuplet 3/2 { fis8([ e8 fis8)] } e8([ fis8)]
   g2.
 
-  % Treimei cei de o fiinţă şi nedespărţită.
+  % Treimei cei de o ființă și nedespărțită.
   b4
   e2 e4.( d8)
   d4. c8 c4. b8
@@ -92,7 +92,7 @@ altoMusic = \relative c' {
 }
 
 tenorMusic = \relative c' {
-  % Cu vrednicie şi cu dreptate
+  % Cu vrednicie și cu dreptate
   \cadenzaOff
   \oneVoice R1 \voiceOne
 
@@ -107,13 +107,13 @@ tenorMusic = \relative c' {
   b8 b8 b8 b8
   e2
 
-  % Tatălui şi Fiului şi Sfântului Duh,
+  % Tatălui și Fiului și Sfântului Duh,
   c'4. g8 a8([ g8)] fis4
   e4. fis8 g8([ fis8)] e4
   d2 d4 d4
   g2.
 
-  % Treimei cei de o fiinţă şi nedespărţită.
+  % Treimei cei de o ființă și nedespărțită.
   b4
   b2 b2
   b4. g8 g4. g8
@@ -124,7 +124,7 @@ tenorMusic = \relative c' {
 }
 
 bassMusic = \relative c' {
-  % Cu vrednicie şi cu dreptate
+  % Cu vrednicie și cu dreptate
   \cadenzaOff
   \oneVoice R1 \voiceTwo
 
@@ -139,13 +139,13 @@ bassMusic = \relative c' {
   b8 b8 b8 b8
   e2
 
-  % Tatălui şi Fiului şi Sfântului Duh,
+  % Tatălui și Fiului și Sfântului Duh,
   c'4. g8 a8([ g8)] fis4
   e4. fis8 g8([ fis8)] e4
   d2 d4 d4
   g2.
 
-  % Treimei cei de o fiinţă şi nedespărţită.
+  % Treimei cei de o ființă și nedespărțită.
   b4
   e,2 e4.( b8)
   b4. c8 c4. d8

@@ -10,7 +10,7 @@ midiTempo =
 
 \header {
   title = "Antifonul I"
-  subtitle = "Mărire... şi acum... Binecuvintează"
+  subtitle = "Mărire... și acum... Binecuvintează"
   subsubtitle = "glasul 8"
   meter = "Allegretto"
 }
@@ -24,11 +24,11 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Mă -- ri -- re Ta -- tă -- lui şi Fi -- u -- lui şi Sfân -- tu -- lui Duh.
+  Mă -- ri -- re Ta -- tă -- lui și Fi -- u -- lui și Sfân -- tu -- lui Duh.
 }
 
 menWords = \lyricmode {
-  Şi a -- cum şi pu -- ru -- rea şi în ve -- cii ve -- ci -- lor, A -- min.
+  Și a -- cum și pu -- ru -- rea și în ve -- cii ve -- ci -- lor, A -- min.
 }
 
 sopMusicOne = \relative c' {

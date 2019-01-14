@@ -35,14 +35,14 @@ sopWords = \lyricmode {
   Sfin -- te Dum -- ne -- ze -- u -- le,
   Sfin -- te ta -- re,
   Sfin -- te făr' de moar -- te, __
-  mi -- lu -- ieş -- te- -- ne __ pre __ noi.
+  mi -- lu -- ieș -- te- -- ne __ pre __ noi.
 }
 
 altoWords = \lyricmode {
   Sfin -- te Dum -- ne -- ze -- u -- le,
   Sfin -- te ta -- re,
   Sfin -- te făr' de moar -- te, __
-  mi -- lu -- ieş -- te- -- ne pre noi.
+  mi -- lu -- ieș -- te- -- ne pre noi.
 }
 
 tenorWords = \altoWords
@@ -64,7 +64,7 @@ sopMusic = \relative c' {
   e4\!^\accent^\mf e^\descrescendoMarkup e e \bar "|"
   d(^\accent c) b( a) \bar "|"
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   g^\p^\< a\! \bar "|"
   b^\rallMarkup a g8([^\> a)] fis([ g)]\! \bar "|"
   e2^\ppAndFermata r \bar "|."
@@ -95,7 +95,7 @@ altoMusic = \relative c' {
   g4\!^\accent^\mf g^\descrescendoMarkup a a
   fis2^\accent g4( fis)
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   e^\p^\< e\!
   e e e^\> dis\!
   b2^\ppAndFermata r
@@ -128,7 +128,7 @@ tenorMusic = \relative c' {
   >>
   \oneVoice
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   <<
     {
       \voiceOne
@@ -160,7 +160,7 @@ bassMusic = \relative c' {
   c4\!^\accent^\mf b^\descrescendoMarkup a a
   b(^\accent a) g( d)
 
-  % Miluieşte-ne pre noi.
+  % Miluiește-ne pre noi.
   <<
     {
       \voiceOne

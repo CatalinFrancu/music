@@ -3,7 +3,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Azi cu toţi să prăznuim"
+  title = "Azi cu toți să prăznuim"
   subtitle = "Colind de Florii"
   composer = "de Gh. Cucu"
 }
@@ -17,7 +17,7 @@ global = {
 allWords = <<
   \new Lyrics \lyricsto "sopranos" {
     \set stanza = "1. "
-    Azi cu toţi să prăz -- nu -- im, __
+    Azi cu toți să prăz -- nu -- im, __
     Pre Dum -- ne -- zeu să-L mă -- rim.
     Hris -- tos vi -- ne-n -- ce -- ti -- nel __
     Spre pa -- ti -- mă __ ca un __ miel. __
@@ -27,17 +27,17 @@ allWords = <<
     \set stanza = "2. "
     Azi in -- tră-n Ie -- ru -- sa -- lim __
     Că -- la -- re pe mânz a -- sin.
-    De po -- por e __ aş -- tep -- tat __
+    De po -- por e __ aș -- tep -- tat __
     Ca un ma -- re __ îm -- pă -- rat. __
     O, mi -- nu -- ne, O, mi -- nu -- ne!
   }
   \new Lyrics \lyricsto "sopranos" {
     \set stanza = "3. "
     La poar -- tă e-n -- tâm -- pi -- nat, __
-    Toţi o -- sa -- na i-au cân -- tat.
+    Toți o -- sa -- na i-au cân -- tat.
     O -- sa -- na din -- tru- -- năl --
     \set ignoreMelismata = ##t
-    ţi -- me
+    ți -- me
     \unset ignoreMelismata
     Că Hris -- tos îm -- pă -- rat __
     \set ignoreMelismata = ##t
@@ -51,10 +51,10 @@ allWords = <<
     \set ignoreMelismata = ##t
     mâ -- nă
     \unset ignoreMelismata
-    Cân -- tă cu to -- ţii-m -- pre -- u-nă.
+    Cân -- tă cu to -- ții-m -- pre -- u-nă.
     O -- sa -- na din -- tru- -- năl --
     \set ignoreMelismata = ##t
-    ţi -- me
+    ți -- me
     \unset ignoreMelismata
     Că Hris -- tos Dum -- ne zeu __
     \set ignoreMelismata = ##t

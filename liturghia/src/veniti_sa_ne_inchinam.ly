@@ -4,7 +4,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Veniţi să ne închinăm"
+  title = "Veniți să ne închinăm"
   subtitle = "glasul 1"
   meter = "Moderato"
 }
@@ -15,7 +15,7 @@ mpMusicGlyphs = \markup {
 
 meterAndMpMarkup = \markup {
   \column {
-    "Puţin mai mişcat"
+    "Puțin mai mișcat"
     \mpMusicGlyphs
   }
 }
@@ -29,51 +29,51 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Ve -- niţi __ să ne în -- chi -- năm şi să că -- dem __ la Hris -- tos.
-  Mân -- tu -- ieş -- te- -- ne pre noi, Fi -- ul lui Dum -- ne -- zeu,
-  Cel __ ce ai în -- vi -- at din __ morţi,
-  pre noi cei ce-ţi cân -- tăm: A -- li -- lu -- i -- a. __
+  Ve -- niți __ să ne în -- chi -- năm și să că -- dem __ la Hris -- tos.
+  Mân -- tu -- ieș -- te- -- ne pre noi, Fi -- ul lui Dum -- ne -- zeu,
+  Cel __ ce ai în -- vi -- at din __ morți,
+  pre noi cei ce-ți cân -- tăm: A -- li -- lu -- i -- a. __
 }
 
 womenAlternateWords = \lyricmode {
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
-  Cel __ ce eşti mi -- nu -- nat
+  Cel __ ce ești mi -- nu -- nat
   \set ignoreMelismata = ##t
-  în -- tru Sfinţi,
+  în -- tru Sfinți,
   \unset ignoreMelismata
 }
 
 tenorWords = \lyricmode {
-  Ve -- niţi __ să ne în -- chi -- năm şi să că -- dem __ la __ Hris -- tos.
-  Mân -- tu -- ieş -- te- -- ne pre noi, Fi -- ul lui Dum -- ne -- zeu,
-  Cel ce ai în -- vi -- at din __ morţi,
-  pre noi cei ce-ţi cân -- tăm: A -- li -- lu -- i' A -- li -- lu -- i -- a. __
+  Ve -- niți __ să ne în -- chi -- năm și să că -- dem __ la __ Hris -- tos.
+  Mân -- tu -- ieș -- te- -- ne pre noi, Fi -- ul lui Dum -- ne -- zeu,
+  Cel ce ai în -- vi -- at din __ morți,
+  pre noi cei ce-ți cân -- tăm: A -- li -- lu -- i' A -- li -- lu -- i -- a. __
 }
 
 tenorAlternateWords = \lyricmode {
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
-  Cel ce eşti mi -- nu -- nat
+  Cel ce ești mi -- nu -- nat
   \set ignoreMelismata = ##t
-  în -- tru Sfinţi,
+  în -- tru Sfinți,
   \unset ignoreMelismata
 }
 
 bassWords = \lyricmode {
-  Ve -- niţi __ să ne în -- chi -- năm şi să că -- dem __ la __ Hris -- tos.
-  Mân -- tu -- ieş -- te- -- ne pre noi, Fi -- ul lui Dum -- ne -- zeu,
-  Cel __ ce ai în -- vi -- at din __ morţi,
-  pre noi cei ce-ţi cân -- tăm: __ A -- li -- lu -- i -- a. __
+  Ve -- niți __ să ne în -- chi -- năm și să că -- dem __ la __ Hris -- tos.
+  Mân -- tu -- ieș -- te- -- ne pre noi, Fi -- ul lui Dum -- ne -- zeu,
+  Cel __ ce ai în -- vi -- at din __ morți,
+  pre noi cei ce-ți cân -- tăm: __ A -- li -- lu -- i -- a. __
 }
 
 bassAlternateWords = \womenAlternateWords
 
 sopMusic = \relative c' {
   \cadenzaOn
-  % Veniţi să ne închinăm şi să cădem la Hristos.
+  % Veniți să ne închinăm și să cădem la Hristos.
   b'4^\mf \bar "|"
   e(^\accent d) c b \bar "|"
   a^\> g \bar "|"
@@ -81,7 +81,7 @@ sopMusic = \relative c' {
   g(^\accent fis)^\> e d\! \bar "|"
   e2 \breathe
 
-  % Mântuieşte-ne pre noi, Fiul lui Dumnezeu
+  % Mântuiește-ne pre noi, Fiul lui Dumnezeu
   e4^\meterAndMpMarkup e \bar "|"
   a a g a \bar "|"
   b2 \bar "|"
@@ -89,7 +89,7 @@ sopMusic = \relative c' {
   g a \bar "|"
   b2\! \bar "|"
 
-  % Cel ce ai înviat din morţi / Cel ce eşti minunat întru Sfinţi
+  % Cel ce ai înviat din morți / Cel ce ești minunat întru Sfinți
   c4(^\accent b) a^\< a \bar "|"
   b cis \bar "|"
   \slurDashed
@@ -97,7 +97,7 @@ sopMusic = \relative c' {
   \slurSolid
   a4.\! \breathe
 
-  % Pe noi cei ce-ţi cântăm: Aliluia
+  % Pe noi cei ce-ți cântăm: Aliluia
   e8 \bar "|"
   a4^\accent a g a \bar "|"
   b2 g4^\< g\! \bar "|"
@@ -109,7 +109,7 @@ sopMusic = \relative c' {
 
 altoMusic = \relative c' {
   \cadenzaOn
-  % Veniţi să ne închinăm şi să cădem la Hristos.
+  % Veniți să ne închinăm și să cădem la Hristos.
   b'4^\mf
   e(^\accent d) c b
   a^\> e
@@ -117,7 +117,7 @@ altoMusic = \relative c' {
   g(^\accent fis)^\> e d\!
   e2 \breathe
 
-  % Mântuieşte-ne pre noi, Fiul lui Dumnezeu
+  % Mântuiește-ne pre noi, Fiul lui Dumnezeu
   e4^\mp e
   e e e e
   e2
@@ -125,7 +125,7 @@ altoMusic = \relative c' {
   e fis
   g2\!
 
-  % Cel ce ai înviat din morţi / Cel ce eşti minunat întru Sfinţi
+  % Cel ce ai înviat din morți / Cel ce ești minunat întru Sfinți
   fis4(^\accent g) fis^\< fis
   g g
   \slurDashed
@@ -133,7 +133,7 @@ altoMusic = \relative c' {
   \slurSolid
   fis4.\! \breathe
 
-  % Pe noi cei ce-ţi cântăm: Aliluia
+  % Pe noi cei ce-ți cântăm: Aliluia
   e8
   e4^\accent e e e
   e2 e4^\< e\!
@@ -144,7 +144,7 @@ altoMusic = \relative c' {
 
 tenorMusic = \relative c' {
   \cadenzaOn
-  % Veniţi să ne închinăm şi să cădem la Hristos.
+  % Veniți să ne închinăm și să cădem la Hristos.
   b4^\mf
   e(^\accent d) c b
   a^\> b
@@ -152,7 +152,7 @@ tenorMusic = \relative c' {
   g(^\accent fis)^\> g8( a) b4\!
   b2 \breathe
 
-  % Mântuieşte-ne pre noi, Fiul lui Dumnezeu
+  % Mântuiește-ne pre noi, Fiul lui Dumnezeu
   e,4^\mp e
   c' c b c
   b2
@@ -160,7 +160,7 @@ tenorMusic = \relative c' {
   b d
   d2\!
 
-  % Cel ce ai înviat din morţi / Cel ce eşti minunat întru Sfinţi
+  % Cel ce ai înviat din morți / Cel ce ești minunat întru Sfinți
   d^\accent d4^\< d
   d e
   \tieDashed
@@ -168,7 +168,7 @@ tenorMusic = \relative c' {
   \tieSolid
   d4.\! \breathe
 
-  % Pe noi cei ce-ţi cântăm: Aliluia
+  % Pe noi cei ce-ți cântăm: Aliluia
   b8
   c4^\accent c b c
   b2 b4^\< b\!
@@ -179,7 +179,7 @@ tenorMusic = \relative c' {
 
 bassMusic = \relative c' {
   \cadenzaOn
-  % Veniţi să ne închinăm şi să cădem la Hristos.
+  % Veniți să ne închinăm și să cădem la Hristos.
   b4^\mf
   e(^\accent d) c b
   a^\> e
@@ -187,7 +187,7 @@ bassMusic = \relative c' {
   g(^\accent fis)^\> e8( fis) g4\!
   e2 \breathe
 
-  % Mântuieşte-ne pre noi, Fiul lui Dumnezeu
+  % Mântuiește-ne pre noi, Fiul lui Dumnezeu
   e4^\mp e
   a a e e
   e2
@@ -195,7 +195,7 @@ bassMusic = \relative c' {
   e d
   g2\!
 
-  % Cel ce ai înviat din morţi / Cel ce eşti minunat întru Sfinţi
+  % Cel ce ai înviat din morți / Cel ce ești minunat întru Sfinți
   a4(^\accent b) c4^\< c
   b a
   \slurDashed
@@ -203,7 +203,7 @@ bassMusic = \relative c' {
   \slurSolid
   d4.\! \breathe
 
-  % Pe noi cei ce-ţi cântăm: Aliluia
+  % Pe noi cei ce-ți cântăm: Aliluia
   e8
   e4^\accent e e e
   e1~

@@ -4,7 +4,7 @@
 \include "preamble.ly"
 
 \header {
-  title = "Doamne mântuieşte"
+  title = "Doamne mântuiește"
   subtitle = "glasul 8 (3 voci egale)"
   composer = "Armonizat de N. Lungu"
   meter = "Andante"
@@ -19,7 +19,7 @@ global = {
 }
 
 womenWords = \lyricmode {
-  Doam -- ne mân -- tu -- ieş -- te pe cei bi -- ne cre -- din -- cioşi.
+  Doam -- ne mân -- tu -- ieș -- te pe cei bi -- ne cre -- din -- cioși.
 }
 menWords = \womenWords
 

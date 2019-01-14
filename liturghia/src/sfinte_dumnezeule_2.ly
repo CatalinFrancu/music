@@ -21,8 +21,8 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Mă -- ri -- re Ta -- tă -- lui şi Fi -- u -- lui şi Sfân -- tu -- lui Duh.
-  Şi a -- cum şi pu -- ru -- rea şi în ve -- cii ve -- ci -- lor. __ A -- min.
+  Mă -- ri -- re Ta -- tă -- lui și Fi -- u -- lui și Sfân -- tu -- lui Duh.
+  Și a -- cum și pu -- ru -- rea și în ve -- cii ve -- ci -- lor. __ A -- min.
 }
 
 altoWords = \sopWords
@@ -32,7 +32,7 @@ bassWords = \sopWords
 sopMusic = \relative c' {
   \cadenzaOn
 
-  % Mărire Tatălui şi Fiului şi Sfântului Duh.
+  % Mărire Tatălui și Fiului și Sfântului Duh.
   e8^\mf \bar "|"
   e4 e \bar "|"
   a^\accent g a b^\< \bar "|"
@@ -40,7 +40,7 @@ sopMusic = \relative c' {
   d8(^\accent e d4) c8( b) a4^\> \bar "|"
   b2\! \breathe
 
-  % Şi acum şi pururea şi în vecii vecilor, amin.
+  % Și acum și pururea și în vecii vecilor, amin.
   e,4^\p e \bar "|"
   a^\accent g \bar "|"
   a^\accent b^\> b2\! \bar "|"
@@ -52,7 +52,7 @@ sopMusic = \relative c' {
 altoMusic = \relative c' {
   \cadenzaOn
 
-  % Mărire Tatălui şi Fiului şi Sfântului Duh.
+  % Mărire Tatălui și Fiului și Sfântului Duh.
   e8^\mf
   e4 e
   e^\accent e e e^\<
@@ -60,7 +60,7 @@ altoMusic = \relative c' {
   fis2^\accent fis4 fis^\>
   g2\! \breathe
 
-  % Şi acum şi pururea şi în vecii vecilor, amin.
+  % Și acum și pururea și în vecii vecilor, amin.
   e4^\p e
   a^\accent g
   fis^\accent g^\> g2\!
@@ -72,7 +72,7 @@ altoMusic = \relative c' {
 tenorMusic = \relative c' {
   \cadenzaOn
 
-  % Mărire Tatălui şi Fiului şi Sfântului Duh.
+  % Mărire Tatălui și Fiului și Sfântului Duh.
   e,8^\mf
   e4 e
   c'^\accent b c d^\<
@@ -80,7 +80,7 @@ tenorMusic = \relative c' {
   a2^\accent a4 d^\>
   d2\! \breathe
 
-  % Şi acum şi pururea şi în vecii vecilor, amin.
+  % Și acum și pururea și în vecii vecilor, amin.
   e4^\p e
   e^\accent d
   d^\accent d^\> d2\!
@@ -91,7 +91,7 @@ tenorMusic = \relative c' {
 
 bassMusic = \relative c' {
   \cadenzaOn
-  % Mărire Tatălui şi Fiului şi Sfântului Duh.
+  % Mărire Tatălui și Fiului și Sfântului Duh.
   e,8^\mf
   e4 e
   a^\accent g a b^\<
@@ -99,7 +99,7 @@ bassMusic = \relative c' {
   d2^\accent d4 d^\>
   g2\! \breathe
 
-  % Şi acum şi pururea şi în vecii vecilor, amin.
+  % Și acum și pururea și în vecii vecilor, amin.
   e4^\p e
   c'^\accent b
   a^\accent g^\> g2\!

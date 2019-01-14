@@ -32,7 +32,7 @@ womenWords = \lyricmode {
   pe he -- ru -- vimi în -- chi -- pu -- im,
   pe he -- ru -- vimi __ în -- chi -- pu -- im.
 
-  Şi fă -- că -- toa -- rei de via -- ţă Tre -- imi
+  Și fă -- că -- toa -- rei de via -- ță Tre -- imi
   sfân -- tă cân -- ta -- re a -- du -- cem,
   sfân -- tă cân -- ta -- re-a -- du -- cem în -- tre -- it.
 
@@ -69,7 +69,7 @@ sopMusic = \relative c' {
   g4( f4) e4\!
   f2.^\ppAndFermataMarkup \bar "|."
 
-  % Şi făcătoarei  de viaţă Treimi
+  % Și făcătoarei  de viață Treimi
   a4^\< a4 a4
   g4 g4 g4\!
   f4(^\> g4 a4)
@@ -134,7 +134,7 @@ altoMusic = \relative c' {
   d4( c4) c4
   c2.
 
-  % Şi făcătoarei  de viaţă Treimi
+  % Și făcătoarei  de viață Treimi
   f4 f4 f4
   e4 e4 e4
   f4( e4 f4)
@@ -199,7 +199,7 @@ tenorMusic = \relative c' {
   bes4( a4) g4
   a2.^\ppAndFermataMarkup
 
-  % Şi făcătoarei  de viaţă Treimi
+  % Și făcătoarei  de viață Treimi
   c4 c4 c4
   c4 c4 c4
   c2.
@@ -264,7 +264,7 @@ bassMusic = \relative c' {
   bes,4( c4) c4
   <f f,>2.
 
-  % Şi făcătoarei  de viaţă Treimi
+  % Și făcătoarei  de viață Treimi
   f4 f4 f4
   c4 c4 c4
   a'4( g4 f4)

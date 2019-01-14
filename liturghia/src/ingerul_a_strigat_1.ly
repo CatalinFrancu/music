@@ -35,38 +35,38 @@ global = {
 womenWords = \lyricmode {
   În -- ge -- rul a stri -- gat că -- tre cea pli -- nă de da -- ruri,
   Cu -- ra -- tă Fe -- cioa -- ră: __ Bu -- cu -- ră- -- te!
-  Şi ia -- ră zic, bu -- cu -- ră- -- te, că Fi -- ul tău
+  Și ia -- ră zic, bu -- cu -- ră- -- te, că Fi -- ul tău
   a în -- vi -- at __ a tre -- ia __ zi __ din __ mor -- mânt
-  şi pe morţi i-a ri -- di -- cat. __
-  Ve -- se -- li -- ţi -- vă __ po -- poa -- re -- lor, __
+  și pe morți i-a ri -- di -- cat. __
+  Ve -- se -- li -- ți -- vă __ po -- poa -- re -- lor, __
   po -- poa -- re -- lor.
   Lu -- mi -- nea -- ză- -- te, lu -- mi -- nea -- ză- -- te
   no -- u -- le I -- e -- ru -- sa -- li -- me
   că __ sla -- va Dom -- nu -- lui __  pes -- te ti -- ne __
   a __ ră -- să -- rit.
-  Sal -- tă __ a -- cum __ şi te bu -- cu -- ră Si -- oa -- ne
+  Sal -- tă __ a -- cum __ și te bu -- cu -- ră Si -- oa -- ne
   iar __ tu __ cu -- ra -- tă __ Năs -- că -- toa -- re __ de __
   Dum -- ne -- zeu
-  ve -- se -- leş -- te- -- te în -- tru în -- vi -- e -- rea
+  ve -- se -- leș -- te- -- te în -- tru în -- vi -- e -- rea
   ce -- lui __ năs -- cut, __ năs -- cut __ al tău. __
 }
 
 menWords = \lyricmode {
   În -- ge -- rul a stri -- gat __
   Cu -- ra -- tă Fe -- cioa -- ră: __ Bu -- cu -- ră- -- te!
-  Şi ia -- ră zic, bu -- cu -- ră- -- te, că Fi -- ul tău
+  Și ia -- ră zic, bu -- cu -- ră- -- te, că Fi -- ul tău
   a în -- vi -- at __ a tre -- ia __ zi __ din mor -- mânt
-  şi pe morţi i-a ri -- di -- cat. __
-  Ve -- se -- li -- ţi -- vă po -- poa -- re -- lor, __
+  și pe morți i-a ri -- di -- cat. __
+  Ve -- se -- li -- ți -- vă po -- poa -- re -- lor, __
   po -- poa -- re -- lor.
   Lu -- mi -- nea -- ză- -- te, lu -- mi -- nea -- ză- -- te
   no -- u -- le I -- e -- ru -- sa -- li -- me
   că sla -- va Dom -- nu -- lui pes -- te ti -- ne __
   a __ ră -- să -- rit.
-  Sal -- tă a -- cum şi te bu -- cu -- ră Si -- oa -- ne
+  Sal -- tă a -- cum și te bu -- cu -- ră Si -- oa -- ne
   iar __ tu cu -- ra -- tă Năs -- că -- toa -- re __ de __
   Dum -- ne -- zeu
-  ve -- se -- leş -- te- -- te în -- tru în -- vi -- e -- rea
+  ve -- se -- leș -- te- -- te în -- tru în -- vi -- e -- rea
   ce -- lui năs -- cut, __ năs -- cut al tău, __ al tău.
 }
 
@@ -89,7 +89,7 @@ sopMusic = \relative c' {
   \break
   g4.
 
-  % Şi iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
+  % Și iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
   g8 \bar "|"
   b4( a8[ b8)] g4 g4 \bar "|"
   c4( d4 e4) d8 c8 \bar "|"
@@ -102,7 +102,7 @@ sopMusic = \relative c' {
   g8([ b8 a8 g8)] fis4( a8) a8 \bar "|"
   g2
 
-  % Şi pe morţi i-a ridicat. Veseliţi-vă popoarelor, popoarelor.
+  % Și pe morți i-a ridicat. Veseliți-vă popoarelor, popoarelor.
   g4 g4 \bar "|"
   \break
   b4 g4 c4 d4 \bar "|"
@@ -140,7 +140,7 @@ sopMusic = \relative c' {
   g8([ b8 a8 g8)] \bar "|"
   fis4( a8) a8 g2 \bar "|"
 
-  % Saltă acum şi te bucură Sioane iar tu Curată Născătoare de Dumnezeu
+  % Saltă acum și te bucură Sioane iar tu Curată Născătoare de Dumnezeu
   \override Staff.TimeSignature.text = ""
   d'8([^\f c8 b8 e8] d8[ c8 b8 c8)] \bar "|"
   \break
@@ -161,7 +161,7 @@ sopMusic = \relative c' {
   g8([ b8 a8 g8)] \bar "|"
   fis4( a8) a8 g2 \bar "|"
 
-  % veseleşte-te întru învierea celui născut al tău.
+  % veselește-te întru învierea celui născut al tău.
   b4^\< c4\! \bar "|"
   d8([ c8 b8 e8)] d8([ c8 b8 c8)] \bar "|"
   \break
@@ -195,7 +195,7 @@ altoMusic = \relative c' {
   g8([ b8 a8 g8)] fis4~ fis8 fis8
   g4.
 
-  % Şi iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
+  % Și iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
   g8
   b4( a8[ b8)] g4 g4
   c4( b4 c4) b8 a8
@@ -207,7 +207,7 @@ altoMusic = \relative c' {
   g8([ b8 a8 g8)] fis4~ fis8 fis8
   g2
 
-  % Şi pe morţi i-a ridicat. Veseliţi-vă popoarelor, popoarelor.
+  % Și pe morți i-a ridicat. Veseliți-vă popoarelor, popoarelor.
   g4 g4
   b4 g4 c4 b4
   c4( b8[ a8] b2)
@@ -240,7 +240,7 @@ altoMusic = \relative c' {
   g8([ b8 a8 g8)]
   fis4~ fis8 fis8 g2
 
-  % Saltă acum şi te bucură Sioane iar tu Curată Născătoare de Dumnezeu
+  % Saltă acum și te bucură Sioane iar tu Curată Născătoare de Dumnezeu
   b8([ a8 g8 c8] b8[ a8 g8 a8)]
   fis8([ g8)] g4
   c4( b4 c4 b8[ a8)]
@@ -257,7 +257,7 @@ altoMusic = \relative c' {
   g8([ b8 a8 g8)]
   fis4~ fis8 fis8 g2
 
-  % veseleşte-te întru învierea celui născut al tău.
+  % veselește-te întru învierea celui născut al tău.
   g4 a4
   b8([ a8 g8 c8)] b8([ a8 g8 a8)]
   fis2 g4 g4
@@ -289,7 +289,7 @@ tenorMusic = \relative c' {
   g8([ b8 a8 g8)] d4. d8
   g4.
 
-  % Şi iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
+  % Și iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
   g8
   b4( a8[ b8)] g4 g4
   c4( b4 a4) d,8 d8
@@ -301,7 +301,7 @@ tenorMusic = \relative c' {
   g8([ b8 a8 g8)] d4. d8
   g2
 
-  % Şi pe morţi i-a ridicat. Veseliţi-vă popoarelor, popoarelor.
+  % Și pe morți i-a ridicat. Veseliți-vă popoarelor, popoarelor.
   g4 g4
   b4 g4 a4 b4
   c4(^\< b8[ a8] g2)
@@ -334,7 +334,7 @@ tenorMusic = \relative c' {
   g8([ b8 a8 g8)]
   d4. d8 g2
 
-  % Saltă acum şi te bucură Sioane iar tu Curată Născătoare de Dumnezeu
+  % Saltă acum și te bucură Sioane iar tu Curată Născătoare de Dumnezeu
   \cadenzaOff
   \override Staff.TimeSignature.text = ""
   \time 4/4
@@ -356,7 +356,7 @@ tenorMusic = \relative c' {
   g8([ b8 a8 g8)]
   d4. d8 g2
 
-  % veseleşte-te întru învierea celui născut al tău.
+  % veselește-te întru învierea celui născut al tău.
   \cadenzaOff
   R2
   \cadenzaOn
@@ -392,7 +392,7 @@ bassMusic = \relative c' {
   g8([ b8 a8 g8)] d4. d8
   g4.
 
-  % Şi iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
+  % Și iară zic, bucură-te, că Fiul tău a înviat a treia zi din mormânt
   g8
   b4( a8[ b8)] g4 g4
   c4( b4 a4) d,8 d8
@@ -404,7 +404,7 @@ bassMusic = \relative c' {
   g8([ b8 a8 g8)] d4. d8
   g2
 
-  % Şi pe morţi i-a ridicat. Veseliţi-vă popoarelor, popoarelor.
+  % Și pe morți i-a ridicat. Veseliți-vă popoarelor, popoarelor.
   g4 g4
   b4 g4 a4 b4
   c4( b8[ a8] g2)
@@ -438,7 +438,7 @@ bassMusic = \relative c' {
   g8([ b8 a8 g8)]
   d4. d8 g2
 
-  % Saltă acum şi te bucură Sioane iar tu Curată Născătoare de Dumnezeu
+  % Saltă acum și te bucură Sioane iar tu Curată Născătoare de Dumnezeu
   s1
   s2
   c4( b4) a4 d,4
@@ -456,7 +456,7 @@ bassMusic = \relative c' {
   g8([ b8 a8 g8)]
   d4. d8 g2
 
-  % veseleşte-te întru învierea celui născut al tău.
+  % veselește-te întru învierea celui născut al tău.
   s2
   g4 g4 g4 g4
   d2 g4 g4

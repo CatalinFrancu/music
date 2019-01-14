@@ -22,11 +22,11 @@ global = {
 }
 
 sopWords = \lyricmode {
-  Tru -- pul lui Hris -- tos __ pri -- miţi, __ pri -- miţi __
-  şi din iz -- vo -- rul cel fă -- ră de moar -- te gus -- taţi. __
+  Tru -- pul lui Hris -- tos __ pri -- miți, __ pri -- miți __
+  și din iz -- vo -- rul cel fă -- ră de moar -- te gus -- tați. __
 
-  Tru -- pul lui Hris -- tos __ pri -- miţi, __ pri -- miţi __
-  şi din iz -- vo -- rul cel fă -- ră de moar -- te gus -- taţi. __
+  Tru -- pul lui Hris -- tos __ pri -- miți, __ pri -- miți __
+  și din iz -- vo -- rul cel fă -- ră de moar -- te gus -- tați. __
 
   A -- li -- lu -- i -- a,
   a -- li -- lu -- i -- a,
@@ -40,11 +40,11 @@ sopWords = \lyricmode {
 }
 
 altoWords = \lyricmode {
-  Tru -- pul lui Hris -- tos pri -- miţi, pri -- miţi __
-  şi din iz -- vo -- rul cel fă -- ră de moar -- te gus -- taţi, gus -- taţi.
+  Tru -- pul lui Hris -- tos pri -- miți, pri -- miți __
+  și din iz -- vo -- rul cel fă -- ră de moar -- te gus -- tați, gus -- tați.
 
-  Tru -- pul lui Hris -- tos pri -- miţi, pri -- miţi __
-  şi din iz -- vo -- rul cel fă -- ră de moar -- te gus -- taţi, gus -- taţi.
+  Tru -- pul lui Hris -- tos pri -- miți, pri -- miți __
+  și din iz -- vo -- rul cel fă -- ră de moar -- te gus -- tați, gus -- tați.
 
   A -- li -- lu -- i -- a,
   a -- li -- lu -- i -- a,
@@ -60,11 +60,11 @@ altoWords = \lyricmode {
 tenorWords = \altoWords
 
 bassWords = \lyricmode {
-  Tru -- pul lui Hris -- tos pri -- miţi, pri -- miţi __
-  şi din iz -- vo -- rul __ cel fă -- ră de moar -- te gus -- taţi. __
+  Tru -- pul lui Hris -- tos pri -- miți, pri -- miți __
+  și din iz -- vo -- rul __ cel fă -- ră de moar -- te gus -- tați. __
 
-  Tru -- pul lui Hris -- tos pri -- miţi, pri -- miţi __
-  şi din iz -- vo -- rul cel fă -- ră de moar -- te gus -- taţi. __
+  Tru -- pul lui Hris -- tos pri -- miți, pri -- miți __
+  și din iz -- vo -- rul cel fă -- ră de moar -- te gus -- tați. __
 
   A -- li -- lu -- i -- a,
   a -- li -- lu -- i -- a,
@@ -80,7 +80,7 @@ bassWords = \lyricmode {
 sopMusic = \relative c' {
   \cadenzaOn
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   a'4^\p g4 f4 e4^\< \bar "|"
   f4(\! g4) f4(^\> e4) \bar "|"
   d4.(\! f8) e4(^\> d4)\! \bar "|"
@@ -92,7 +92,7 @@ sopMusic = \relative c' {
   f1~ \bar "|"
   f2. r4 \bar "|"
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   a4^\pp g4 f4 e4 \bar "|"
   f4( g4) f4( e4) \bar "|"
   d4.(^\< f8)\! e4(^\> d4) \bar "|"
@@ -135,7 +135,7 @@ sopMusic = \relative c' {
 altoMusic = \relative c' {
   \cadenzaOn
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   f4^\p e4 d4 d4^\<
   d2\! d4(^\> e4)
   d2\! e4(^\> d4)\!
@@ -147,7 +147,7 @@ altoMusic = \relative c' {
   c2.^\< d4\!^\>
   c2.\! r4
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   f4^\pp e4 c4 c4
   c2 c4( e4)
   d2 e4(^\> d4)
@@ -190,7 +190,7 @@ altoMusic = \relative c' {
 tenorMusic = \relative c' {
   \cadenzaOn
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   c4^\p c4 a4 a4^\<
   a4(\! bes4) a4.(^\> g8)
   f2\! g4(^\> f4)\!
@@ -202,7 +202,7 @@ tenorMusic = \relative c' {
   a2.^\< bes4\!^\>
   a2.\! r4
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   r2 c4^\pp bes4
   a4 bes4 a4 g4
   f2 g4(^\> f4)
@@ -245,7 +245,7 @@ tenorMusic = \relative c' {
 bassMusic = \relative c' {
   \cadenzaOn
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   f,4^\p c4 d4 d4^\<
   d2\! d4(^\> a4)
   d2\! a4(^\> bes4)\!
@@ -257,7 +257,7 @@ bassMusic = \relative c' {
   f1~
   f2. r4
 
-  % Trupul lui Hristos primiţi şi din izvorul cel fără de moarte gustaţi.
+  % Trupul lui Hristos primiți și din izvorul cel fără de moarte gustați.
   r2 a4^\pp g4
   f4 e4 f4 c4
   d2 a4(^\> bes4)
