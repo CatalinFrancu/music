@@ -99,10 +99,10 @@ myScore = \new Score \with {
       \new Voice = "women" { \global \womenMusic }
     >>
     \womenWords
-    
+
     \new Staff <<
       \clef "G_8"
-      \new Voice { \global \tenorMusic }
+      \new Voice ="basses" { \global \tenorMusic }
       \new Voice { \global \bassMusic }
     >>
     \menWords
@@ -111,7 +111,10 @@ myScore = \new Score \with {
 
 \score {
   \myScore
-  \layout { }
+  \layout {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #myStaffSpacing
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #myStaffSpacing
+  }
 }
 
 \score {
